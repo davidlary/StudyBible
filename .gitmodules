@@ -1,0 +1,3 @@
+[submodule "Code/Suno/PrepareForDistrokit/cpf"]
+	path = Code/Suno/PrepareForDistrokit/cpf
+	url = https://github.com/davidlary/ContextPreservingFramework.git
