@@ -35,12 +35,12 @@ jobs:
         run: npm ci
 
       - name: Build Eleventy site
-        run: npx @11ty/eleventy
+        run: npx @11ty/eleventy --input=website --output=website/_site --config=website/.eleventy.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: ./website/_site
 
   deploy:
     environment:
