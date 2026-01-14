@@ -1,0 +1,155 @@
+{
+  "total_verses": 1,
+  "total_tag_entries": 52,
+  "total_categories": 19,
+  "avg_tags_per_verse": 52.0,
+  "categories": {
+    "tier_1_foundational_theology:christology": {
+      "unique_values": 1,
+      "most_common": [
+        "Christ's redemptive work extends beyond Israel"
+      ]
+    },
+    "tier_1_foundational_theology:holy_spirit": {
+      "unique_values": 2,
+      "most_common": [
+        "Spirit's role in breaking down barriers",
+        "divine initiative in salvation"
+      ]
+    },
+    "tier_1_foundational_theology:soteriology": {
+      "unique_values": 2,
+      "most_common": [
+        "Gentile inclusion without works of law",
+        "salvation by grace through faith"
+      ]
+    },
+    "tier_1_foundational_theology:gospel": {
+      "unique_values": 2,
+      "most_common": [
+        "removal of ethnic barriers",
+        "universal scope of good news"
+      ]
+    },
+    "tier_1_foundational_theology:covenant_theology": {
+      "unique_values": 2,
+      "most_common": [
+        "fulfillment of Abrahamic blessing to all nations",
+        "transition from Old to New Covenant"
+      ]
+    },
+    "tier_2_applied_theology:faith": {
+      "unique_values": 2,
+      "most_common": [
+        "Cornelius's faith demonstrated by alms and prayers",
+        "receptivity to divine revelation"
+      ]
+    },
+    "tier_2_applied_theology:worship": {
+      "unique_values": 3,
+      "most_common": [
+        "appropriate vs inappropriate worship",
+        "proskynēsen - worship language",
+        "prostration at feet"
+      ]
+    },
+    "tier_2_applied_theology:obedience": {
+      "unique_values": 2,
+      "most_common": [
+        "Cornelius obeyed angelic vision",
+        "Peter obeyed despite cultural barriers"
+      ]
+    },
+    "tier_2_applied_theology:witness_evangelism": {
+      "unique_values": 2,
+      "most_common": [
+        "apostolic witness to Gentiles",
+        "crossing cultural boundaries for Gospel"
+      ]
+    },
+    "tier_3_relational_ethics:humility": {
+      "unique_values": 3,
+      "most_common": [
+        "Cornelius's reverence despite military rank",
+        "Peter's forthcoming refusal of worship (v.26)",
+        "reversal of worldly power dynamics"
+      ]
+    },
+    "tier_3_relational_ethics:church_community": {
+      "unique_values": 3,
+      "most_common": [
+        "breaking down Jew-Gentile divisions",
+        "expansion of covenant community",
+        "household baptism model"
+      ]
+    },
+    "tier_4_cultural_historical:jewish_customs": {
+      "unique_values": 3,
+      "most_common": [
+        "Jewish-Gentile separation",
+        "Peter's paradigm shift",
+        "purity laws regarding Gentile homes"
+      ]
+    },
+    "tier_4_cultural_historical:roman_occupation": {
+      "unique_values": 4,
+      "most_common": [
+        "Roman household structure",
+        "centurion of Italian Regiment",
+        "military hierarchy",
+        "occupation forces in Judea"
+      ]
+    },
+    "tier_4_cultural_historical:gentiles": {
+      "unique_values": 4,
+      "most_common": [
+        "Cornelius as first full Gentile convert",
+        "God-fearer status",
+        "alms-giving to Jewish community",
+        "liminal space between paganism and Judaism"
+      ]
+    },
+    "tier_4_cultural_historical:clean_unclean_laws": {
+      "unique_values": 3,
+      "most_common": [
+        "boundary crossing",
+        "divine cleansing of what was unclean",
+        "ritual purity concerns"
+      ]
+    },
+    "tier_5_literary_prophetic:prophecy_fulfillment": {
+      "unique_values": 4,
+      "most_common": [
+        "Acts 1:8 - witnesses to ends of earth",
+        "Genesis 12:3 - blessing to all families",
+        "Isaiah 49:6 - light to Gentiles",
+        "Joel 2:28-32 - Spirit on all flesh"
+      ]
+    },
+    "tier_5_literary_prophetic:typology": {
+      "unique_values": 4,
+      "most_common": [
+        "Jonah/Nineveh foreshadowing",
+        "Naaman bowing before Elisha parallel",
+        "Rahab and Gentile inclusion",
+        "Ruth the Moabitess type"
+      ]
+    },
+    "tier_5_literary_prophetic:narrative_history": {
+      "unique_values": 3,
+      "most_common": [
+        "careful Lukan historiography",
+        "pivotal moment in Acts",
+        "structural center of redemptive history shift"
+      ]
+    },
+    "tier_5_literary_prophetic:rhetorical_device": {
+      "unique_values": 3,
+      "most_common": [
+        "aorist participles building narrative tension",
+        "parataxis for narrative solemnity",
+        "tricolon of actions (met-fell-worshiped)"
+      ]
+    }
+  }
+}

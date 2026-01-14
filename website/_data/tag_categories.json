@@ -1,0 +1,149 @@
+{
+  "tier_1_foundational_theology:christology": {
+    "count": 1,
+    "values": [
+      "Christ's redemptive work extends beyond Israel"
+    ]
+  },
+  "tier_1_foundational_theology:holy_spirit": {
+    "count": 2,
+    "values": [
+      "Spirit's role in breaking down barriers",
+      "divine initiative in salvation"
+    ]
+  },
+  "tier_1_foundational_theology:soteriology": {
+    "count": 2,
+    "values": [
+      "Gentile inclusion without works of law",
+      "salvation by grace through faith"
+    ]
+  },
+  "tier_1_foundational_theology:gospel": {
+    "count": 2,
+    "values": [
+      "removal of ethnic barriers",
+      "universal scope of good news"
+    ]
+  },
+  "tier_1_foundational_theology:covenant_theology": {
+    "count": 2,
+    "values": [
+      "fulfillment of Abrahamic blessing to all nations",
+      "transition from Old to New Covenant"
+    ]
+  },
+  "tier_2_applied_theology:faith": {
+    "count": 2,
+    "values": [
+      "Cornelius's faith demonstrated by alms and prayers",
+      "receptivity to divine revelation"
+    ]
+  },
+  "tier_2_applied_theology:worship": {
+    "count": 3,
+    "values": [
+      "appropriate vs inappropriate worship",
+      "proskynēsen - worship language",
+      "prostration at feet"
+    ]
+  },
+  "tier_2_applied_theology:obedience": {
+    "count": 2,
+    "values": [
+      "Cornelius obeyed angelic vision",
+      "Peter obeyed despite cultural barriers"
+    ]
+  },
+  "tier_2_applied_theology:witness_evangelism": {
+    "count": 2,
+    "values": [
+      "apostolic witness to Gentiles",
+      "crossing cultural boundaries for Gospel"
+    ]
+  },
+  "tier_3_relational_ethics:humility": {
+    "count": 3,
+    "values": [
+      "Cornelius's reverence despite military rank",
+      "Peter's forthcoming refusal of worship (v.26)",
+      "reversal of worldly power dynamics"
+    ]
+  },
+  "tier_3_relational_ethics:church_community": {
+    "count": 3,
+    "values": [
+      "breaking down Jew-Gentile divisions",
+      "expansion of covenant community",
+      "household baptism model"
+    ]
+  },
+  "tier_4_cultural_historical:jewish_customs": {
+    "count": 3,
+    "values": [
+      "Jewish-Gentile separation",
+      "Peter's paradigm shift",
+      "purity laws regarding Gentile homes"
+    ]
+  },
+  "tier_4_cultural_historical:roman_occupation": {
+    "count": 4,
+    "values": [
+      "Roman household structure",
+      "centurion of Italian Regiment",
+      "military hierarchy",
+      "occupation forces in Judea"
+    ]
+  },
+  "tier_4_cultural_historical:gentiles": {
+    "count": 4,
+    "values": [
+      "Cornelius as first full Gentile convert",
+      "God-fearer status",
+      "alms-giving to Jewish community",
+      "liminal space between paganism and Judaism"
+    ]
+  },
+  "tier_4_cultural_historical:clean_unclean_laws": {
+    "count": 3,
+    "values": [
+      "boundary crossing",
+      "divine cleansing of what was unclean",
+      "ritual purity concerns"
+    ]
+  },
+  "tier_5_literary_prophetic:prophecy_fulfillment": {
+    "count": 4,
+    "values": [
+      "Acts 1:8 - witnesses to ends of earth",
+      "Genesis 12:3 - blessing to all families",
+      "Isaiah 49:6 - light to Gentiles",
+      "Joel 2:28-32 - Spirit on all flesh"
+    ]
+  },
+  "tier_5_literary_prophetic:typology": {
+    "count": 4,
+    "values": [
+      "Jonah/Nineveh foreshadowing",
+      "Naaman bowing before Elisha parallel",
+      "Rahab and Gentile inclusion",
+      "Ruth the Moabitess type"
+    ]
+  },
+  "tier_5_literary_prophetic:narrative_history": {
+    "count": 3,
+    "values": [
+      "careful Lukan historiography",
+      "pivotal moment in Acts",
+      "structural center of redemptive history shift"
+    ]
+  },
+  "tier_5_literary_prophetic:rhetorical_device": {
+    "count": 3,
+    "values": [
+      "aorist participles building narrative tension",
+      "parataxis for narrative solemnity",
+      "tricolon of actions (met-fell-worshiped)"
+    ]
+  }
+}

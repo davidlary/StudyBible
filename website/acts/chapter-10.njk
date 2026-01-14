@@ -53,10 +53,58 @@ title: Acts Chapter 10
                 </div>
             </div>
 
-            {# TODO: Add word-by-word interlinear here when morphological data available #}
+            {# Word-by-Word Interlinear Table #}
+            {% if verse.data.interlinear_analysis and verse.data.interlinear_analysis.length > 0 %}
+            <div class="interlinear-table">
+                <table class="morphology-grid">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Greek/Hebrew</th>
+                            <th>Transliteration</th>
+                            <th>Parsing</th>
+                            <th>Strong's</th>
+                            <th>English</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for word in verse.data.interlinear_analysis %}
+                        <tr>
+                            <td class="word-num">{{word.word_number}}</td>
+                            <td class="original-word">{{word.greek_word or word.hebrew_word}}</td>
+                            <td class="translit">{{word.transliteration}}</td>
+                            <td class="parsing" title="{{word.parsing_expanded}}">{{word.parsing_code}}</td>
+                            <td class="strongs">{{word.strongs_number}}</td>
+                            <td class="gloss">{{word.english_gloss}}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
             <p class="interlinear-note">
-                <em>Note: Word-by-word morphological analysis with Strong's numbers will be added in a future update.</em>
+                <em>Note: Word-by-word morphological analysis will be available when verses are regenerated with new schema.</em>
             </p>
+            {% endif %}
+
+            {# Geographic Calculations #}
+            {% if verse.data.geographic_calculations and verse.data.geographic_calculations.length > 0 %}
+            <div class="geo-calculations">
+                <h4 class="minor-heading">Geographic Context</h4>
+                {% for calc in verse.data.geographic_calculations %}
+                <div class="geo-item">
+                    <p><strong>{{calc.from_location}} to {{calc.to_location}}:</strong></p>
+                    <ul class="geo-details">
+                        <li>Straight-line: {{calc.straight_line_distance_km}} km ({{calc.straight_line_distance_mi}} mi)</li>
+                        <li>Ancient route: ~{{calc.ancient_route_distance_km}} km ({{calc.ancient_route_distance_mi}} mi)</li>
+                        <li>Elevation change: {{calc.elevation_change_m}}m ({{calc.elevation_change_ft}}ft)</li>
+                        <li>Travel time: {{calc.estimated_travel_time_days.on_foot}} days on foot, {{calc.estimated_travel_time_days.by_horse}} day by horse</li>
+                        {% if calc.uncertainty_notes %}<li class="uncertainty">Note: {{calc.uncertainty_notes}}</li>{% endif %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
     </details>
 
@@ -69,31 +117,7 @@ title: Acts Chapter 10
 
         <div class="exegesis-content">
 
-            {# Literal-Primary Filter #}
-            {% if verse.data.section_2_exegetical_synthesis.literal_primary_filter %}
-            <div class="note-section">
-                <h3 class="note-heading">Textual & Contextual Analysis</h3>
-                {% if verse.data.section_2_exegetical_synthesis.literal_primary_filter | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literal_primary_filter | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literal_primary_filter }}</p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {# Prophetic Typology #}
-            {% if verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality %}
-            <div class="note-section">
-                <h3 class="note-heading">Prophetic Typology & Intertextuality</h3>
-                {% if verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality }}</p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {# Linguistic Analysis #}
+            {# 1. Linguistic Analysis #}
             {% if verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names %}
             <div class="note-section">
                 <h3 class="note-heading">Linguistic Mechanics & Etymology</h3>
@@ -105,79 +129,19 @@ title: Acts Chapter 10
             </div>
             {% endif %}
 
-            {# Literary Devices #}
-            {% if verse.data.section_2_exegetical_synthesis.literary_devices %}
+            {# 2. Literal-Primary Filter #}
+            {% if verse.data.section_2_exegetical_synthesis.literal_primary_filter %}
             <div class="note-section">
-                <h3 class="note-heading">Literary Structure & Devices</h3>
-                {% if verse.data.section_2_exegetical_synthesis.literary_devices | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literary_devices | join(' ') }}</p>
+                <h3 class="note-heading">Textual & Contextual Analysis</h3>
+                {% if verse.data.section_2_exegetical_synthesis.literal_primary_filter | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literal_primary_filter | join(' ') }}</p>
                 {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literary_devices }}</p>
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literal_primary_filter }}</p>
                 {% endif %}
             </div>
             {% endif %}
 
-            {# Numerical Significance #}
-            {% if verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance %}
-            <div class="note-section">
-                <h3 class="note-heading">Numerical & Symbolic Significance</h3>
-                {% if verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance }}</p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {# Historical Context #}
-            {% if verse.data.section_2_exegetical_synthesis.historical_context_and_chronology %}
-            <div class="note-section">
-                <h3 class="note-heading">Historical Context & Chronology</h3>
-                {% if verse.data.section_2_exegetical_synthesis.historical_context_and_chronology | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.historical_context_and_chronology | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.historical_context_and_chronology }}</p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {# Socio-Political #}
-            {% if verse.data.section_2_exegetical_synthesis.socio_political_matrix %}
-            <div class="note-section">
-                <h3 class="note-heading">Socio-Political Context</h3>
-                {% if verse.data.section_2_exegetical_synthesis.socio_political_matrix | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.socio_political_matrix | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.socio_political_matrix }}</p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {# Geospatial #}
-            {% if verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography %}
-            <div class="note-section">
-                <h3 class="note-heading">Geography & Physical Setting</h3>
-                {% if verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography }}</p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {# Archaeological #}
-            {% if verse.data.section_2_exegetical_synthesis.archaeological_confirmation %}
-            <div class="note-section">
-                <h3 class="note-heading">Archaeological Evidence</h3>
-                {% if verse.data.section_2_exegetical_synthesis.archaeological_confirmation | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.archaeological_confirmation | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.archaeological_confirmation }}</p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {# Analogia Scriptura #}
+            {# 3. Analogia Scriptura #}
             {% if verse.data.section_2_exegetical_synthesis.aggregate_perspective_and_analogia_scriptura %}
             <div class="note-section">
                 <h3 class="note-heading">Scripture Interpreting Scripture</h3>
@@ -189,30 +153,110 @@ title: Acts Chapter 10
             </div>
             {% endif %}
 
-        </div>
-    </details>
-
-    {# ==================== LIFE APPLICATION (Collapsible) ==================== #}
-    <details class="application-section">
-        <summary class="section-toggle">
-            <span class="toggle-icon">▸</span>
-            <span class="toggle-label">Practical Application</span>
-        </summary>
-
-        <div class="application-content">
-            {% if verse.data.section_3_life_application.practical_application %}
-                {% if verse.data.section_3_life_application.practical_application | isArray %}
-                    <p class="application-prose">{{ verse.data.section_3_life_application.practical_application | join(' ') }}</p>
-                {% else %}
-                    <p class="application-prose">{{ verse.data.section_3_life_application.practical_application }}</p>
+            {# 4. Life Application (moved from separate section) #}
+            {% if verse.data.section_3_life_application.practical_application or verse.data.section_3_life_application.application_summary %}
+            <div class="note-section">
+                <h3 class="note-heading">Practical Application</h3>
+                {% if verse.data.section_3_life_application.practical_application %}
+                    {% if verse.data.section_3_life_application.practical_application | isArray %}
+                        <p class="note-prose">{{ verse.data.section_3_life_application.practical_application | join(' ') }}</p>
+                    {% else %}
+                        <p class="note-prose">{{ verse.data.section_3_life_application.practical_application }}</p>
+                    {% endif %}
+                {% elif verse.data.section_3_life_application.application_summary %}
+                    {% if verse.data.section_3_life_application.application_summary | isArray %}
+                        <p class="note-prose">{{ verse.data.section_3_life_application.application_summary | join(' ') }}</p>
+                    {% else %}
+                        <p class="note-prose">{{ verse.data.section_3_life_application.application_summary }}</p>
+                    {% endif %}
                 {% endif %}
-            {% elif verse.data.section_3_life_application.application_summary %}
-                {% if verse.data.section_3_life_application.application_summary | isArray %}
-                    <p class="application-prose">{{ verse.data.section_3_life_application.application_summary | join(' ') }}</p>
-                {% else %}
-                    <p class="application-prose">{{ verse.data.section_3_life_application.application_summary }}</p>
-                {% endif %}
+            </div>
             {% endif %}
+
+            {# 5. Prophetic Typology #}
+            {% if verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality %}
+            <div class="note-section">
+                <h3 class="note-heading">Prophetic Typology & Intertextuality</h3>
+                {% if verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality | join(' ') }}</p>
+                {% else %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {# 6. Historical Context #}
+            {% if verse.data.section_2_exegetical_synthesis.historical_context_and_chronology %}
+            <div class="note-section">
+                <h3 class="note-heading">Historical Context & Chronology</h3>
+                {% if verse.data.section_2_exegetical_synthesis.historical_context_and_chronology | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.historical_context_and_chronology | join(' ') }}</p>
+                {% else %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.historical_context_and_chronology }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {# 7. Geospatial #}
+            {% if verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography %}
+            <div class="note-section">
+                <h3 class="note-heading">Geography & Physical Setting</h3>
+                {% if verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography | join(' ') }}</p>
+                {% else %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {# 8. Socio-Political #}
+            {% if verse.data.section_2_exegetical_synthesis.socio_political_matrix %}
+            <div class="note-section">
+                <h3 class="note-heading">Socio-Political Context</h3>
+                {% if verse.data.section_2_exegetical_synthesis.socio_political_matrix | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.socio_political_matrix | join(' ') }}</p>
+                {% else %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.socio_political_matrix }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {# 9. Archaeological #}
+            {% if verse.data.section_2_exegetical_synthesis.archaeological_confirmation %}
+            <div class="note-section">
+                <h3 class="note-heading">Archaeological Evidence</h3>
+                {% if verse.data.section_2_exegetical_synthesis.archaeological_confirmation | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.archaeological_confirmation | join(' ') }}</p>
+                {% else %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.archaeological_confirmation }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {# 10. Literary Devices #}
+            {% if verse.data.section_2_exegetical_synthesis.literary_devices %}
+            <div class="note-section">
+                <h3 class="note-heading">Literary Structure & Devices</h3>
+                {% if verse.data.section_2_exegetical_synthesis.literary_devices | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literary_devices | join(' ') }}</p>
+                {% else %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literary_devices }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {# 11. Numerical Significance #}
+            {% if verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance %}
+            <div class="note-section">
+                <h3 class="note-heading">Numerical & Symbolic Significance</h3>
+                {% if verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance | join(' ') }}</p>
+                {% else %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
         </div>
     </details>
 
@@ -375,6 +419,118 @@ details[open] .toggle-icon {
     color: var(--text-muted);
 }
 
+/* Morphology Table Styles */
+.interlinear-table {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+}
+
+.morphology-grid {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-commentary);
+    font-size: 0.9rem;
+}
+
+.morphology-grid th {
+    background: var(--navy);
+    color: white;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+}
+
+.morphology-grid td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.morphology-grid tr:last-child td {
+    border-bottom: none;
+}
+
+.morphology-grid tr:hover {
+    background: #F9FAFB;
+}
+
+.word-num {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    width: 40px;
+}
+
+.original-word {
+    font-family: var(--font-original);
+    font-size: 1.1rem;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.translit {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.parsing {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--burgundy);
+    cursor: help;
+}
+
+.strongs {
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.gloss {
+    color: var(--text-secondary);
+}
+
+/* Geographic Calculations Styles */
+.geo-calculations {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #F0F9FF;
+    border-radius: 6px;
+}
+
+.geo-item {
+    margin-bottom: 1rem;
+}
+
+.geo-item:last-child {
+    margin-bottom: 0;
+}
+
+.geo-item p {
+    margin: 0 0 0.5rem 0;
+    color: var(--navy);
+    font-family: var(--font-commentary);
+}
+
+.geo-details {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+    font-family: var(--font-commentary);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.geo-details li {
+    margin-bottom: 0.25rem;
+}
+
+.geo-details .uncertainty {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
 /* ===== EXEGESIS SECTION ===== */
 .exegesis-section {
     background: #FFFBEB;
@@ -426,6 +582,14 @@ details[open] .toggle-icon {
 }
 
 /* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (min-width: 1200px) {
+    .scripture-text,
+    .note-prose,
+    .application-prose {
+        max-width: 90ch;
+    }
+}
+
 @media (max-width: 768px) {
     .scripture-text {
         font-size: 1.15rem;
