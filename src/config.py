@@ -30,9 +30,10 @@ def get_project_root() -> Path:
 
 def get_gemini_api_key() -> str:
     """
-    Get and validate Google Gemini API key from environment.
+    Get and validate Google Gemini API key from environment or YAML file.
 
-    The key may be in format "google_api_key: ACTUAL_KEY" which needs to be parsed.
+    The key may be in format "google_api_key: 'ACTUAL_KEY'" which needs to be parsed.
+    Falls back to reading directly from .env-keys.yml if environment variable is malformed.
 
     Returns:
         str: Valid Gemini API key
@@ -48,13 +49,37 @@ def get_gemini_api_key() -> str:
             "Please set it with: export GOOGLE_API_KEY='your-key-here'"
         )
 
-    # Handle format: "google_api_key: ACTUAL_KEY"
+    # Handle format: "google_api_key: 'ACTUAL_KEY'" (with YAML syntax and quotes)
     if ":" in api_key and api_key.startswith("google_api_key"):
         api_key = api_key.split(":", 1)[1].strip()
+        # Remove surrounding quotes if present
+        if api_key.startswith("'") and api_key.endswith("'"):
+            api_key = api_key[1:-1]
+        elif api_key.startswith('"') and api_key.endswith('"'):
+            api_key = api_key[1:-1]
 
-    if not api_key:
+    # If key still looks malformed or is old expired key, read directly from YAML
+    if not api_key.startswith("AIzaSy") or "BArMBNvTzE" in api_key:
+        logger.warning("Environment variable malformed or expired. Reading from YAML file.")
+        yaml_path = Path.home() / "Dropbox" / "Environments" / ".env-keys.yml"
+        if yaml_path.exists():
+            with open(yaml_path, 'r') as f:
+                for line in f:
+                    if line.strip().startswith("google_api_key:"):
+                        # Extract: google_api_key: 'AIza...'
+                        api_key = line.split(":", 1)[1].strip()
+                        # Remove quotes
+                        if api_key.startswith("'") and api_key.endswith("'"):
+                            api_key = api_key[1:-1]
+                        elif api_key.startswith('"') and api_key.endswith('"'):
+                            api_key = api_key[1:-1]
+                        break
+        else:
+            raise ValueError(f"YAML file not found at {yaml_path}")
+
+    if not api_key or not api_key.startswith("AIzaSy"):
         raise ValueError(
-            "GOOGLE_API_KEY environment variable is empty after parsing. "
+            "GOOGLE_API_KEY is empty or invalid after parsing. "
             "Please set a valid API key."
         )
 

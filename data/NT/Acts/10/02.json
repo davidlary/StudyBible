@@ -1,25 +1,385 @@
 {
   "verse_id": "ACTS-10-2",
   "section_1_sacred_text": {
-    "verse_reference": "Acts 10:2",
     "original_script": "εὐσεβὴς καὶ φοβούμενος τὸν θεὸν σὺν παντὶ τῷ οἴκῳ αὐτοῦ, ⸀ποιῶν ἐλεημοσύνας πολλὰς τῷ λαῷ καὶ δεόμενος τοῦ θεοῦ διὰ παντός,",
-    "faithful_direct_translation": "pious and fearing God with all his household, doing many alms to the people and praying to God continually,",
-    "standalone_english_translation": "He was a devout man who feared God along with his whole household. He gave generously to the people and prayed regularly to God.",
-    "amplified_narrative_translation": "This man was characterized by a genuine reverence and active piety, and he was one who lived in reverential awe of the one true God, a conviction he shared with his entire household; furthermore, he habitually and generously gave charitable gifts to the Jewish people and was continually petitioning God in prayer at all times."
+    "faithful_direct_translation": "devout and fearing God with all his household, giving alms many to the people and praying to God continually,",
+    "standalone_english_translation": "He was a devout man who feared God along with his whole household. He gave generously to the Jewish people and prayed to God regularly.",
+    "amplified_narrative_translation": "He was a genuinely pious (devoutly religious) man, one who held a reverential awe of the one true God, and he led his entire household in this same fear. Furthermore, he was characterized by consistently giving many eleemosynary (relating to charity or alms) gifts to the Jewish people and was in a state of continual prayer, petitioning God at all times."
   },
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "εὐσεβὴς",
+      "transliteration": "eusebēs",
+      "lemma": "εὐσεβής",
+      "parsing_code": "A-NMS",
+      "parsing_expanded": "Adjective, Nominative, Masculine, Singular",
+      "strongs_number": "G2152",
+      "english_gloss": "devout, pious",
+      "contextual_meaning": "Describes Cornelius's core character as one who is reverent and dutiful in his religious observances toward the true God."
+    },
+    {
+      "word_number": 2,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and, also",
+      "contextual_meaning": "A coordinating conjunction linking the quality of being 'devout' with the action of 'fearing God'."
+    },
+    {
+      "word_number": 3,
+      "greek_word": "φοβούμενος",
+      "transliteration": "phoboumenos",
+      "lemma": "φοβέομαι",
+      "parsing_code": "V-PMP-NMS",
+      "parsing_expanded": "Verb, Present, Middle/Passive Participle, Nominative, Masculine, Singular",
+      "strongs_number": "G5399",
+      "english_gloss": "fearing",
+      "contextual_meaning": "A present participle indicating a continuous state of reverential awe and respect for God, not terror. This was a technical term for a Gentile who worshipped Yahweh."
+    },
+    {
+      "word_number": 4,
+      "greek_word": "τὸν",
+      "transliteration": "ton",
+      "lemma": "ὁ",
+      "parsing_code": "T-AMS",
+      "parsing_expanded": "Article, Accusative, Masculine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "The definite article specifying 'God' as the object of Cornelius's fear."
+    },
+    {
+      "word_number": 5,
+      "greek_word": "θεὸν",
+      "transliteration": "theon",
+      "lemma": "θεός",
+      "parsing_code": "N-AMS",
+      "parsing_expanded": "Noun, Accusative, Masculine, Singular",
+      "strongs_number": "G2316",
+      "english_gloss": "God",
+      "contextual_meaning": "Refers to the God of Israel, Yahweh, whom Cornelius worshipped despite his Roman, polytheistic background."
+    },
+    {
+      "word_number": 6,
+      "greek_word": "σὺν",
+      "transliteration": "syn",
+      "lemma": "σύν",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G4862",
+      "english_gloss": "with",
+      "contextual_meaning": "Indicates that his household shared in his piety; he was not alone in his devotion but led his family."
+    },
+    {
+      "word_number": 7,
+      "greek_word": "παντὶ",
+      "transliteration": "panti",
+      "lemma": "πᾶς",
+      "parsing_code": "A-DMS",
+      "parsing_expanded": "Adjective, Dative, Masculine, Singular",
+      "strongs_number": "G3956",
+      "english_gloss": "all, whole",
+      "contextual_meaning": "Emphasizes the completeness of his household's participation in his faith."
+    },
+    {
+      "word_number": 8,
+      "greek_word": "τῷ",
+      "transliteration": "tō",
+      "lemma": "ὁ",
+      "parsing_code": "T-DMS",
+      "parsing_expanded": "Article, Dative, Masculine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "The definite article modifying 'household'."
+    },
+    {
+      "word_number": 9,
+      "greek_word": "οἴκῳ",
+      "transliteration": "oikō",
+      "lemma": "οἶκος",
+      "parsing_code": "N-DMS",
+      "parsing_expanded": "Noun, Dative, Masculine, Singular",
+      "strongs_number": "G3624",
+      "english_gloss": "household",
+      "contextual_meaning": "Refers to his entire domestic establishment, including family, servants, and possibly some soldiers under his direct influence."
+    },
+    {
+      "word_number": 10,
+      "greek_word": "αὐτοῦ",
+      "transliteration": "autou",
+      "lemma": "αὐτός",
+      "parsing_code": "P-GSM",
+      "parsing_expanded": "Pronoun, Genitive, Masculine, Singular",
+      "strongs_number": "G846",
+      "english_gloss": "his",
+      "contextual_meaning": "Possessive pronoun indicating the household belonged to Cornelius."
+    },
+    {
+      "word_number": 11,
+      "greek_word": "ποιῶν",
+      "transliteration": "poiōn",
+      "lemma": "ποιέω",
+      "parsing_code": "V-PAP-NMS",
+      "parsing_expanded": "Verb, Present, Active, Participle, Nominative, Masculine, Singular",
+      "strongs_number": "G4160",
+      "english_gloss": "doing, making",
+      "contextual_meaning": "A circumstantial participle describing another of Cornelius's habitual actions: he was a continual 'doer' or 'giver' of alms."
+    },
+    {
+      "word_number": 12,
+      "greek_word": "ἐλεημοσύνας",
+      "transliteration": "eleēmosynas",
+      "lemma": "ἐλεημοσύνη",
+      "parsing_code": "N-AFP",
+      "parsing_expanded": "Noun, Accusative, Feminine, Plural",
+      "strongs_number": "G1654",
+      "english_gloss": "alms, acts of charity",
+      "contextual_meaning": "Refers to charitable gifts, especially to the poor. It's the fruit of his piety, demonstrating his love for God through love for people."
+    },
+    {
+      "word_number": 13,
+      "greek_word": "πολλὰς",
+      "transliteration": "pollas",
+      "lemma": "πολύς",
+      "parsing_code": "A-AFP",
+      "parsing_expanded": "Adjective, Accusative, Feminine, Plural",
+      "strongs_number": "G4183",
+      "english_gloss": "many, large",
+      "contextual_meaning": "Quantifies his acts of charity, indicating they were not occasional or meager but frequent and generous."
+    },
+    {
+      "word_number": 14,
+      "greek_word": "τῷ",
+      "transliteration": "tō",
+      "lemma": "ὁ",
+      "parsing_code": "T-DMS",
+      "parsing_expanded": "Article, Dative, Masculine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "to the",
+      "contextual_meaning": "The article specifying the recipient of the alms."
+    },
+    {
+      "word_number": 15,
+      "greek_word": "λαῷ",
+      "transliteration": "laō",
+      "lemma": "λαός",
+      "parsing_code": "N-DMS",
+      "parsing_expanded": "Noun, Dative, Masculine, Singular",
+      "strongs_number": "G2992",
+      "english_gloss": "people",
+      "contextual_meaning": "In this context, specifically refers to 'the People' of Israel, the Jewish people. This is significant, as a Roman officer is generously supporting the occupied populace."
+    },
+    {
+      "word_number": 16,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and",
+      "contextual_meaning": "Links his charitable actions with his prayer life, presenting them as two concurrent aspects of his devotion."
+    },
+    {
+      "word_number": 17,
+      "greek_word": "δεόμενος",
+      "transliteration": "deomenos",
+      "lemma": "δέομαι",
+      "parsing_code": "V-PMP-NMS",
+      "parsing_expanded": "Verb, Present, Middle/Passive Participle, Nominative, Masculine, Singular",
+      "strongs_number": "G1189",
+      "english_gloss": "praying, asking",
+      "contextual_meaning": "A participle that denotes a continuous, personal pleading and petitioning to God. It implies a sense of need and dependence on God."
+    },
+    {
+      "word_number": 18,
+      "greek_word": "τοῦ",
+      "transliteration": "tou",
+      "lemma": "ὁ",
+      "parsing_code": "T-GMS",
+      "parsing_expanded": "Article, Genitive, Masculine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "of the",
+      "contextual_meaning": "Specifies 'God' as the one to whom he prays."
+    },
+    {
+      "word_number": 19,
+      "greek_word": "θεοῦ",
+      "transliteration": "theou",
+      "lemma": "θεός",
+      "parsing_code": "N-GMS",
+      "parsing_expanded": "Noun, Genitive, Masculine, Singular",
+      "strongs_number": "G2316",
+      "english_gloss": "God",
+      "contextual_meaning": "The object of his prayers is the God of Israel."
+    },
+    {
+      "word_number": 20,
+      "greek_word": "διὰ",
+      "transliteration": "dia",
+      "lemma": "διά",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G1223",
+      "english_gloss": "through",
+      "contextual_meaning": "Used with the genitive in the idiom 'dia pantos' to mean 'through all time' or 'continually'."
+    },
+    {
+      "word_number": 21,
+      "greek_word": "παντός",
+      "transliteration": "pantos",
+      "lemma": "πᾶς",
+      "parsing_code": "A-GNS",
+      "parsing_expanded": "Adjective, Genitive, Neuter, Singular",
+      "strongs_number": "G3956",
+      "english_gloss": "all",
+      "contextual_meaning": "Part of the idiom 'διὰ παντός' (dia pantos), meaning always or constantly, highlighting the regularity and persistence of his prayer life."
+    }
+  ],
   "section_2_exegetical_synthesis": {
-    "literal_primary_filter": "The text presents Cornelius as a historical individual, a Roman centurion stationed in Caesarea.\nHis character is defined by four literal, observable, and consistent actions: his personal piety, his leadership in bringing his household to fear God, his generous almsgiving to the local Jewish population, and his persistent life of prayer.\nThese are not metaphors but the factual description of a man whose heart God had prepared, yet who still awaited the specific revelation of the Gospel for salvation (Acts 11:14).",
-    "prophetic_typology_and_intertextuality": "Cornelius is the New Testament antitype of the 'God-fearing' Gentile prophesied in the Old Testament.\nHe embodies the fulfillment of God's promise to be a 'light to the Gentiles' (Isaiah 42:6) and to bring 'salvation to the ends of the earth' (Isaiah 49:6).\nThe 'foreigners who join themselves to the LORD' (Isaiah 56:6-7) find their initial apostolic realization in him.\nHis conversion is the historical and theological pivot in Acts, demonstrating the breaking down of the 'dividing wall of hostility' (Ephesians 2:14) between Jew and Gentile.\nThis event served as the definitive precedent used by Peter and others at the Jerusalem Council to affirm that salvation for Gentiles is by grace through faith alone, apart from the Mosaic Law (Acts 15:7-11).",
-    "linguistic_mechanics_and_names": "The name [Κορνήλιος] (Kornélios, \"Cornelius\") is a Latin name from the prominent Roman clan (gens) Cornelia, signifying his identity as a man integrated into the Roman imperial structure.\n[εὐσεβὴς] (eusebēs, \"pious/devout\") is derived from *eu* (\"well\") and *sebomai* (\"to revere\"); it denotes a practical, active reverence for God that manifests in a righteous and dutiful life.\n[φοβούμενος τὸν θεὸν] (phoboumenos ton theon, \"fearing God\") is a present middle participle, indicating a continuous, personal state of reverential awe, not terror. This phrase became a semi-technical term for non-Jews who worshipped the God of Israel without becoming full proselytes (Acts 13:16, 26).\n[σὺν παντὶ τῷ οἴκῳ αὐτοῦ] (sun panti tō oikō autou, \"with all his household\") demonstrates his spiritual leadership over his entire sphere of influence, including immediate family, servants, and dependents (the ancient *oikos*).\n[ποιῶν ἐλεημοσύνας πολλὰς] (poiōn eleēmosunas pollas, \"doing many alms\") is a present active participle, denoting continuous action. [ἐλεημοσύνας] (eleēmosunas) means acts of mercy or charity. His giving 'to the people' [τῷ λαῷ] (tō laō) specifically refers to the Jewish people, a remarkable act for an occupying Roman officer.\n[δεόμενος τοῦ θεοῦ διὰ παντός] (deomenos tou theou dia pantos, \"praying to God continually\") is a present middle participle. [δεόμενος] (deomenos) implies petitioning from a sense of personal need, while [διὰ παντός] (dia pantos) means 'through all time' or 'constantly,' signifying a disciplined habit of prayer.",
-    "literary_devices": "Luke employs characterization through action, a powerful literary device. He does not simply label Cornelius as 'good'; instead, he provides four distinct and active proofs of his character.\nThis fourfold description (piety, fear of God, almsgiving, prayer) creates a cumulative effect, painting a vivid portrait of a man uniquely prepared by God to receive the Gospel and serve as the gateway for its official expansion to the Gentile world.",
-    "numerical_and_gematria_significance": "While this specific verse lacks overt numerical symbolism, the surrounding narrative highlights the number three, a number of divine completeness and confirmation. Peter sees his vision three times (Acts 10:16), and Cornelius sends three men to find Peter (Acts 10:7).\nFurthermore, Cornelius's vision occurs at the 'ninth hour' (Acts 10:3), which is 3 p.m. This was one of the official Jewish hours of prayer at the Temple, demonstrating how deeply Cornelius had aligned his personal worship practices with those of the Jewish people he respected.",
-    "historical_context_and_chronology": "This event is dated to approximately AD 38-40.\nThis places it after the persecution following Stephen's martyrdom (which scattered the church) and before the more systematic persecution under Herod Agrippa I began around AD 44 (Acts 12).\nThis was a crucial transitional period. The social and religious chasm between Jews and Gentiles was immense and reinforced by both Jewish purity laws and Roman social hierarchy.\nA Roman officer giving alms to the subjugated Jewish people was profoundly counter-cultural and points to a genuine work of God in his heart that transcended the ethnic and political animosities of the time.",
-    "socio_political_matrix": "Cornelius was a centurion, a non-commissioned officer and the command backbone of the Roman army, responsible for about 80-100 soldiers.\nHe belonged to the 'Italian Cohort' (Acts 10:1), which was likely the *Cohors II Italica Civium Romanorum*, a unit composed of Roman citizens recruited from Italy, granting it a higher status than locally levied auxiliary units.\nHis position as an agent of Roman imperial power in Caesarea, the provincial capital, makes his conversion profoundly significant. It demonstrates the Gospel's power to penetrate the very military and political structure occupying the Holy Land.",
-    "geospatial_data_and_physical_geography": "Location: Caesarea Maritima (modern Caesarea, Israel).\nCoordinates: Approximately 32.5052° N, 34.8931° E.\nAltitude: Sea level.\nGeography: Caesarea was a major, technologically advanced port city built by Herod the Great on the Mediterranean coast. As the Roman administrative and military headquarters for the province of Iudaea, it was a hub of Gentile power, commerce, and culture. Its strategic location as a major seaport made it a natural launchpad for the Gospel's journey from Judea to the wider Roman world, fulfilling the geographical progression outlined in Acts 1:8.",
-    "archaeological_confirmation": "The extensive ruins of Caesarea Maritima have been excavated, confirming its status as a major Roman city as described by Luke. Discoveries include Herod's palace (the Praetorium where Paul was later held, Acts 23:35), a theater, a hippodrome, aqueducts, and the revolutionary artificial harbor.\nA limestone block, known as the 'Pilate Stone,' was discovered there, providing the first archaeological evidence for Pontius Pilate and confirming his title as Prefect of Judea.\nAn inscription attesting to the *Cohors II Italica* has been found, but it dates to a later period (AD 69). While its presence in Caesarea c. AD 40 is not directly proven by archaeology, it is historically plausible, and the overall physical setting of the narrative is strongly substantiated.",
-    "aggregate_perspective_and_analogia_scriptura": "Cornelius's story demonstrates a core theological principle: sincere piety and good works, while pleasing to God, are insufficient for salvation. His righteousness was evidence of God's preparatory grace, but he still needed to hear 'a message by which you and all your household will be saved' (Acts 11:14).\nHis reverential 'fear of God' connects to the Old Testament theme that 'the fear of the LORD is the beginning of wisdom' (Proverbs 9:10). God honored Cornelius's initial wisdom by leading him to its ultimate fulfillment: the knowledge of Christ.\nHis prayers and alms 'ascended as a memorial before God' (Acts 10:4), using language that echoes the aroma of Old Testament sacrifices (Leviticus 2:2), signifying that God recognized and accepted his worship even while it was incomplete.\nThus, Cornelius stands as the pivotal figure in the book of Acts, proving that God grants 'to the Gentiles also the repentance that leads to life' (Acts 11:18) on the exact same terms as to the Jews: by grace alone through faith in Jesus Christ alone."
+    "linguistic_mechanics_and_names": [
+      {
+        "entry": "devout (εὐσεβὴς, eusebēs)",
+        "theological_significance": "From 'eu' (well) and 'sebomai' (to revere), this term describes a person who correctly and reverently performs their duties to God. It signifies a practical, observant piety that goes beyond mere belief. For a Roman, this devotion to the God of the Jews instead of the Roman pantheon was exceptional."
+      },
+      {
+        "entry": "fearing God (φοβούμενος τὸν θεὸν, phoboumenos ton theon)",
+        "theological_significance": "This phrase was a semi-technical term for a class of Gentiles who were attracted to the monotheism and ethics of Judaism. They worshipped Yahweh and attended synagogue but did not undergo circumcision to become full proselytes (converts to Judaism). This 'fear' is not terror but a reverential awe that shapes one's entire life, echoing the Old Testament concept of wisdom's beginning (Proverbs 9:10)."
+      },
+      {
+        "entry": "household (οἴκῳ, oikō)",
+        "theological_significance": "In the ancient world, the 'oikos' encompassed the entire domestic unit: family, slaves, and dependents. The spiritual state of the head of the household (paterfamilias) determined the religious practice of the entire unit. Cornelius's leadership is evident in that his whole house followed his devotion, a pattern seen throughout Acts with conversions of entire households (Acts 16:15, 31-34)."
+      },
+      {
+        "entry": "alms (ἐλεημοσύνας, eleēmosynas)",
+        "theological_significance": "Derived from the Greek word for 'mercy' (eleos), almsgiving was a cornerstone of Jewish piety, seen as an act of righteousness. For Cornelius, a Roman, to be giving 'many' alms specifically to 'the people' (τῷ λαῷ, tō laō) – a term Luke uses for the Jewish people – demonstrates a remarkable identification with and compassion for the nation whose God he worshipped."
+      }
+    ],
+    "literary_devices": "Luke employs a literary technique of characterization through a descriptive list. The verse is structured around the main adjective, 'devout' (εὐσεβὴς, eusebēs), which is then explained by a series of three present participles describing Cornelius's continuous actions: 'fearing' (φοβούμενος, phoboumenos), 'giving' (ποιῶν, poiōn), and 'praying' (δεόμενος, deomenos). This structure paints a vivid and comprehensive portrait of a man whose inner piety has clear outward expressions, establishing him as a worthy, God-prepared recipient for the Gospel.",
+    "aggregate_analogia_scriptura": "Scripture interprets Scripture by showing that Cornelius embodies the ideal Old Testament Gentile who seeks God (cf. Psalm 111:10; Proverbs 1:7 on the 'fear of the Lord'). His almsgiving and prayer are noted by God (Acts 10:4) in a way that echoes the 'memorial' of the grain offering in the temple (Leviticus 2:2). However, the narrative arc of Acts 10-11 powerfully demonstrates that this exemplary piety and righteousness, while pleasing to God, are insufficient for salvation. He still needed to hear the words 'by which you and all your household will be saved' (Acts 11:14), which are found exclusively in the person and work of Jesus Christ. His story serves as a bridge, showing God's prevenient grace (divine grace that precedes a human decision) at work, preparing a Gentile heart to receive the specific, saving message of the Gospel which fulfills all prior forms of piety.",
+    "literal_primary_filter": [
+      "Cornelius was a man of genuine religious devotion.",
+      "He revered the God of Israel.",
+      "His entire household adopted his religious practices.",
+      "He was consistently and generously charitable to the Jewish people.",
+      "He maintained a constant and personal prayer life with God."
+    ],
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "Cornelius represents a 'type' of the righteous Gentile seeker, embodying the 'God-fearer' who lives up to the light he has but still awaits the full revelation. He is a shadow of the harvest from the nations that was to come.",
+      "antitype_fulfillment": "The inclusion of Cornelius and his household into the church is the antitype (fulfillment) of Old Testament prophecies that the Gentiles would be brought into God's covenant people (Isaiah 49:6, Amos 9:11-12). His conversion is a pivotal moment in Acts, demonstrating the concrete fulfillment of Jesus' commission to be witnesses 'to the end of the earth' (Acts 1:8) and Peter's vision that what God has made clean is not to be called common (Acts 10:15).",
+      "progression_notes": "This event marks a crucial step in redemptive history. The Gospel had moved from Jews (Pentecost), to Samaritans (Acts 8), and now, officially and with apostolic approval, to the Gentiles. Cornelius is the 'firstfruits' of the Gentile harvest, opening the door for the Pauline mission and the universalization of the church."
+    },
+    "numerical_and_gematria_significance": "There are no specific numerical or gematria significances within this verse. The emphasis is on the qualitative and continuous nature of Cornelius's piety, not on symbolic numbers.",
+    "historical_context_and_chronology": {
+      "dates": "This event is typically dated to approximately AD 40-41, during the reign of Emperor Caligula or early in the reign of Claudius.",
+      "context": "Cornelius was a centurion (a commander of 80-100 soldiers) of the 'Italian Cohort' (Cohors II Italica Civium Romanorum), an auxiliary unit of Roman citizens stationed in Syria-Palaestina. As a 'God-fearer', he occupied a social space between paganism and full Judaism. Such individuals were a fertile ground for the early Christian mission, as they already possessed a monotheistic worldview and a moral framework shaped by the Old Testament, making them receptive to the news of the Jewish Messiah."
+    },
+    "socio_political_matrix": "As an officer of the occupying Roman army in Caesarea Maritima, the Roman administrative capital of Judea, Cornelius's position was one of power and authority over the Jewish population. His genuine piety towards the God of Israel and his remarkable generosity towards the Jewish people (τῷ λαῷ, tō laō) would have been highly counter-cultural, subverting the typical animosity between the Romans and the Jews. This socio-political dynamic underscores the radical, barrier-breaking nature of the work God was doing in preparation for the Gospel's entrance into the Gentile world.",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Caesarea, Israel",
+      "coordinates": {
+        "lat": 32.505,
+        "long": 34.893
+      },
+      "altitude_m": 15,
+      "terrain_climate_characteristics": "Caesarea Maritima was a major, man-made port city on the Mediterranean coast. Built by Herod the Great, it was a hub of Roman administration, trade, and culture. The terrain is flat coastal plain with a Mediterranean climate (hot, dry summers and mild, wet winters). Its status as a Roman capital made it a strategic location for the Gospel to leap from a predominantly Jewish context to the broader Gentile world."
+    },
+    "archaeological_confirmation": "Extensive excavations at Caesarea Maritima have uncovered the Roman-era city, including the harbor, amphitheater, aqueduct, and palace, confirming its status as a major administrative center as described by Luke. While a specific inscription directly naming Cornelius has not been found, inscriptions found elsewhere confirm the presence of the Cohors II Italica in Syria during the first century AD. The archaeological record provides strong circumstantial evidence for the setting of this account."
   },
-  "section_3_life_application": {
-    "practical_application": "First, understand that God actively seeks and prepares the hearts of people from every nation, tribe, and background. Our role is to be ready, like Peter, to carry the specific message of Jesus Christ to them when He opens the door.\nSecond, genuine faith is never merely an internal belief; it must express itself through tangible actions. A life that truly fears God will be marked by both consistent prayer (our vertical relationship with Him) and generous charity (our horizontal relationship with others).\nThird, spiritual leadership begins at home. Like Cornelius, strive to lead your entire household—your family and sphere of influence—into a reverential awe of God through your own example.\nFinally, never mistake morality or religious sincerity for salvation. While God honors a seeking heart, our good works can never save us. Every person, no matter how devout, must consciously place their faith in the finished work of Jesus Christ for their salvation."
-  }
+  "geographic_calculations": [
+    {
+      "from_location": "Joppa (where Peter was)",
+      "to_location": "Caesarea Maritima (where Cornelius was)",
+      "straight_line_distance_km": 50,
+      "ancient_route_distance_km": 55,
+      "elevation_change_m": 10,
+      "estimated_travel_time_days": {
+        "on_foot": 2.0,
+        "by_donkey": 1.5,
+        "by_horse": 1.0
+      },
+      "uncertainty_notes": "The journey mentioned in the wider pericope (a portion of text) of Acts 10. The ancient route likely followed the relatively flat and well-established Roman coastal road, part of the Via Maris. The travel time estimate of 'two days' (Acts 10:23-24 implies an overnight stop) for the messengers is consistent with these distances."
+    }
+  ],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "soteriology": [
+        "prevenient grace",
+        "salvation for Gentiles"
+      ],
+      "creation_providence": [
+        "God preparing a human heart",
+        "divine appointments"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "faith": [
+        "nascent faith",
+        "pre-Christian piety"
+      ],
+      "prayer": [
+        "continual prayer",
+        "intercession"
+      ],
+      "stewardship": [
+        "generosity",
+        "almsgiving"
+      ],
+      "holiness_sanctification": [
+        "personal piety",
+        "righteous living"
+      ],
+      "witness_evangelism": [
+        "God preparing a Gentile for the gospel"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "compassion_mercy": [
+        "charity to the poor"
+      ],
+      "wealth_poverty": [
+        "charitable use of resources"
+      ],
+      "leadership_authority": [
+        "leading a household in faith"
+      ],
+      "love": [
+        "love for God expressed in action",
+        "love for neighbor (Jews)"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "roman_occupation": [
+        "centurion",
+        "Italian Cohort",
+        "Caesarea Maritima"
+      ],
+      "gentiles": [
+        "God-fearer",
+        "Cornelius"
+      ],
+      "jewish_customs": [
+        "almsgiving to the Jewish people"
+      ],
+      "synagogue": [
+        "God-fearers as synagogue attendees"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "narrative_history": [
+        "pivotal event in Acts",
+        "character description"
+      ],
+      "prophecy_fulfillment": [
+        "Gentile inclusion prophesied in OT"
+      ],
+      "typology": [
+        "Cornelius as firstfruits of Gentiles"
+      ]
+    }
+  },
+  "section_3_life_application": "Acts 10:2 teaches that God sees and honors a sincere heart that seeks Him through prayer, reverence, and practical love for others. Cornelius's piety was the fertile ground God had prepared for the seed of the Gospel. This challenges us to recognize that our good works, while pleasing to God, do not save us; rather, they are the evidence of a heart that is ready to receive the truth. The application is twofold: First, we should cultivate a life of consistent prayer and generosity, knowing God takes notice. Second, we must never mistake this piety for salvation itself. Like Cornelius, every devout person still needs to hear the specific, saving message of Jesus Christ's death and resurrection and respond in faith to be truly saved."
 }

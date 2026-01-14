@@ -1,0 +1,159 @@
+/Users/davidlary/Dropbox/Environments/Code/StudyBible/src/gemini_client.py:18: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Generating Acts 10:2-48 (47 verses)
+Estimated time: 45-70 minutes
+============================================================
+
+[2/48] Generating Acts 10:2...
+  ✓ Acts 10:2 complete
+
+[3/48] Generating Acts 10:3...
+  ✓ Acts 10:3 complete
+
+[4/48] Generating Acts 10:4...
+  ✓ Acts 10:4 complete
+
+[5/48] Generating Acts 10:5...
+  ✓ Acts 10:5 complete
+
+[6/48] Generating Acts 10:6...
+  ✗ Acts 10:6 - generation failed
+
+[7/48] Generating Acts 10:7...
+  ✓ Acts 10:7 complete
+
+[8/48] Generating Acts 10:8...
+  ✓ Acts 10:8 complete
+
+[9/48] Generating Acts 10:9...
+  ✓ Acts 10:9 complete
+
+[10/48] Generating Acts 10:10...
+  ✓ Acts 10:10 complete
+
+[11/48] Generating Acts 10:11...
+  ✓ Acts 10:11 complete
+
+[12/48] Generating Acts 10:12...
+  ✓ Acts 10:12 complete
+
+[13/48] Generating Acts 10:13...
+  ✓ Acts 10:13 complete
+
+[14/48] Generating Acts 10:14...
+  ✓ Acts 10:14 complete
+
+[15/48] Generating Acts 10:15...
+  ✓ Acts 10:15 complete
+
+[16/48] Generating Acts 10:16...
+  ✓ Acts 10:16 complete
+
+[17/48] Generating Acts 10:17...
+  ✗ Acts 10:17 - generation failed
+
+[18/48] Generating Acts 10:18...
+  ✗ Acts 10:18 - generation failed
+
+[19/48] Generating Acts 10:19...
+  ✓ Acts 10:19 complete
+
+[20/48] Generating Acts 10:20...
+  ✓ Acts 10:20 complete
+
+[21/48] Generating Acts 10:21...
+  ✓ Acts 10:21 complete
+
+[22/48] Generating Acts 10:22...
+  ✓ Acts 10:22 complete
+
+[23/48] Generating Acts 10:23...
+  ✓ Acts 10:23 complete
+
+[24/48] Generating Acts 10:24...
+  ✗ Acts 10:24 - generation failed
+
+[25/48] Generating Acts 10:25...
+  ✓ Acts 10:25 complete
+
+[26/48] Generating Acts 10:26...
+  ✗ Acts 10:26 - error: Study prompt not found: StudyPrompt.md
+
+[27/48] Generating Acts 10:27...
+  ✗ Acts 10:27 - error: Study prompt not found: StudyPrompt.md
+
+[28/48] Generating Acts 10:28...
+  ✗ Acts 10:28 - error: Study prompt not found: StudyPrompt.md
+
+[29/48] Generating Acts 10:29...
+  ✗ Acts 10:29 - error: Study prompt not found: StudyPrompt.md
+
+[30/48] Generating Acts 10:30...
+  ✗ Acts 10:30 - error: Study prompt not found: StudyPrompt.md
+
+[31/48] Generating Acts 10:31...
+  ✗ Acts 10:31 - error: Study prompt not found: StudyPrompt.md
+
+[32/48] Generating Acts 10:32...
+  ✗ Acts 10:32 - error: Study prompt not found: StudyPrompt.md
+
+[33/48] Generating Acts 10:33...
+  ✗ Acts 10:33 - error: Study prompt not found: StudyPrompt.md
+
+[34/48] Generating Acts 10:34...
+  ✗ Acts 10:34 - error: Study prompt not found: StudyPrompt.md
+
+[35/48] Generating Acts 10:35...
+  ✗ Acts 10:35 - error: Study prompt not found: StudyPrompt.md
+
+[36/48] Generating Acts 10:36...
+  ✗ Acts 10:36 - error: Study prompt not found: StudyPrompt.md
+
+[37/48] Generating Acts 10:37...
+  ✗ Acts 10:37 - error: Study prompt not found: StudyPrompt.md
+
+[38/48] Generating Acts 10:38...
+  ✗ Acts 10:38 - error: Study prompt not found: StudyPrompt.md
+
+[39/48] Generating Acts 10:39...
+  ✗ Acts 10:39 - error: Study prompt not found: StudyPrompt.md
+
+[40/48] Generating Acts 10:40...
+  ✗ Acts 10:40 - error: Study prompt not found: StudyPrompt.md
+
+[41/48] Generating Acts 10:41...
+  ✗ Acts 10:41 - error: Study prompt not found: StudyPrompt.md
+
+[42/48] Generating Acts 10:42...
+  ✗ Acts 10:42 - error: Study prompt not found: StudyPrompt.md
+
+[43/48] Generating Acts 10:43...
+  ✗ Acts 10:43 - error: Study prompt not found: StudyPrompt.md
+
+[44/48] Generating Acts 10:44...
+  ✗ Acts 10:44 - error: Study prompt not found: StudyPrompt.md
+
+[45/48] Generating Acts 10:45...
+  ✗ Acts 10:45 - error: Study prompt not found: StudyPrompt.md
+
+[46/48] Generating Acts 10:46...
+  ✗ Acts 10:46 - error: Study prompt not found: StudyPrompt.md
+
+[47/48] Generating Acts 10:47...
+  ✗ Acts 10:47 - error: Study prompt not found: StudyPrompt.md
+
+[48/48] Generating Acts 10:48...
+  ✗ Acts 10:48 - error: Study prompt not found: StudyPrompt.md
+
+============================================================
+Generation complete!
+  Successful: 20
+  Failed: 27
+  Total: 47

@@ -1,85 +1,350 @@
 {
   "verse_id": "ACTS-10-9",
-  "verse_reference": "Acts 10:9",
   "section_1_sacred_text": {
     "original_script": "Τῇ δὲ ἐπαύριον ὁδοιπορούντων ἐκείνων καὶ τῇ πόλει ἐγγιζόντων ἀνέβη Πέτρος ἐπὶ τὸ δῶμα προσεύξασθαι περὶ ὥραν ἕκτην.",
-    "faithful_direct_translation": "And on the next day, as they were journeying and drawing near to the city, Peter went up onto the housetop to pray, around the sixth hour.",
-    "standalone_english_translation": "The next day, as they were on their journey and approaching the city, Peter went up on the roof to pray, about noon.",
-    "amplified_narrative_translation": "Now on the very next day, while the men sent from Cornelius were still traveling on the road and were just then drawing near to the city of Joppa, Peter himself went up onto the flat housetop, a customary place for privacy and contemplation, for the specific purpose of praying, at about the sixth hour, which corresponds to high noon."
+    "faithful_direct_translation": "On the next day, while those ones were journeying and drawing near to the city, Peter went up upon the rooftop to pray, around the sixth hour.",
+    "standalone_english_translation": "About noon the next day, as they were on their journey and approaching the city, Peter went up on the roof to pray.",
+    "amplified_narrative_translation": "Meanwhile, on the following day, as Cornelius's men were continuing their journey and were now drawing near to the city of Joppa, Peter ascended to the flat rooftop of the house, intending to pray at the pivotal (significant moment or turning point) time of about the sixth hour, which is high noon."
   },
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "Τῇ",
+      "transliteration": "Tē",
+      "lemma": "ὁ",
+      "parsing_code": "Art-DFS",
+      "parsing_expanded": "Article, Dative, Feminine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "Functions as a dative of time, translated 'On the...' referring to the next day."
+    },
+    {
+      "word_number": 2,
+      "greek_word": "δὲ",
+      "transliteration": "de",
+      "lemma": "δέ",
+      "parsing_code": "Conj",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G1161",
+      "english_gloss": "but, and, now",
+      "contextual_meaning": "A transitional conjunction, marking a shift in scene from Cornelius's men to Peter, best translated as 'Now' or 'Meanwhile'."
+    },
+    {
+      "word_number": 3,
+      "greek_word": "ἐπαύριον",
+      "transliteration": "epaurion",
+      "lemma": "ἐπαύριον",
+      "parsing_code": "Adv",
+      "parsing_expanded": "Adverb",
+      "strongs_number": "G1887",
+      "english_gloss": "on the next day",
+      "contextual_meaning": "Specifies the time frame as the day following the departure of the messengers from Caesarea (Acts 10:7-8)."
+    },
+    {
+      "word_number": 4,
+      "greek_word": "ὁδοιπορούντων",
+      "transliteration": "hodoiporountōn",
+      "lemma": "ὁδοιπορέω",
+      "parsing_code": "V-PAP-GMP",
+      "parsing_expanded": "Verb, Participle, Present, Active, Genitive, Masculine, Plural",
+      "strongs_number": "G3596",
+      "english_gloss": "journeying",
+      "contextual_meaning": "Part of a genitive absolute clause, describing the ongoing action of Cornelius's men traveling."
+    },
+    {
+      "word_number": 5,
+      "greek_word": "ἐκείνων",
+      "transliteration": "ekeinōn",
+      "lemma": "ἐκεῖνος",
+      "parsing_code": "Pro-D-GMP",
+      "parsing_expanded": "Pronoun, Demonstrative, Genitive, Masculine, Plural",
+      "strongs_number": "G1565",
+      "english_gloss": "of those",
+      "contextual_meaning": "Refers back to the men sent by Cornelius, serving as the subject of the genitive absolute clause: 'while those men were journeying...'"
+    },
+    {
+      "word_number": 6,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "Conj",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and",
+      "contextual_meaning": "Connects the two participial phrases describing the men's progress: 'journeying AND drawing near'."
+    },
+    {
+      "word_number": 7,
+      "greek_word": "τῇ",
+      "transliteration": "tē",
+      "lemma": "ὁ",
+      "parsing_code": "Art-DFS",
+      "parsing_expanded": "Article, Dative, Feminine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "to the",
+      "contextual_meaning": "The article for 'city', in the dative case because the verb 'drawing near' takes a dative object."
+    },
+    {
+      "word_number": 8,
+      "greek_word": "πόλει",
+      "transliteration": "polei",
+      "lemma": "πόλις",
+      "parsing_code": "N-DFS",
+      "parsing_expanded": "Noun, Dative, Feminine, Singular",
+      "strongs_number": "G4172",
+      "english_gloss": "city",
+      "contextual_meaning": "Refers to Joppa, where Peter was staying."
+    },
+    {
+      "word_number": 9,
+      "greek_word": "ἐγγιζόντων",
+      "transliteration": "engizontōn",
+      "lemma": "ἐγγίζω",
+      "parsing_code": "V-PAP-GMP",
+      "parsing_expanded": "Verb, Participle, Present, Active, Genitive, Masculine, Plural",
+      "strongs_number": "G1448",
+      "english_gloss": "drawing near",
+      "contextual_meaning": "The second participle in the genitive absolute, indicating the messengers' proximity to their destination."
+    },
+    {
+      "word_number": 10,
+      "greek_word": "ἀνέβη",
+      "transliteration": "anebē",
+      "lemma": "ἀναβαίνω",
+      "parsing_code": "V-AAI-3S",
+      "parsing_expanded": "Verb, Aorist, Active, Indicative, 3rd Person, Singular",
+      "strongs_number": "G305",
+      "english_gloss": "he went up",
+      "contextual_meaning": "The main verb of the sentence, describing Peter's specific action. The aorist tense indicates a completed action."
+    },
+    {
+      "word_number": 11,
+      "greek_word": "Πέτρος",
+      "transliteration": "Petros",
+      "lemma": "Πέτρος",
+      "parsing_code": "N-NMS",
+      "parsing_expanded": "Noun, Nominative, Masculine, Singular",
+      "strongs_number": "G4074",
+      "english_gloss": "Peter",
+      "contextual_meaning": "The subject of the main verb 'anebē' (he went up)."
+    },
+    {
+      "word_number": 12,
+      "greek_word": "ἐπὶ",
+      "transliteration": "epi",
+      "lemma": "ἐπί",
+      "parsing_code": "Prep",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G1909",
+      "english_gloss": "upon, onto",
+      "contextual_meaning": "Indicates direction and destination: 'onto the rooftop'."
+    },
+    {
+      "word_number": 13,
+      "greek_word": "τὸ",
+      "transliteration": "to",
+      "lemma": "ὁ",
+      "parsing_code": "Art-ANS",
+      "parsing_expanded": "Article, Accusative, Neuter, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "The definite article modifying 'rooftop'."
+    },
+    {
+      "word_number": 14,
+      "greek_word": "δῶμα",
+      "transliteration": "dōma",
+      "lemma": "δῶμα",
+      "parsing_code": "N-ANS",
+      "parsing_expanded": "Noun, Accusative, Neuter, Singular",
+      "strongs_number": "G1430",
+      "english_gloss": "rooftop, housetop",
+      "contextual_meaning": "The flat roof of a house, a common place in the ancient Near East for privacy, coolness, and prayer."
+    },
+    {
+      "word_number": 15,
+      "greek_word": "προσεύξασθαι",
+      "transliteration": "proseuxasthai",
+      "lemma": "προσεύχομαι",
+      "parsing_code": "V-AMN",
+      "parsing_expanded": "Verb, Aorist, Middle, Infinitive",
+      "strongs_number": "G4336",
+      "english_gloss": "to pray",
+      "contextual_meaning": "An infinitive of purpose, explaining why Peter went up to the roof: 'for the purpose of praying'."
+    },
+    {
+      "word_number": 16,
+      "greek_word": "περὶ",
+      "transliteration": "peri",
+      "lemma": "περί",
+      "parsing_code": "Prep",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G4012",
+      "english_gloss": "about, around",
+      "contextual_meaning": "Indicates an approximate time."
+    },
+    {
+      "word_number": 17,
+      "greek_word": "ὥραν",
+      "transliteration": "hōran",
+      "lemma": "ὥρα",
+      "parsing_code": "N-AFS",
+      "parsing_expanded": "Noun, Accusative, Feminine, Singular",
+      "strongs_number": "G5610",
+      "english_gloss": "hour",
+      "contextual_meaning": "Refers to a specific point in time."
+    },
+    {
+      "word_number": 18,
+      "greek_word": "ἕκτην",
+      "transliteration": "hektēn",
+      "lemma": "ἕκτος",
+      "parsing_code": "Adj-AFS",
+      "parsing_expanded": "Adjective, Ordinal, Accusative, Feminine, Singular",
+      "strongs_number": "G1623",
+      "english_gloss": "sixth",
+      "contextual_meaning": "Specifies the hour. By Jewish and Roman reckoning, this was noon, the middle of the day."
+    }
+  ],
   "section_2_exegetical_synthesis": {
-    "literal_primary_filter": [
-      "The event recorded is a literal, historical occurrence, meticulously documented by Luke.",
-      "It transpires on a specific day, Τῇ δὲ ἐπαύριον (tē de epaurion), 'on the next day,' linking it directly to the timeline of Cornelius's vision.",
-      "The narrative details two simultaneous, physical actions: the journey of Cornelius's men and the ascent of Peter.",
-      "A specific individual, Peter, is in a specific location, Joppa, in the house of Simon the Tanner.",
-      "He performs a deliberate action, ἀνέβη (anebē), 'he went up,' for a specific purpose, προσεύξασθαι (proseuxasthai), 'to pray.'",
-      "The time is precisely noted as περὶ ὥραν ἕκτην (peri hōran hektēn), 'around the sixth hour' or noon.",
-      "This detailed, factual account serves as the historical anchor for a supernatural revelation that will pivot the redemptive mission of the early Church."
-    ],
-    "prophetic_typology_and_intertextuality": [
-      "This passage is the apostolic hinge-point for the inclusion of the Gentiles, a thematic cognate woven throughout the Old Testament.",
-      "The Type is the Abrahamic Covenant, where God promised to bless 'all the families of the earth' through Abraham's seed (Genesis 12:3; Genesis 22:18).",
-      "The Antitype is the apostolic fulfillment, where Peter, a key holder of the kingdom (Matthew 16:19), is commissioned to open the door of faith to a Roman centurion, representing those very 'families of the earth.'",
-      "Isaiah's prophecies of a 'house of prayer for all peoples' (Isaiah 56:7) and Gentiles being drawn to God's light (Isaiah 60:3) find their incipient New Covenant fulfillment here.",
-      "A powerful negative Type is found in the prophet Jonah, who fled from Joppa to avoid preaching to the Gentile Ninevites (Jonah 1:3).",
-      "In a dramatic reversal, Peter, in the very same city of Joppa, will obey the call to go to the Gentiles, demonstrating the superior obedience of the new covenant.",
-      "The Levitical dietary laws (Leviticus 11), which created a practical barrier between Jews and Gentiles, serve as the Type for the 'unclean' status of the nations.",
-      "The vision Peter receives, prompted by his prayer, serves as the Antitype, declaring that what God has cleansed is no longer to be called common or unclean (Acts 10:15), thereby tearing down the 'dividing wall of hostility' (Ephesians 2:14)."
-    ],
     "linguistic_mechanics_and_names": [
-      "The construction ὁδοιπορούντων ἐκείνων...καὶ ἐγγιζόντων (hodoiporountōn ekeinōn...kai engizontōn), a genitive absolute, shows the simultaneous action of the men traveling and Peter praying, a literary device emphasizing God's perfect timing.",
-      "ἀνέβη (anebē) is an aorist active indicative verb, 'he went up,' signifying a completed, decisive historical act.",
-      "Πέτρος (Petros), from the Greek πέτρα (petra), meaning 'Rock.' The man named 'Rock' by Jesus (John 1:42) is about to become the foundational instrument for building the Gentile portion of the church (Matthew 16:18).",
-      "The destination is τὸ δῶμα (to dōma), 'the housetop.' This was the flat roof of a typical first-century Near Eastern home, a place of retreat, solitude, and elevated perspective ideal for prayer.",
-      "The purpose is stated by the aorist infinitive προσεύξασθαι (proseuxasthai), 'to pray.' It was a deliberate act of seeking God.",
-      "The timing, ὥραν ἕκτην (hōran hektēn), 'the sixth hour,' corresponds to noon and was one of the three established Jewish hours of daily prayer (Psalm 55:17; Daniel 6:10), showing Peter's continued pious observance."
+      {
+        "entry": "Peter (Πέτρος, Petros)",
+        "theological_significance": "The name Peter, given by Jesus, means 'rock' (from Greek petra). His actions in this chapter are foundational for the Gentile mission, as he becomes the 'rock' or key figure through whom God officially opens the door of faith to non-Jews, fulfilling his role given in Matthew 16:18-19. The etymology (the study of the origin of words) of his name is deeply tied to his apostolic function."
+      },
+      {
+        "entry": "to pray (προσεύξασθαι, proseuxasthai)",
+        "theological_significance": "This verb is a compound of 'pros' (toward) and 'euchomai' (to wish, vow). It signifies a deliberate act of turning one's focus toward God. Peter's action is not accidental; he seeks a specific time and place for communion with God. It is in this posture of intentional prayer that he receives divine revelation, a common pattern throughout Scripture (e.g., Daniel, Paul)."
+      },
+      {
+        "entry": "rooftop (δῶμα, dōma)",
+        "theological_significance": "The rooftop was a place of elevation, separation, and openness to the heavens. Going 'up' to the roof symbolizes seeking a higher perspective, away from earthly distractions, to meet with God. It is a physical act reflecting a spiritual desire for communion and revelation, making it an ideal setting for the vision that follows."
+      },
+      {
+        "entry": "sixth hour (ὥραν ἕκτην, hōran hektēn)",
+        "theological_significance": "This refers to noon, a time of full light and the day's turning point. It is a biblically significant time. At the sixth hour, darkness covered the land during Christ's crucifixion (Luke 23:44), marking the ultimate turning point in salvation history. Here, at the sixth hour, a new light of revelation comes to Peter that will turn the course of the early church toward the Gentiles."
+      }
     ],
-    "literary_devices": [
-      "Luke employs the literary device of narrative convergence or intercutting, presenting two separate storylines—Cornelius's delegation and Peter's devotions—that are on a divinely ordained collision course. This technique builds narrative tension and highlights God's sovereign orchestration.",
-      "The mundane act of Peter going up to the roof for a routine prayer serves as a powerful use of foreshadowing, setting a quiet stage for a revelatory event that will have global and eternal consequences."
+    "literary_devices": "The primary literary device is the use of a genitive absolute (a grammatical construction in Greek) with two participles: 'while those men were journeying (ὁδοιπορούντων, hodoiporountōn)... and drawing near (ἐγγιζόντων, engizontōn)'. Luke uses this to create narrative suspense and dramatic irony. The reader knows the Gentile messengers are approaching, but Peter, isolated on the rooftop in prayer, is completely unaware. This technique masterfully interweaves two separate plotlines, highlighting God's sovereign timing in bringing them to a divine intersection.",
+    "aggregate_analogia_scriptura": "This verse resonates with several scriptural themes. The practice of fixed-hour prayer is seen in Daniel 6:10 (three times a day) and Psalm 55:17 ('evening, morning and at noon'). Peter's action aligns with this pious (devoutly religious) Jewish custom. The rooftop as a place of revelation connects to Samuel anointing Saul (1 Samuel 9:25-26). Most importantly, Peter's experience of receiving a world-changing vision while in prayer parallels Daniel's vision (Daniel 9:20-21) and Ananias's vision regarding Saul (Acts 9:10-12). The subsequent inclusion of the Gentiles is the direct fulfillment of OT prophecies like Isaiah 49:6, where God's salvation reaches 'to the ends of the earth'. Peter, prepared by prayer, becomes the human agent for this prophetic fulfillment.",
+    "literal_primary_filter": [
+      "The day after Cornelius dispatched his men, they were traveling.",
+      "As they neared the city of Joppa, their destination.",
+      "An apostle named Peter went up onto the flat roof of the house where he was staying.",
+      "His stated purpose for going to the roof was to pray.",
+      "The time of this event was approximately noon."
     ],
-    "numerical_and_gematria_significance": [
-      "The Sixth Hour (6) is biblically significant. Man was created on the sixth day (Genesis 1:27, 31). This revelation at the sixth hour concerns the unification of all humanity—Jew and Gentile—under their Creator.",
-      "Furthermore, the sixth hour was when darkness fell over the land during the crucifixion of Christ (Luke 23:44), the very event that made Gentile inclusion possible. Peter's vision at this hour theologically connects the opening of the gospel to the Gentiles with the atoning work of the cross."
-    ],
-    "historical_context_and_chronology": [
-      "The event is conservatively dated to approximately 40-41 AD.",
-      "This places it in the period following Saul's conversion (~34-35 AD) and prior to the intense persecution initiated by King Herod Agrippa I (~42-44 AD), a crucial window for the church's expansion.",
-      "The timeline is precise: 'the next day' after Cornelius's vision (Acts 10:3), which aligns perfectly with the travel time required to cover the distance between Caesarea and Joppa.",
-      "The practice of prayer at fixed hours (the third, sixth, and ninth) was a deeply ingrained custom for devout Jews in the Second Temple period, which Peter, as an observant Jew, naturally followed."
-    ],
-    "socio_political_matrix": [
-      "The Roman Empire was the supreme political power. Cornelius was a centurion in the Italian Cohort, a representative of Roman military authority in the provincial capital, Caesarea Maritima.",
-      "A rigid social and religious segregation existed between Jews and Gentiles. For a Jew, entering a Gentile's home or sharing a meal was forbidden and resulted in ceremonial defilement (Acts 10:28; John 18:28).",
-      "God's command to Peter was therefore not merely a suggestion but a radical, revolutionary directive to shatter a cornerstone of Jewish socio-religious identity in favor of a new identity in Christ."
-    ],
-    "geospatial_data_and_physical_geography": [
-      "Location: Joppa (modern Jaffa, a district of Tel Aviv-Yafo, Israel).",
-      "Coordinates (Old Jaffa): Approximately 32.0544° N, 34.7523° E.",
-      "Altitude: The ancient port city sits on a hill rising to about 40 meters (131 feet) above the Mediterranean Sea.",
-      "Topography: Joppa was the historic natural harbor for Jerusalem, situated on the coastal Plain of Sharon. Peter would have had a clear view of the Mediterranean from the housetop.",
-      "The journey of Cornelius's men was approximately 30-35 miles (50-55 km) south from Caesarea along the main Roman coastal road, the Via Maris."
-    ],
-    "archaeological_confirmation": [
-      "Excavations in Jaffa have unearthed continuous layers of settlement from the Roman period and earlier, confirming its ancient history as described in the Bible.",
-      "Ruins of first-century domestic architecture found throughout Israel (e.g., Capernaum, Sepphoris) consistently show homes with flat roofs accessible by external stairways, confirming the physical setting of a prayer on 'the housetop.'",
-      "Extensive archaeology at Caesarea Maritima has uncovered the Roman praetorium, theater, harbor, and aqueducts. Inscriptions found there confirm its status as the Roman administrative and military headquarters for the province of Judea, the precise context for a Roman centurion's station."
-    ],
-    "aggregate_perspective_and_analogia_scriptura": [
-      "The passage reveals the absolute sovereignty of God, who simultaneously prepares the heart of a praying Gentile in Caesarea and the heart of a praying Apostle in Joppa (Proverbs 21:1).",
-      "God purposefully selects Peter, the Apostle to the circumcision (Galatians 2:8), to be the one to unlock the door to the uncircumcision, demonstrating that there is one Gospel, one Church, and one Lord for all.",
-      "This event is the direct fulfillment of Christ's commission to be witnesses in 'Judea and Samaria, and to the end of the earth' (Acts 1:8), with Cornelius representing the 'end of the earth.'",
-      "The theological significance of the location, Joppa, cannot be overstated. From this port, Jonah fled from God's mission to the Gentiles; from this same port, the new covenant mission to the Gentiles is officially launched in apostolic obedience.",
-      "Peter's experience here provides the authoritative, eyewitness testimony he would later use to defend the inclusion of the Gentiles at the Jerusalem Council (Acts 15:7-9), solidifying church doctrine on the basis of divine revelation and action."
-    ]
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "The physical separation of Jew and Gentile, codified in the Mosaic Law's clean/unclean distinctions (Leviticus 11), serves as a 'type' or shadow. Peter's current understanding is still bound by this separation.",
+      "antitype_fulfillment": "The 'antitype' (the reality to which the type points) is the spiritual unity of all people in Christ. The vision Peter is about to receive (Acts 10:10-16) will serve as the divine declaration that what God has cleansed (through the blood of Christ) is no longer to be considered 'unclean'. Christ is the fulfillment who breaks down the 'dividing wall of hostility' (Ephesians 2:14).",
+      "progression_notes": "This event is a pivotal moment in redemptive history. It marks the programmatic shift from a primarily Jewish-centric ministry to the intentional, church-sanctioned mission to the Gentiles. It is the practical outworking of the 'and to the end of the earth' clause of the Great Commission (Acts 1:8)."
+    },
+    "numerical_and_gematria_significance": "The 'sixth hour' (noon) is the most significant number here. It is a time of climax and transition. In John's Gospel, Jesus meets the Samaritan woman (a non-Jew) at Jacob's well 'about the sixth hour' (John 4:6), initiating a move beyond Jewish boundaries. At the 'sixth hour,' Jesus is presented by Pilate, 'Behold your King!' (John 19:14), and at the 'sixth hour,' darkness falls over the cross (Luke 23:44). Peter's vision at this same hour places this new revelation—the inclusion of the Gentiles—on par with these other climactic, salvation-historical moments. It is a 'high noon' moment for the church's mission.",
+    "historical_context_and_chronology": {
+      "dates": "This event occurs approximately 8-10 years after Christ's ascension, around AD 38-40. This places it during the reign of the Roman Emperor Caligula (AD 37-41).",
+      "context": "First-century Judean houses commonly featured flat roofs made of packed earth and clay over wooden beams. These rooftops served as extra living space, especially in the cool of the evening, and were ideal for private activities like prayer. The 'sixth hour' was noon, a standard time for prayer for devout Jews, corresponding to the time of the second daily temple sacrifice. Peter's adherence to this schedule shows he is still a devout, law-observant Jew just before receiving a vision that will radically alter his understanding of that Law."
+    },
+    "socio_political_matrix": "The setting is Joppa (modern Jaffa), a major port city with a mixed population but a strong Jewish identity. Peter is staying with 'Simon, a tanner' (Acts 9:43), a trade considered ceremonially unclean because it involved contact with dead animals. This detail subtly prefigures the theme of the chapter: God is breaking down barriers of 'uncleanness'. The approaching men are emissaries of a Roman centurion, a symbol of the occupying military power. The meeting about to occur between a Jewish apostle and the servants of a Roman officer is socially and religiously radical, challenging deep-seated cultural divisions.",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Joppa (ancient Yoppa, modern Jaffa), now part of the municipality of Tel Aviv-Yafo, Israel.",
+      "coordinates": {
+        "lat": 32.0553,
+        "long": 34.7523
+      },
+      "altitude_m": 25,
+      "terrain_climate_characteristics": "Joppa is a natural harbor on the Mediterranean coast. The terrain is a low coastal plain. The climate is Mediterranean, characterized by hot, dry summers and mild, wet winters. A rooftop at noon in this climate would have been hot and exposed to the full sun, suggesting Peter sought solitude even at the cost of comfort."
+    },
+    "archaeological_confirmation": "Excavations in Jaffa have uncovered remains from the Hellenistic and Roman periods, confirming its existence as a significant port city as described in the Bible and by historians like Josephus. While the specific house of Simon the Tanner cannot be identified, the architectural style of Roman-era courtyard houses with external staircases leading to flat roofs is well-attested throughout the region, providing a solid archaeological backdrop for the narrative's setting."
   },
-  "section_3_life_application": {
-    "conclusion": [
-      "Cultivate the discipline of scheduled prayer. Peter was in the right place at the right time to receive a world-changing revelation because he was faithful in the routine practice of seeking God.",
-      "Recognize that God is always at work behind the scenes, coordinating events and preparing people's hearts. Your simple act of faithfulness today may be a critical part of a divine appointment that God is orchestrating for tomorrow.",
-      "Actively ask God to reveal your 'Gentile.' Identify the personal, cultural, or social barriers you have erected and be prepared for God to command you to cross them with the love and truth of the Gospel.",
-      "Be ready to have your deepest-held traditions and cultural norms challenged by a direct command from God's Word. True obedience requires a willingness to place God's revealed will above our personal comfort and prejudice."
-    ]
-  }
+  "geographic_calculations": [
+    {
+      "from_location": "Caesarea Maritima",
+      "to_location": "Joppa (Jaffa)",
+      "straight_line_distance_km": 52,
+      "ancient_route_distance_km": 60,
+      "elevation_change_m": -10,
+      "estimated_travel_time_days": {
+        "on_foot": 2.0,
+        "by_donkey": 1.5,
+        "by_horse": 1.0
+      },
+      "uncertainty_notes": "The journey would have followed the relatively flat and well-established Roman coastal road, the Via Maris. The text implies a two-day journey; they left on one day (10:8), were traveling 'on the next day' (10:9), and arrived 'on the following day' (10:24). This fits the calculated distance for travel on foot perfectly."
+    }
+  ],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "holy_spirit": [
+        "divine guidance",
+        "revelation"
+      ],
+      "soteriology": [
+        "salvation for Gentiles"
+      ],
+      "covenant_theology": [
+        "transition from Mosaic to New Covenant application"
+      ],
+      "creation_providence": [
+        "divine appointments",
+        "sovereign timing"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "prayer": [
+        "scheduled prayer",
+        "prayer leading to revelation"
+      ],
+      "witness_evangelism": [
+        "opening the Gentile mission"
+      ],
+      "discipleship": [
+        "Peter's spiritual growth",
+        "overcoming prejudice"
+      ],
+      "obedience": [
+        "posture of readiness for God's command"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "church_community": [
+        "breaking down ethnic barriers"
+      ],
+      "compassion_mercy": [
+        "God's mercy extending to all nations"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "jewish_customs": [
+        "fixed-hour prayer",
+        "rooftop architecture",
+        "clean/unclean concepts"
+      ],
+      "gentiles": [
+        "Cornelius' household",
+        "God-fearers"
+      ],
+      "roman_occupation": [
+        "interaction with a centurion's household"
+      ],
+      "travel_trade_routes": [
+        "Via Maris coastal route"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "narrative_history": [
+        "pivotal turning point in Acts"
+      ],
+      "symbolism": [
+        "rooftop as place of revelation",
+        "sixth hour as time of decision"
+      ],
+      "prophecy_fulfillment": [
+        "Gentile inclusion prophesied in OT"
+      ],
+      "rhetorical_device": [
+        "dramatic irony",
+        "interlocking narratives"
+      ]
+    }
+  },
+  "section_3_life_application": "Just as Peter set aside a specific time and place for prayer, we should cultivate intentional rhythms of communion with God. Our routines are not interruptions to God's work; they are the very places He often chooses to give us new direction. This verse challenges us to be people of prayer, prepared for God to sovereignly arrange 'divine intersections' in our lives. We must be willing to ascend to our own 'rooftop'—a place of spiritual focus—so we can hear God's call to move beyond our cultural comfort zones and personal prejudices to embrace the full scope of His redemptive mission."
 }

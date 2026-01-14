@@ -1,87 +1,354 @@
 {
   "verse_id": "ACTS-10-3",
   "section_1_sacred_text": {
-    "verse_reference": "Acts 10:3",
-    "original_script": "εἶδεν ἐν ὁράματι φανερῶς ὡσεὶ περὶ ὥραν ἐνάτην τῆς ἡμέρας ἄγγελον τοῦ θεοῦ εἰσελθόντα πρὸς αὐτὸν καὶ εἰπόντα αὐτῷ· Κορνήλιε.",
-    "faithful_direct_translation": "He saw in a vision clearly, at about the ninth hour of the day, an angel of God having entered to him and having said to him: 'Cornelius.'",
-    "standalone_english_translation": "He distinctly saw in a vision at about the ninth hour of the day an angel of God who came in and said to him, 'Cornelius.'",
-    "amplified_narrative_translation": "This man, Cornelius, while fully awake, saw in a vision that was objectively real and unmistakably clear, at approximately three o'clock in the afternoon, a customary time for Jewish prayer, a direct messenger sent from the one true God who physically entered into his presence and spoke directly to him, calling him by his personal name: Cornelius."
+    "original_script": "εἶδεν ἐν ὁράματι φανερῶς ὡσεὶ ⸀περὶ ὥραν ἐνάτην τῆς ἡμέρας ἄγγελον τοῦ θεοῦ εἰσελθόντα πρὸς αὐτὸν καὶ εἰπόντα αὐτῷ· Κορνήλιε.",
+    "faithful_direct_translation": "He saw in a vision clearly, about the ninth hour of the day, an angel of God entering to him and saying to him, 'Cornelius.'",
+    "standalone_english_translation": "About the ninth hour of the day he clearly saw in a vision an angel of God who came in and said to him, 'Cornelius.'",
+    "amplified_narrative_translation": "During the designated time for afternoon prayer, at approximately 3:00 p.m., he witnessed with unmistakable clarity in a waking vision—not a dream—a messenger directly from God entering his presence and addressing him personally by name: 'Cornelius.'"
   },
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "εἶδεν",
+      "transliteration": "eiden",
+      "lemma": "ὁράω",
+      "parsing_code": "V-AAI-3S",
+      "parsing_expanded": "Verb, Aorist, Active, Indicative, 3rd person, Singular",
+      "strongs_number": "G3708",
+      "english_gloss": "he saw",
+      "contextual_meaning": "The main verb of the sentence, indicating a supernatural sight or revelation granted to Cornelius. The aorist tense presents the action as a completed event."
+    },
+    {
+      "word_number": 2,
+      "greek_word": "ἐν",
+      "transliteration": "en",
+      "lemma": "ἐν",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G1722",
+      "english_gloss": "in",
+      "contextual_meaning": "A preposition indicating the sphere or means by which he saw; it was 'in the realm of' a vision."
+    },
+    {
+      "word_number": 3,
+      "greek_word": "ὁράματι",
+      "transliteration": "horamati",
+      "lemma": "ὅραμα",
+      "parsing_code": "N-DNS",
+      "parsing_expanded": "Noun, Dative, Neuter, Singular",
+      "strongs_number": "G3705",
+      "english_gloss": "a vision",
+      "contextual_meaning": "Specifies the nature of the revelation. This was not a dream during sleep but a waking vision, a direct supernatural perception."
+    },
+    {
+      "word_number": 4,
+      "greek_word": "φανερῶς",
+      "transliteration": "phanerōs",
+      "lemma": "φανερῶς",
+      "parsing_code": "ADV",
+      "parsing_expanded": "Adverb",
+      "strongs_number": "G5320",
+      "english_gloss": "clearly, distinctly",
+      "contextual_meaning": "Modifies the verb 'saw', emphasizing the clarity and objective reality of the vision. This was not a vague impression but an unmistakable event."
+    },
+    {
+      "word_number": 5,
+      "greek_word": "ὡσεὶ",
+      "transliteration": "hōsei",
+      "lemma": "ὡσεί",
+      "parsing_code": "ADV",
+      "parsing_expanded": "Adverb",
+      "strongs_number": "G5616",
+      "english_gloss": "about, as if",
+      "contextual_meaning": "An adverb of comparison or approximation, used here to indicate that the time was 'around' or 'approximately' the ninth hour."
+    },
+    {
+      "word_number": 6,
+      "greek_word": "περὶ",
+      "transliteration": "peri",
+      "lemma": "περί",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G4012",
+      "english_gloss": "about, around",
+      "contextual_meaning": "This word is a textual variant present in some manuscripts that reinforces the approximation of time ('about the hour'). It functions similarly to 'hōsei'."
+    },
+    {
+      "word_number": 7,
+      "greek_word": "ὥραν",
+      "transliteration": "hōran",
+      "lemma": "ὥρα",
+      "parsing_code": "N-AFS",
+      "parsing_expanded": "Noun, Accusative, Feminine, Singular",
+      "strongs_number": "G5610",
+      "english_gloss": "hour",
+      "contextual_meaning": "The specific unit of time, used here in the accusative case to denote a point in time."
+    },
+    {
+      "word_number": 8,
+      "greek_word": "ἐνάτην",
+      "transliteration": "enatēn",
+      "lemma": "ἔνατος",
+      "parsing_code": "ADJ-AFS",
+      "parsing_expanded": "Adjective, Accusative, Feminine, Singular",
+      "strongs_number": "G1766",
+      "english_gloss": "ninth",
+      "contextual_meaning": "The ordinal number modifying 'hour', specifying it as the ninth hour of the Roman/Jewish day, which corresponds to 3:00 p.m."
+    },
+    {
+      "word_number": 9,
+      "greek_word": "τῆς",
+      "transliteration": "tēs",
+      "lemma": "ὁ",
+      "parsing_code": "T-GFS",
+      "parsing_expanded": "Article, Genitive, Feminine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "The definite article corresponding to 'day'."
+    },
+    {
+      "word_number": 10,
+      "greek_word": "ἡμέρας",
+      "transliteration": "hēmeras",
+      "lemma": "ἡμέρα",
+      "parsing_code": "N-GFS",
+      "parsing_expanded": "Noun, Genitive, Feminine, Singular",
+      "strongs_number": "G2250",
+      "english_gloss": "of the day",
+      "contextual_meaning": "Genitive of time, clarifying that it was the ninth hour 'of the day', distinguishing it from the night."
+    },
+    {
+      "word_number": 11,
+      "greek_word": "ἄγγελον",
+      "transliteration": "angelon",
+      "lemma": "ἄγγελος",
+      "parsing_code": "N-AMS",
+      "parsing_expanded": "Noun, Accusative, Masculine, Singular",
+      "strongs_number": "G32",
+      "english_gloss": "an angel",
+      "contextual_meaning": "The direct object of the verb 'saw'. Cornelius saw a divine messenger."
+    },
+    {
+      "word_number": 12,
+      "greek_word": "τοῦ",
+      "transliteration": "tou",
+      "lemma": "ὁ",
+      "parsing_code": "T-GMS",
+      "parsing_expanded": "Article, Genitive, Masculine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "of the",
+      "contextual_meaning": "The definite article corresponding to 'God'."
+    },
+    {
+      "word_number": 13,
+      "greek_word": "θεοῦ",
+      "transliteration": "theou",
+      "lemma": "θεός",
+      "parsing_code": "N-GMS",
+      "parsing_expanded": "Noun, Genitive, Masculine, Singular",
+      "strongs_number": "G2316",
+      "english_gloss": "of God",
+      "contextual_meaning": "Genitive of source or possession. The angel is not an independent entity but a messenger 'from God' or 'belonging to God'."
+    },
+    {
+      "word_number": 14,
+      "greek_word": "εἰσελθόντα",
+      "transliteration": "eiselthonta",
+      "lemma": "εἰσέρχομαι",
+      "parsing_code": "V-AAP-AMS",
+      "parsing_expanded": "Verb, Aorist, Active, Participle, Accusative, Masculine, Singular",
+      "strongs_number": "G1525",
+      "english_gloss": "entering",
+      "contextual_meaning": "A circumstantial participle modifying 'angel', describing the angel's action of coming in to where Cornelius was."
+    },
+    {
+      "word_number": 15,
+      "greek_word": "πρὸς",
+      "transliteration": "pros",
+      "lemma": "πρός",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G4314",
+      "english_gloss": "to",
+      "contextual_meaning": "Indicates direction towards a person: 'to him'."
+    },
+    {
+      "word_number": 16,
+      "greek_word": "αὐτὸν",
+      "transliteration": "auton",
+      "lemma": "αὐτός",
+      "parsing_code": "P-ASM",
+      "parsing_expanded": "Pronoun, Accusative, Masculine, Singular",
+      "strongs_number": "G846",
+      "english_gloss": "him",
+      "contextual_meaning": "Refers to Cornelius, the object of the preposition 'pros'."
+    },
+    {
+      "word_number": 17,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and",
+      "contextual_meaning": "Connects the two participles describing the angel's actions ('entering' and 'saying')."
+    },
+    {
+      "word_number": 18,
+      "greek_word": "εἰπόντα",
+      "transliteration": "eiponta",
+      "lemma": "λέγω",
+      "parsing_code": "V-AAP-AMS",
+      "parsing_expanded": "Verb, Aorist, Active, Participle, Accusative, Masculine, Singular",
+      "strongs_number": "G3004",
+      "english_gloss": "saying",
+      "contextual_meaning": "A second circumstantial participle modifying 'angel', describing the angel's speech."
+    },
+    {
+      "word_number": 19,
+      "greek_word": "αὐτῷ",
+      "transliteration": "autō",
+      "lemma": "αὐτός",
+      "parsing_code": "P-DSM",
+      "parsing_expanded": "Pronoun, Dative, Masculine, Singular",
+      "strongs_number": "G846",
+      "english_gloss": "to him",
+      "contextual_meaning": "The indirect object of 'saying', indicating that the angel spoke 'to him' (Cornelius)."
+    },
+    {
+      "word_number": 20,
+      "greek_word": "Κορνήλιε",
+      "transliteration": "Kornēlie",
+      "lemma": "Κορνήλιος",
+      "parsing_code": "N-VMS",
+      "parsing_expanded": "Noun, Vocative, Masculine, Singular",
+      "strongs_number": "G2883",
+      "english_gloss": "Cornelius!",
+      "contextual_meaning": "The vocative case indicates a direct address. The divine message begins by getting his personal attention, demonstrating God's intimate knowledge of him."
+    }
+  ],
   "section_2_exegetical_synthesis": {
-    "literal_primary_filter": [
-      "The event is a historical fact, not a dream or subjective impression.",
-      "The subject, Cornelius, saw [εἶδεν (eiden)] a vision [ἐν ὁράματι (en horamati)] while he was awake.",
-      "The adverb [φανερῶς (phanerōs)] qualifies the vision as 'manifestly,' 'clearly,' or 'distinctly,' emphasizing its objective reality.",
-      "The vision's content was an [ἄγγελον τοῦ θεοῦ (angelon tou theou)], a 'messenger of God,' who physically appeared to enter the room.",
-      "The angel initiated direct, personal communication by speaking Cornelius's name."
-    ],
-    "prophetic_typology_and_intertextuality": [
-      "This event is the narrative antitype (fulfillment) of the prophetic 'type' (shadow) promising Gentile inclusion in God's salvation.",
-      "It begins the apostolic realization of God's promise to Abraham that through his seed 'all the families of the earth shall be blessed' (Genesis 12:3, Genesis 22:18).",
-      "It acts as a 'Gentile Pentecost,' fulfilling the prophecy of Joel that God would pour out His Spirit on 'all flesh' (Joel 2:28-29), a promise first applied to Jews at Pentecost (Acts 2:17) and now extended to Gentiles.",
-      "It gives practical force to Isaiah's prophecies that Israel's Messiah would be a 'light to the nations' (Isaiah 42:6, Isaiah 49:6).",
-      "Cornelius embodies the prophesied Gentile who would seek the God of Israel (Isaiah 56:6-7, Zechariah 8:22-23).",
-      "This historical event provides the divine precedent for the Jerusalem Council's formal ruling on Gentile admission to the church (Acts 15:7-9)."
-    ],
     "linguistic_mechanics_and_names": [
-      "The verb [εἶδεν (eiden)] is an aorist active indicative, stating a simple, completed action in past time: 'he saw.'",
-      "The name [Κορνήλιε (Kornēlie)], the vocative case of Cornelius, is of Latin origin from the esteemed Roman clan (gens) Cornelia.",
-      "This name immediately identifies him as a non-Jew, a Roman citizen of standing, framing the encounter as a monumental bridging of the Jewish-Gentile divide.",
-      "The term [ἄγγελον (angelon)], from [ἄγγελος (angelos)], literally means 'messenger,' emphasizing the being's role as a bearer of a divine word from the God of Israel, not a pagan deity.",
-      "The aorist participles [εἰσελθόντα (eiselthonta), 'having entered'] and [εἰπόντα (eiponta), 'having said'] stress the reality of the angel's actions, grounding the supernatural event in physical space and audible communication."
+      {
+        "entry": "vision (ὅραμα, horama)",
+        "theological_significance": "This term refers to a waking, supernatural sight, distinct from a dream (ὄναρ, onar). It denotes a direct and objective revelation from God, underscoring the divine origin and authority of the message Cornelius is about to receive. The clarity is stressed by the adverb 'clearly (φανερῶς, phanerōs)', removing any doubt about the experience's reality."
+      },
+      {
+        "entry": "angel (ἄγγελος, angelos)",
+        "theological_significance": "Literally 'messenger'. The appearance of an 'angel of God' signifies a moment of critical divine intervention and communication. This messenger is not acting on his own authority but comes as a direct representative of God, bridging the gap between heaven and earth to initiate a pivotal moment in salvation history."
+      },
+      {
+        "entry": "Cornelius (Κορνήλιος, Kornēlios)",
+        "theological_significance": "This is a Latin name, derived from the Roman clan name 'Cornelii', possibly meaning 'horn'. As a Roman centurion (military officer commanding about 100 soldiers), his name itself signifies his Gentile, Roman identity. The angel's use of his personal name in the vocative case ('Κορνήλιε, Kornēlie!') is a profound act of personal recognition from the God of Israel to a Roman officer, signaling that God's plan is now personally and directly including the Gentiles."
+      }
     ],
-    "literary_devices": [
-      "The specific detail of the 'ninth hour' serves as a narrative anchor, connecting the Gentile's pious act to the rhythm of Jewish spiritual life.",
-      "The account employs purposeful repetition; Cornelius's vision is recounted by him (Acts 10:30-33) and then retold by Peter (Acts 11:13-14, Acts 15:7-9), a literary technique used to underscore the event's divine origin and critical importance for the entire church.",
-      "The direct address, 'Cornelius,' is a common biblical device signifying a divine and personal call (cf. Genesis 22:1, Exodus 3:4, 1 Samuel 3:10, Acts 9:4)."
+    "literary_devices": "The verse employs a chain of participles—'entering (εἰσελθόντα, eiselthonta)' and 'saying (εἰπόντα, eiponta)'—which modify the 'angel' and create a flowing narrative of sequential actions. This is a common feature of Greek narrative style, efficiently conveying a series of events. The direct address, 'Cornelius!', serves as the dramatic climax of the verse, shifting the narrative from a third-person description of the event to a first-person divine encounter. This entire event forms a key pericope (a distinct literary unit) that serves as the inciting incident for the inclusion of the Gentiles into the church.",
+    "aggregate_analogia_scriptura": "This divine visitation follows a biblical pattern seen throughout Scripture. God often uses angelic messengers to announce pivotal shifts in His redemptive plan, such as to Abraham (Genesis 18), Gideon (Judges 6), Zechariah and Mary (Luke 1), and the shepherds (Luke 2). The vision given to Cornelius parallels the vision given to Peter in the same chapter (Acts 10:9-16). Both are divine interventions designed to overcome deep-seated prejudice and reveal God's universal purpose. This event is the initial fulfillment of Christ's commission to be witnesses 'to the end of the earth' (Acts 1:8) and the realization of Old Testament prophecies that Gentiles would be brought into God's covenant people (Isaiah 49:6, Malachi 1:11). Christ is the Lord of all (Acts 10:36), and this vision is the divine mechanism to make that theological truth a historical reality in the church.",
+    "literal_primary_filter": [
+      "A man named Cornelius experienced a vision.",
+      "The vision was not a dream but a clear, waking experience.",
+      "The event took place at a specific time: the ninth hour of the day (3 p.m.).",
+      "The being he saw was identified as an angel (messenger) from God.",
+      "The angel entered his presence and spoke to him directly.",
+      "The angel initiated the conversation by speaking Cornelius's name."
     ],
-    "numerical_and_gematria_significance": [
-      "The event occurs at the 'ninth hour' [ὥραν ἐνάτην], which corresponds to 3:00 PM.",
-      "This was the established hour of the evening sacrifice (the Tamid offering) in the Jerusalem Temple (Exodus 29:39-41, Josephus, Antiquities 14.4.3).",
-      "It was also a recognized time for Jewish prayer, as seen when Peter and John went to the temple at the 'hour of prayer, the ninth hour' (Acts 3:1).",
-      "Crucially, the ninth hour was the moment of Christ's death on the cross (Matthew 27:46-50, Mark 15:34-37, Luke 23:44-46).",
-      "The theological weight is immense: a Gentile's prayer is heard at the very hour of Israel's formal worship and at the very hour of the ultimate atonement that made his inclusion possible."
-    ],
-    "historical_context_and_chronology": [
-      "The most probable date for this event is between AD 38 and 40.",
-      "This period follows Saul's conversion (c. AD 34-35) and falls within the time of 'peace' for the church throughout Judea, Galilee, and Samaria mentioned in Acts 9:31.",
-      "It precedes the severe famine under Claudius (c. AD 45-47) and the persecution by Herod Agrippa I (c. AD 41-44), which are described in Acts 11 and 12.",
-      "Cornelius is identified as a 'God-fearer' [φοβούμενος τὸν θεόν (phoboumenos ton Theon)], a known historical category of Gentiles who adopted Jewish monotheism and ethics without becoming full proselytes through circumcision."
-    ],
-    "socio_political_matrix": [
-      "Cornelius was a centurion, a non-commissioned officer commanding about 80-100 soldiers in the Roman army, a position of significant authority and social standing.",
-      "He was part of the 'Italian Cohort' [σπείρης τῆς καλουμένης Ἰταλικῆς], likely a unit of Roman citizens recruited from Italy, signifying a prestigious assignment.",
-      "As a centurion in Caesarea, he was an instrument of Roman occupation and imperial power.",
-      "His submission to the God of the subjugated Jewish people represents a profound reversal of the world's power structures.",
-      "The setting, Caesarea Maritima, was the Roman administrative capital of Iudaea Province and the primary residence of the Roman governor, making it a symbol of Roman political and military dominance."
-    ],
-    "geospatial_data_and_physical_geography": [
-      "Location: Caesarea Maritima (modern Caesarea, Israel).",
-      "Coordinates: 32.5033° N, 34.8969° E.",
-      "Altitude: Approximately 0-10 meters above sea level.",
-      "Topography: A major man-made port city built by Herod the Great on the flat coastal plain of the Mediterranean Sea.",
-      "This coastal, Gentile, Romanized location stands in geographic and cultural contrast to the Jewish, inland, highland spiritual center of Jerusalem, visually depicting the Gospel moving 'to the end of the earth' (Acts 1:8)."
-    ],
-    "archaeological_confirmation": [
-      "Extensive excavations at Caesarea Maritima have revealed the Roman city described in the text, including Herod's harbor, a theater, a hippodrome, aqueducts, and administrative buildings.",
-      "A limestone block was discovered in the theater bearing an inscription dedicated by 'Pontius Pilate, Prefect of Judea,' confirming the city's role as the Roman capital and the historical accuracy of the New Testament.",
-      "While a specific 'Cornelius inscription' found there is likely from a later period, the presence of Roman auxiliary cohorts in Syria and Judea during the 1st century is well-documented by inscriptions and historical records, making the stationing of the Italian Cohort historically plausible."
-    ],
-    "aggregate_perspective_and_analogia_scriptura": [
-      "The entire biblical witness converges on this moment: God sovereignly initiates the fulfillment of His covenant promise to bless all nations through Abraham's seed, Jesus Christ (Galatians 3:16).",
-      "God Himself selects a man who is both morally upright (devout, God-fearing, generous, prayerful - Acts 10:2) and a representative of the Gentile world's supreme political and military power.",
-      "This divine summons to a Roman officer in the Roman capital demonstrates that the Kingdom of God transcends and subordinates all human empires.",
-      "The vision is not an end in itself but the catalyst that requires a corresponding, divinely-orchestrated revelation to the Apostle Peter (Acts 10:9-20).",
-      "The plain meaning is that God, honoring the sincere piety of a seeking Gentile, breached the dividing wall of hostility (Ephesians 2:14) by direct, supernatural revelation, thereby opening the door of faith to the non-Jewish world through the preaching of the Gospel."
-    ]
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "The piety (devout reverence for God) of righteous Gentiles in the Old Testament (e.g., Naaman, the widow of Zarephath, the Ninevites) serves as a type or shadow of a God-fearer like Cornelius.",
+      "antitype_fulfillment": "The event initiated by this verse is the antitype (fulfillment or reality) of Old Testament prophecies concerning the salvation of the Gentiles. Specifically, it is the historical outworking of the promise of the Spirit being poured out on 'all flesh' (Joel 2:28-29), which Peter had previously applied to the Jews at Pentecost. This 'Gentile Pentecost' demonstrates that the blessings of the New Covenant, purchased by Christ's blood, are not limited by ethnicity.",
+      "progression_notes": "This moment represents a monumental step in redemptive history. The 'mystery' hidden for ages—that Gentiles are fellow heirs with Jews in the body of Christ (Ephesians 3:4-6)—is now being openly revealed and enacted. The wall of hostility is being torn down not just theologically on the cross, but practically in the life of the church."
+    },
+    "numerical_and_gematria_significance": "The 'ninth hour' (3 p.m.) is highly significant. This was the traditional time for the afternoon prayer in Judaism, linked to the evening sacrifice at the Temple in Jerusalem (Acts 3:1). That Cornelius, a Gentile, is praying at this specific Jewish hour demonstrates the depth of his devotion to the God of Israel. Furthermore, the ninth hour was the moment Christ died on the cross, crying out 'It is finished' (Matthew 27:45-50; John 19:30). The timing of this vision links God's new work among the Gentiles directly to the accomplished work of Christ's atonement, which made Gentile inclusion possible.",
+    "historical_context_and_chronology": {
+      "dates": "This event is typically dated to approximately 40-41 AD, during the reign of the Roman Emperor Caligula (37-41 AD) or shortly after the accession of Claudius (41 AD).",
+      "context": "At this stage, the early church was still predominantly Jewish, with some outreach to Samaritans and the Ethiopian eunuch. The full-scale, intentional mission to pagan Gentiles had not yet begun. This encounter with Cornelius is the divinely orchestrated event that breaks down the final theological and cultural barriers, paving the way for the missionary journeys of Paul and the dramatic expansion of the church throughout the Roman Empire."
+    },
+    "socio_political_matrix": "Cornelius was a centurion of the 'Italian Cohort'. This identifies him as part of the Roman military machine that occupied Judea, a source of tension for the Jewish people. As a centurion, he was a man of authority, discipline, and pragmatism. However, he is also described as a 'God-fearer'—a technical term for a Gentile who worshiped the God of Israel, attended synagogue, and followed Jewish ethical laws but had not undergone circumcision to become a full proselyte. This class of people represented a crucial bridge between the Jewish and Gentile worlds and were particularly receptive to the gospel message, which offered inclusion in God's people through faith in Christ, not through ethnic rites.",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Caesarea, Israel",
+      "coordinates": {
+        "lat": 32.5048,
+        "long": 34.8918
+      },
+      "altitude_m": 12,
+      "terrain_climate_characteristics": "The vision occurred in Caesarea Maritima, the Roman capital of the province of Judaea. It was a major, modern port city on the Mediterranean coastal plain, built by Herod the Great. It was a center of Roman administration and Hellenistic (Greek-influenced) culture, representing a stark contrast to the religious and cultural center of Jerusalem. Its status as a Roman hub makes it a fitting location for the gospel to officially and dramatically break into the Gentile world."
+    },
+    "archaeological_confirmation": "Extensive archaeological excavations at Caesarea Maritima have uncovered the Roman-era city, including the palace, hippodrome, theater, and harbor, confirming its description as a major administrative center. While no specific artifact mentions Cornelius himself, an inscription found there in 1961 confirmed Pontius Pilate as prefect of Judaea, attesting to the historical accuracy of the New Testament's depiction of the city's role. Furthermore, Roman military diplomas and inscriptions from later periods confirm the existence of the *Cohors II Italica Civium Romanorum*, lending historical plausibility to the presence of an 'Italian Cohort' in the region during this earlier period."
   },
-  "section_3_life_application": {
-    "principles": [
-      "Recognize that God sees and remembers your acts of devotion, prayer, and charity, even those done in private. Sincere seeking of God never goes unnoticed by Heaven.",
-      "Be prepared for God to interrupt your established routines—even your scheduled prayer times—with divine appointments that will stretch your understanding and expand your mission.",
-      "Do not allow cultural, ethnic, national, or social barriers to define the limits of your fellowship or your witness; the Gospel is for every person, and God actively works to bring disparate peoples together.",
-      "When God gives you a clear directive, even one that challenges your comfort zone or preconceived notions, your immediate response must be attentive listening and subsequent obedience.",
-      "Understand that your personal encounter with God is often the first step in a larger plan He is orchestrating, one that involves connecting you with others for His kingdom purposes."
-    ]
-  }
+  "geographic_calculations": [],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "soteriology": [
+        "salvation for Gentiles",
+        "divine election",
+        "prevenient grace"
+      ],
+      "gospel": [
+        "gospel expansion",
+        "breaking Jew-Gentile barrier"
+      ],
+      "angelology_demonology": [
+        "angelic messenger",
+        "divine communication"
+      ],
+      "creation_providence": [
+        "God's sovereign guidance",
+        "divine appointments"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "prayer": [
+        "praying at specific times",
+        "God hearing prayer"
+      ],
+      "witness_evangelism": [
+        "divine initiative in mission",
+        "cross-cultural outreach"
+      ],
+      "faith": [
+        "piety of a God-fearer"
+      ],
+      "obedience": [
+        "receptivity to divine messages"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "church_community": [
+        "inclusion of Gentiles",
+        "breaking down social barriers"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "roman_occupation": [
+        "centurion",
+        "Italian Cohort"
+      ],
+      "gentiles": [
+        "God-fearer",
+        "Cornelius"
+      ],
+      "jewish_customs": [
+        "ninth hour prayer"
+      ],
+      "clean_unclean_laws": [
+        "context for Jewish-Gentile separation"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "narrative_history": [
+        "pivotal event in Acts",
+        "historical account"
+      ],
+      "prophecy_fulfillment": [
+        "Joel 2:28-29",
+        "Isaiah 49:6",
+        "Gentile inclusion"
+      ],
+      "symbolism": [
+        "Cornelius as representative of Gentiles",
+        "Caesarea as Roman power center"
+      ]
+    }
+  },
+  "section_3_life_application": "Acts 10:3 reveals a God who actively seeks out those who sincerely seek Him, regardless of their background or social status. Cornelius's prayers and piety were 'seen' by God, who then took the initiative to bring him the full truth of the gospel. The application for today is twofold: First, we should be confident that sincere devotion and a searching heart are never invisible to God. He meets us where we are. Second, we must be willing to let God demolish our own cultural, racial, or denominational prejudices. The gospel is for everyone, and God often works through unexpected people and in unexpected places to advance His kingdom. We are called to be ready participants in His mission, not gatekeepers of our own comfort zones."
 }

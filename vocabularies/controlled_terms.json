@@ -1,0 +1,55 @@
+{
+  "professions": {
+    "centurion": {
+      "preferred": "centurion",
+      "variants": ["centurian", "hekatontarch", "ἑκατοντάρχης"],
+      "definition": "Roman military officer commanding approximately 80-100 soldiers"
+    },
+    "apostle": {
+      "preferred": "apostle",
+      "variants": ["apostolos", "ἀπόστολος"],
+      "definition": "One sent with authority; specifically, the twelve disciples chosen by Jesus"
+    }
+  },
+
+  "concepts_theological": {
+    "God-fearer": {
+      "preferred": "God-fearer",
+      "variants": ["god-fearer", "phoboumenos ton theon", "φοβούμενος τὸν θεόν"],
+      "definition": "Gentile who worshipped Israel's God without full conversion to Judaism"
+    },
+    "sanctification": {
+      "preferred": "sanctification",
+      "variants": ["sanctify", "hagiazo", "ἁγιάζω"],
+      "definition": "Process of being made holy; set apart for God's purposes"
+    }
+  },
+
+  "places": {
+    "Caesarea Maritima": {
+      "preferred": "Caesarea Maritima",
+      "variants": ["Caesarea", "Caesarea by the Sea", "Καισάρεια"],
+      "modern_name": "Caesarea",
+      "coordinates": {"lat": 32.5, "lon": 34.9, "elevation_m": 0}
+    },
+    "Jerusalem": {
+      "preferred": "Jerusalem",
+      "variants": ["Yerushalayim", "ירושלים", "Ἱεροσόλυμα"],
+      "modern_name": "Jerusalem",
+      "coordinates": {"lat": 31.7683, "lon": 35.2137, "elevation_m": 754}
+    }
+  },
+
+  "nationalities": {
+    "Roman": {
+      "preferred": "Roman",
+      "variants": ["Romanos", "Ῥωμαῖος"],
+      "definition": "Citizen or subject of the Roman Empire"
+    },
+    "Jewish": {
+      "preferred": "Jewish",
+      "variants": ["Jew", "Hebrew", "Israelite", "Ἰουδαῖος"],
+      "definition": "Member of the people of Israel; adherent to Judaism"
+    }
+  }
+}

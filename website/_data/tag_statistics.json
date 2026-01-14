@@ -1,48 +1,397 @@
 {
-  "total_verses": 1,
-  "total_tag_entries": 52,
-  "total_categories": 19,
-  "avg_tags_per_verse": 52.0,
+  "total_verses": 12,
+  "total_tag_entries": 329,
+  "total_categories": 36,
+  "avg_tags_per_verse": 27.416666666666668,
   "categories": {
+    "tier_1_foundational_theology:soteriology": {
+      "unique_values": 8,
+      "most_common": [
+        "Gentile inclusion without works of law",
+        "breaking down barriers to salvation",
+        "divine election",
+        "grace",
+        "prevenient grace",
+        "salvation by grace through faith",
+        "salvation for Gentiles",
+        "salvation for the Gentiles"
+      ]
+    },
+    "tier_1_foundational_theology:holy_spirit": {
+      "unique_values": 10,
+      "most_common": [
+        "Spirit's role in breaking down barriers",
+        "divine guidance",
+        "divine initiative in salvation",
+        "divine revelation",
+        "prelude to Gentile Pentecost",
+        "preparation of the heart",
+        "preparatory work of the Spirit",
+        "revelation",
+        "visionary experience",
+        "visions and trances"
+      ]
+    },
+    "tier_1_foundational_theology:covenant_theology": {
+      "unique_values": 7,
+      "most_common": [
+        "Abrahamic promise to bless all nations",
+        "expansion of the New Covenant",
+        "fulfillment of Abrahamic blessing to all nations",
+        "transition from Mosaic to New Covenant application",
+        "transition from Old Covenant restrictions to New Covenant freedom",
+        "transition from Old to New Covenant",
+        "transition to the New Covenant's full inclusiveness"
+      ]
+    },
+    "tier_1_foundational_theology:creation_providence": {
+      "unique_values": 9,
+      "most_common": [
+        "God preparing a human heart",
+        "God's sovereign guidance",
+        "God's sovereignty in orchestrating events",
+        "God's sovereignty over all creation",
+        "divine appointments",
+        "divine orchestration of events",
+        "redefinition of created kinds for human consumption",
+        "sovereign timing",
+        "sovereignty in missions"
+      ]
+    },
+    "tier_2_applied_theology:faith": {
+      "unique_values": 8,
+      "most_common": [
+        "Cornelius's faith demonstrated by alms and prayers",
+        "acting on a divine vision",
+        "faith expressed through works",
+        "nascent faith",
+        "piety of a God-fearer",
+        "pre-Christian piety",
+        "readiness to receive new divine instruction",
+        "receptivity to divine revelation"
+      ]
+    },
+    "tier_2_applied_theology:prayer": {
+      "unique_values": 14,
+      "most_common": [
+        "God hearing prayer",
+        "actions resulting from answered prayer",
+        "continual prayer",
+        "divine answer to prayer",
+        "divine revelation in response to prayer",
+        "efficacy of prayer",
+        "intercession",
+        "prayer as worship",
+        "prayer leading to revelation",
+        "praying at specific times"
+      ]
+    },
+    "tier_2_applied_theology:witness_evangelism": {
+      "unique_values": 15,
+      "most_common": [
+        "Gentile inclusion",
+        "Gentile mission",
+        "God preparing a Gentile for the gospel",
+        "apostolic witness to Gentiles",
+        "breaking barriers for Gentile evangelism",
+        "cross-cultural mission",
+        "cross-cultural outreach",
+        "crossing cultural boundaries for Gospel",
+        "divine initiative in mission",
+        "opening the Gentile mission"
+      ]
+    },
+    "tier_2_applied_theology:discipleship": {
+      "unique_values": 4,
+      "most_common": [
+        "God prepares hearts for the gospel",
+        "Peter's spiritual growth",
+        "challenging pre-conceived notions",
+        "overcoming prejudice"
+      ]
+    },
+    "tier_3_relational_ethics:justice": {
+      "unique_values": 1,
+      "most_common": [
+        "portrayal of a just Roman officer"
+      ]
+    },
+    "tier_3_relational_ethics:church_community": {
+      "unique_values": 9,
+      "most_common": [
+        "breaking down Jew-Gentile divisions",
+        "breaking down Jewish-Gentile barriers",
+        "breaking down ethnic and social walls",
+        "breaking down ethnic barriers",
+        "breaking down social barriers",
+        "expansion of covenant community",
+        "household baptism model",
+        "inclusion of Gentiles",
+        "redefining the boundaries of the church"
+      ]
+    },
+    "tier_4_cultural_historical:roman_occupation": {
+      "unique_values": 13,
+      "most_common": [
+        "Caesarea Maritima",
+        "Caesarea as Roman capital",
+        "Caesarea as Roman provincial capital",
+        "Italian Cohort",
+        "Roman household structure",
+        "Roman soldier",
+        "centurion",
+        "centurion of Italian Regiment",
+        "centurion's household",
+        "cohort"
+      ]
+    },
+    "tier_4_cultural_historical:gentiles": {
+      "unique_values": 15,
+      "most_common": [
+        "Cornelius",
+        "Cornelius as a God-fearer",
+        "Cornelius as a representative",
+        "Cornelius as first full Gentile convert",
+        "Cornelius narrative",
+        "Cornelius' household",
+        "God-fearer",
+        "God-fearer status",
+        "God-fearers",
+        "Italian"
+      ]
+    },
+    "tier_4_cultural_historical:jewish_customs": {
+      "unique_values": 17,
+      "most_common": [
+        "Jew-Gentile separation",
+        "Jewish-Gentile separation",
+        "Jewish-Gentile separation as backdrop",
+        "Peter's paradigm shift",
+        "almsgiving",
+        "almsgiving to the Jewish people",
+        "clean/unclean concepts",
+        "dietary laws",
+        "fixed-hour prayer",
+        "hours of prayer"
+      ]
+    },
+    "tier_5_literary_prophetic:narrative_history": {
+      "unique_values": 14,
+      "most_common": [
+        "careful Lukan historiography",
+        "character description",
+        "historical account",
+        "historical account of church expansion",
+        "historical particularism",
+        "opening the Gentile mission",
+        "pivotal event in Acts",
+        "pivotal moment in Acts",
+        "pivotal moment in the book of Acts",
+        "pivotal turning point in Acts"
+      ]
+    },
+    "tier_5_literary_prophetic:prophecy_fulfillment": {
+      "unique_values": 16,
+      "most_common": [
+        "Acts 1:8 - witness to the end of the earth",
+        "Acts 1:8 - witnesses to ends of earth",
+        "Genesis 12:3 - blessing to all families",
+        "Gentile inclusion",
+        "Gentile inclusion prophesied in OT",
+        "Isaiah 49:6",
+        "Isaiah 49:6 (light to Gentiles)",
+        "Isaiah 49:6 - light to Gentiles",
+        "Isaiah 49:6 - light to the Gentiles",
+        "Isaiah's prophecies of light to Gentiles"
+      ]
+    },
+    "tier_1_foundational_theology:gospel": {
+      "unique_values": 7,
+      "most_common": [
+        "Gentile inclusion",
+        "breaking Jew-Gentile barrier",
+        "gospel expansion",
+        "removal of ethnic barriers",
+        "universal proclamation",
+        "universal scope of good news",
+        "universal scope of the gospel"
+      ]
+    },
+    "tier_3_relational_ethics:compassion_mercy": {
+      "unique_values": 6,
+      "most_common": [
+        "God's mercy extended to all nations",
+        "God's mercy extended to the Gentiles",
+        "God's mercy extending beyond Israel",
+        "God's mercy extending to all nations",
+        "caring for the poor",
+        "charity to the poor"
+      ]
+    },
+    "tier_3_relational_ethics:truthfulness": {
+      "unique_values": 3,
+      "most_common": [
+        "confronting religious prejudice with divine truth",
+        "full disclosure of the vision to subordinates",
+        "trusting the angelic message"
+      ]
+    },
+    "tier_4_cultural_historical:travel_trade_routes": {
+      "unique_values": 6,
+      "most_common": [
+        "Caesarea to Joppa",
+        "Joppa as a port city",
+        "Via Maris",
+        "Via Maris coastal route",
+        "journey from Caesarea to Joppa",
+        "vision occurs in a major port city, a crossroads of cultures"
+      ]
+    },
+    "tier_5_literary_prophetic:symbolism": {
+      "unique_values": 14,
+      "most_common": [
+        "Caesarea as Roman power center",
+        "Cornelius as representative of Gentiles",
+        "Joppa's connection to Jonah",
+        "alms as a sacrifice",
+        "animals as humanity",
+        "food as a symbol for people",
+        "four corners as the world",
+        "hunger as spiritual readiness",
+        "prayers ascending like incense",
+        "rooftop as place of revelation"
+      ]
+    },
+    "tier_2_applied_theology:obedience": {
+      "unique_values": 10,
+      "most_common": [
+        "Cornelius obeyed angelic vision",
+        "Peter obeyed despite cultural barriers",
+        "Peter's radical hospitality",
+        "divine command preparing Peter for a difficult act of obedience",
+        "faithfulness in action",
+        "immediate response to God's command",
+        "immediate response to revelation",
+        "posture of readiness for God's command",
+        "prelude to apostolic obedience",
+        "receptivity to divine messages"
+      ]
+    },
+    "tier_3_relational_ethics:humility": {
+      "unique_values": 5,
+      "most_common": [
+        "Cornelius's fearful submission",
+        "Cornelius's reverence despite military rank",
+        "Peter associating with the socially marginalized",
+        "Peter's forthcoming refusal of worship (v.26)",
+        "reversal of worldly power dynamics"
+      ]
+    },
+    "tier_4_cultural_historical:clean_unclean_laws": {
+      "unique_values": 6,
+      "most_common": [
+        "boundary crossing",
+        "context for Jewish-Gentile separation",
+        "divine cleansing of what was unclean",
+        "ritual purity concerns",
+        "tanner's profession",
+        "theological abolition of ritual impurity"
+      ]
+    },
+    "tier_5_literary_prophetic:typology": {
+      "unique_values": 10,
+      "most_common": [
+        "Cornelius as first-fruits of Gentiles",
+        "Cornelius as firstfruits of Gentiles",
+        "Cornelius's offering as a type of Gentile worship",
+        "Jonah/Nineveh foreshadowing",
+        "Naaman bowing before Elisha parallel",
+        "Peter as antitype to Jonah",
+        "Peter in Joppa as the anti-type to Jonah",
+        "Rahab and Gentile inclusion",
+        "Ruth the Moabitess type",
+        "reversal of the Jonah narrative"
+      ]
+    },
+    "tier_5_literary_prophetic:intertextuality": {
+      "unique_values": 1,
+      "most_common": [
+        "allusion to Jonah 1:3"
+      ]
+    },
+    "tier_1_foundational_theology:angelology_demonology": {
+      "unique_values": 3,
+      "most_common": [
+        "angelic messenger",
+        "divine communication",
+        "divine revelation"
+      ]
+    },
+    "tier_3_relational_ethics:leadership_authority": {
+      "unique_values": 5,
+      "most_common": [
+        "Cornelius's command",
+        "centurion's command and delegation",
+        "giving clear instructions",
+        "godly influence on subordinates",
+        "leading a household in faith"
+      ]
+    },
+    "tier_2_applied_theology:holiness_sanctification": {
+      "unique_values": 3,
+      "most_common": [
+        "personal piety",
+        "redefining holiness based on Christ, not ritual",
+        "righteous living"
+      ]
+    },
+    "tier_3_relational_ethics:love": {
+      "unique_values": 3,
+      "most_common": [
+        "extending God's love beyond ethnic boundaries",
+        "love for God expressed in action",
+        "love for neighbor (Jews)"
+      ]
+    },
+    "tier_5_literary_prophetic:rhetorical_device": {
+      "unique_values": 7,
+      "most_common": [
+        "aorist participles building narrative tension",
+        "dramatic irony",
+        "historical present for vividness",
+        "interlocking narratives",
+        "parataxis for narrative solemnity",
+        "simile",
+        "tricolon of actions (met-fell-worshiped)"
+      ]
+    },
+    "tier_1_foundational_theology:attributes_of_god": {
+      "unique_values": 3,
+      "most_common": [
+        "attentiveness to prayer",
+        "impartiality",
+        "omniscience"
+      ]
+    },
+    "tier_2_applied_theology:stewardship": {
+      "unique_values": 3,
+      "most_common": [
+        "almsgiving",
+        "charity as worship",
+        "generosity"
+      ]
+    },
+    "tier_3_relational_ethics:wealth_poverty": {
+      "unique_values": 2,
+      "most_common": [
+        "charitable use of resources",
+        "righteous use of wealth"
+      ]
+    },
     "tier_1_foundational_theology:christology": {
       "unique_values": 1,
       "most_common": [
         "Christ's redemptive work extends beyond Israel"
-      ]
-    },
-    "tier_1_foundational_theology:holy_spirit": {
-      "unique_values": 2,
-      "most_common": [
-        "Spirit's role in breaking down barriers",
-        "divine initiative in salvation"
-      ]
-    },
-    "tier_1_foundational_theology:soteriology": {
-      "unique_values": 2,
-      "most_common": [
-        "Gentile inclusion without works of law",
-        "salvation by grace through faith"
-      ]
-    },
-    "tier_1_foundational_theology:gospel": {
-      "unique_values": 2,
-      "most_common": [
-        "removal of ethnic barriers",
-        "universal scope of good news"
-      ]
-    },
-    "tier_1_foundational_theology:covenant_theology": {
-      "unique_values": 2,
-      "most_common": [
-        "fulfillment of Abrahamic blessing to all nations",
-        "transition from Old to New Covenant"
-      ]
-    },
-    "tier_2_applied_theology:faith": {
-      "unique_values": 2,
-      "most_common": [
-        "Cornelius's faith demonstrated by alms and prayers",
-        "receptivity to divine revelation"
       ]
     },
     "tier_2_applied_theology:worship": {
@@ -53,102 +402,10 @@
         "prostration at feet"
       ]
     },
-    "tier_2_applied_theology:obedience": {
-      "unique_values": 2,
+    "tier_4_cultural_historical:synagogue": {
+      "unique_values": 1,
       "most_common": [
-        "Cornelius obeyed angelic vision",
-        "Peter obeyed despite cultural barriers"
-      ]
-    },
-    "tier_2_applied_theology:witness_evangelism": {
-      "unique_values": 2,
-      "most_common": [
-        "apostolic witness to Gentiles",
-        "crossing cultural boundaries for Gospel"
-      ]
-    },
-    "tier_3_relational_ethics:humility": {
-      "unique_values": 3,
-      "most_common": [
-        "Cornelius's reverence despite military rank",
-        "Peter's forthcoming refusal of worship (v.26)",
-        "reversal of worldly power dynamics"
-      ]
-    },
-    "tier_3_relational_ethics:church_community": {
-      "unique_values": 3,
-      "most_common": [
-        "breaking down Jew-Gentile divisions",
-        "expansion of covenant community",
-        "household baptism model"
-      ]
-    },
-    "tier_4_cultural_historical:jewish_customs": {
-      "unique_values": 3,
-      "most_common": [
-        "Jewish-Gentile separation",
-        "Peter's paradigm shift",
-        "purity laws regarding Gentile homes"
-      ]
-    },
-    "tier_4_cultural_historical:roman_occupation": {
-      "unique_values": 4,
-      "most_common": [
-        "Roman household structure",
-        "centurion of Italian Regiment",
-        "military hierarchy",
-        "occupation forces in Judea"
-      ]
-    },
-    "tier_4_cultural_historical:gentiles": {
-      "unique_values": 4,
-      "most_common": [
-        "Cornelius as first full Gentile convert",
-        "God-fearer status",
-        "alms-giving to Jewish community",
-        "liminal space between paganism and Judaism"
-      ]
-    },
-    "tier_4_cultural_historical:clean_unclean_laws": {
-      "unique_values": 3,
-      "most_common": [
-        "boundary crossing",
-        "divine cleansing of what was unclean",
-        "ritual purity concerns"
-      ]
-    },
-    "tier_5_literary_prophetic:prophecy_fulfillment": {
-      "unique_values": 4,
-      "most_common": [
-        "Acts 1:8 - witnesses to ends of earth",
-        "Genesis 12:3 - blessing to all families",
-        "Isaiah 49:6 - light to Gentiles",
-        "Joel 2:28-32 - Spirit on all flesh"
-      ]
-    },
-    "tier_5_literary_prophetic:typology": {
-      "unique_values": 4,
-      "most_common": [
-        "Jonah/Nineveh foreshadowing",
-        "Naaman bowing before Elisha parallel",
-        "Rahab and Gentile inclusion",
-        "Ruth the Moabitess type"
-      ]
-    },
-    "tier_5_literary_prophetic:narrative_history": {
-      "unique_values": 3,
-      "most_common": [
-        "careful Lukan historiography",
-        "pivotal moment in Acts",
-        "structural center of redemptive history shift"
-      ]
-    },
-    "tier_5_literary_prophetic:rhetorical_device": {
-      "unique_values": 3,
-      "most_common": [
-        "aorist participles building narrative tension",
-        "parataxis for narrative solemnity",
-        "tricolon of actions (met-fell-worshiped)"
+        "God-fearers as synagogue attendees"
       ]
     }
   }

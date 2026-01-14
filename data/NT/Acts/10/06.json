@@ -1,0 +1,265 @@
+{
+  "verse_id": "ACTS-10-6",
+  "section_1_sacred_text": {
+    "original_script": "οὗτος ξενίζεται παρά τινι Σίμωνι βυρσεῖ, ᾧ ἐστιν οἰκία παρὰ θάλασσαν.",
+    "faithful_direct_translation": "This one is lodging with a certain Simon, a tanner, to whom is a house by the sea.",
+    "standalone_english_translation": "He is staying as a guest with Simon, a tanner, whose house is by the sea.",
+    "amplified_narrative_translation": "This man, Peter, is currently being hosted in the home of a specific individual named Simon, who works as a tanner—a trade involving animal hides—and his house is situated right next to the Mediterranean Sea."
+  },
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "οὗτος",
+      "transliteration": "houtos",
+      "lemma": "οὗτος",
+      "parsing_code": "P-DNM-S",
+      "parsing_expanded": "Demonstrative Pronoun, Nominative, Masculine, Singular",
+      "strongs_number": "G3778",
+      "english_gloss": "this one",
+      "contextual_meaning": "Refers specifically to Simon Peter, the subject of the angel's instruction."
+    },
+    {
+      "word_number": 2,
+      "greek_word": "ξενίζεται",
+      "transliteration": "xenizetai",
+      "lemma": "ξενίζω",
+      "parsing_code": "V-PPI-3S",
+      "parsing_expanded": "Verb, Present, Passive, Indicative, 3rd Person, Singular",
+      "strongs_number": "G3579",
+      "english_gloss": "he is lodging",
+      "contextual_meaning": "Indicates Peter's current status as a guest or lodger. The passive voice emphasizes that he is being hosted, highlighting the hospitality of Simon the tanner."
+    },
+    {
+      "word_number": 3,
+      "greek_word": "παρά",
+      "transliteration": "para",
+      "lemma": "παρά",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition (with dative case)",
+      "strongs_number": "G3844",
+      "english_gloss": "with, beside",
+      "contextual_meaning": "Denotes proximity and association, indicating Peter is staying at the home of Simon."
+    },
+    {
+      "word_number": 4,
+      "greek_word": "τινι",
+      "transliteration": "tini",
+      "lemma": "τις",
+      "parsing_code": "P-IDM-S",
+      "parsing_expanded": "Indefinite Pronoun, Dative, Masculine, Singular",
+      "strongs_number": "G5100",
+      "english_gloss": "a certain",
+      "contextual_meaning": "Functions as an indefinite article, 'a' or 'a certain,' specifying a particular but perhaps not widely known individual."
+    },
+    {
+      "word_number": 5,
+      "greek_word": "Σίμωνι",
+      "transliteration": "Simōni",
+      "lemma": "Σίμων",
+      "parsing_code": "N-DM-S",
+      "parsing_expanded": "Noun, Dative, Masculine, Singular",
+      "strongs_number": "G4613",
+      "english_gloss": "Simon",
+      "contextual_meaning": "The proper name of Peter's host, the tanner."
+    },
+    {
+      "word_number": 6,
+      "greek_word": "βυρσεῖ",
+      "transliteration": "byrsei",
+      "lemma": "βυρσεύς",
+      "parsing_code": "N-DM-S",
+      "parsing_expanded": "Noun, Dative, Masculine, Singular",
+      "strongs_number": "G1038",
+      "english_gloss": "a tanner",
+      "contextual_meaning": "Identifies the profession of Simon, a crucial detail given the trade's association with ritual uncleanness."
+    },
+    {
+      "word_number": 7,
+      "greek_word": "ᾧ",
+      "transliteration": "hō",
+      "lemma": "ὅς",
+      "parsing_code": "P-RDM-S",
+      "parsing_expanded": "Relative Pronoun, Dative, Masculine, Singular",
+      "strongs_number": "G3739",
+      "english_gloss": "to whom, whose",
+      "contextual_meaning": "A relative pronoun in the dative case indicating possession: 'to whom there is a house' or more smoothly in English, 'whose house.'"
+    },
+    {
+      "word_number": 8,
+      "greek_word": "ἐστιν",
+      "transliteration": "estin",
+      "lemma": "εἰμί",
+      "parsing_code": "V-PAI-3S",
+      "parsing_expanded": "Verb, Present, Active, Indicative, 3rd Person, Singular",
+      "strongs_number": "G2076",
+      "english_gloss": "is",
+      "contextual_meaning": "The verb of being, stating the existence and location of the house."
+    },
+    {
+      "word_number": 9,
+      "greek_word": "οἰκία",
+      "transliteration": "oikia",
+      "lemma": "οἰκία",
+      "parsing_code": "N-NF-S",
+      "parsing_expanded": "Noun, Nominative, Feminine, Singular",
+      "strongs_number": "G3614",
+      "english_gloss": "a house",
+      "contextual_meaning": "Refers to the physical dwelling place of Simon the tanner."
+    },
+    {
+      "word_number": 10,
+      "greek_word": "παρὰ",
+      "transliteration": "para",
+      "lemma": "παρά",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition (with accusative case)",
+      "strongs_number": "G3844",
+      "english_gloss": "beside, near",
+      "contextual_meaning": "The second use of 'para' in the verse, here with the accusative case, specifically denoting location along the edge of something, 'alongside the sea'."
+    },
+    {
+      "word_number": 11,
+      "greek_word": "θάλασσαν",
+      "transliteration": "thalassan",
+      "lemma": "θάλασσα",
+      "parsing_code": "N-AF-S",
+      "parsing_expanded": "Noun, Accusative, Feminine, Singular",
+      "strongs_number": "G2281",
+      "english_gloss": "sea",
+      "contextual_meaning": "Identifies the body of water as the Mediterranean Sea, a key geographical and symbolic marker."
+    }
+  ],
+  "section_2_exegetical_synthesis": {
+    "linguistic_mechanics_and_names": [
+      {
+        "entry": "lodging (ξενίζεται, xenizetai)",
+        "theological_significance": "From the root 'xenos,' meaning stranger or guest, this verb highlights the theme of hospitality. It shows Peter being welcomed, a practice central to early Christian ethics. The passive voice implies Peter is the recipient of hospitality, which is significant as he is being prepared to extend God's 'welcome' to the Gentiles."
+      },
+      {
+        "entry": "Simon (Σίμωνι, Simōni)",
+        "theological_significance": "Derived from the Hebrew 'Shimon' (שִׁמְעוֹן), meaning 'he has heard.' It is the name of the host and also the original name of the guest, the Apostle Peter. This shared name may serve as a literary device to link the two men, subtly suggesting that Simon Peter must 'hear' God's new command, just as his host has 'heard' the call to offer hospitality."
+      },
+      {
+        "entry": "tanner (βυρσεῖ, byrsei)",
+        "theological_significance": "This is a critical detail. A tanner worked with the skins of dead animals, a profession considered ceremonially unclean under Mosaic Law (Leviticus 11:39-40). For Peter, a devout Jew, to lodge in such a home was already a significant crossing of a purity boundary, preparing his heart for the much larger boundary-crossing of entering a Gentile's home."
+      },
+      {
+        "entry": "sea (θάλασσαν, thalassan)",
+        "theological_significance": "Refers to the Mediterranean Sea. In the Jewish mindset, the sea often represented chaos, the unknown, and the realm of the Gentiles. The house's location on this boundary between land and sea symbolically places Peter at the threshold of the Gentile world, from which his next mission will launch."
+      }
+    ],
+    "literary_devices": "The verse employs a high degree of specificity ('a certain Simon', 'a tanner', 'house by the sea') which serves to enhance its verisimilitude (the appearance of being true or real), a hallmark of Luke's historiography. The setting in Joppa, by the sea, creates a powerful intertextual allusion to the story of Jonah, casting Peter's impending obedience in stark contrast to Jonah's disobedience in the same location.",
+    "aggregate_analogia_scriptura": "This verse is a practical prelude to the theological revelation in Acts 10:9-16. Peter's willingness to lodge with an 'unclean' tanner demonstrates a heart already being prepared by the Spirit to understand that what God has cleansed, no one should call common or unclean (Acts 10:15). This principle, first applied to food in the vision, is ultimately about people—the Gentiles. Peter's location physically prefigures his spiritual journey. This moment fulfills the trajectory of Jesus's own ministry, who regularly associated with the ritually and socially 'unclean' (Mark 2:15-17) and declared all foods clean (Mark 7:19). It sets the stage for the fulfillment of the Great Commission to 'all nations' (Matthew 28:19).",
+    "literal_primary_filter": [
+      "An angel is giving Cornelius instructions to find a specific person.",
+      "The person to be found is Simon, also called Peter.",
+      "Peter is not at his own home but is a guest in Joppa.",
+      "His host is another man named Simon, whose occupation is a tanner.",
+      "The location of the tanner's house is precisely described as being by the seashore."
+    ],
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "Jonah in Joppa represents the 'type' of a prophet reluctant to obey God's call to bring a message of repentance to Gentiles (the Ninevites). His flight from Joppa via the sea symbolizes the resistance within Old Covenant thinking to embrace the 'unclean' nations.",
+      "antitype_fulfillment": "Peter in Joppa is the 'antitype' or fulfillment. He is the apostle who, from the very same city, will obey the call to go to the Gentiles (Cornelius's household). Where Jonah fled from his mission, Peter will embrace his. The sea, which for Jonah was an escape route, becomes for Peter the horizon of a new, worldwide mission. Peter's obedience reverses Jonah's disobedience.",
+      "progression_notes": "This narrative demonstrates a key moment in redemptive history, showing the expansion of God's salvific plan from being primarily focused on Israel to explicitly including all nations, as prophesied in Isaiah 49:6. It is the practical application of the mystery revealed to Paul, that the Gentiles are fellow heirs in Christ (Ephesians 3:6)."
+    },
+    "numerical_and_gematria_significance": "There are no significant numerical or gematria elements in this verse. The details provided are functional and geographical, intended to ground the narrative in historical reality rather than symbolic numerology.",
+    "historical_context_and_chronology": {
+      "dates": "This event is dated to approximately 40-41 AD, during the reign of the Roman Emperor Caligula. It occurs after the conversion of Saul (c. 34-35 AD) and Peter's healing miracles in Lydda and Joppa (Acts 9:32-43), and before the persecution under Herod Agrippa I (c. 44 AD).",
+      "context": "The early church was still predominantly Jewish, grappling with the implications of the New Covenant for non-Jews. This episode marks the first sanctioned, Spirit-led mission to a Gentile household, setting a crucial precedent that would be debated in Jerusalem (Acts 11, 15) and form the basis of Paul's later ministry."
+    },
+    "socio_political_matrix": "A tanner's profession was socially and religiously problematic. The handling of dead carcasses rendered a person ceremonially unclean (Lev. 11:39-40), and the process created a foul stench, leading to social ostracism. Mishnaic law (the codification of Jewish oral tradition) often required tanneries to be located outside of city walls and downwind. The location 'by the sea' served the practical need for water and the social requirement of separation. For Peter, the chief apostle, to stay in such a home was a radical act of humility and a bridge across a significant socio-religious divide, preconditioning him for the greater divide he was about to cross with Cornelius.",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Ancient Joppa is now the old city of Jaffa, which is part of the municipality of Tel Aviv-Yafo, Israel.",
+      "coordinates": {
+        "lat": 32.054,
+        "long": 34.752
+      },
+      "altitude_m": 15,
+      "terrain_climate_characteristics": "Joppa is an ancient port city built on a hill overlooking a natural harbor on the Mediterranean coast. Its location made it the primary seaport for Jerusalem, located about 55 km to the southeast. The climate is Mediterranean, with hot, dry summers and mild, wet winters. The house's location 'by the sea' would have been on the western edge of the town, exposed to sea breezes."
+    },
+    "archaeological_confirmation": "While the specific house of Simon has not been positively identified, the traditional site is marked in modern Jaffa. Archaeological work in Jaffa has extensively documented its long history as a port city dating back to the Bronze Age, confirming its significance as described in the Bible (e.g., Jonah 1:3; 2 Chronicles 2:16). The existence of a tanning industry in such a coastal location is historically and economically plausible."
+  },
+  "geographic_calculations": [
+    {
+      "from_location": "Caesarea Maritima",
+      "to_location": "Joppa",
+      "straight_line_distance_km": 50,
+      "ancient_route_distance_km": 56,
+      "elevation_change_m": -10,
+      "estimated_travel_time_days": {
+        "on_foot": 2.0,
+        "by_donkey": 1.5,
+        "by_horse": 1.2
+      },
+      "uncertainty_notes": "This calculation is for the journey Cornelius's men undertook to reach Peter. The route would have followed the well-established Roman coastal road, the Via Maris. The travel time is an estimate for a small group, likely mounted or moving at a brisk military pace, making a journey of just over one full day very feasible."
+    }
+  ],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "soteriology": [
+        "salvation for Gentiles"
+      ],
+      "holy_spirit": [
+        "divine guidance",
+        "preparation of the heart"
+      ],
+      "gospel": [
+        "universal scope of the gospel"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "witness_evangelism": [
+        "Gentile mission"
+      ],
+      "obedience": [
+        "Peter's radical hospitality",
+        "prelude to apostolic obedience"
+      ],
+      "prayer": [
+        "divine revelation in response to prayer"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "church_community": [
+        "breaking down Jewish-Gentile barriers"
+      ],
+      "humility": [
+        "Peter associating with the socially marginalized"
+      ],
+      "compassion_mercy": [
+        "God's mercy extending to all nations"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "jewish_customs": [
+        "purity laws"
+      ],
+      "gentiles": [
+        "Cornelius as a God-fearer"
+      ],
+      "clean_unclean_laws": [
+        "tanner's profession"
+      ],
+      "travel_trade_routes": [
+        "Joppa as a port city",
+        "Via Maris"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "narrative_history": [
+        "pivotal event in Acts"
+      ],
+      "symbolism": [
+        "sea as Gentile world",
+        "tanner's house as breaking purity codes"
+      ],
+      "typology": [
+        "Peter in Joppa as the anti-type to Jonah"
+      ],
+      "intertextuality": [
+        "allusion to Jonah 1:3"
+      ]
+    }
+  },
+  "section_3_life_application": "God orchestrates our circumstances to prepare our hearts for His purposes. Peter’s stay with an 'unclean' tanner was not accidental; it was a divine setup to challenge his lifelong prejudices before God gave him the paradigm-shifting vision about the Gentiles. This teaches us to pay attention to the 'uncomfortable' situations God places us in. The person, job, or neighborhood that challenges our comfort zone may be God's chosen classroom to break down our hidden biases and prepare us to be ministers of His grace to people we would have otherwise avoided. We must ask: 'God, what prejudice in my heart are you trying to dismantle through my current circumstances so I can more fully participate in Your mission?'"
+}

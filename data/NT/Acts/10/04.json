@@ -1,94 +1,455 @@
 {
   "verse_id": "ACTS-10-4",
   "section_1_sacred_text": {
-    "verse_reference": "Acts 10:4",
     "original_script": "ὁ δὲ ἀτενίσας αὐτῷ καὶ ἔμφοβος γενόμενος εἶπεν· Τί ἐστιν, κύριε; εἶπεν δὲ αὐτῷ· Αἱ προσευχαί σου καὶ αἱ ἐλεημοσύναι σου ἀνέβησαν εἰς μνημόσυνον ἔμπροσθεν τοῦ θεοῦ.",
-    "faithful_direct_translation": "And the one having stared intently at him and having become terrified, said: 'What is it, lord?' And he said to him: 'Your prayers and your alms have ascended for a memorial before the face of God.'",
-    "standalone_english_translation": "And staring at him and becoming terrified, he said, “What is it, Lord?” And he said to him, “Your prayers and your alms have ascended as a memorial before God.”",
-    "amplified_narrative_translation": "And Cornelius, gazing intently upon the angelic messenger and becoming utterly terrified by the supernatural sight, asked with reverent submission, 'What is it, my lord?' The angel then delivered the message to him, saying, 'The consistent pattern of your devout prayers and your compassionate acts of charity to the poor have together ascended and come up into the very presence of God, where they have been received as a formal memorial offering, prompting His divine attention and action.'"
+    "faithful_direct_translation": "And the one having stared at him and having become fearful said, 'What is it, lord?' And he said to him, 'Your prayers and your alms have ascended for a memorial before God.'",
+    "standalone_english_translation": "And he, gazing at him and becoming terrified, said, 'What is it, Lord?' And he said to him, 'Your prayers and your alms have ascended as a memorial before God.'",
+    "amplified_narrative_translation": "And Cornelius, fixing his gaze intently upon the angel and becoming filled with profound fear, responded, 'What is your will, my Lord?' The angel then replied to him, 'The consistent prayers you have offered up and the acts of charity you have given have come up and are now recorded as a lasting memorial in the very presence of God.'"
   },
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "ὁ",
+      "transliteration": "ho",
+      "lemma": "ὁ",
+      "parsing_code": "N-NSM",
+      "parsing_expanded": "Noun, Nominative, Singular, Masculine (used as a substantive pronoun, 'he')",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "Functions as a pronoun here referring to Cornelius."
+    },
+    {
+      "word_number": 2,
+      "greek_word": "δὲ",
+      "transliteration": "de",
+      "lemma": "δέ",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G1161",
+      "english_gloss": "but, and",
+      "contextual_meaning": "A connective particle showing continuation of the narrative."
+    },
+    {
+      "word_number": 3,
+      "greek_word": "ἀτενίσας",
+      "transliteration": "atenisas",
+      "lemma": "ἀτενίζω",
+      "parsing_code": "V-AAP-NSM",
+      "parsing_expanded": "Verb, Aorist, Active, Participle, Nominative, Singular, Masculine",
+      "strongs_number": "G816",
+      "english_gloss": "having gazed intently",
+      "contextual_meaning": "Describes an intense, fixed, unwavering gaze, indicating Cornelius's shock and focused attention on the heavenly vision."
+    },
+    {
+      "word_number": 4,
+      "greek_word": "αὐτῷ",
+      "transliteration": "autō",
+      "lemma": "αὐτός",
+      "parsing_code": "P-DSM",
+      "parsing_expanded": "Pronoun, Dative, Singular, Masculine",
+      "strongs_number": "G846",
+      "english_gloss": "to him, at him",
+      "contextual_meaning": "The object of the gaze; Cornelius stared 'at him' (the angel)."
+    },
+    {
+      "word_number": 5,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and",
+      "contextual_meaning": "Connects the two participles describing Cornelius's reaction: gazing and becoming fearful."
+    },
+    {
+      "word_number": 6,
+      "greek_word": "ἔμφοβος",
+      "transliteration": "emphobos",
+      "lemma": "ἔμφοβος",
+      "parsing_code": "A-NSM",
+      "parsing_expanded": "Adjective, Nominative, Singular, Masculine",
+      "strongs_number": "G1719",
+      "english_gloss": "fearful, terrified",
+      "contextual_meaning": "Denotes a state of terror or great fear, a common human reaction to a divine manifestation."
+    },
+    {
+      "word_number": 7,
+      "greek_word": "γενόμενος",
+      "transliteration": "genomenos",
+      "lemma": "γίνομαι",
+      "parsing_code": "V-ADP-NSM",
+      "parsing_expanded": "Verb, Aorist, Deponent, Participle, Nominative, Singular, Masculine",
+      "strongs_number": "G1096",
+      "english_gloss": "having become",
+      "contextual_meaning": "Indicates a change of state; Cornelius 'became' fearful as a result of seeing the angel."
+    },
+    {
+      "word_number": 8,
+      "greek_word": "εἶπεν",
+      "transliteration": "eipen",
+      "lemma": "εἶπον",
+      "parsing_code": "V-AAI-3S",
+      "parsing_expanded": "Verb, Aorist, Active, Indicative, 3rd Person, Singular",
+      "strongs_number": "G2036",
+      "english_gloss": "he said",
+      "contextual_meaning": "The main verb describing Cornelius's verbal response."
+    },
+    {
+      "word_number": 9,
+      "greek_word": "Τί",
+      "transliteration": "Ti",
+      "lemma": "τίς",
+      "parsing_code": "I-NSN",
+      "parsing_expanded": "Interrogative Pronoun, Nominative, Singular, Neuter",
+      "strongs_number": "G5101",
+      "english_gloss": "what?",
+      "contextual_meaning": "The interrogative 'What?' indicating a question of purpose or meaning, not just identity."
+    },
+    {
+      "word_number": 10,
+      "greek_word": "ἐστιν",
+      "transliteration": "estin",
+      "lemma": "εἰμί",
+      "parsing_code": "V-PAI-3S",
+      "parsing_expanded": "Verb, Present, Active, Indicative, 3rd Person, Singular",
+      "strongs_number": "G2076",
+      "english_gloss": "is",
+      "contextual_meaning": "The verb of being, forming the question 'What is it?'"
+    },
+    {
+      "word_number": 11,
+      "greek_word": "κύριε",
+      "transliteration": "kyrie",
+      "lemma": "κύριος",
+      "parsing_code": "N-VSM",
+      "parsing_expanded": "Noun, Vocative, Singular, Masculine",
+      "strongs_number": "G2962",
+      "english_gloss": "O Lord, sir",
+      "contextual_meaning": "A term of respectful address. In this context, it acknowledges the angelic being's authority and superiority, similar to 'sir' but with a strong sense of reverence."
+    },
+    {
+      "word_number": 12,
+      "greek_word": "εἶπεν",
+      "transliteration": "eipen",
+      "lemma": "εἶπον",
+      "parsing_code": "V-AAI-3S",
+      "parsing_expanded": "Verb, Aorist, Active, Indicative, 3rd Person, Singular",
+      "strongs_number": "G2036",
+      "english_gloss": "he said",
+      "contextual_meaning": "The main verb for the angel's reply."
+    },
+    {
+      "word_number": 13,
+      "greek_word": "δὲ",
+      "transliteration": "de",
+      "lemma": "δέ",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G1161",
+      "english_gloss": "and, but",
+      "contextual_meaning": "Connects the angel's speech to Cornelius's question."
+    },
+    {
+      "word_number": 14,
+      "greek_word": "αὐτῷ",
+      "transliteration": "autō",
+      "lemma": "αὐτός",
+      "parsing_code": "P-DSM",
+      "parsing_expanded": "Pronoun, Dative, Singular, Masculine",
+      "strongs_number": "G846",
+      "english_gloss": "to him",
+      "contextual_meaning": "Indicates the recipient of the angel's message: 'to him' (Cornelius)."
+    },
+    {
+      "word_number": 15,
+      "greek_word": "Αἱ",
+      "transliteration": "Hai",
+      "lemma": "ὁ",
+      "parsing_code": "T-NPF",
+      "parsing_expanded": "Article, Nominative, Plural, Feminine",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "The definite article for 'prayers'."
+    },
+    {
+      "word_number": 16,
+      "greek_word": "προσευχαί",
+      "transliteration": "proseuchai",
+      "lemma": "προσευχή",
+      "parsing_code": "N-NPF",
+      "parsing_expanded": "Noun, Nominative, Plural, Feminine",
+      "strongs_number": "G4335",
+      "english_gloss": "prayers",
+      "contextual_meaning": "Refers to Cornelius's acts of worship and petition directed towards God."
+    },
+    {
+      "word_number": 17,
+      "greek_word": "σου",
+      "transliteration": "sou",
+      "lemma": "σύ",
+      "parsing_code": "P-GS",
+      "parsing_expanded": "Pronoun, Genitive, Singular",
+      "strongs_number": "G4771",
+      "english_gloss": "of you, your",
+      "contextual_meaning": "Possessive pronoun: 'your prayers'."
+    },
+    {
+      "word_number": 18,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and",
+      "contextual_meaning": "Connects 'prayers' and 'alms' as a pair."
+    },
+    {
+      "word_number": 19,
+      "greek_word": "αἱ",
+      "transliteration": "hai",
+      "lemma": "ὁ",
+      "parsing_code": "T-NPF",
+      "parsing_expanded": "Article, Nominative, Plural, Feminine",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "The definite article for 'alms'."
+    },
+    {
+      "word_number": 20,
+      "greek_word": "ἐλεημοσύναι",
+      "transliteration": "eleēmosynai",
+      "lemma": "ἐλεημοσύνη",
+      "parsing_code": "N-NPF",
+      "parsing_expanded": "Noun, Nominative, Plural, Feminine",
+      "strongs_number": "G1654",
+      "english_gloss": "alms, acts of charity",
+      "contextual_meaning": "Specifically refers to giving to the poor, a practical outworking of his piety (devoutly religious)."
+    },
+    {
+      "word_number": 21,
+      "greek_word": "σου",
+      "transliteration": "sou",
+      "lemma": "σύ",
+      "parsing_code": "P-GS",
+      "parsing_expanded": "Pronoun, Genitive, Singular",
+      "strongs_number": "G4771",
+      "english_gloss": "of you, your",
+      "contextual_meaning": "Possessive pronoun: 'your alms'."
+    },
+    {
+      "word_number": 22,
+      "greek_word": "ἀνέβησαν",
+      "transliteration": "anebēsan",
+      "lemma": "ἀναβαίνω",
+      "parsing_code": "V-AAI-3P",
+      "parsing_expanded": "Verb, Aorist, Active, Indicative, 3rd Person, Plural",
+      "strongs_number": "G305",
+      "english_gloss": "they went up, ascended",
+      "contextual_meaning": "Used metaphorically to describe the prayers and alms reaching God's presence, like the smoke of an accepted sacrifice."
+    },
+    {
+      "word_number": 23,
+      "greek_word": "εἰς",
+      "transliteration": "eis",
+      "lemma": "εἰς",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G1519",
+      "english_gloss": "into, for, as",
+      "contextual_meaning": "Indicates purpose or result: they ascended 'for' a memorial or 'to become' a memorial."
+    },
+    {
+      "word_number": 24,
+      "greek_word": "μνημόσυνον",
+      "transliteration": "mnēmosynon",
+      "lemma": "μνημόσυνον",
+      "parsing_code": "N-ASN",
+      "parsing_expanded": "Noun, Accusative, Singular, Neuter",
+      "strongs_number": "G3422",
+      "english_gloss": "a memorial, reminder",
+      "contextual_meaning": "A technical term from sacrificial language, signifying an offering that brings the worshiper to God's remembrance, prompting divine action."
+    },
+    {
+      "word_number": 25,
+      "greek_word": "ἔμπροσθεν",
+      "transliteration": "emprosthen",
+      "lemma": "ἔμπροσθεν",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition (governs the genitive)",
+      "strongs_number": "G1715",
+      "english_gloss": "before, in the presence of",
+      "contextual_meaning": "Emphasizes that this remembrance is not just a concept, but has occurred in the very presence of God himself."
+    },
+    {
+      "word_number": 26,
+      "greek_word": "τοῦ",
+      "transliteration": "tou",
+      "lemma": "ὁ",
+      "parsing_code": "T-GSM",
+      "parsing_expanded": "Article, Genitive, Singular, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "of the",
+      "contextual_meaning": "The definite article for 'God'."
+    },
+    {
+      "word_number": 27,
+      "greek_word": "θεοῦ",
+      "transliteration": "theou",
+      "lemma": "θεός",
+      "parsing_code": "N-GSM",
+      "parsing_expanded": "Noun, Genitive, Singular, Masculine",
+      "strongs_number": "G2316",
+      "english_gloss": "of God",
+      "contextual_meaning": "The ultimate recipient and observer of Cornelius's devotion."
+    }
+  ],
   "section_2_exegetical_synthesis": {
-    "literal_primary_filter": [
-      "The event is a literal, historical encounter between a Roman centurion named Cornelius and an angel of God.",
-      "Cornelius [Κορνήλιος] (Kornēlios, from the Latin 'Cornelius,' possibly meaning 'horn'), a Roman centurion, experienced a genuine supernatural vision (Acts 10:3).",
-      "His reaction, staring intently [ἀτενίσας] (atenisas, 'to gaze fixedly') and becoming terrified [ἔμφοβος] (emphobos, 'filled with fear'), is a normative human response to a divine encounter (cf. Luke 1:12; Daniel 10:7-9).",
-      "He addresses the angel with a term of high respect, [κύριε] (kyrie), which can mean 'Sir' or 'Lord,' acknowledging a superior being.",
-      "The angel delivers a direct message from God.",
-      "The message states that two specific categories of Cornelius's actions—his prayers [προσευχαί] (proseuchai) and his alms [ἐλεημοσύναι] (eleēmosynai)—have 'ascended' [ἀνέβησαν] (anebēsan).",
-      "This ascent is not merely noted; it is registered εἰς μνημόσυνον (eis mnēmosynon), 'as a memorial,' directly in God's presence, ἔμπροσθεν τοῦ θεοῦ (emprosthen tou theou), 'before the face of God.'"
-    ],
-    "prophetic_typology_and_intertextuality": [
-      "The 'memorial' [μνημόσυνον] (mnēmosynon) is the theological core, directly linking Cornelius's piety to the Old Testament sacrificial system.",
-      "Type: The 'memorial portion' [אַזְכָּרָה] (azkarah) of the grain offering (Leviticus 2:2, 9, 16; 5:12; 6:15).",
-      "This `azkarah` was a handful of fine flour and oil burned on the altar, the smoke of which ascended as a 'pleasing aroma to the LORD,' causing God to 'remember' the worshiper.",
-      "Antitype: Cornelius's prayers and alms function as the spiritual fulfillment of the `azkarah`.",
-      "His righteous deeds, offered in sincere faith, ascend to God's heavenly altar and serve as the catalyst for God's redemptive action.",
-      "This event marks the prophetic fulfillment of God's promise to bless the Gentiles through Abraham (Genesis 12:3).",
-      "It actualizes the prophecy of Isaiah that foreigners who join themselves to the LORD would have their offerings accepted on His altar (Isaiah 56:6-7).",
-      "Solomon's prayer dedicating the Temple explicitly asks God to hear the prayers of foreigners who come to seek Him (1 Kings 8:41-43), a prayer now being answered for Cornelius.",
-      "The union of prayer (devotion to God) and alms (love for neighbor) is seen as more acceptable than sacrifice alone (Proverbs 21:3; Hosea 6:6), reflecting a deep principle of Old Testament ethics that Cornelius was practicing."
-    ],
     "linguistic_mechanics_and_names": [
-      "The verb [ἀνέβησαν] (anebēsan, 'they have ascended') is an aorist active indicative, signifying a completed action with ongoing results. His deeds have reached their destination.",
-      "The term for alms, [ἐλεημοσύναι] (eleēmosynai), is derived from [ἔλεος] (eleos, 'mercy'), highlighting that his charity was an act of mercy, not mere duty.",
-      "The term [μνημόσυνον] (mnēmosynon) is from the verb μιμνῄσκομαι (mimnēskomai), 'to remember.' It signifies an object or action that brings someone to mind.",
-      "In this context, Cornelius’s life of piety has caused God to 'remember' him for the purpose of extending salvation.",
-      "The location, Caesarea [Καισάρεια] (Kaisareia, 'City of Caesar'), named in honor of Caesar Augustus, underscores the geopolitical reality: God is moving His plan forward from the very heart of Roman imperial power in the region.",
-      "The Apostle involved, Peter [Πέτρος] (Petros, 'Rock'), is the one to whom Jesus gave the 'keys of the kingdom' (Matthew 16:19), and here he is using them to formally open the door of faith to the Gentiles."
+      {
+        "entry": "stared (ἀτενίσας, atenisas)",
+        "theological_significance": "From 'atenes' (strained, intent), this verb denotes more than a casual glance. It is a fixed, intense gaze. Luke uses this word to describe moments of profound spiritual focus or confrontation (Luke 4:20; Acts 3:4, 12). Cornelius's reaction highlights the undeniable reality of the supernatural vision, locking his entire attention onto the divine messenger."
+      },
+      {
+        "entry": "fearful (ἔμφοβος, emphobos)",
+        "theological_significance": "This term describes a reverential awe and terror that is the appropriate human response to a direct encounter with the holy. It is not mere fright, but the recognition of one's creatureliness before the divine. This is the 'fear of the Lord' in its most immediate form, seen throughout Scripture when angels or God appear to mortals (e.g., Luke 1:12, 2:9)."
+      },
+      {
+        "entry": "Lord (κύριε, kyrie)",
+        "theological_significance": "In the vocative case, this is a term of profound respect. While it can mean 'sir,' its use in a supernatural context signifies Cornelius's submission to a higher authority. He immediately recognizes the messenger is not his peer and addresses him with deference (politeness), acknowledging his right to command."
+      },
+      {
+        "entry": "prayers (προσευχαί, proseuchai) and alms (ἐλεημοσύναι, eleēmosynai)",
+        "theological_significance": "These two terms are presented as a pair, representing the two dimensions of true piety: the vertical relationship with God (prayer) and the horizontal relationship with humanity (charity). They are the classic expressions of Jewish piety that Cornelius, a God-fearer, had adopted. The angel validates both, showing that God sees not only our words of devotion but also our works of compassion."
+      },
+      {
+        "entry": "ascended (ἀνέβησαν, anebēsan)",
+        "theological_significance": "This verb powerfully evokes the imagery of Old Testament sacrifice. The smoke of an accepted burnt offering would 'ascend' to God. Here, Cornelius's non-ritualistic acts of devotion are portrayed in sacrificial terms, signifying that God has received them as a pleasing aroma (cf. Philippians 4:18)."
+      },
+      {
+        "entry": "memorial (μνημόσυνον, mnēmosynon)",
+        "theological_significance": "This is a crucial Old Testament sacrificial term (Hebrew: azkarah). It refers to the portion of a grain offering burned on the altar 'as a memorial portion' to bring the offerer to God's remembrance (Leviticus 2:2, 9, 16). By using this term, the angel places Cornelius's piety in the same category as an accepted Temple sacrifice, indicating that God has taken notice and is now about to act on his behalf."
+      }
     ],
-    "literary_devices": [
-      "The narrative employs parallelism by pairing two key actions: 'prayers' (vertical relationship with God) and 'alms' (horizontal relationship with humanity).",
-      "This pairing creates a hendiadys, where the two terms represent a single, unified concept: a life of holistic piety and righteousness.",
-      "The entire Cornelius account (Acts 10:1-11:18) is structured as a chiasm, with Peter's vision in Joppa at the center, framed by the divine preparations of Cornelius and Peter, their meeting, and the subsequent report to the Jerusalem church."
+    "literary_devices": "The primary device is parallelism, where 'your prayers' and 'your alms' are paired to represent the totality of Cornelius's devotion. The angel's message is a structured declaration of divine notice, functioning almost as a heavenly legal pronouncement. The use of sacrificial language ('ascended', 'memorial') is a powerful metaphor that elevates the sincere acts of a Gentile to the status of an accepted offering before God, foreshadowing the breaking down of the Jew-Gentile barrier.",
+    "aggregate_analogia_scriptura": "This verse is a New Covenant fulfillment of Old Testament principles. The concept of a 'memorial' (Hebrew: azkarah) is rooted in the Levitical system (Leviticus 2:2, 5:12, 6:15), where a portion of the grain offering was burned to bring the worshiper to God's mind. The pairing of prayer and action reflects passages like Isaiah 58:6-9, where true worship (fasting) is defined by acts of justice and mercy, which then cause God to hear one's prayers. Psalm 141:2 links prayer to the evening sacrifice and incense, another image of worship ascending to God. Cornelius's acts, though outside the formal covenant with Israel, are judged by God according to the spirit of the Law, demonstrating that 'in every nation anyone who fears him and does what is right is acceptable to him' (Acts 10:35), a principle that prepares for the gospel's universal reach.",
+    "literal_primary_filter": [
+      "Cornelius saw an angel of God in a vision.",
+      "His immediate reaction was to stare intently and become terrified.",
+      "He addressed the angel respectfully as 'Lord' and asked what the vision meant.",
+      "The angel told him that his prayers and his charitable giving have been noticed by God.",
+      "These acts are described as a 'memorial' that has 'ascended' into God's presence."
     ],
-    "numerical_and_gematria_significance": [
-      "The vision occurred at the 'ninth hour' (Acts 10:3), which was 3:00 PM.",
-      "This was the established time for the evening prayer and the evening sacrifice (`minchah`) in the Jerusalem Temple (Acts 3:1; Exodus 29:39).",
-      "The timing is theologically significant: as the prescribed sacrifices were being offered in the Temple, God was recognizing a Gentile's 'spiritual sacrifice' far away in Caesarea.",
-      "This demonstrates that access to God is no longer limited by the Temple's geography or rituals but is available through sincere faith and piety, a core tenet of the New Covenant (John 4:21-24)."
-    ],
-    "historical_context_and_chronology": [
-      "The event is dated to approximately A.D. 40-41.",
-      "This is during the reign of the Roman Emperor Caligula (Gaius Caesar), a period of heightened tension between Rome and the Jewish people.",
-      "Caligula's demand to have a statue of himself erected in the Jerusalem Temple had brought the province to the brink of rebellion, making any peaceful interaction between Romans and Jews highly charged.",
-      "Cornelius is described as a 'God-fearer' (φοβούμενος τὸν θεόν), a semi-technical term for a class of Gentiles who adopted Jewish monotheism and ethics without fully converting through circumcision.",
-      "These God-fearers were a crucial bridge community for the gospel's expansion from a Jewish sect to a world religion."
-    ],
-    "socio_political_matrix": [
-      "Cornelius was a centurion of the [σπείρης τῆς καλουμένης Ἰταλικῆς] (speirēs tēs kaloumenēs Italikēs), the 'cohort called Italian.'",
-      "A cohort was a tactical unit of the Roman army, notionally 600 men.",
-      "The 'Italian' designation suggests it was an auxiliary unit composed of Roman citizens, likely recruited from Italy, as opposed to local provincial recruits. This marks Cornelius as a full Roman citizen with direct ties to the empire's heartland.",
-      "As a centurion, he was a non-commissioned officer, the backbone of military discipline and order. Centurions were generally respected for their pragmatism and leadership.",
-      "His station was Caesarea Maritima, the political and military capital of Roman Judea, built by Herod the Great. It was a cosmopolitan, Hellenistic city, representing the power of Rome in a Jewish land.",
-      "The social barrier between a Jew (like Peter) and a Roman soldier was immense, rooted in religious law (kosher laws) and political resentment (occupation). Entering a Gentile's house would make a Jew ritually unclean (Acts 10:28)."
-    ],
-    "geospatial_data_and_physical_geography": [
-      "Location: Caesarea Maritima (modern-day Caesarea, Israel).",
-      "Coordinates: Approximately 32.5052° N, 34.8922° E.",
-      "Altitude: Sea level.",
-      "Caesarea was a major, artificially constructed deep-sea harbor on the Mediterranean coast, located about 65 miles (105 km) northwest of Jerusalem.",
-      "Its strategic position as the primary port and Roman administrative center made it a hub of military, political, and commercial activity, and a natural launching point for the gospel's expansion westward into the Gentile world."
-    ],
-    "archaeological_confirmation": [
-      "Extensive archaeological excavations at Caesarea Maritima have uncovered Herod's palace (where the governor resided), the theater, a hippodrome, and the massive harbor complex, confirming its status as a major Roman city as described by Luke.",
-      "An inscription discovered in the Caesarea theater in 1961 bears the name of 'Pontius Pilatus, Prefect of Judea,' providing external, physical evidence of the high-level Roman administration mentioned in the Gospels and Acts.",
-      "While no inscription directly naming Cornelius or confirming the Italian Cohort's presence *at this specific date* has been found in Caesarea, the unit itself is known from other historical records and inscriptions found elsewhere, confirming its existence."
-    ],
-    "aggregate_perspective_and_analogia_scriptura": [
-      "Acts 10:4 marks a pivotal moment in redemptive history: God Himself orchestrates the breaching of the Jew-Gentile barrier, which had defined the covenant people for centuries.",
-      "The angel's message validates the piety of a righteous Gentile, showing that God sees and responds to sincere faith wherever it is found (Acts 10:34-35).",
-      "However, this validation is not an end in itself; it is the *prelude* to Cornelius hearing the gospel of Jesus Christ (Acts 10:43; 11:14).",
-      "His good works and prayers were not sufficient for salvation, but they prepared his heart and prompted God to send him the message *of* salvation.",
-      "This event is the definitive, apostolic confirmation that the New Covenant in Christ is open to all people on the basis of faith alone, fulfilling the promise that in Abraham's seed 'all the nations of the earth shall be blessed' (Genesis 22:18; Galatians 3:8, 14)."
-    ]
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "Cornelius's offering of prayers and alms functions as a type of the acceptable offering of the Gentiles. Just as the 'memorial portion' of the grain offering in Leviticus was a physical act that signified remembrance before God, Cornelius's piety is a spiritual act that brings the Gentile world to God's active remembrance in the age of the Spirit.",
+      "antitype_fulfillment": "The ultimate 'memorial' is the finished work of Jesus Christ, whose once-for-all sacrifice is what truly brings humanity to God's favorable remembrance (Hebrews 10:1-18). Cornelius's offering is accepted by God not as a means of earning salvation, but as an act of faith that God uses to lead him to the true source of salvation—the gospel of Jesus Christ, which Peter will soon deliver. His acceptable piety is the fruit of God's prevenient grace (divine grace that precedes human decision), preparing his heart for the antitype.",
+      "progression_notes": "This event marks a pivotal moment in redemptive history. It shows the progression from a covenant centered on ethnic Israel and the Levitical system to the New Covenant where faith in Christ, evidenced by a God-fearing heart and righteous deeds, is the basis for acceptance, regardless of ethnicity. It is the beginning of the fulfillment of the Spirit being poured out on 'all flesh' (Joel 2; Acts 2)."
+    },
+    "numerical_and_gematria_significance": "There are no explicit numerical or gematria elements in this verse. The focus is on the theological significance of Cornelius's actions and God's response, not on symbolic numbers.",
+    "historical_context_and_chronology": {
+      "dates": "This event is typically dated to approximately 38-40 AD. This places it several years after the conversion of Saul of Tarsus (c. 34-35 AD) and before the persecution by Herod Agrippa I (c. 44 AD).",
+      "context": "The Roman Empire is under the rule of Emperor Caligula (37-41 AD). The church is still in its early stages, having expanded primarily among Jews, Samaritans, and proselytes. The question of the full inclusion of uncircumcised Gentiles into the church on equal footing with Jews was a major, unresolved issue. This divinely orchestrated encounter is Luke's primary narrative to address and settle this question."
+    },
+    "socio_political_matrix": "Cornelius is a centurion (commander of about 100 soldiers in the Roman army) of the 'Italian Cohort,' a unit of Roman citizens. This identifies him as a man of significant authority and status within the Roman occupying force in Judea. As a 'God-fearer,' he belongs to a recognized class of Gentiles who worshiped the God of Israel, attended synagogue, and followed Jewish ethical and dietary laws, but had not undergone circumcision to become full proselytes. This positions him as the ideal social and spiritual bridge: a respected Roman official who is genuinely seeking the God of the Jews, making his conversion a powerful and undeniable sign to the Jewish believers.",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Caesarea, Israel",
+      "coordinates": {
+        "lat": 32.505,
+        "long": 34.891
+      },
+      "altitude_m": 15,
+      "terrain_climate_characteristics": "Caesarea Maritima was a major, man-made port city on the Mediterranean coast of Judea. Built by Herod the Great, it was the Roman provincial capital and military headquarters. The climate is Mediterranean, with hot, dry summers and mild, wet winters. The terrain is a flat coastal plain. As a major administrative and trade hub, it was a cosmopolitan city with a mixed population of Jews, Romans, and other Gentiles."
+    },
+    "archaeological_confirmation": "Excavations at Caesarea Maritima have uncovered extensive ruins of the Roman city, including Herod's palace (where the governor's praetorium was located), a theater, a hippodrome, and the massive artificial harbor. A limestone block was discovered there inscribed with the name '[Pon]tius Pilatus,' confirming his prefecture and the city's role as the Roman administrative center. While no specific evidence of the 'Italian Cohort' has been found at Caesarea from this exact period, Roman military presence is well-attested. The existence of a synagogue from a slightly later period has also been confirmed, providing a physical context for where a 'God-fearer' like Cornelius might have worshiped."
   },
-  "section_3_life_application": {
-    "conclusion_and_call_to_action": [
-      "God sees and remembers every sincere act of worship and every deed of compassion.",
-      "Your private prayers (your vertical devotion) and your public acts of kindness (your horizontal charity) are not invisible; they ascend together as a memorial before God.",
-      "A life of consistent, quiet faithfulness in prayer and practical love for others is a powerful witness in the throne room of heaven.",
-      "While good deeds do not save us, they are the evidence of a heart genuinely seeking God, and He honors that seeking by drawing such people closer to the truth of His Son, Jesus Christ.",
-      "Therefore, integrate your faith into your actions. Let your prayer life fuel your compassion, and let your compassion be an extension of your prayers. Live knowing that nothing done for God, or for others in His name, is ever forgotten."
-    ]
-  }
+  "geographic_calculations": [
+    {
+      "from_location": "Caesarea Maritima",
+      "to_location": "Joppa (modern Jaffa)",
+      "straight_line_distance_km": 52,
+      "ancient_route_distance_km": 60,
+      "elevation_change_m": -10,
+      "estimated_travel_time_days": {
+        "on_foot": 2,
+        "by_donkey": 1.5,
+        "by_horse": 1.0
+      },
+      "uncertainty_notes": "The journey from Caesarea to Joppa, commanded by the angel in the subsequent verses (10:5-8), would have followed the well-established Roman coastal road, the Via Maris. The distance is relatively certain. The men sent by Cornelius (10:7) would likely have been soldiers on foot or perhaps on horseback, making the journey in 1-2 days."
+    }
+  ],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "attributes_of_god": [
+        "omniscience",
+        "attentiveness to prayer",
+        "impartiality"
+      ],
+      "soteriology": [
+        "prevenient grace",
+        "salvation for Gentiles"
+      ],
+      "angelology_demonology": [
+        "angelic messenger",
+        "divine revelation"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "prayer": [
+        "efficacy of prayer",
+        "prayer as worship"
+      ],
+      "stewardship": [
+        "almsgiving",
+        "charity as worship"
+      ],
+      "witness_evangelism": [
+        "divine initiative in mission",
+        "Gentile inclusion"
+      ],
+      "faith": [
+        "faith expressed through works"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "compassion_mercy": [
+        "caring for the poor"
+      ],
+      "wealth_poverty": [
+        "righteous use of wealth"
+      ],
+      "humility": [
+        "Cornelius's fearful submission"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "roman_occupation": [
+        "centurion",
+        "Italian Cohort",
+        "Caesarea Maritima"
+      ],
+      "gentiles": [
+        "God-fearer",
+        "Cornelius as a representative"
+      ],
+      "jewish_customs": [
+        "almsgiving",
+        "hours of prayer"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "narrative_history": [
+        "pivotal event in Acts",
+        "opening the Gentile mission"
+      ],
+      "symbolism": [
+        "prayers ascending like incense",
+        "alms as a sacrifice"
+      ],
+      "typology": [
+        "Cornelius's offering as a type of Gentile worship"
+      ]
+    }
+  },
+  "section_3_life_application": "This verse teaches that God sees and values sincere devotion, wherever it is found. Our faith is not a private, internal matter; it has two visible expressions that God notices: our upward devotion in prayer and our outward compassion in action (alms). Cornelius was not saved by his good works, but his good works were the evidence of a heart genuinely seeking God, a heart that God was preparing to receive the gospel. The application for believers today is to integrate these two aspects of faith. Our prayer life should fuel our generosity and compassion, and our acts of service should flow from a heart connected to God. We can be confident that no sincere prayer and no act of selfless giving, however small, goes unnoticed by our heavenly Father. They serve as a 'memorial' before Him, not to earn our salvation, but as the fragrant aroma of a life being transformed by His grace."
 }

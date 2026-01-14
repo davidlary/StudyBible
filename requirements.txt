@@ -1,0 +1,21 @@
+# Core dependencies
+google-generativeai>=0.3.0      # Gemini API client
+requests>=2.31.0                 # HTTP requests
+lxml>=5.1.0                      # XML parsing (OSHB)
+jsonschema>=4.21.0              # JSON validation
+
+# CLI & UI
+rich>=13.7.0                     # Progress bars, formatting
+click>=8.1.7                     # CLI framework
+
+# Testing
+pytest>=8.0.0                    # Test framework
+pytest-cov>=4.1.0                # Coverage plugin
+pytest-xdist>=3.5.0              # Parallel testing
+pytest-mock>=3.12.0              # Mocking utilities
+responses>=0.25.0                # Mock HTTP requests
+
+# Development
+black>=24.1.0                    # Code formatter
+ruff>=0.2.0                      # Fast linter
+mypy>=1.8.0                      # Type checking

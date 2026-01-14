@@ -1,0 +1,364 @@
+{
+  "verse_id": "ACTS-10-25",
+  "section_1_sacred_text": {
+    "original_script": "Ὡς δὲ ἐγένετο τοῦ εἰσελθεῖν τὸν Πέτρον, συναντήσας αὐτῷ ὁ Κορνήλιος πεσὼν ἐπὶ τοὺς πόδας προσεκύνησεν.",
+    "faithful_direct_translation": "And as it happened for Peter to enter, Cornelius having met him, having fallen upon the feet, worshiped.",
+    "standalone_english_translation": "As Peter entered, Cornelius met him and fell at his feet in worship.",
+    "amplified_narrative_translation": "At the very moment when Peter was about to cross the threshold into the house, Cornelius, who had been eagerly awaiting his arrival, came forward to meet him and immediately fell prostrate upon the ground at Peter's feet, offering him the kind of reverential worship typically reserved for deity or high royalty."
+  },
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "Ὡς",
+      "transliteration": "Hōs",
+      "lemma": "ὡς",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G5613",
+      "english_gloss": "as, when",
+      "contextual_meaning": "temporal marker indicating the exact moment of Peter's entrance"
+    },
+    {
+      "word_number": 2,
+      "greek_word": "δὲ",
+      "transliteration": "de",
+      "lemma": "δέ",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction (continuative/adversative)",
+      "strongs_number": "G1161",
+      "english_gloss": "and, but",
+      "contextual_meaning": "narrative transition maintaining story flow"
+    },
+    {
+      "word_number": 3,
+      "greek_word": "ἐγένετο",
+      "transliteration": "egeneto",
+      "lemma": "γίνομαι",
+      "parsing_code": "V-2ADI-3S",
+      "parsing_expanded": "Verb, Second Aorist, Deponent, Indicative, Third Person, Singular",
+      "strongs_number": "G1096",
+      "english_gloss": "to become, to happen",
+      "contextual_meaning": "marks the occurrence of the event, a Lukan stylistic device common in narrative transitions"
+    },
+    {
+      "word_number": 4,
+      "greek_word": "τοῦ",
+      "transliteration": "tou",
+      "lemma": "ὁ",
+      "parsing_code": "T-GSM",
+      "parsing_expanded": "Article, Genitive, Singular, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "article forming articular infinitive construction with εἰσελθεῖν"
+    },
+    {
+      "word_number": 5,
+      "greek_word": "εἰσελθεῖν",
+      "transliteration": "eiselthein",
+      "lemma": "εἰσέρχομαι",
+      "parsing_code": "V-2AAN",
+      "parsing_expanded": "Verb, Second Aorist, Active, Infinitive",
+      "strongs_number": "G1525",
+      "english_gloss": "to enter, to come in",
+      "contextual_meaning": "Peter's physical act of crossing the threshold into Cornelius's house, symbolically crossing Jewish-Gentile boundary"
+    },
+    {
+      "word_number": 6,
+      "greek_word": "τὸν",
+      "transliteration": "ton",
+      "lemma": "ὁ",
+      "parsing_code": "T-ASM",
+      "parsing_expanded": "Article, Accusative, Singular, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "article identifying Peter as subject of the infinitive"
+    },
+    {
+      "word_number": 7,
+      "greek_word": "Πέτρον",
+      "transliteration": "Petron",
+      "lemma": "Πέτρος",
+      "parsing_code": "N-ASM",
+      "parsing_expanded": "Noun, Accusative, Singular, Masculine (Proper name)",
+      "strongs_number": "G4074",
+      "english_gloss": "Peter",
+      "contextual_meaning": "the apostle Peter, here functioning as God's instrument to open salvation to Gentiles"
+    },
+    {
+      "word_number": 8,
+      "greek_word": "συναντήσας",
+      "transliteration": "synantēsas",
+      "lemma": "συναντάω",
+      "parsing_code": "V-AAP-NSM",
+      "parsing_expanded": "Verb, Aorist, Active, Participle, Nominative, Singular, Masculine",
+      "strongs_number": "G4876",
+      "english_gloss": "to meet, to encounter",
+      "contextual_meaning": "Cornelius's deliberate action of going out to greet Peter, showing initiative and eagerness"
+    },
+    {
+      "word_number": 9,
+      "greek_word": "αὐτῷ",
+      "transliteration": "autō",
+      "lemma": "αὐτός",
+      "parsing_code": "P-DSM",
+      "parsing_expanded": "Pronoun, Personal, Dative, Singular, Masculine",
+      "strongs_number": "G846",
+      "english_gloss": "him",
+      "contextual_meaning": "dative of direct object with συναντάω, referring to Peter"
+    },
+    {
+      "word_number": 10,
+      "greek_word": "ὁ",
+      "transliteration": "ho",
+      "lemma": "ὁ",
+      "parsing_code": "T-NSM",
+      "parsing_expanded": "Article, Nominative, Singular, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "article identifying Cornelius"
+    },
+    {
+      "word_number": 11,
+      "greek_word": "Κορνήλιος",
+      "transliteration": "Kornēlios",
+      "lemma": "Κορνήλιος",
+      "parsing_code": "N-NSM",
+      "parsing_expanded": "Noun, Nominative, Singular, Masculine (Proper name)",
+      "strongs_number": "G2883",
+      "english_gloss": "Cornelius",
+      "contextual_meaning": "Roman centurion, God-fearer, first Gentile convert representing the breaking down of the dividing wall (Eph 2:14)"
+    },
+    {
+      "word_number": 12,
+      "greek_word": "πεσὼν",
+      "transliteration": "pesōn",
+      "lemma": "πίπτω",
+      "parsing_code": "V-2AAP-NSM",
+      "parsing_expanded": "Verb, Second Aorist, Active, Participle, Nominative, Singular, Masculine",
+      "strongs_number": "G4098",
+      "english_gloss": "to fall",
+      "contextual_meaning": "deliberate act of prostration, culturally appropriate for greeting high dignitaries but theologically inappropriate for a mere human"
+    },
+    {
+      "word_number": 13,
+      "greek_word": "ἐπὶ",
+      "transliteration": "epi",
+      "lemma": "ἐπί",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition (with accusative: upon, on)",
+      "strongs_number": "G1909",
+      "english_gloss": "upon, on",
+      "contextual_meaning": "spatial preposition indicating prostration at the feet"
+    },
+    {
+      "word_number": 14,
+      "greek_word": "τοὺς",
+      "transliteration": "tous",
+      "lemma": "ὁ",
+      "parsing_code": "T-APM",
+      "parsing_expanded": "Article, Accusative, Plural, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "article with πόδας"
+    },
+    {
+      "word_number": 15,
+      "greek_word": "πόδας",
+      "transliteration": "podas",
+      "lemma": "πούς",
+      "parsing_code": "N-APM",
+      "parsing_expanded": "Noun, Accusative, Plural, Masculine",
+      "strongs_number": "G4228",
+      "english_gloss": "feet",
+      "contextual_meaning": "location of prostration, indicating complete submission and reverence"
+    },
+    {
+      "word_number": 16,
+      "greek_word": "προσεκύνησεν",
+      "transliteration": "prosekyēsen",
+      "lemma": "προσκυνέω",
+      "parsing_code": "V-AAI-3S",
+      "parsing_expanded": "Verb, Aorist, Active, Indicative, Third Person, Singular",
+      "strongs_number": "G4352",
+      "english_gloss": "to worship, to do obeisance",
+      "contextual_meaning": "the culminating act of reverence, here misplaced as Peter is not deity; sets up Peter's corrective response in v.26"
+    }
+  ],
+  "section_2_exegetical_synthesis": {
+    "linguistic_mechanics_and_names": [
+      {
+        "entry": "Peter (Πέτρος, Petros)",
+        "theological_significance": "From Greek petra meaning 'rock', the name Jesus gave Simon (Matt 16:18) signifying his foundational role in the church. Here Peter becomes the key that unlocks the door of faith to Gentiles (Acts 15:7), fulfilling his role as holder of the kingdom keys."
+      },
+      {
+        "entry": "Cornelius (Κορνήλιος, Kornēlios)",
+        "theological_significance": "Roman family name of the gens Cornelia, one of Rome's most distinguished patrician families. This centurion's name signals his high social status, yet he humbles himself before the Gospel messenger. His name appears 10 times in Acts 10, emphasizing his pivotal role."
+      },
+      {
+        "entry": "fell (πεσὼν, pesōn)",
+        "theological_significance": "From piptō, used throughout Scripture for both literal falling and prostration in worship (Rev 1:17, Matt 2:11). The aorist participle indicates a decisive, completed action—Cornelius didn't gradually kneel but fully prostrated himself."
+      },
+      {
+        "entry": "worshiped (προσεκύνησεν, prosekyēsen)",
+        "theological_significance": "Compound of pros (toward) + kyneō (to kiss), literally 'to kiss toward', indicating the highest form of reverence. In the LXX translates Hebrew shachah (bow down). Used for worship of God (John 4:24) and inappropriate worship of humans/angels (Rev 19:10, Acts 10:26). The theological tension: Cornelius offers divine honors to a mere man."
+      },
+      {
+        "entry": "met (συναντήσας, synantēsas)",
+        "theological_significance": "From syn (together) + antaō (to meet face to face), suggesting eager, intentional encounter. The same verb describes meeting the Lord at the Parousia (1 Thess 4:17). Cornelius's eagerness foreshadows Gentile responsiveness to the Gospel throughout Acts."
+      }
+    ],
+    "literary_devices": "The verse employs rapid-fire aorist participles (synantēsas, pesōn) building to the climactic main verb prosekyēsen, creating narrative momentum and emphasizing the immediacy of Cornelius's actions. Luke uses parataxis (simple coordination with 'and') characteristic of Semitic narrative style, lending solemnity to this historic moment. The threefold action (met-fell-worshiped) forms an ascending tricolon (rhetorical device using three parallel elements with increasing intensity) showing progression from greeting to full prostration. The positioning of 'Cornelius' as subject between two participles places him at the narrative center, highlighting his agency in this boundary-crossing moment.",
+    "aggregate_analogia_scriptura": "This moment fulfills Joel 2:28-32 (quoted Acts 2:17-21) that the Spirit would be poured out 'on all flesh', breaking the Jew-Gentile division that had defined redemptive history. Peter's vision of clean and unclean animals (Acts 10:9-16) prepared him for this very moment—what God has cleansed must not be called unclean. The parallel with the Ethiopian eunuch (Acts 8:26-40) shows God's systematic demolition of Old Covenant barriers (ethnic, ritual purity). Cornelius's worship echoes the Magi (Matt 2:11) who fell down and worshiped the infant Christ, both Gentiles seeking the Jewish Messiah. Peter's forthcoming rebuke 'I too am a man' (Acts 10:26) mirrors Paul and Barnabas at Lystra (Acts 14:15) and the angel in Revelation (Rev 19:10, 22:9)—consistent apostolic refusal of worship. The centurion's humility contrasts with Herod Agrippa's fatal acceptance of worship (Acts 12:21-23), demonstrating right versus wrong response to divine-human encounters. Ephesians 2:11-22 theologizes this historic moment: Christ has destroyed the dividing wall of hostility, making Jew and Gentile one new man. Romans 10:12 declares 'there is no distinction between Jew and Greek'—Cornelius is exhibit A. Galatians 3:28 confirms 'neither Jew nor Greek' in Christ. This verse is the hinge on which salvation history swings from particular (Israel) to universal (all nations), fulfilling the Abrahamic promise that 'in you all the families of the earth shall be blessed' (Gen 12:3, 22:18).",
+    "literal_primary_filter": [
+      "Peter physically entered the house of Cornelius, a Roman centurion, in Caesarea Maritima.",
+      "Cornelius initiated the encounter by coming out to meet Peter as he entered.",
+      "Cornelius performed three sequential actions: met Peter, fell at his feet, and worshiped him.",
+      "The worship act (proskynēsen) was religiously inappropriate for a human, as Peter's response in v.26 confirms.",
+      "This is the first recorded instance of an apostle entering a Gentile home, violating Jewish purity customs.",
+      "The text emphasizes the immediacy of the encounter using aorist tense, indicating completed, decisive actions.",
+      "Cornelius's military rank (centurion commanding 100 soldiers) makes his humility before Peter remarkable.",
+      "The cultural context assumes prostration was standard protocol for greeting persons of perceived divine or royal status.",
+      "Luke's detailed narration signals this as a pivotal moment in redemptive history, not incidental biography.",
+      "The verb 'worshiped' (prosekyneō) is the same word used for worship of God and Christ throughout the New Testament."
+    ],
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "Rahab the Gentile harlot who received the Israelite spies (Joshua 2:1-21) prefigures Cornelius the Gentile centurion receiving Peter. Ruth the Moabitess who declared 'your people shall be my people, your God my God' (Ruth 1:16) typifies Gentile inclusion. The Queen of Sheba's journey to hear Solomon's wisdom (1 Kings 10:1-13) foreshadows Gentiles seeking divine wisdom. Naaman the Syrian who bowed before Elisha (2 Kings 5:15) parallels Cornelius's reverence, both military men seeking Israel's God. Isaiah 49:6 prophesied the Servant would be 'a light for the Gentiles', fulfilled as Peter brings Gospel light to Cornelius's household. Isaiah 56:3-8 promised foreigners and eunuchs would be included in God's house, realized in Acts 8 (Ethiopian) and Acts 10 (Cornelius). Jonah's reluctant mission to Nineveh types Peter's hesitant journey to Caesarea—both prophets learning God's compassion extends beyond Israel.",
+      "antitype_fulfillment": "Jesus Christ has 'destroyed in his flesh the dividing wall of hostility' (Eph 2:14), making this moment possible. Christ commanded 'you will be my witnesses in Jerusalem, Judea, Samaria, and to the end of the earth' (Acts 1:8)—Cornelius represents 'the end of the earth', the Gentile world. Jesus's Great Commission 'make disciples of all nations' (Matt 28:19) finds concrete fulfillment here. Christ's declaration 'I have other sheep not of this fold' (John 10:16) is realized as Cornelius enters the one flock. The outpouring of the Holy Spirit on Gentiles (Acts 10:44-48) proves they are co-heirs with Jews (Rom 8:17, Eph 3:6). Peter preaching to Cornelius fulfills Jesus's prophecy that 'this gospel will be preached to all nations' (Matt 24:14). The New Covenant promise 'I will be their God and they will be my people' (Jer 31:33, Heb 8:10) now includes Gentiles without conversion to Judaism.",
+      "progression_notes": "Old Covenant: Gentiles could become proselytes through circumcision and law-keeping (Exod 12:48-49), remaining secondary citizens. Gospels: Jesus ministers primarily to 'the lost sheep of the house of Israel' (Matt 15:24) but drops hints of Gentile inclusion (Matt 8:10-12, John 10:16). Acts 1-9: Gospel spreads within Jewish and Samaritan circles; Gentile converts are proselytes or God-fearers already attached to Judaism. Acts 10: The breakthrough—Gentiles receive the Gospel and Spirit without becoming Jewish proselytes, the central controversy of early church (Acts 15, Galatians 2). Epistles: Theological explanation that Jew-Gentile unity in Christ was God's eternal mystery, now revealed (Eph 3:3-6, Rom 11:25-32). Revelation: Consummation—the redeemed include 'a great multitude from every nation, tribe, people, and language' (Rev 7:9), fulfilling the Abrahamic covenant globally."
+    },
+    "numerical_and_gematria_significance": "This is verse 25 of chapter 10 in Acts. The number 10 signifies completeness and divine order (ten commandments, ten plagues, tithes). Acts 10 occurs at the structural midpoint of Acts (28 chapters), marking the theological pivot from Jewish to Gentile mission. Cornelius gathered relatives and close friends (Acts 10:24), forming a household baptism, echoing Noah's family of 8 saved through water (1 Pet 3:20) and symbolizing a new beginning. Peter stayed 'some days' (Acts 10:48) likely completing a week, mirroring the creation week when God made man from all nations. The centurion commanded 100 men, a number symbolizing fullness and completion in Roman military structure, suggesting he brings his full authority and resources under Christ's lordship. Three separate visions (Cornelius's, Peter's, the messengers' confirmation) establish divine orchestration (Gen 41:32, 2 Cor 13:1). The narrative spans three days (Cornelius sends messengers, Peter travels, meeting occurs), echoing resurrection typology and signaling new life for Gentiles.",
+    "historical_context_and_chronology": {
+      "dates": "c. AD 41-42, approximately 8-9 years after Pentecost (AD 33) and before the Jerusalem Council (AD 49, Acts 15). Precise dating derives from: (1) Herod Agrippa I's reign mentioned shortly after in Acts 12 (AD 41-44), (2) the reference to 'four days ago' in Acts 10:30 providing internal chronology, (3) the famine prophecy of Agabus (Acts 11:28) occurring under Claudius (AD 41-54). Conservative scholarship places this during the early years of Claudius's reign (began AD 41). Peter had been traveling through Judea conducting ministry (Acts 9:32-43) for several years before this event, giving time for the Gospel to establish itself among Jews before expanding to Gentiles.",
+      "context": "The Roman military occupation of Judea created an Italian cohort (Acts 10:1) stationed in Caesarea Maritima, the Roman administrative capital. Centurions were the backbone of Roman legions, typically promoted from ranks after 15-20 years, commanding 80-100 men with significant authority. 'God-fearers' like Cornelius were Gentiles who attended synagogue, observed ethical monotheism (a commitment to the worship of one God coupled with moral living), gave alms, and prayed but did not undergo circumcision or full proselyte conversion. They occupied a liminal space (in-between status) between paganism and Judaism. Jewish purity laws strictly forbade entering Gentile homes due to potential ritual contamination (John 18:28, Acts 11:3). Peter's willingness to enter represents a massive paradigm shift, requiring divine triple vision to overcome deeply ingrained scruples (concerns about propriety). Caesarea was a cosmopolitan port city with mixed Jewish-Gentile population, built by Herod the Great with pagan temples, amphitheater (oval or circular building with tiers of seats around a central open area), and harbor, representing Greco-Roman culture at its peak. The social dynamics: a Roman military officer in occupied territory prostrating before a Jewish fisherman-turned-apostle inverts worldly power structures, demonstrating the Gospel's counter-cultural force. The dating of c. AD 41-42 is estimated based on internal Acts chronology and surrounding events, though precise dating of this event is uncertain."
+    },
+    "socio_political_matrix": "Roman occupation forces maintained peace through military presence. Centurions like Cornelius were middle-management, enforcing imperial rule while maintaining local order. His generous alms to Jews despite representing their occupiers suggests intentional bridge-building and genuine spiritual hunger. The Italian Regiment (a cohort of Roman citizens from Italy, called 'Cohors Italica' in Acts 10:1) was a prestigious unit distinct from auxiliary troops composed of provincials, indicating Cornelius's high status. While an inscription found in 1982 confirms the existence of an Italian Cohort in the region, the specific unit designation remains uncertain. Jews lived under complex political pressures: collaboration with Rome (Sadducees, Herodians) vs. resistance (Zealots), with most maintaining uneasy coexistence. Peter's entry into a Roman centurion's home risked severe criticism from the circumcision party (Acts 11:2-3, Gal 2:12), threatening church unity and his own standing. The household structure (domus) included extended family, servants, slaves, and dependents—Cornelius's conversion implies potential mass conversion of his household (realized Acts 10:24, 48), demonstrating the corporate nature of ancient conversion versus modern individualism. The political subtext: if a Roman centurion bows before a Jewish apostle, it symbolically subordinates imperial power to Christ's kingdom, a dangerous message that will lead to Christian persecution (Acts 17:7, 'acting against Caesar's decrees'). The economic factor: Roman military salaries enabled Cornelius's generosity, yet he recognizes spiritual poverty requiring the Gospel's wealth—a reversal Jesus predicted (Matt 19:30, 'the first shall be last').",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Caesarea Maritima (modern Qesarya, Israel)",
+      "coordinates": {
+        "lat": 32.5000,
+        "long": 34.8916
+      },
+      "altitude_m": 10,
+      "terrain_climate_characteristics": "Coastal Mediterranean location with mild, wet winters and hot, dry summers. Built on flat sandy coastline with an impressive man-made harbor (Sebastos) constructed by Herod the Great (37-4 BC), using revolutionary hydraulic concrete technology. The city featured Roman architecture including a hippodrome (arena for chariot racing), amphitheater, aqueduct system bringing fresh water from Mount Carmel springs (13 km away), pagan temples dedicated to Roma and Augustus, and administrative complexes. The coastal location facilitated trade and military supply routes, making it the ideal Roman administrative capital. The flat terrain allowed for organized Roman urban planning with grid streets and public spaces. The proximity to the sea moderated temperature but increased humidity. Strategic location on the Via Maris (Way of the Sea), the major trade route connecting Egypt to Syria and beyond, ensured economic prosperity and cultural exchange. Archaeological excavations (ongoing since 1950s) have uncovered extensive ruins confirming Luke's historical accuracy."
+    },
+    "archaeological_confirmation": "Caesarea Maritima has been extensively excavated, confirming Luke's description: (1) Italian Cohort inscription discovered in 1982, validating Acts 10:1 reference to a cohort of Italian origin (though the specific unit designation remains debated among scholars). (2) Pilate Stone found in 1961 bearing inscription 'Pontius Pilatus, Prefect of Judea', confirming Roman governance. (3) Herodian harbor and city infrastructure excavated, matching historical descriptions. (4) Theater and hippodrome ruins demonstrate cultural context of Roman occupation. (5) Crusader-era fortifications and later settlements show continuous occupation. (6) Aqueduct remains visible today, demonstrating engineering sophistication. (7) Coins from the period show economic prosperity. The historical reliability of Acts is reinforced by Luke's precise geographical and administrative details. No archaeological evidence contradicts the Acts narrative; rather, each discovery confirms Luke's accuracy as a careful historian. The Italian Cohort inscription proves Luke correctly identified military units present in first-century Caesarea."
+  },
+  "geographic_calculations": [
+    {
+      "from_location": "Joppa (modern Jaffa)",
+      "to_location": "Caesarea Maritima",
+      "straight_line_distance_km": 56,
+      "ancient_route_distance_km": 68,
+      "elevation_change_m": -25,
+      "estimated_travel_time_days": {
+        "on_foot": 2.5,
+        "by_donkey": 2.0,
+        "by_horse": 1.5
+      },
+      "uncertainty_notes": "The ancient route likely followed the coastal Via Maris northward, potentially deviating inland slightly to avoid difficult terrain. Travel time assumes average walking speed of 25-30 km/day and accounts for resting periods. Acts 10:23-24 indicates Peter left Joppa the day after receiving Cornelius's messengers, stayed overnight en route (implied by 'next day' in v.24), and arrived in Caesarea on day two. This matches the estimated 2-day journey. Roman roads in this region were well-maintained by AD 40, making travel relatively efficient. The descent from Joppa (35m elevation) to sea-level Caesarea explains the slight negative elevation change."
+    }
+  ],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "christology": [
+        "Christ's redemptive work extends beyond Israel"
+      ],
+      "holy_spirit": [
+        "Spirit's role in breaking down barriers",
+        "divine initiative in salvation"
+      ],
+      "soteriology": [
+        "salvation by grace through faith",
+        "Gentile inclusion without works of law"
+      ],
+      "gospel": [
+        "universal scope of good news",
+        "removal of ethnic barriers"
+      ],
+      "covenant_theology": [
+        "transition from Old to New Covenant",
+        "fulfillment of Abrahamic blessing to all nations"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "faith": [
+        "Cornelius's faith demonstrated by alms and prayers",
+        "receptivity to divine revelation"
+      ],
+      "worship": [
+        "appropriate vs inappropriate worship",
+        "prostration at feet",
+        "proskynēsen - worship language"
+      ],
+      "obedience": [
+        "Cornelius obeyed angelic vision",
+        "Peter obeyed despite cultural barriers"
+      ],
+      "witness_evangelism": [
+        "apostolic witness to Gentiles",
+        "crossing cultural boundaries for Gospel"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "humility": [
+        "Peter's forthcoming refusal of worship (v.26)",
+        "Cornelius's reverence despite military rank",
+        "reversal of worldly power dynamics"
+      ],
+      "church_community": [
+        "breaking down Jew-Gentile divisions",
+        "household baptism model",
+        "expansion of covenant community"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "jewish_customs": [
+        "purity laws regarding Gentile homes",
+        "Peter's paradigm shift",
+        "Jewish-Gentile separation"
+      ],
+      "roman_occupation": [
+        "centurion of Italian Regiment",
+        "military hierarchy",
+        "Roman household structure",
+        "occupation forces in Judea"
+      ],
+      "gentiles": [
+        "God-fearer status",
+        "Cornelius as first full Gentile convert",
+        "alms-giving to Jewish community",
+        "liminal space between paganism and Judaism"
+      ],
+      "clean_unclean_laws": [
+        "boundary crossing",
+        "ritual purity concerns",
+        "divine cleansing of what was unclean"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "prophecy_fulfillment": [
+        "Joel 2:28-32 - Spirit on all flesh",
+        "Isaiah 49:6 - light to Gentiles",
+        "Genesis 12:3 - blessing to all families",
+        "Acts 1:8 - witnesses to ends of earth"
+      ],
+      "typology": [
+        "Rahab and Gentile inclusion",
+        "Ruth the Moabitess type",
+        "Naaman bowing before Elisha parallel",
+        "Jonah/Nineveh foreshadowing"
+      ],
+      "narrative_history": [
+        "pivotal moment in Acts",
+        "structural center of redemptive history shift",
+        "careful Lukan historiography"
+      ],
+      "rhetorical_device": [
+        "aorist participles building narrative tension",
+        "tricolon of actions (met-fell-worshiped)",
+        "parataxis for narrative solemnity"
+      ]
+    }
+  },
+  "section_3_life_application": "Examine your heart for ethnic, social, or cultural barriers that you have erected against the Gospel's reach. Peter had to overcome deeply ingrained religious scruples to enter Cornelius's home—what prejudices must you crucify to obey God's call? When God opens doors to unexpected people groups or social classes, will you cross the threshold in obedience or retreat to comfortable homogeneity? Beware of accepting worship or honor that belongs to God alone; like Peter, deflect glory upward. Cornelius's humility despite military rank challenges us: Are you as eager to receive God's Word as this centurion, regardless of the messenger's social status? The Gospel obliterates worldly hierarchies—in Christ, there is no Jew or Greek, slave or free, Roman or Judean. Seek opportunities to extend fellowship across cultural and ethnic lines, demonstrating the cosmic scope of Christ's reconciling work. If God cleansed the Gentiles, He can cleanse anyone—never write off a person as beyond Gospel hope. Reflect the urgency of Cornelius who gathered his household to hear Peter's message; do you create spaces for your family and community to encounter Scripture? Let this verse remind you that salvation history pivots not on human initiative but divine orchestration—God prepared both Peter and Cornelius through separate visions, then brought them together at the appointed moment. Trust God's sovereign timing and yield to His boundary-breaking agenda."
+}

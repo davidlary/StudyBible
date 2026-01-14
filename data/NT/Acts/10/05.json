@@ -1,52 +1,294 @@
 {
   "verse_id": "ACTS-10-5",
   "section_1_sacred_text": {
-    "verse_reference": "Acts 10:5",
     "original_script": "καὶ νῦν πέμψον ⸂ἄνδρας εἰς Ἰόππην⸃ καὶ μετάπεμψαι Σίμωνά ⸂τινα ὃς ἐπικαλεῖται Πέτρος⸃·",
-    "faithful_direct_translation": "And now, send men to Joppa and summon a certain Simon who is also called Peter.",
-    "standalone_english_translation": "Now send men to Joppa and call for Simon, whose surname is Peter.",
-    "amplified_narrative_translation": "Therefore, at this very moment, you are to dispatch men immediately to the port city of Joppa, and you are to specifically summon to your presence a man named Simon, the one who is also known by the surname Peter."
+    "faithful_direct_translation": "And now send men to Joppa and summon for yourself a certain Simon who is called Peter.",
+    "standalone_english_translation": "Now send men to Joppa and call for Simon, who is also known as Peter.",
+    "amplified_narrative_translation": "Therefore, at this very moment, dispatch some of your men to the port city of Joppa, and send for a specific man, Simon by name—the one who bears the surname Peter."
   },
-  "section_2_exegetical_synthesis": [
-    "This verse is a direct, unambiguous command from an angelic messenger to a Roman centurion named Cornelius, delivered within a vision.",
-    "The text is historical narrative (Sensus Literalis), recording a pivotal, literal event, not an allegory or parable.",
-    "The action commanded—sending for Peter—serves as the catalyst for the formal, apostolic opening of the gospel to the Gentile world.",
-    "This moment is the historical antitype, or fulfillment, of God's foundational promise to Abraham that 'in you all the families of the earth shall be blessed' (Genesis 12:3).",
-    "It is the apostolic realization of the prophetic theme that Israel's Messiah would be a 'light for the nations' (Isaiah 42:6, 49:6), bringing God's salvation to the ends of the earth.",
-    "The command to Cornelius actualizes the Great Commission of Jesus to 'make disciples of all nations' (Matthew 28:19), moving the early church past its initial Judeo-centric focus.",
-    "The narrative stands as a stark reversal of the story of the prophet Jonah, who fled from God's command to preach to Gentiles by boarding a ship at the very same port, Joppa (Jonah 1:3).",
-    "Peter, in Joppa, is being summoned to embrace the Gentiles, correcting Jonah's rebellious flight and fulfilling Israel's true calling.",
-    "The angel issues two urgent commands: `πέμψον` (pempson, 'send') and `μετάπεμψαι` (metapempsai, 'send for'/'summon').",
-    "Both are aorist active imperatives, grammatical forms indicating decisive, specific actions to be carried out without delay.",
-    "The command is given to Cornelius, a centurion of the 'Italian Cohort,' a unit likely composed of Roman citizens from Italy, marking him as an unambiguous, high-status Gentile.",
-    "His description as one who 'feared God' (Acts 10:2) identifies him as a Gentile worshipper of Yahweh, sympathetic to Judaism but not a full proselyte.",
-    "The destination is `Ἰόππην` (Ioppēn), the port city of Joppa, from the Hebrew `יָפוֹ` (Yāfō, 'beautiful').",
-    "The man to be summoned is `Σίμωνά` (Simōna), from the Hebrew `שִׁמְעוֹן` (Šimʿôn, 'he has heard').",
-    "The theological significance is that God has 'heard' the prayers of the Gentile Cornelius (Acts 10:4, 31) and is now sending the apostle named 'Hearing' to deliver His message.",
-    "He is further identified as the one `ὃς ἐπικαλεῖται Πέτρος` (hos epikaleitai Petros, 'who is surnamed Peter').",
-    "`Πέτρος` (Petros) means 'a rock' or 'stone,' the apostolic name given to him by Jesus (John 1:42).",
-    "The apostle who was called the 'Rock' (Matthew 16:18) is now being used to lay the foundational stone of the Gentile mission, expanding the church beyond its Jewish origins.",
-    "The use of both names, Simon Peter, often signifies the intersection of the man's natural identity and his divine, apostolic calling.",
-    "The historical setting is approximately A.D. 40-41, during the reign of Roman Emperor Caligula or shortly after Claudius ascended.",
-    "The socio-political context is one of extreme tension and separation between Jews and Gentiles.",
-    "Pious Jews would not enter a Gentile home or eat with them, viewing them as ritually unclean (Acts 10:28), a barrier rooted in interpretations of the Mosaic Law designed to prevent pagan syncretism (Deuteronomy 7:3-4).",
-    "Peter's subsequent journey into the home of a Roman centurion would be a radical, taboo-shattering act, requiring a direct vision from God to authorize (Acts 10:9-16).",
-    "Cornelius was stationed in Caesarea Maritima (Lat/Long: 32.50° N, 34.90° E; Altitude: Sea level), the Roman administrative capital of Judea.",
-    "Peter was staying in Joppa, modern Jaffa (Lat/Long: 32.05° N, 34.75° E; Altitude: Sea level to 40m), a major port city.",
-    "The distance between Caesarea and Joppa is approximately 32 miles (51 km) along the Via Maris, a journey of over one full day for Cornelius's men (Acts 10:7-9, 23-24).",
-    "The terrain is the flat, easily-traversable coastal plain of Sharon.",
-    "Archaeological excavations at Caesarea have confirmed its status as the Roman capital, unearthing the theater, harbor, aqueduct, and an inscription mentioning Pontius Pilate, who preceded the governor of this period.",
-    "The traditional site of the 'House of Simon the Tanner' in Jaffa is located by the sea, consistent with the logistical needs of tanning, a trade considered 'unclean' by many Jews which required access to water.",
-    "This divinely-orchestrated event breaks down the 'dividing wall of hostility' (Ephesians 2:14), demonstrating that God shows no partiality (Acts 10:34) and that salvation is available to all who believe, Jew and Gentile alike (Romans 1:16).",
-    "It is the historic moment that unlocks the 'mystery' of the Gospel: that the Gentiles are fellow heirs and members of the same body through Christ (Ephesians 3:6).",
-    "Peter himself later cites this event as the definitive proof that God had chosen him to open the door of faith to the Gentiles (Acts 15:7)."
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and, also, even",
+      "contextual_meaning": "Functions as a transitional conjunction, 'And now' or 'So now', connecting the angel's appearance and message with the required action."
+    },
+    {
+      "word_number": 2,
+      "greek_word": "νῦν",
+      "transliteration": "nyn",
+      "lemma": "νῦν",
+      "parsing_code": "ADV",
+      "parsing_expanded": "Adverb",
+      "strongs_number": "G3568",
+      "english_gloss": "now",
+      "contextual_meaning": "An adverb of time emphasizing the immediacy of the command. The action is to be taken without delay."
+    },
+    {
+      "word_number": 3,
+      "greek_word": "πέμψον",
+      "transliteration": "pempson",
+      "lemma": "πέμπω",
+      "parsing_code": "V-AMA-2S",
+      "parsing_expanded": "Verb, Aorist, Active, Imperative, 2nd person, Singular",
+      "strongs_number": "G3992",
+      "english_gloss": "send",
+      "contextual_meaning": "A command for a specific, decisive action. Cornelius is ordered to dispatch his men."
+    },
+    {
+      "word_number": 4,
+      "greek_word": "ἄνδρας",
+      "transliteration": "andras",
+      "lemma": "ἀνήρ",
+      "parsing_code": "N-AMP",
+      "parsing_expanded": "Noun, Accusative, Masculine, Plural",
+      "strongs_number": "G435",
+      "english_gloss": "men",
+      "contextual_meaning": "Refers to male individuals, the messengers whom Cornelius is to send. The plural is indefinite; he sends three (v. 7)."
+    },
+    {
+      "word_number": 5,
+      "greek_word": "εἰς",
+      "transliteration": "eis",
+      "lemma": "εἰς",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G1519",
+      "english_gloss": "to, into",
+      "contextual_meaning": "Indicates the destination of the journey: 'to Joppa'."
+    },
+    {
+      "word_number": 6,
+      "greek_word": "Ἰόππην",
+      "transliteration": "Ioppēn",
+      "lemma": "Ἰόππη",
+      "parsing_code": "N-AFS",
+      "parsing_expanded": "Noun, Accusative, Feminine, Singular",
+      "strongs_number": "G2445",
+      "english_gloss": "Joppa",
+      "contextual_meaning": "The specific port city where Peter was staying."
+    },
+    {
+      "word_number": 7,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and",
+      "contextual_meaning": "Connects the first command ('send') with the second command ('summon')."
+    },
+    {
+      "word_number": 8,
+      "greek_word": "μετάπεμψαι",
+      "transliteration": "metapempsai",
+      "lemma": "μεταπέμπω",
+      "parsing_code": "V-AMM-2S",
+      "parsing_expanded": "Verb, Aorist, Middle, Imperative, 2nd person, Singular",
+      "strongs_number": "G3343",
+      "english_gloss": "summon, send for",
+      "contextual_meaning": "The middle voice implies 'summon for yourself,' indicating Cornelius's personal interest and benefit in Peter's arrival. It's a command to have someone brought to him."
+    },
+    {
+      "word_number": 9,
+      "greek_word": "Σίμωνά",
+      "transliteration": "Simōna",
+      "lemma": "Σίμων",
+      "parsing_code": "N-AMS",
+      "parsing_expanded": "Noun, Accusative, Masculine, Singular",
+      "strongs_number": "G4613",
+      "english_gloss": "Simon",
+      "contextual_meaning": "The given Hebrew name of the apostle who is to be summoned."
+    },
+    {
+      "word_number": 10,
+      "greek_word": "τινα",
+      "transliteration": "tina",
+      "lemma": "τις",
+      "parsing_code": "PRO-AMS",
+      "parsing_expanded": "Pronoun, Indefinite, Accusative, Masculine, Singular",
+      "strongs_number": "G5100",
+      "english_gloss": "a certain, someone",
+      "contextual_meaning": "Used here to introduce a person who may be unknown to the immediate audience but is being specifically identified, 'a certain Simon'."
+    },
+    {
+      "word_number": 11,
+      "greek_word": "ὃς",
+      "transliteration": "hos",
+      "lemma": "ὅς",
+      "parsing_code": "PRO-NMS",
+      "parsing_expanded": "Pronoun, Relative, Nominative, Masculine, Singular",
+      "strongs_number": "G3739",
+      "english_gloss": "who, which",
+      "contextual_meaning": "Introduces a relative clause that provides further identification for Simon."
+    },
+    {
+      "word_number": 12,
+      "greek_word": "ἐπικαλεῖται",
+      "transliteration": "epikaleitai",
+      "lemma": "ἐπικαλέω",
+      "parsing_code": "V-PPI-3S",
+      "parsing_expanded": "Verb, Present, Passive, Indicative, 3rd person, Singular",
+      "strongs_number": "G1941",
+      "english_gloss": "is called, is named",
+      "contextual_meaning": "Indicates a surname or an additional name by which a person is known. The present tense shows this is his ongoing, recognized name."
+    },
+    {
+      "word_number": 13,
+      "greek_word": "Πέτρος",
+      "transliteration": "Petros",
+      "lemma": "Πέτρος",
+      "parsing_code": "N-NMS",
+      "parsing_expanded": "Noun, Nominative, Masculine, Singular",
+      "strongs_number": "G4074",
+      "english_gloss": "Peter",
+      "contextual_meaning": "The Greek name ('Rock') given to Simon by Jesus, used here as the definitive identifier."
+    }
   ],
-  "section_3_life_application": [
-    "Recognize that God's specific instructions often require us to step beyond our personal comfort zones and cross social, cultural, or racial barriers we have erected.",
-    "Respond to God's leading with immediate obedience, just as Cornelius did, even when you don't yet understand the full purpose or outcome.",
-    "Actively look for the 'divine appointments' God is orchestrating, where He brings you into contact with people from different backgrounds for the sake of the Gospel.",
-    "Confront and dismantle any personal prejudice or bias, asking God to give you His heart for all people, seeing them not by their external status but as individuals for whom Christ died.",
-    "Understand that your personal obedience to a specific, seemingly small command from God can be a critical link in the chain of His grand, redemptive plan for others.",
-    "Be a 'Peter' whom God can send, and be a 'Cornelius' who is willing to listen and seek—be prepared to both carry the message and to receive it in unexpected ways from unexpected people."
-  ]
+  "section_2_exegetical_synthesis": {
+    "linguistic_mechanics_and_names": [
+      {
+        "entry": "now (νῦν, nyn)",
+        "theological_significance": "This adverb emphasizes the immediacy and urgency of the divine command. Cornelius's prayers have been heard, and God's response requires immediate action, highlighting that obedience should not be delayed when God gives clear direction."
+      },
+      {
+        "entry": "summon (μετάπεμψαι, metapempsai)",
+        "theological_significance": "The use of the middle voice ('summon for yourself') suggests a personal stake for Cornelius. This is not a mere errand but an act that will bring direct blessing and revelation to him and his household. It underscores that God's call is personal and for our benefit."
+      },
+      {
+        "entry": "Joppa (Ἰόππην, Ioppēn)",
+        "theological_significance": "From the Hebrew 'Yafo' (יָפוֹ), meaning 'beautiful.' The etymology (the study of word origins) is less significant here than its role in redemptive history. It was from Joppa that Jonah fled to avoid preaching to Gentiles (Jonah 1:3). Now, from the very same city, God summons a messenger to bring the gospel to Gentiles, signifying a redemptive reversal."
+      },
+      {
+        "entry": "Simon (Σίμωνά, Simōna)",
+        "theological_significance": "The Greek form of the Hebrew name 'Simeon' (שִׁמְעוֹν), meaning 'he has heard.' This is profoundly significant. God tells Cornelius, 'your prayers... have ascended as a memorial before God' (Acts 10:4), and in response, He sends a man whose very name means 'heard' to deliver the answer."
+      },
+      {
+        "entry": "Peter (Πέτρος, Petros)",
+        "theological_significance": "Meaning 'Rock' in Greek, this is the apostolic name Jesus gave Simon (John 1:42; Matt 16:18). His summons signifies the official, apostolic opening of the door of faith to the Gentiles. The 'Rock' is being used by God to lay a new part of the foundation of the church, which includes non-Jews."
+      }
+    ],
+    "literary_devices": "The primary literary device is **Specific Identification through Apposition**. The angel does not just say 'summon Simon.' The identity is clarified in layers: 'a certain Simon' (distinguishing him from others), 'who is called Peter' (his apostolic title), and in the next verse, his precise lodging is given. This literary technique removes all ambiguity, underscoring the divine precision of the command and leaving no room for human error in this pivotal moment of church history.",
+    "aggregate_analogia_scriptura": "This verse is a cornerstone of the theme that God's salvation is for all people. It is the direct outworking of the Great Commission to 'make disciples of all nations' (Matt 28:19) and to be witnesses 'to the end of the earth' (Acts 1:8). The event reverses the narrative of Jonah, who fled from Joppa to escape preaching to Gentiles (Jonah 1:3); here, God's new messenger is sent from Joppa to embrace them. This divine summons echoes God's sovereign calling throughout Scripture, such as calling Abraham from Ur or sending Ananias to Saul (Acts 9:10-11). It demonstrates that God takes the initiative to bridge divides—in this case, the seemingly insurmountable one between Jew and Gentile—to fulfill His redemptive plan promised in the Old Testament (Isaiah 49:6).",
+    "literal_primary_filter": [
+      "An angel gave a direct and unambiguous command to Cornelius.",
+      "The command involved a specific action: sending men.",
+      "The destination was a specific place: the city of Joppa.",
+      "The objective was to summon a specific person: Simon, also known as Peter."
+    ],
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "Jonah's flight from Joppa to avoid his mission to the Gentile city of Nineveh serves as a negative type. He represents the Old Covenant tendency toward national exclusivity and reluctance to share God's message of repentance with outsiders.",
+      "antitype_fulfillment": "Peter, the apostle of the New Covenant, is the antitype. Summoned from the very same port city of Joppa, his obedient journey to the Gentile Cornelius fulfills God's global salvific purpose. He becomes the willing instrument to bring the good news, demonstrating the grace that transcends ethnic boundaries, a central mystery revealed in Christ (Eph 3:6).",
+      "progression_notes": "This event marks a monumental progression in redemptive history. While there had been individual Gentile conversions (e.g., the Ethiopian Eunuch in Acts 8), this is the first divinely-initiated, apostolic-approved mission to a Gentile household. It sets the stage for the Jerusalem Council (Acts 15) and Paul's subsequent ministry, formally and publicly tearing down the 'dividing wall of hostility' (Eph 2:14)."
+    },
+    "numerical_and_gematria_significance": "There is no direct numerical or gematria significance within this verse. However, the surrounding narrative in Acts 10 is structured around the number three: Cornelius's vision occurs at the third hour of prayer (3 PM), Peter's vision of the sheet is repeated three times, and Cornelius sends three men to Peter. In biblical literature, the number three often signifies divine emphasis, confirmation, and completeness, underscoring the divine authority and certainty of this new revelation.",
+    "historical_context_and_chronology": {
+      "dates": "Approximately 40-41 AD. This places the event during the reign of the Roman Emperor Caligula (37-41 AD) or at the very beginning of Claudius's reign (41-54 AD). It occurs before the famine mentioned in Acts 11:28 (c. 45-46 AD) and the death of Herod Agrippa I in 44 AD.",
+      "context": "At this point, the early church was still grappling with its Jewish identity. The Gospel had spread to Samaritans and proselytes but a direct, unprompted mission to a Gentile 'God-fearer'—one who revered the God of Israel but was not a full convert to Judaism—was a radical and unprecedented step. This event was the catalyst for the church's self-understanding as a multi-ethnic body."
+    },
+    "socio_political_matrix": "The interaction is fraught with social tension. Cornelius was a centurion (a Roman army officer commanding around 100 soldiers) in the prestigious Italian Cohort, stationed in Caesarea Maritima, the Roman administrative capital of Judea. He represented the occupying Roman power. Peter was a Galilean fisherman, a Jew from a subjugated people. For a Roman officer to summon a Jew into his home, and for a devout Jew to enter, was a violation of powerful social and religious taboos concerning ritual purity (Acts 10:28). This divine command directly confronts and overrides the socio-political barriers of the day.",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Joppa is now the ancient city of Jaffa, which is part of the modern municipality of Tel Aviv-Yafo, Israel.",
+      "coordinates": {
+        "lat": 32.0538,
+        "long": 34.7523
+      },
+      "altitude_m": 20,
+      "terrain_climate_characteristics": "Joppa is an ancient natural harbor on the Mediterranean coast. The terrain between Caesarea and Joppa is the flat, fertile coastal Plain of Sharon. The journey would have been straightforward, likely following the major Roman coastal road, the Via Maris. The climate is Mediterranean, with hot, dry summers and mild, wet winters."
+    },
+    "archaeological_confirmation": "Excavations at Caesarea Maritima have unearthed the extensive Roman city, including its harbor, theater, hippodrome, and aqueducts, confirming its status as the provincial capital. A famous inscription found there names Pontius Pilate, prefect of Judea, solidifying its historicity as the seat of Roman governance. In Jaffa (ancient Joppa), archaeological work has confirmed its continuous occupation as a port city since the Bronze Age. While the specific house of 'Simon the Tanner' has not been found, the existence of tanneries (which required proximity to water and were often located at the edge of town due to the odor) in a coastal city like Joppa is historically and archaeologically plausible."
+  },
+  "geographic_calculations": [
+    {
+      "from_location": "Caesarea Maritima",
+      "to_location": "Joppa (Jaffa)",
+      "straight_line_distance_km": 50,
+      "ancient_route_distance_km": 55,
+      "elevation_change_m": -10,
+      "estimated_travel_time_days": {
+        "on_foot": 2.0,
+        "by_donkey": 1.5,
+        "by_horse": 1.0
+      },
+      "uncertainty_notes": "The ancient route distance is an estimate based on the path of the Roman coastal road (Via Maris). The travel time aligns with the biblical narrative, where Cornelius's men travel for over a day, arriving around noon on the day following their departure (Acts 10:7-9)."
+    }
+  ],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "soteriology": [
+        "salvation for Gentiles",
+        "grace"
+      ],
+      "gospel": [
+        "universal proclamation"
+      ],
+      "holy_spirit": [
+        "divine guidance",
+        "revelation"
+      ],
+      "angelology_demonology": [
+        "angelic messenger"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "obedience": [
+        "immediate response to God's command"
+      ],
+      "prayer": [
+        "divine answer to prayer"
+      ],
+      "witness_evangelism": [
+        "cross-cultural mission",
+        "Gentile mission"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "church_community": [
+        "breaking down ethnic barriers"
+      ],
+      "compassion_mercy": [
+        "God's mercy extended to all nations"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "gentiles": [
+        "Cornelius",
+        "God-fearer"
+      ],
+      "roman_occupation": [
+        "centurion",
+        "Italian Cohort",
+        "Caesarea Maritima"
+      ],
+      "jewish_customs": [
+        "Jew-Gentile separation",
+        "ritual purity"
+      ],
+      "travel_trade_routes": [
+        "Via Maris"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "narrative_history": [
+        "pivotal event in Acts"
+      ],
+      "typology": [
+        "Peter as antitype to Jonah"
+      ],
+      "prophecy_fulfillment": [
+        "Acts 1:8 - witness to the end of the earth",
+        "Isaiah 49:6 - light to the Gentiles"
+      ],
+      "symbolism": [
+        "Joppa's connection to Jonah"
+      ]
+    }
+  },
+  "section_3_life_application": "This verse teaches that God responds to sincere seeking with specific, actionable guidance. Like Cornelius, we are called to immediate and precise obedience, even when the instruction pushes us across cultural, social, or personal comfort zones. The command was not just a suggestion; it was the critical next step in God's plan. Our application is twofold: first, to cultivate a heart of prayer and devotion that God will honor with direction. Second, when God provides that direction through His Word and Spirit, we must act on it decisively and without delay, trusting that He is orchestrating encounters and events far beyond our own understanding to bring His salvation to others."
 }

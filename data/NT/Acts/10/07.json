@@ -1,29 +1,322 @@
 {
   "verse_id": "ACTS-10-7",
   "section_1_sacred_text": {
-    "verse_reference": "Acts 10:7",
     "original_script": "ὡς δὲ ἀπῆλθεν ὁ ἄγγελος ὁ λαλῶν αὐτῷ, φωνήσας δύο τῶν οἰκετῶν καὶ στρατιώτην εὐσεβῆ τῶν προσκαρτερούντων αὐτῷ",
-    "faithful_direct_translation": "And when the angel who was speaking to him departed, having called two of the household servants and a devout soldier from those who regularly attended him...",
-    "standalone_english_translation": "When the angel who spoke to him had departed, he called two of his household servants and a devout soldier from among his personal attendants.",
-    "amplified_narrative_translation": "The very moment the angelic messenger who had been speaking directly to him had gone, Cornelius acted without delay, summoning two of his trusted servants from within his own household and a genuinely pious soldier, one of those who was steadfastly and loyally assigned to his immediate personal service."
+    "faithful_direct_translation": "And when the angel who was speaking to him departed, having called two of the household servants and a devout soldier from those constantly attending him,",
+    "standalone_english_translation": "When the angel who spoke to him had departed, he called two of his household servants and a devout soldier from among those who attended him.",
+    "amplified_narrative_translation": "The moment the celestial messenger who had been speaking directly to him departed, Cornelius, acting with immediate obedience, summoned two of his trusted domestic servants and, notably, a pious soldier from his personal retinue—one of those who were in constant, loyal attendance upon him."
   },
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "ὡς",
+      "transliteration": "hōs",
+      "lemma": "ὡς",
+      "parsing_code": "ADV",
+      "parsing_expanded": "Adverb",
+      "strongs_number": "G5613",
+      "english_gloss": "as, when",
+      "contextual_meaning": "Functions as a temporal conjunction, marking the point in time immediately following the angel's departure. It emphasizes the immediacy of Cornelius's response."
+    },
+    {
+      "word_number": 2,
+      "greek_word": "δὲ",
+      "transliteration": "de",
+      "lemma": "δέ",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G1161",
+      "english_gloss": "but, and, now",
+      "contextual_meaning": "A connective particle that indicates a transition in the narrative, moving from the vision itself to Cornelius's subsequent actions."
+    },
+    {
+      "word_number": 3,
+      "greek_word": "ἀπῆλθεν",
+      "transliteration": "apēlthen",
+      "lemma": "ἀπέρχομαι",
+      "parsing_code": "V-AAI-3S",
+      "parsing_expanded": "Verb, Aorist, Active, Indicative, 3rd Person, Singular",
+      "strongs_number": "G565",
+      "english_gloss": "he departed",
+      "contextual_meaning": "A simple past tense verb indicating the completed action of the angel's departure, which serves as the catalyst for the next event."
+    },
+    {
+      "word_number": 4,
+      "greek_word": "ὁ",
+      "transliteration": "ho",
+      "lemma": "ὁ",
+      "parsing_code": "T-NSM",
+      "parsing_expanded": "Article, Nominative, Singular, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "The definite article specifying 'the' angel, the one just mentioned in the preceding verses."
+    },
+    {
+      "word_number": 5,
+      "greek_word": "ἄγγελος",
+      "transliteration": "angelos",
+      "lemma": "ἄγγελος",
+      "parsing_code": "N-NSM",
+      "parsing_expanded": "Noun, Nominative, Singular, Masculine",
+      "strongs_number": "G32",
+      "english_gloss": "angel, messenger",
+      "contextual_meaning": "Refers to the divine messenger sent by God, confirming the supernatural origin of Cornelius's instructions."
+    },
+    {
+      "word_number": 6,
+      "greek_word": "ὁ",
+      "transliteration": "ho",
+      "lemma": "ὁ",
+      "parsing_code": "T-NSM",
+      "parsing_expanded": "Article, Nominative, Singular, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "the (one)",
+      "contextual_meaning": "Functions with the following participle to form a substantive phrase, 'the one speaking'."
+    },
+    {
+      "word_number": 7,
+      "greek_word": "λαλῶν",
+      "transliteration": "lalōn",
+      "lemma": "λαλέω",
+      "parsing_code": "V-PAP-NSM",
+      "parsing_expanded": "Verb, Present, Active, Participle, Nominative, Singular, Masculine",
+      "strongs_number": "G2980",
+      "english_gloss": "speaking",
+      "contextual_meaning": "Describes the angel's primary action relative to Cornelius. The present participle indicates continuous or ongoing action during the vision."
+    },
+    {
+      "word_number": 8,
+      "greek_word": "αὐτῷ,",
+      "transliteration": "autō",
+      "lemma": "αὐτός",
+      "parsing_code": "P-DSM",
+      "parsing_expanded": "Pronoun, Dative, Singular, Masculine",
+      "strongs_number": "G846",
+      "english_gloss": "to him",
+      "contextual_meaning": "Indicates the recipient of the angel's speech, which is Cornelius."
+    },
+    {
+      "word_number": 9,
+      "greek_word": "φωνήσας",
+      "transliteration": "phōnēsas",
+      "lemma": "φωνέω",
+      "parsing_code": "V-AAP-NSM",
+      "parsing_expanded": "Verb, Aorist, Active, Participle, Nominative, Singular, Masculine",
+      "strongs_number": "G5455",
+      "english_gloss": "having called",
+      "contextual_meaning": "An aorist participle indicating an action that precedes the main verb (which is implied in the next verse, 'he sent'). Cornelius 'called' his men before he could send them."
+    },
+    {
+      "word_number": 10,
+      "greek_word": "δύο",
+      "transliteration": "dyo",
+      "lemma": "δύο",
+      "parsing_code": "NU-A",
+      "parsing_expanded": "Numeral, Accusative",
+      "strongs_number": "G1417",
+      "english_gloss": "two",
+      "contextual_meaning": "Specifies the number of household servants chosen for the mission."
+    },
+    {
+      "word_number": 11,
+      "greek_word": "τῶν",
+      "transliteration": "tōn",
+      "lemma": "ὁ",
+      "parsing_code": "T-GPM",
+      "parsing_expanded": "Article, Genitive, Plural, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "of the",
+      "contextual_meaning": "A partitive genitive, meaning 'two *from among* the household servants'."
+    },
+    {
+      "word_number": 12,
+      "greek_word": "οἰκετῶν",
+      "transliteration": "oiketōn",
+      "lemma": "οἰκέτης",
+      "parsing_code": "N-GPM",
+      "parsing_expanded": "Noun, Genitive, Plural, Masculine",
+      "strongs_number": "G3610",
+      "english_gloss": "household servants",
+      "contextual_meaning": "Refers to domestic servants, who were part of the household (oikos). This term often implies a closer, more familial relationship than the more general term for slave (doulos)."
+    },
+    {
+      "word_number": 13,
+      "greek_word": "καὶ",
+      "transliteration": "kai",
+      "lemma": "καί",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G2532",
+      "english_gloss": "and",
+      "contextual_meaning": "Connects the two servants with the third individual, the soldier."
+    },
+    {
+      "word_number": 14,
+      "greek_word": "στρατιώτην",
+      "transliteration": "stratiōtēn",
+      "lemma": "στρατιώτης",
+      "parsing_code": "N-ASM",
+      "parsing_expanded": "Noun, Accusative, Singular, Masculine",
+      "strongs_number": "G4757",
+      "english_gloss": "a soldier",
+      "contextual_meaning": "Identifies the third messenger's profession. As a centurion, Cornelius had soldiers under his command, and he chose one for this sensitive spiritual mission."
+    },
+    {
+      "word_number": 15,
+      "greek_word": "εὐσεβῆ",
+      "transliteration": "eusebē",
+      "lemma": "εὐσεβής",
+      "parsing_code": "A-ASM",
+      "parsing_expanded": "Adjective, Accusative, Singular, Masculine",
+      "strongs_number": "G2152",
+      "english_gloss": "devout, pious",
+      "contextual_meaning": "A crucial descriptor of the soldier's character. It signifies reverence and piety towards God, indicating that Cornelius's faith had influenced his subordinates."
+    },
+    {
+      "word_number": 16,
+      "greek_word": "τῶν",
+      "transliteration": "tōn",
+      "lemma": "ὁ",
+      "parsing_code": "T-GPM",
+      "parsing_expanded": "Article, Genitive, Plural, Masculine",
+      "strongs_number": "G3588",
+      "english_gloss": "of the (ones)",
+      "contextual_meaning": "Another partitive genitive, signifying that this soldier was selected 'from among' his regular attendants."
+    },
+    {
+      "word_number": 17,
+      "greek_word": "προσκαρτερούντων",
+      "transliteration": "proskarterountōn",
+      "lemma": "προσκαρτερέω",
+      "parsing_code": "V-PAP-GPM",
+      "parsing_expanded": "Verb, Present, Active, Participle, Genitive, Plural, Masculine",
+      "strongs_number": "G4342",
+      "english_gloss": "attending constantly",
+      "contextual_meaning": "This participle describes the soldier's relationship to Cornelius. It means 'to be steadfast,' 'to persevere,' or 'to wait upon continually.' This was not a random soldier, but one of his trusted, personal guards."
+    }
+  ],
   "section_2_exegetical_synthesis": {
-    "literal_primary_filter": "The verse records a direct, historical sequence of events: an angel departs, and a Roman centurion named Cornelius immediately takes action based on the divine command he just received (Acts 10:5-6).\nCornelius summons three specific individuals—two household servants and one soldier—to entrust them with a critical mission.\nThis action is not an allegory but a literal response of faith, forming the crucial link between the divine initiative and its human execution.",
-    "prophetic_typology_and_intertextuality": "Cornelius's immediate obedience is a New Covenant expression of the faith demonstrated by Abraham, who obeyed God's call to an unknown land without delay (Gen 12:4; Heb 11:8).\nThis event is the apostolic realization of God's long-standing promise to bless all nations through Abraham's seed (Gen 12:3, 22:18).\nThe inclusion of this Gentile centurion is the fulfillment of prophetic types promising that Gentiles would seek the God of Israel (Isa 2:2-3, 49:6; Zech 8:22-23).\nThe angel's visit serves as a divine catalyst, initiating the formal tearing down of the dividing wall of hostility between Jew and Gentile, a 'mystery' later expounded by Paul (Eph 2:14, 3:6).",
-    "linguistic_mechanics_and_names": "The name [Κορνήλιος] (Kornēlios) identifies him with the prominent Roman clan *Cornelia*, signifying his status as a Roman citizen with authority.\n[φωνήσας] (phōnēsas), an aorist active participle, means \"having called\" and indicates a decisive action completed immediately after the angel's departure.\n[οἰκετῶν] (oiketōn) denotes household servants, distinct from general slaves, implying a closer, more trusted relationship within Cornelius's domestic sphere.\n[στρατιώτην εὐσεβῆ] (stratiōtēn eusebē) translates to \"a devout soldier.\" The adjective [εὐσεβῆ] is crucial; it is the same root used for Cornelius in verse 2, showing his godliness was reflected in his subordinates.\n[τῶν προσκαρτερούντων αὐτῷ] (tōn proskarterountōn autō) is a present participle meaning \"of those who continually attended him.\" The word [προσκαρτερέω] implies steadfast, persistent devotion, used elsewhere for devotion to prayer (Acts 1:14) and doctrine (Acts 2:42). These were his loyal, personal orderlies.",
-    "literary_devices": "This passage is part of a larger narrative structure known as a diptych or parallel narrative.\nGod gives a vision to the Gentile Cornelius (Acts 10:1-8) and then a corresponding vision to the Jew Peter (Acts 10:9-23).\nThis literary parallelism underscores the divine orchestration of the event, demonstrating God sovereignly preparing both parties for their unprecedented meeting.",
-    "numerical_and_gematria_significance": "Cornelius sends a delegation of three men (two servants and one soldier).\nIn Scripture, the number three often signifies divine action, completeness, and legally sufficient testimony (Deut 19:15).\nThis group of three would serve as credible witnesses to Peter concerning the divine origin of their mission, fulfilling the standard that \"every charge may be established by the evidence of two or three witnesses\" (Matt 18:16; 2 Cor 13:1).",
-    "historical_context_and_chronology": "The event is conservatively dated to A.D. 40-41, during the reign of Emperor Caligula and before the death of Herod Agrippa I (A.D. 44).\nCornelius was a centurion, a commander of approximately 80-100 men in the Roman army, a position requiring discipline, leadership, and citizenship.\nHe was stationed in Caesarea Maritima, the political and military capital of the Roman province of Judaea.\nAs a \"God-fearer\" (Acts 10:2), he was part of a recognized class of Gentiles who worshipped the God of Israel and adhered to Jewish ethics without becoming full proselytes through circumcision.",
-    "socio_political_matrix": "The political landscape was defined by Roman occupation, creating inherent tension with the Jewish populace.\nA Roman officer expressing piety towards the Jewish God was exceptionally rare and bridged a significant cultural and political chasm.\nHis unit, the [Σπείρης τῆς καλουμένης Ἰταλικῆς] (Speirēs tēs kaloumenēs Italikēs, \"of the cohort called Italian\"), suggests it was composed of Roman citizens from Italy, a prestigious auxiliary unit.\nCornelius's authority as a centurion gave him the means to dispatch messengers and act with decisiveness.",
-    "geospatial_data_and_physical_geography": "Location: Caesarea Maritima (Modern Caesarea, Israel).\nCoordinates: Approximately 32.50° N, 34.89° E.\nAltitude: Approximately 13 meters (43 ft) above sea level.\nCaesarea was a major, state-of-the-art port city on the Mediterranean coast, built by Herod the Great.\nIts strategic coastal location and position as the Roman capital made it a hub of military, economic, and cultural exchange, an ideal launching point for the Gospel to cross ethnic boundaries.",
-    "archaeological_confirmation": "Excavations at Caesarea Maritima have unearthed the extensive ruins of the Roman city, including Herod's palace (which served as the Praetorium, the governor's residence), a theater, and a hippodrome.\nA limestone block found reused in the theater in 1961 bears the partial inscription \"[...] Pontius Pilatus [...] Praefectus Iudaeae,\" confirming the title and location of the Roman governorship as described in the Gospels and Acts.\nWhile no direct inscription of Cornelius or the *Cohors Italica* from this specific period has been found, the extensive military and administrative ruins powerfully corroborate the setting described by Luke.",
-    "aggregate_perspective_and_analogia_scriptura": "This verse demonstrates the synergy between divine revelation and human responsibility. God speaks, and man must act.\nCornelius's immediate and discerning obedience serves as a paradigm of active faith (James 2:17-18).\nHis choice of a \"devout\" soldier highlights the principle that a leader's character shapes his environment and those under his authority (Prov 22:11).\nThis singular act sets in motion the fulfillment of Jesus's commission to take the Gospel to the \"end of the earth\" (Acts 1:8), with Caesarea representing the first deliberate, Spirit-sanctioned step into the Gentile world.\nGod sovereignly prepares both the messenger (Peter) and the recipient (Cornelius), confirming that salvation is entirely His initiative (Jonah 2:9; Eph 2:8-9)."
+    "linguistic_mechanics_and_names": [
+      {
+        "entry": "devout (εὐσεβής, eusebēs)",
+        "theological_significance": "From 'eu' (well) and 'sebomai' (to worship, revere). This is a key term in Acts for God-fearing Gentiles. It describes a practical piety and reverence for the God of Israel, even without formal conversion to Judaism. Luke's use of this word for the soldier, echoing the description of Cornelius himself (v. 2), highlights the spiritual character of Cornelius's entire household and his godly influence as a leader."
+      },
+      {
+        "entry": "household servants (οἰκετῶν, oiketōn)",
+        "theological_significance": "Derived from 'oikos' (house), this term denotes servants who were part of the domestic establishment. It can imply a closer, more trusted relationship than 'doulos' (slave). Cornelius entrusts this critical spiritual mission to members of his immediate household, suggesting a relationship built on loyalty and shared values."
+      },
+      {
+        "entry": "constantly attending (προσκαρτερούντων, proskarterountōn)",
+        "theological_significance": "This verb implies persistent, steadfast devotion. It is used elsewhere for devotion to prayer and the apostles' teaching (Acts 1:14, 2:42). Its application here to a soldier's duty to his commander elevates the description from mere service to unwavering loyalty. This soldier was part of Cornelius's inner circle, chosen for his reliability and, as seen with 'eusebēs', his piety."
+      },
+      {
+        "entry": "angel (ἄγγελος, angelos)",
+        "theological_significance": "Literally 'messenger.' In the Septuagint and New Testament, it overwhelmingly refers to a celestial being sent by God to deliver a message or carry out a task. The appearance of an 'angelos' authenticates the message to Cornelius as being of divine origin, setting in motion a pivotal event in redemptive history."
+      }
+    ],
+    "literary_devices": "Luke employs precise characterization to advance his theological narrative. By specifying 'two household servants and a devout soldier,' he adds verisimilitude (the appearance of being true or real) to the account. The description of the soldier as 'devout' and 'constantly attending' is not incidental; it serves to portray Cornelius as a man whose godliness profoundly influences his environment, creating a household prepared by God to receive the Gospel. This detail reinforces the theme that God has been at work among the Gentiles even before the arrival of the apostolic message.",
+    "aggregate_analogia_scriptura": "Cornelius's immediate obedience to the heavenly vision parallels that of other key figures in Scripture who responded to God's call without delay, such as Abraham leaving Ur (Genesis 12:4) and Saul of Tarsus after his vision on the Damascus road (Acts 9:18-20). The figure of the 'devout' Gentile centurion echoes the centurion praised by Jesus for his great faith (Matthew 8:5-13), whom Jesus declared was a sign that many 'from east and west will come and recline at the table with Abraham, Isaac, and Jacob in the kingdom of heaven' (Matthew 8:11). This verse in Acts 10 is the narrative hinge upon which that prophecy begins its explicit fulfillment in the life of the church.",
+    "literal_primary_filter": [
+      "Immediately after the angel departed, Cornelius acted.",
+      "He summoned three specific individuals from his staff.",
+      "Two of them were domestic servants from his own house.",
+      "The third was a soldier who served as a personal attendant.",
+      "This soldier was explicitly described as 'devout' or 'pious', sharing Cornelius's reverence for God."
+    ],
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "Righteous Gentiles throughout the Old Testament, such as Naaman the Syrian (2 Kings 5) or the Ninevites who repented at Jonah's preaching (Jonah 3), serve as types or foreshadowings of Gentiles who would seek the God of Israel.",
+      "antitype_fulfillment": "Cornelius and his household are the antitype (the reality to which the shadow pointed) and the first-fruits of the Gentile harvest. This event is a direct fulfillment of the messianic prophecy that God's servant would be a 'light to the Gentiles' (Isaiah 49:6) and that the Spirit would be poured out 'on all flesh' (Joel 2:28-29), a promise Peter will quote in his Pentecost sermon (Acts 2:17) and see fulfilled here in this Gentile home.",
+      "progression_notes": "This verse marks a critical acceleration in the progressive fulfillment of the Great Commission (Acts 1:8). The Gospel had reached Jews, Samaritans (Acts 8), and an Ethiopian proselyte (Acts 8), but this is the moment God orchestrates the formal, apostolic opening of the door of faith to the Gentiles, a central theme of the book of Acts."
+    },
+    "numerical_and_gematria_significance": "Cornelius sends a delegation of three men (two servants and one soldier). The number three in Scripture often represents completeness, testimony, and divine action (e.g., the Trinity, three days in the tomb, Peter's three-fold restoration). A delegation of three provides sufficient witness (cf. Deuteronomy 19:15) and a complete party for the journey. While not a heavily symbolic use, the choice of three aligns with a common biblical pattern for important missions and testimonies.",
+    "historical_context_and_chronology": {
+      "dates": "Approximately A.D. 40-41. This is during the reign of the Roman Emperor Caligula (A.D. 37-41) or shortly after the accession of Claudius (A.D. 41).",
+      "context": "This event occurs after the conversion of Saul (Acts 9) and Peter's ministry healing Aeneas in Lydda and raising Tabitha in Joppa (Acts 9:32-43). The church was experiencing a period of peace and growth (Acts 9:31), creating a stable environment for this next great leap in its mission: the official inclusion of the Gentiles."
+    },
+    "socio_political_matrix": "Cornelius was a centurion of the 'Italian Cohort.' This was likely the *Cohors II Italica Civium Romanorum*, an auxiliary unit composed of Roman citizens from Italy. As an officer, he was an agent of the Roman occupation. However, as a 'God-fearer', he occupied a unique social space between the Roman and Jewish worlds. His ability to command the loyalty of a 'devout' soldier indicates that his personal piety was not a private matter but shaped the ethos (the characteristic spirit of a culture or community) of his command. This demonstrates a potential for spiritual receptivity even within the Roman military, the very symbol of gentile power.",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Caesarea, Israel",
+      "coordinates": {
+        "lat": 32.5048,
+        "long": 34.8918
+      },
+      "altitude_m": 12,
+      "terrain_climate_characteristics": "Caesarea Maritima was a major man-made port city on the Mediterranean coastal plain. Built by Herod the Great, it served as the Roman administrative capital of Judea province. The terrain is flat, and the climate is Mediterranean, with hot, dry summers and mild, wet winters. Its strategic location made it a hub of Roman military, political, and commercial activity."
+    },
+    "archaeological_confirmation": "The extensive ruins of Caesarea Maritima have been excavated, confirming its status as a premier Roman city in the 1st century. Discoveries include Herod's palace (the likely *praetorium*, or governor's residence), a theater, a hippodrome, and a sophisticated aqueduct system. While no inscription bearing Cornelius's name has been found, the archaeological record provides a robust confirmation of the setting described by Luke. The famous 'Pilate Stone', found in the theater's ruins, confirms Pontius Pilate was prefect and resided there, validating Caesarea's role as the seat of Roman power."
   },
-  "section_3_life_application": {
-    "application_points": [
-      "When God's will is made clear through His Word and the Spirit's leading, our response must be immediate and specific obedience. Do not delay, rationalize, or delegate what God has instructed you to do personally.",
-      "Cultivate godliness in your own life so that it positively influences those you lead in your family, workplace, and community. Like Cornelius, endeavor to have trusted, faithful people around you who share your core values.",
-      "Trust in God's sovereign timing and preparation. He is always working on both sides of a divine appointment, preparing your heart and the hearts of others to accomplish His purposes. Our role is to obey the step He has revealed to us right now."
-    ]
-  }
+  "geographic_calculations": [
+    {
+      "from_location": "Caesarea Maritima",
+      "to_location": "Joppa (modern Jaffa)",
+      "straight_line_distance_km": 50,
+      "ancient_route_distance_km": 55,
+      "elevation_change_m": -5,
+      "estimated_travel_time_days": {
+        "on_foot": 2.0,
+        "by_donkey": 1.5,
+        "by_horse": 1.0
+      },
+      "uncertainty_notes": "The journey would have followed the well-traveled Roman coastal road, part of the Via Maris ('Way of the Sea'). The distance is relatively certain. Travel time for a small group on foot would likely span two days, as indicated by the narrative in Acts 10:23-24."
+    }
+  ],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "soteriology": [
+        "salvation for the Gentiles"
+      ],
+      "angelology_demonology": [
+        "angelic messenger",
+        "divine revelation"
+      ],
+      "holy_spirit": [
+        "preparatory work of the Spirit"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "obedience": [
+        "immediate response to God's command"
+      ],
+      "faith": [
+        "acting on a divine vision"
+      ],
+      "witness_evangelism": [
+        "prelude to Gentile evangelism"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "leadership_authority": [
+        "Cornelius's command",
+        "godly influence on subordinates"
+      ],
+      "truthfulness": [
+        "trusting the angelic message"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "roman_occupation": [
+        "centurion",
+        "Italian Cohort",
+        "Roman soldier"
+      ],
+      "gentiles": [
+        "Cornelius as a God-fearer",
+        "devout soldier"
+      ],
+      "travel_trade_routes": [
+        "journey from Caesarea to Joppa"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "narrative_history": [
+        "pivotal event in Acts",
+        "transition to Gentile mission"
+      ],
+      "prophecy_fulfillment": [
+        "Isaiah 49:6 (light to Gentiles)",
+        "Joel 2 (Spirit on all flesh)"
+      ]
+    }
+  },
+  "section_3_life_application": "This verse showcases the anatomy of true faith: hearing God's word and immediately acting upon it. Cornelius did not hesitate, question, or form a committee. The departure of the angel was the signal for his immediate obedience. The application for the believer is to cultivate a heart that is so attuned to God's guidance that our default response is action, not analysis paralysis. Furthermore, Cornelius's choice of a 'devout' soldier reveals the power of godly leadership. Our faith should influence and elevate the character of those within our sphere of influence—in our families, workplaces, and communities. We are called not only to obey God personally but also to create an environment where faith can flourish in others."
 }

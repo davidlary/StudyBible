@@ -1,68 +1,10 @@
-
-__pycache__/
-.AppleDouble
-.claude/
-.cpf/logs/
-.cpf/state/
-.DS_Store
-.ecmwfapirc
-.env
-.env-keys.yml
-.env-keys.yml.*
-.env-keys.yml.backup
-.env-keys.yml.bak.*
-.env-keys.yml.test
-.env.local
-.keys_setup_completed
-.keys-copy.yml
-.LSOverride
-.pip-cache/
-.Python
-.venv/
-.wheels/
-*.ipynb_checkpoints/
-*.key
-*.log
-*.pem
-*.py[cod]
-*.tmp
-*$py.class
-# API Keys and Sensitive Data
-# Auto-generated files (should not be tracked)
-# Base environment (but allow requirements.in)
-# Claude settings (may contain API keys)
 # Context-Preserving Framework
-# Downloaded archives
-# Environment directories
+.cpf/state/
+.cpf/logs/
+
+# Claude settings (may contain API keys)
+.claude/
+
 # Environment variables (contains API keys)
-# Large directories (NOT for version control)
-# macOS system files
-# Python
-# Temporary files
-# Venv and caches (local paths)
-base-env/__pycache__/
-base-env/.pip-cache/
-base-env/.venv/
-base-env/.wheels/
-base-env/*.ipynb_checkpoints/
-base-env/*.log
-base-env/*.tmp
-base-env/requirements.lock.txt
-base-env/requirements.txt
-Class/
-Code/
-current_packages.txt
-diagnose_*.py
-Docker/
-ds-ml-env/
-notes.txt
-Old/
-original_packages.txt
-requirements.lock.txt
-requirements.txt
-sc-claude-code-files-main/
-setup_final.log
-setup_output*.log
-SetUpEnvironments/
-Tools/
-website/_site/
+.env
+.env.local

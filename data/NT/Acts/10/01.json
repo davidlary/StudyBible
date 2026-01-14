@@ -1,98 +1,268 @@
 {
   "verse_id": "ACTS-10-1",
   "section_1_sacred_text": {
-    "verse_reference": "Acts 10:1",
-    "original_script": "Ἀνὴρ δέ ⸀τις ἐν Καισαρείᾳ ὀνόματι Κορνήλιος, ἑκατοντάρχης ἐκ σπείρης τῆς καλουμένης Ἰταλικῆς,",
-    "faithful_direct_translation": "Now a certain man in Caesarea, Cornelius by name, a centurion from the cohort being called the Italian,",
-    "standalone_english_translation": "There was a man in Caesarea named Cornelius, a centurion of what was known as the Italian Cohort.",
-    "amplified_narrative_translation": "Now at that time, there was a particular man of significant standing living in the city of Caesarea, whose name was Cornelius. He held the military rank of a centurion, a commander of about one hundred soldiers, belonging to the specific regiment that was officially designated as the Italian Cohort."
+    "original_script": "Ἀνὴρ δέ ⸀τις ἐν Καισαρείᾳ ὀνόματι Κορνήλios, ἑκατοντάρχης ἐκ σπείρης τῆς καλουμένης Ἰταλικῆς,",
+    "faithful_direct_translation": "Now a man, a certain one in Caesarea, by name Cornelius, a centurion of the cohort called the Italian,",
+    "standalone_english_translation": "At Caesarea there was a man named Cornelius, a centurion of what was known as the Italian Cohort.",
+    "amplified_narrative_translation": "In the prominent Roman capital of Caesarea, there lived a particular man of notable character named Cornelius. He held the military rank of a centurion, an officer in command of about 100 soldiers, belonging to the specific Roman army unit formally designated as the Italian Cohort."
   },
+  "interlinear_analysis": [
+    {
+      "word_number": 1,
+      "greek_word": "Ἀνὴρ",
+      "transliteration": "Anēr",
+      "lemma": "ἀνήρ",
+      "parsing_code": "N-NSM",
+      "parsing_expanded": "Noun, Nominative, Singular, Masculine",
+      "strongs_number": "G435",
+      "english_gloss": "a man",
+      "contextual_meaning": "Functions as the subject of the clause, introducing the main character of the narrative. The word emphasizes his status as an adult male."
+    },
+    {
+      "word_number": 2,
+      "greek_word": "δέ",
+      "transliteration": "de",
+      "lemma": "δέ",
+      "parsing_code": "CONJ",
+      "parsing_expanded": "Conjunction",
+      "strongs_number": "G1161",
+      "english_gloss": "now, but, and",
+      "contextual_meaning": "A transitional particle, indicating a new development in Luke's narrative. It smoothly shifts the focus from Peter's activities in Joppa (Acts 9) to a new character and location."
+    },
+    {
+      "word_number": 3,
+      "greek_word": "τις",
+      "transliteration": "tis",
+      "lemma": "τις",
+      "parsing_code": "T-NSM",
+      "parsing_expanded": "Indefinite Pronoun, Nominative, Singular, Masculine",
+      "strongs_number": "G5100",
+      "english_gloss": "a certain",
+      "contextual_meaning": "Modifies 'man' (Anēr), introducing Cornelius as a specific but perhaps not widely known individual to the original audience, a common Lukan literary device."
+    },
+    {
+      "word_number": 4,
+      "greek_word": "ἐν",
+      "transliteration": "en",
+      "lemma": "ἐν",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G1722",
+      "english_gloss": "in, at",
+      "contextual_meaning": "A preposition indicating location, specifying that Cornelius resided 'in' the city of Caesarea."
+    },
+    {
+      "word_number": 5,
+      "greek_word": "Καισαρείᾳ",
+      "transliteration": "Kaisareia",
+      "lemma": "Καισάρεια",
+      "parsing_code": "N-DFS",
+      "parsing_expanded": "Noun, Dative, Feminine, Singular",
+      "strongs_number": "G2542",
+      "english_gloss": "Caesarea",
+      "contextual_meaning": "The specific location where the events begin, the Roman administrative capital of Judea."
+    },
+    {
+      "word_number": 6,
+      "greek_word": "ὀνόματι",
+      "transliteration": "onomati",
+      "lemma": "ὄνομα",
+      "parsing_code": "N-DNS",
+      "parsing_expanded": "Noun, Dative, Neutrum, Singular",
+      "strongs_number": "G3686",
+      "english_gloss": "by name",
+      "contextual_meaning": "A dative of respect, literally 'with respect to name,' the standard Greek idiom for introducing a person's name."
+    },
+    {
+      "word_number": 7,
+      "greek_word": "Κορνήλιος,",
+      "transliteration": "Kornēlios",
+      "lemma": "Κορνήλιος",
+      "parsing_code": "N-NSM",
+      "parsing_expanded": "Noun, Nominative, Singular, Masculine",
+      "strongs_number": "G2883",
+      "english_gloss": "Cornelius",
+      "contextual_meaning": "The proper name of the man, a common Roman name suggesting he was a Roman citizen, possibly a freedman or descendant of the distinguished Cornelii clan."
+    },
+    {
+      "word_number": 8,
+      "greek_word": "ἑκατοντάρχης",
+      "transliteration": "hekatontarchēs",
+      "lemma": "ἑκατοντάρχης",
+      "parsing_code": "N-NSM",
+      "parsing_expanded": "Noun, Nominative, Singular, Masculine",
+      "strongs_number": "G1543",
+      "english_gloss": "a centurion",
+      "contextual_meaning": "Specifies his military rank. As a centurion, he was a non-commissioned officer, the backbone of the Roman army, responsible for the discipline and welfare of about 80-100 soldiers."
+    },
+    {
+      "word_number": 9,
+      "greek_word": "ἐκ",
+      "transliteration": "ek",
+      "lemma": "ἐκ",
+      "parsing_code": "PREP",
+      "parsing_expanded": "Preposition",
+      "strongs_number": "G1537",
+      "english_gloss": "from, of",
+      "contextual_meaning": "Preposition indicating origin or belonging, showing he was 'from' or 'a member of' a specific military unit."
+    },
+    {
+      "word_number": 10,
+      "greek_word": "σπείρης",
+      "transliteration": "speirēs",
+      "lemma": "σπεῖρα",
+      "parsing_code": "N-GFS",
+      "parsing_expanded": "Noun, Genitive, Feminine, Singular",
+      "strongs_number": "G4686",
+      "english_gloss": "a cohort",
+      "contextual_meaning": "The military unit he belonged to. The term corresponds to the Latin 'cohors,' a tactical unit of a Roman legion or, in this provincial context, an auxiliary cohort."
+    },
+    {
+      "word_number": 11,
+      "greek_word": "τῆς",
+      "transliteration": "tēs",
+      "lemma": "ὁ",
+      "parsing_code": "T-GFS",
+      "parsing_expanded": "Definite Article, Genitive, Feminine, Singular",
+      "strongs_number": "G3588",
+      "english_gloss": "the",
+      "contextual_meaning": "The definite article modifying the participle 'kaloumenēs' (called)."
+    },
+    {
+      "word_number": 12,
+      "greek_word": "καλουμένης",
+      "transliteration": "kaloumenēs",
+      "lemma": "καλέω",
+      "parsing_code": "V-PPP-GFS",
+      "parsing_expanded": "Verb, Present, Passive, Participle, Genitive, Feminine, Singular",
+      "strongs_number": "G2564",
+      "english_gloss": "being called",
+      "contextual_meaning": "A participle that means 'the one being called' or 'which was known as.' It introduces the official name of the cohort."
+    },
+    {
+      "word_number": 13,
+      "greek_word": "Ἰταλικῆς",
+      "transliteration": "Italikēs",
+      "lemma": "Ἰταλικός",
+      "parsing_code": "A-GFS",
+      "parsing_expanded": "Adjective, Genitive, Feminine, Singular",
+      "strongs_number": "G2483",
+      "english_gloss": "Italian",
+      "contextual_meaning": "The name of the cohort. The 'Italian Cohort' was likely composed of volunteer Roman citizens from Italy, distinguishing it from most auxiliary units which were recruited from the provinces."
+    }
+  ],
   "section_2_exegetical_synthesis": {
-    "literal_primary_filter": [
-      "The narrative of Acts pivots to a new scene, introducing a specific individual.",
-      "This person is a man named Cornelius.",
-      "He is a Gentile, not a Jew by birth.",
-      "His residence is the city of Caesarea.",
-      "His profession is that of a Roman centurion.",
-      "His military unit is identified as the Italian Cohort."
-    ],
-    "prophetic_typology_and_intertextuality": [
-      "The introduction of Cornelius marks the divinely initiated fulfillment of God's ancient promise to Abraham.",
-      "The 'Type' is God's covenantal declaration that through Abraham's seed, 'all the families of the earth shall be blessed' (Genesis 12:3).",
-      "Cornelius, a Gentile, represents one of these 'families of the earth' now being brought into the covenant blessing.",
-      "This event is the 'Antitype' or apostolic realization of prophetic promises that the Gentiles would come to God's light.",
-      "Isaiah prophesied that the Messiah would be 'a light for the Gentiles' (Isaiah 42:6, Isaiah 49:6).",
-      "Joel prophesied that God would pour out His Spirit upon 'all flesh' (Joel 2:28), a promise Peter cited at Pentecost (Acts 2:17) but whose full scope is only now being revealed.",
-      "Cornelius's conversion serves as the precedent-setting case study that the Apostles would later debate and confirm at the Jerusalem Council (Acts 15:7-11).",
-      "It makes tangible the 'mystery' later explained by Paul, that Gentiles are 'fellow heirs, members of the same body, and partakers of the promise in Christ Jesus through the gospel' (Ephesians 3:6).",
-      "Thus, Cornelius is not just an individual convert; he is the beachhead for the intentional, Spirit-led mission to the entire Gentile world, fulfilling the Great Commission's mandate to 'all nations' (Matthew 28:19)."
-    ],
     "linguistic_mechanics_and_names": [
-      "The text begins with [Ἀνὴρ δέ τις] (Anēr de tis, \"Now a certain man\").",
-      "The use of [Ἀνὴρ] (Anēr) rather than the generic [ἄνθρωπος] (anthropos) often implies a man of notable character or standing.",
-      "His name, [Κορνήλιος] (Kornēlios), is the Latin name *Cornelius*, a prominent Roman clan name, suggesting he was either a Roman citizen by birth or a freedman of the Cornelia gens.",
-      "The name is etymologically linked to the Latin *cornu*, meaning \"horn,\" a biblical symbol of strength and power (1 Samuel 2:10; Luke 1:69).",
-      "He resides [ἐν Καισαρείᾳ] (en Kaisareia, \"in Caesarea\"). The city's name means \"Pertaining to Caesar,\" highlighting its Roman identity.",
-      "His rank is [ἑκατοντάρχης] (hekatontarchēs, \"centurion\"), a compound of [ἑκατόν] (hekaton, \"one hundred\") and [ἄρχω] (archō, \"to rule\").",
-      "Centurions were the professional backbone of the Roman army, respected for discipline and leadership, and are consistently portrayed positively in the Gospels (Matthew 8:5-13; Luke 23:47).",
-      "He is [ἐκ σπείρης] (ek speirēs, \"of the cohort\"). [Σπεῖρα] is the Greek term for the Latin *cohors*, a military unit of roughly 600 men.",
-      "The cohort is specified as [τῆς καλουμένης Ἰταλικῆς] (tēs kaloumenēs Italikēs, \"the one called Italian\").",
-      "This designated the *Cohors II Italica Civium Romanorum*, an auxiliary unit composed of volunteer Roman citizens from Italy, which gave it a more prestigious status than typical provincial auxiliaries."
+      {
+        "entry": "Cornelius (Κορνήλιος, Kornēlios)",
+        "theological_significance": "A Roman name derived from the prominent 'gens Cornelia', one of the most distinguished patrician families in Rome. While Cornelius himself may not have been an aristocrat, the name signifies his identity as a Roman citizen. His Roman identity is crucial, as his conversion marks the official, Spirit-endorsed opening of the gospel to the Gentiles, fulfilling God's promise that salvation would reach the ends of the earth."
+      },
+      {
+        "entry": "centurion (ἑκατοντάρχης, hekatontarchēs)",
+        "theological_significance": "A compound of 'hekaton' (hundred) and 'archos' (ruler). In the New Testament, centurions are consistently portrayed in a positive light (e.g., Matt 8:5-13; Luke 23:47). They represent Roman authority, order, and pragmatism. Cornelius's piety (devoutness) combined with his respected military rank makes him an ideal 'first fruit' of the Gentile mission—a man of stature and integrity whose conversion would be significant."
+      },
+      {
+        "entry": "cohort (σπεῖρα, speira)",
+        "theological_significance": "The Greek equivalent of the Latin 'cohors', a standard Roman military unit of about 480 men. The mention of a specific unit, the 'Italian Cohort', grounds the narrative in verifiable history. Theologically, it emphasizes that the gospel penetrates even the institutions of imperial power, transforming a key agent of Roman occupation into a vessel for God's grace."
+      }
     ],
-    "literary_devices": [
-      "Luke, the author of Acts, uses Cornelius as a narrative lynchpin.",
-      "The detailed introduction of this one Gentile man serves as a literary device to personify the monumental theological shift of the Gospel officially crossing ethnic boundaries.",
-      "The structure is a careful diptych, pairing the vision of Cornelius with the parallel vision of Peter, demonstrating God working on both sides of the cultural divide to bring about His will."
+    "literary_devices": "Luke employs historical particularism, a characteristic feature of his writing, by meticulously naming the person (Cornelius), place (Caesarea), rank (centurion), and military unit (Italian Cohort). This technique serves to anchor this pivotal, supernaturally-charged narrative in concrete, verifiable reality, presenting it not as a myth or parable, but as a historical event. The verse functions as a narrative introduction, setting the stage for one of the most significant turning points in the book of Acts.",
+    "aggregate_analogia_scriptura": "This verse initiates a narrative that is the fulfillment of numerous Old Testament prophecies regarding the inclusion of the Gentiles into God's people (e.g., Isaiah 42:6, 49:6, 60:3). It is the practical application of the Great Commission to go to 'all nations' (Matt 28:19) and the demonstration of the 'keys of the kingdom' given to Peter (Matt 16:19) being used to open the door of faith to non-Jews. Cornelius acts as a parallel to other righteous Gentiles in Scripture who showed faith, such as the centurion whose servant Jesus healed (Matt 8:5-13), whom Jesus praised for having greater faith than any in Israel. This event is the definitive fulfillment of the Spirit's work prophesied in Joel 2:28-29, which Peter quoted on Pentecost (Acts 2:17), that God would pour out His Spirit on 'all flesh'.",
+    "literal_primary_filter": [
+      "There was a man who lived in the city of Caesarea.",
+      "His name was Cornelius.",
+      "He was a centurion in the Roman army.",
+      "His military unit was known as the Italian Cohort."
     ],
-    "numerical_and_gematria_significance": [
-      "This specific verse does not contain numbers with overt symbolic weight.",
-      "However, the rank of 'centurion' ('ruler of 100') is significant in its military context, denoting a man of authority and responsibility within the most powerful empire of the age."
-    ],
-    "historical_context_and_chronology": [
-      "The event can be dated with high probability to A.D. 40-41.",
-      "This places it during the reign of Roman Emperor Caligula (A.D. 37-41) and after the period of peace for the church described in Acts 9:31.",
-      "Caesarea Maritima was the administrative capital of the Roman province of Iudaea, established by Herod the Great around 22 B.C.",
-      "It was the primary residence of the Roman governor (procurator/prefect) and the main garrison for Roman troops in the region.",
-      "The city was a hub of Greco-Roman culture, commerce, and political power, standing in stark contrast to the religious and cultural center of Jerusalem.",
-      "The presence of an elite Italian cohort underscores the strategic importance of Caesarea to Roman rule."
-    ],
-    "socio_political_matrix": [
-      "As a centurion, Cornelius was a direct agent of Roman imperial power, the occupying force in Judea.",
-      "This created a deep social and religious chasm between him and the Jewish people, for whom contact with a Gentile, especially a soldier, was a source of ritual defilement (John 18:28; Acts 10:28).",
-      "Cornelius, however, is presented as a 'God-fearer' (Acts 10:2), a technical term for a class of Gentiles who adopted the monotheism and ethical framework of Judaism without becoming full proselytes through circumcision.",
-      "This group represented a spiritually prepared 'bridge' community for the Gospel to cross from its Jewish origins to the wider Gentile world."
-    ],
-    "geospatial_data_and_physical_geography": [
-      "Location: Caesarea Maritima (modern Caesarea, Israel).",
-      "Coordinates: Approximately 32.5052° N, 34.8933° E.",
-      "Altitude: Sea level.",
-      "The city was a major man-made port on the Mediterranean coast, roughly 65 miles (105 km) northwest of Jerusalem.",
-      "Its strategic coastal location made it the primary point of entry and exit for Roman officials and maritime trade for the province.",
-      "The geography itself—a Roman port city—symbolizes the launching point for the Gospel's journey across the Mediterranean to the rest of the Roman Empire."
-    ],
-    "archaeological_confirmation": [
-      "Extensive excavations at Caesarea Maritima have unearthed Herod's palace, a theater, a hippodrome, and the sophisticated harbor complex, confirming its status as a major Roman administrative center.",
-      "The famous 'Pilate Stone,' discovered in the Caesarea theater in 1961, is an inscription that confirms Pontius Pilate as the Prefect of Judea, validating the biblical account of Caesarea as his base (Acts 23:23-24).",
-      "While no artifact names Cornelius directly, inscriptions found elsewhere in the Empire (e.g., in Syria, dating to A.D. 69) mention the *Cohors Italica*, confirming the existence and deployment of such units in the eastern provinces during this period.",
-      "These findings provide a solid, historically verifiable context for the events described in Acts 10."
-    ],
-    "aggregate_perspective_and_analogia_scriptura": [
-      "Acts 10:1 sets the stage for a divine revolution, meticulously prepared by God throughout salvation history.",
-      "The 'certain man' is not incidental; he is the fulfillment of the promise to bless 'all nations' (Genesis 12:3).",
-      "His location, Caesarea, the seat of Gentile power, is precisely where God chooses to demonstrate that His kingdom supersedes all earthly empires.",
-      "His profession, a Roman centurion, the embodiment of that power, is the very person God calls to bow the knee to Christ.",
-      "This event is the practical application of Christ's own ministry to the Gentile centurion (Matthew 8:5-13) and the Syrophoenician woman (Mark 7:24-30).",
-      "Peter's subsequent realization, 'Truly I understand that God shows no partiality' (Acts 10:34), becomes the theological thesis statement for the rest of the New Testament's mission.",
-      "It validates the truth that in the Church, there is 'neither Jew nor Greek...for you are all one in Christ Jesus' (Galatians 3:28)."
-    ]
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "Cornelius can be seen as a type of the 'God-fearer'—the Gentile who is drawn to the God of Israel but has not yet been brought into the covenant people through Christ. He represents the 'harvest' among the nations that Jesus spoke of (John 4:35). His devoutness, prayer, and almsgiving (Acts 10:2) are like the preparatory tilling of the soil before the seed of the gospel is planted.",
+      "antitype_fulfillment": "The antitype (Greek *antitypos*, 'a thing formed after a pattern') is the Gentile Church. The conversion of Cornelius and his household is the historical and theological event that officially inaugurates the mission to the Gentiles, demonstrating that faith in Jesus Christ, not adherence to the Mosaic Law, is the sole basis for inclusion in the people of God. It is the fulfillment of the mystery revealed to Paul that Gentiles are 'fellow heirs, members of the same body, and partakers of the promise in Christ Jesus through the gospel' (Eph 3:6).",
+      "progression_notes": "This event marks a crucial progression in redemptive history. The gospel had already gone to Samaritans (Acts 8) and an Ethiopian proselyte (Greek *proselytos*, 'one who has come over') (Acts 8), but this is the first recorded instance of the gospel being preached directly to a Roman Gentile household by apostolic authority, followed by a 'Gentile Pentecost' where they receive the Holy Spirit in the same manner as the Jews did in Acts 2."
+    },
+    "numerical_and_gematria_significance": "There are no explicit numerical symbols or gematria intended in this verse. The focus is historical and theological, not numerological. The number one hundred (implied in 'centurion') simply denotes the standard size of his military command.",
+    "historical_context_and_chronology": {
+      "dates": "This event is typically dated to approximately AD 40-41. This is during the reign of the Roman Emperor Caligula (AD 37-41) or very early in the reign of Claudius (AD 41-54). This places it about a decade after the resurrection of Christ and before the Jerusalem Council (c. AD 49), which would later formally address the issues raised by this very event.",
+      "context": "Caesarea Maritima was the political and military headquarters for the Roman administration of the province of Judea. As the official residence of the Roman governor (procurator), it was a symbol of Roman power and a hub of Gentile culture on the coast of a predominantly Jewish land. The presence of a cohort (Latin *cohors*, a military unit of about 480 men) like the Italian Cohort was standard for maintaining Roman order."
+    },
+    "socio_political_matrix": "As a Roman centurion, Cornelius was a mid-level but highly respected officer. Centurions were known for their discipline, courage, and leadership, and they formed the professional backbone of the Roman legions. The 'Italian Cohort' (*Cohors II Italica Civium Romanorum*) was likely an auxiliary unit of volunteers composed of Roman citizens from Italy. This gave it a higher status than typical provincial auxiliary units. For a Roman officer to be a 'God-fearer'—a monotheistic Gentile who worshiped the God of Israel, attended synagogue, and followed Jewish ethical laws without becoming a full proselyte through circumcision—placed him in a unique social position, respected by some Jews for his piety (devoutness) but still considered an outsider and ritually unclean.",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Caesarea National Park, near the modern town of Caesarea, Israel.",
+      "coordinates": {
+        "lat": 32.5008,
+        "long": 34.8926
+      },
+      "altitude_m": 13,
+      "terrain_climate_characteristics": "Caesarea Maritima was a major artificial port city built by Herod the Great on the Mediterranean coast. The terrain is flat coastal plain. The climate is Mediterranean, with hot, dry summers and mild, wet winters. As the Roman capital, it was strategically located for sea trade and military deployment."
+    },
+    "archaeological_confirmation": "The extensive ruins of Caesarea Maritima have been excavated, confirming its importance as a major Roman city with a theater, hippodrome, palace, and a sophisticated man-made harbor. While no direct inscription of Cornelius has been found, archaeology confirms the setting described by Luke. Furthermore, inscriptions found elsewhere in the Roman Empire (e.g., in Carnuntum, Austria) confirm the existence of the *Cohors II Italica*, the military unit named in the text, lending external support to the historical accuracy of Luke's account."
   },
-  "section_3_life_application": {
-    "application_summary": [
-      "God's work is not limited by our cultural, ethnic, or social boundaries. He actively seeks people from every background, even those we might consider outsiders or opponents.",
-      "We must be prepared for God to challenge our personal prejudices and comfortable traditions in order to advance His kingdom.",
-      "Notice the person in your life—at work, in your neighborhood—who seems farthest from your own experience. God may be preparing their heart just as He was preparing Cornelius's.",
-      "Our role is to be like Peter: willing to listen to the Holy Spirit and go where He sends us, even if it takes us into unfamiliar or uncomfortable territory.",
-      "Examine your own heart for any hidden 'walls of hostility' (Ephesians 2:14) you have built against a certain group of people. Pray for God to give you His heart for them, seeing them not as a category, but as individuals whom Christ died to save."
-    ]
-  }
+  "geographic_calculations": [],
+  "tags": {
+    "tier_1_foundational_theology": {
+      "soteriology": [
+        "salvation for Gentiles",
+        "grace",
+        "prevenient grace"
+      ],
+      "holy_spirit": [
+        "prelude to Gentile Pentecost"
+      ],
+      "covenant_theology": [
+        "expansion of the New Covenant",
+        "Abrahamic promise to bless all nations"
+      ],
+      "creation_providence": [
+        "God's sovereignty in orchestrating events"
+      ]
+    },
+    "tier_2_applied_theology": {
+      "faith": [
+        "piety of a God-fearer"
+      ],
+      "prayer": [
+        "righteous Gentile's prayers"
+      ],
+      "witness_evangelism": [
+        "cross-cultural mission",
+        "reaching the nations"
+      ],
+      "discipleship": [
+        "God prepares hearts for the gospel"
+      ]
+    },
+    "tier_3_relational_ethics": {
+      "justice": [
+        "portrayal of a just Roman officer"
+      ],
+      "church_community": [
+        "breaking down ethnic barriers"
+      ]
+    },
+    "tier_4_cultural_historical": {
+      "roman_occupation": [
+        "centurion",
+        "cohort",
+        "Caesarea as Roman capital"
+      ],
+      "gentiles": [
+        "Cornelius",
+        "God-fearer",
+        "Italian"
+      ],
+      "jewish_customs": [
+        "Jewish-Gentile separation as backdrop"
+      ]
+    },
+    "tier_5_literary_prophetic": {
+      "narrative_history": [
+        "turning point in Acts",
+        "historical particularism"
+      ],
+      "prophecy_fulfillment": [
+        "Gentile inclusion prophesied in OT",
+        "Joel 2 / Acts 2 expansion"
+      ]
+    }
+  },
+  "section_3_life_application": "This verse introduces a foundational truth: God's plan of salvation knows no ethnic or social boundaries. Cornelius was an agent of an occupying military power, yet God saw his heart, heard his prayers, and sovereignly (possessing supreme power) orchestrated events to bring him the gospel. The application for believers today is twofold. First, we must actively reject any prejudice within our own hearts and see every person, regardless of their background, as someone for whom Christ died and whom God may be actively drawing to Himself. Second, we should be encouraged that God is always at work ahead of us, preparing hearts in ways we cannot see. Our role is to be faithful, like Peter would soon be, to share the message of Christ when and where God opens the door, trusting that He has already been there."
 }
