@@ -154,13 +154,13 @@ title: Acts Chapter 10
             {% endif %}
 
             {# Geospatial #}
-            {% if verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography %}
+            {% if verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography %}
             <div class="note-section">
                 <h3 class="note-heading">Geography & Physical Setting</h3>
-                {% if verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography | join(' ') }}</p>
+                {% if verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography | join(' ') }}</p>
                 {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography }}</p>
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography }}</p>
                 {% endif %}
             </div>
             {% endif %}
@@ -178,13 +178,13 @@ title: Acts Chapter 10
             {% endif %}
 
             {# Analogia Scriptura #}
-            {% if verse.data.section_2_exegetical_synthesis.aggregate_perspective_and_analogia_scriptura %}
+            {% if verse.data.section_2_exegetical_synthesis.aggregate_analogia_scriptura %}
             <div class="note-section">
                 <h3 class="note-heading">Scripture Interpreting Scripture</h3>
-                {% if verse.data.section_2_exegetical_synthesis.aggregate_perspective_and_analogia_scriptura | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.aggregate_perspective_and_analogia_scriptura | join(' ') }}</p>
+                {% if verse.data.section_2_exegetical_synthesis.aggregate_analogia_scriptura | isArray %}
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.aggregate_analogia_scriptura | join(' ') }}</p>
                 {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.aggregate_perspective_and_analogia_scriptura }}</p>
+                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.aggregate_analogia_scriptura }}</p>
                 {% endif %}
             </div>
             {% endif %}
