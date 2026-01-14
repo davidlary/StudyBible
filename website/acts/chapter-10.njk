@@ -22,19 +22,65 @@ title: Acts Chapter 10
 
     <div class="section">
         <h3 class="section-title">Exegetical Synthesis</h3>
+
         {% if verse.data.section_2_exegetical_synthesis.literal_primary_filter %}
         <h4>Literal-Primary Filter</h4>
-        <ul>
-        {% for item in verse.data.section_2_exegetical_synthesis.literal_primary_filter %}
-            <li>{{ item }}</li>
-        {% endfor %}
-        </ul>
+        <p>{{ verse.data.section_2_exegetical_synthesis.literal_primary_filter | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality %}
+        <h4>Prophetic Typology & Intertextuality</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names %}
+        <h4>Linguistic Mechanics & Names</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.literary_devices %}
+        <h4>Literary Devices</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.literary_devices | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance %}
+        <h4>Numerical & Gematria Significance</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.numerical_and_gematria_significance | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.historical_context_and_chronology %}
+        <h4>Historical Context & Chronology</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.historical_context_and_chronology | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.socio_political_matrix %}
+        <h4>Socio-Political Matrix</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.socio_political_matrix | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography %}
+        <h4>Geospatial Data & Physical Geography</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.geospatial_data_and_physical_geography | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.archaeological_confirmation %}
+        <h4>Archaeological Confirmation</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.archaeological_confirmation | replace("\n", "<br>") | safe }}</p>
+        {% endif %}
+
+        {% if verse.data.section_2_exegetical_synthesis.aggregate_perspective_and_analogia_scriptura %}
+        <h4>Aggregate Perspective & Analogia Scriptura</h4>
+        <p>{{ verse.data.section_2_exegetical_synthesis.aggregate_perspective_and_analogia_scriptura | replace("\n", "<br>") | safe }}</p>
         {% endif %}
     </div>
 
     <div class="section">
         <h3 class="section-title">Life Application</h3>
+        {% if verse.data.section_3_life_application.practical_application %}
+        <p>{{ verse.data.section_3_life_application.practical_application | replace("\n", "<br>") | safe }}</p>
+        {% elif verse.data.section_3_life_application %}
         <p>{{ verse.data.section_3_life_application }}</p>
+        {% endif %}
     </div>
 </div>
 {% endfor %}
