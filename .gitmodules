@@ -1,3 +1,15 @@
 [submodule "Code/Suno/PrepareForDistrokit/cpf"]
 	path = Code/Suno/PrepareForDistrokit/cpf
 	url = https://github.com/davidlary/ContextPreservingFramework.git
+[submodule "Code/SlideCreationSystem/cpf"]
+	path = Code/SlideCreationSystem/cpf
+	url = https://github.com/davidlary/ContextPreservingFramework.git
+[submodule "Code/Latex/UpdateAirQualityBook/cpf"]
+	path = Code/Latex/UpdateAirQualityBook/cpf
+	url = https://github.com/davidlary/ContextPreservingFramework.git
+[submodule "Suno/MusicGenerator/cpf"]
+	path = Suno/MusicGenerator/cpf
+	url = https://github.com/davidlary/ContextPreservingFramework.git
+[submodule "Code/StudyBible/cpf"]
+	path = Code/StudyBible/cpf
+	url = https://github.com/davidlary/ContextPreservingFramework.git
