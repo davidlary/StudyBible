@@ -1,824 +1,246 @@
-# Base Environment Setup Script
+# StudyBible
 
-**Version:** 3.11.0 (November 2025) - **Production-Grade with Self-Supervision & Smart Safety Checks**
-**Script:** `setup_base_env.sh`
-**Python Version:** 3.11-3.13 (adaptive selection based on compatibility matrix)
+High-fidelity biblical exegesis with original language analysis, comprehensive theological synthesis, and AI-powered deep reasoning.
 
 ## Overview
 
-This script creates a comprehensive, reproducible data science environment with Python, R, and Julia support. It features sophisticated package management with smart constraints, hybrid conflict resolution, performance optimizations, intelligent snapshot strategy, dynamic pip version management, automatic security vulnerability scanning, adaptive compatibility detection, smart Rust toolchain installation, PyTorch safety checks, and **self-supervision with verification loops**.
+StudyBible is a Python CLI application that generates comprehensive biblical exegesis for all 31,102 verses of the Protestant canon (66 books). Each verse includes:
 
-**✨ NEW in v3.11.0:** **Self-Supervision Framework** - Prevents silent failures by verifying actual state vs intended state. Every critical operation is verified, with automatic retry and self-healing. Comprehensive final validation ensures environment correctness before declaring success. Prevents entire class of bugs where operations "succeed" but don't work (like Bug #4: PyTorch TARGET version check). Framework adds <1 second overhead but guarantees correctness and enables 10-100x speedup on re-runs through intelligent operation skipping.
+- **Original Language Texts**: Hebrew (Westminster Leningrad Codex via OSHB) and Greek (SBLGNT)
+- **Four Translations**: Original script, faithful direct translation, standalone English, amplified narrative
+- **Exegetical Synthesis**: Ten comprehensive analysis dimensions including:
+  - Literal-Primary Filter (Sensus Literalis)
+  - Analogia Scriptura (Scripture interprets Scripture)
+  - Philological & Grammatical Mechanics
+  - Spatio-Temporal & Archaeological Matrix
+  - Historical & Socio-Political Context
+  - And more...
+- **Life Application**: Practical guidance for contemporary living
 
-**✨ v3.10:** Smart Rust Detection & PyTorch Safety Net. Automatic Rust toolchain installation when Rust-based packages detected (polars, ruff, pydantic-core, etc.). PyTorch safety checks in TWO locations for defense-in-depth: normal installation AND update mode. Blocks Python 3.13 + PyTorch + macOS 15.1+ + Apple Silicon incompatibility.
+## Features
 
-**v3.2 refinements (6):** Stale lock detection, stage logging in lock file, smart constraints (8 packages), adaptive conflict resolution (2-tier), early exit optimization.
+- **AI-Powered Analysis**: Uses Google Gemini 2.5 Pro for deep reasoning and exegetical synthesis
+- **Original Source Texts**: Direct extraction from OSHB (Hebrew) and SBLGNT (Greek) repositories
+- **JSON Flat-File Database**: Structured data storage at `/data/{OT|NT}/{BOOK}/{CH}/{VS}.json`
+- **Static Website**: Eleventy-powered site with full-text search via Pagefind
+- **GitHub Pages Deployment**: Automatic deployment via GitHub Actions
+- **Comprehensive Testing**: 190 tests with 81% coverage, pytest-based test suite
 
-**v3.1 enhancements (10):** Concurrent safety with file locking, memory monitoring, SHA256 hash integrity verification, enhanced error diagnostics with platform-specific fixes, CPU architecture detection (x86_64/ARM64), comprehensive build tool detection, structured logging with timestamps, parallel pip downloads, compressed snapshots, and atomic file operations.
+## Live Website
 
-## Quick Start
+Visit the live StudyBible at: **https://davidlary.github.io/StudyBible/**
 
-```bash
-# Navigate to wherever you've placed this script
-cd /path/to/your/environments/directory
+Currently available: **Acts Chapter 10** (all 48 verses with complete exegesis)
 
-# 1. Configure API keys (optional but recommended)
-./setup_keys.sh
-
-# 2. Run installation
-./setup_base_env.sh
-
-# 3. ⚠️  IMPORTANT: Activate the environment (REQUIRED before use!)
-source base-env/.venv/bin/activate
-
-# 4. Verify it works
-python -c "import pandas, numpy, sklearn; print('✅ Environment ready!')"
-
-# 5. Now you can work from any directory!
-cd ~/your-project-directory
-```
-
-**🚀 Even Easier - Use Helper Scripts:**
-
-```bash
-# After installation, use the convenient activation script from anywhere:
-source ~/Dropbox/Environments/activate_base_env.sh
-
-# Or verify everything works:
-~/Dropbox/Environments/verify_env.sh
-```
-
-**Additional Options:**
-
-```bash
-# With adaptive conflict resolution (if needed)
-./setup_base_env.sh --adaptive
-
-# Force reinstall everything
-./setup_base_env.sh --force-reinstall
-
-# Check for updates to ALL components (Python, R, Julia, system dependencies, packages)
-# Tests everything including systematic smart constraint analysis
-# ONLY offers updates if ALL tests pass
-./setup_base_env.sh --update
-
-# Show help
-./setup_base_env.sh --help
-```
-
-## Key Features
-
-### 🎯 Smart Package Management
-- **Smart Constraints System**: Pre-defined version pins for 8 historically problematic packages
-- **Hybrid Conflict Resolution**: Two-tier conflict resolution strategy
-- **Backtracking Prevention**: Optimized constraints reduce pip solver time
-- **Obsolescence Management**: Automatic removal of deprecated packages (jupyter-dash, nose)
-
-### ⚡ Performance Optimizations
-- **Early Exit Detection**: Skip reinstallation if environment already exists
-- **Smart Filtering**: Only process changed constraints
-- **Wheel Pre-compilation**: Cache compiled wheels for faster reinstalls
-- **Pip Caching**: Leverage pip's built-in download cache
-- **Pip Version Pinning**: pip < 25.2 for compatibility with pip-tools 7.5.1
-
-### 🔧 Comprehensive Coverage
-- **147 Direct Python Packages** (+ dependencies): ML, deep learning, visualization, geospatial, web deployment, APIs, testing, web scraping, graph databases, documentation, scientific data formats, LLM frameworks
-  - **NOW INCLUDED (23 packages fixed)**:
-    - Deep Learning: torch, tensorflow, keras
-    - Modern Data: polars, statsmodels, joblib
-    - Scientific Formats: xarray, zarr, h5py
-    - Infrastructure: pint, rpy2, sqlalchemy, psycopg2-binary, boto3
-    - Utilities: tqdm, click, python-dateutil, feedparser, openpyxl
-    - AI/NLP: spacy, langchain, jupyterlab, papermill
-  - Includes gremlinpython for Gremlin graph queries (aenum conflict resolved Oct 2025)
-- **13 R Packages**: tidyverse, bibliometrix, reticulate, and more
-- **Julia Environment**: IJulia kernel with automatic setup
-
-### 🛡️ Production-Grade Safety Features
-- **Pre-flight Checks**: Validates disk space (10GB minimum), internet connectivity, write permissions, and system dependencies before installation
-- **Operating System Detection**: Automatically detects macOS/Linux and adjusts commands accordingly
-- **Cross-Platform Compatibility**: Full support for macOS and Linux (Ubuntu, RHEL, Fedora, etc.)
-- **Environment Snapshots**: Automatic backup of working environment before making changes
-- **Automatic Rollback**: Restores previous state if installation fails
-- **Post-installation Health Checks**: Validates Python interpreter, critical packages (numpy, pandas, matplotlib, jupyter), and Jupyter kernels
-- **Installation Metadata**: Tracks installation history, timestamps, package counts, conflict status, and OS information in `.env_metadata.json`
-- **Snapshot Management**: Automatically cleans up old snapshots (keeps 2 most recent) and removes snapshot after successful installation
-
-### 🔑 API Key Management
-Automatically configures environment variables for:
-- OpenAI API
-- xAI API (Grok)
-- Google API (Gemini)
-- GitHub API (repos, gists, actions)
-- Census Bureau API
-
-**Note:** ANTHROPIC_API_KEY is intentionally **not** exported to avoid conflicts with Claude Code CLI, which uses its own authentication system via the Anthropic Console.
-
-## API Key Configuration
-
-### 🔑 Single Source of Truth: `.env-keys.yml`
-
-All API keys and credentials are managed through a single YAML file with secure 600 permissions.
-
-**Managed Credentials (8 environment variables):**
-- `OPENAI_API_KEY` - OpenAI GPT models
-- `XAI_API_KEY` - xAI Grok models
-- `GOOGLE_API_KEY` - Google Gemini models
-- `GITHUB_TOKEN` - GitHub API access
-- `GITHUB_EMAIL` - Git commits and documentation
-- `GITHUB_USERNAME` - Git configuration
-- `GITHUB_NAME` - Full name for attribution
-- `CENSUS_API_KEY` - US Census Bureau API
-
-Plus: IPUMS credentials, ECMWF credentials
-
-**Note:** `ANTHROPIC_API_KEY` is stored in `.env-keys.yml` but is **not** exported to the environment to prevent conflicts with Claude Code CLI, which manages its own authentication via the Anthropic Console.
-
-### 🛠️ Smart YAML Auto-Repair
-
-The setup script intelligently manages your API keys:
-
-**✅ Automatic Detection**
-- Loads existing keys from `.env-keys.yml`
-- Detects missing keys automatically
-- Creates file if it doesn't exist
-
-**✅ Auto-Repair**
-- Adds missing keys with placeholders
-- Preserves existing values
-- Notifies you what was added
-
-**✅ Zero Configuration Errors**
-- Script continues even with missing keys
-- Clear messages about placeholders
-- Explicit instructions for updating
-
-**Example Auto-Repair Session:**
-
-```bash
-./setup_base_env.sh
-
-🔑 Loading API keys from .env-keys.yml...
-🔧 Auto-repaired YAML file - added missing keys:
-   • google_api_key (placeholder added)
-   • github_token (placeholder added)
-   ⚠️  Please edit .env-keys.yml to add your actual API keys
-✅ API keys loaded from YAML file
-```
-
-### 🔒 Security Best Practices
-
-**Primary Storage Locations:**
-1. **`.env-keys.yml`** - Single source of truth (600 permissions)
-2. **`base-env/.venv/bin/activate`** - Convenience copy (auto-synced)
-3. **`~/.ecmwfapirc`** - ECMWF API requirement (600 permissions)
-
-**🚨 CRITICAL: Never Hardcode API Keys**
-
-**DO NOT** put actual API keys in:
-- Scripts or code files
-- Git repositories
-- Documentation files
-- Chat conversations
-- Screenshots or screen recordings
-
-**Security Features:**
-- ✅ 600 file permissions (owner read/write only)
-- ✅ Separate from code
-- ✅ Single source of truth
-- ✅ Should be in `.gitignore` (automatically)
-- ✅ Automatic backups by `setup_keys.sh`
-- ✅ Placeholder detection
-
-### Setting Real Keys
-
-**Option 1: Use setup_keys.sh (Recommended)**
-
-```bash
-./setup_keys.sh
-nano .env-keys.yml  # Edit with your actual keys
-./setup_base_env.sh
-```
-
-**Option 2: Edit YAML directly**
-
-```bash
-nano /path/to/your/environments/directory/.env-keys.yml
-# Update values, then run:
-./setup_base_env.sh
-```
-
-**Option 3: Runtime loading**
-
-```bash
-source load_api_keys.sh  # Loads keys into current shell
-```
-
-### YAML File Structure
-
-```yaml
-# API Keys for this environment
-# This file is only readable by you (chmod 600)
-
-openai_api_key: 'sk-...'
-anthropic_api_key: 'sk-ant-...'
-xai_api_key: 'xai-...'
-google_api_key: 'AIzaSyC...'
-
-# GitHub credentials (used for API access, git operations, and documentation)
-github:
-  token: "ghp_..."
-  email: "your-email@example.com"
-  username: "your-github-username"
-  name: "Your Name"
-
-# API credentials
-api_keys:
-  census_api_key: "..."
-
-# IPUMS credentials
-ipums:
-  username: "..."
-  password: "..."
-
-# ECMWF API credentials
-ecmwf:
-  url: "https://api.ecmwf.int/v1"
-  key: "..."
-  email: "..."
-```
-
-### Key Rotation & Emergency
-
-**Regularly rotate your API keys at:**
-- OpenAI: https://platform.openai.com/api-keys
-- Anthropic: https://console.anthropic.com/settings/keys
-- xAI: https://console.x.ai/
-- Google/Gemini: https://makersuite.google.com/app/apikey
-- GitHub: https://github.com/settings/tokens
-
-**If keys are compromised:**
-1. Immediately revoke exposed keys from provider dashboards
-2. Generate new keys
-3. Update `.env-keys.yml` with new keys
-4. Run `./setup_base_env.sh --force-reinstall`
-5. Review usage logs for unauthorized access
-
-## Installation Requirements
+## Installation
 
 ### Prerequisites
-- macOS (Darwin) or Linux
-- [Homebrew](https://brew.sh/) (macOS)
+
+- Python 3.12+
+- Node.js 20+
+- Google Gemini API key
 - Git
-- 10+ GB free disk space
 
-### Automatic Installation
-The script automatically installs:
-- **pyenv** (Python version management)
-- **Python 3.12** (via pyenv)
-- **pip-tools** (for requirements compilation)
-- **R** (via Homebrew on macOS)
-- **Julia** (via Homebrew on macOS)
+### Setup
 
-## Usage Guide
-
-### Command-Line Options
-
-```bash
-./setup_base_env.sh [OPTIONS]
-
-Options:
-  --adaptive         Enable adaptive conflict resolution (slower but smarter)
-  --no-adaptive      Disable adaptive resolution (faster, default)
-  --force-reinstall  Force full reinstall by clearing .venv and caches
-  --update           Comprehensive check for latest versions of ALL components:
-                     • Homebrew, pyenv, Python, pip, pip-tools (automatic updates)
-                     • R, Julia, system dependencies (manual brew upgrade)
-                     • Python packages with conflict testing
-                     • Systematic smart constraint analysis (tests each individually)
-                     ONLY offers updates if ALL tests pass (maximum stability)
-                     (automatically enables adaptive mode for intelligent resolution)
-  --help             Show usage information
-
-Environment Variables:
-  ENABLE_ADAPTIVE=1  Enable adaptive resolution
-
-Default: Fast mode with basic conflict detection
-```
-
-### First-Time Setup
-
-**Important:** All setup commands must be run from the directory where you've placed the script. After activation, you can work from any directory.
-
-1. **Navigate to the script directory**:
+1. **Clone the repository:**
    ```bash
-   cd /path/to/your/script/directory
-   chmod +x setup_base_env.sh
+   git clone https://github.com/davidlary/StudyBible.git
+   cd StudyBible
    ```
 
-2. **Configure API keys** (optional):
+2. **Install Python dependencies:**
    ```bash
-   ./setup_keys.sh
-   ```
-   See `README.API-KEYS.md` for details.
-
-3. **Run the setup**:
-   ```bash
-   ./setup_base_env.sh
+   pip install -r requirements.txt
    ```
 
-4. **Activate the environment**:
+3. **Set up environment variables:**
    ```bash
-   source base-env/.venv/bin/activate
+   cp .env.example .env
+   # Edit .env and add your GOOGLE_API_KEY
    ```
 
-   Once activated, the environment is available from any directory:
+4. **Download source texts:**
    ```bash
-   cd ~/your-project
-   python your_script.py  # Uses the activated environment
+   python -m src.cli download-sources
    ```
 
-### Updating the Environment
+5. **Install Node dependencies (for website):**
+   ```bash
+   npm install
+   ```
 
-If `requirements.in` changes, navigate to the script directory first:
+## Usage
 
-```bash
-cd /path/to/your/script/directory
-
-# Automatic detection and update
-./setup_base_env.sh
-
-# Force full reinstall
-./setup_base_env.sh --force-reinstall
-```
-
-### Checking for Latest Versions (Update Mode)
-
-The `--update` flag provides **comprehensive environment checking** for Python, R, Julia, and system dependencies:
+### Generate Single Verse
 
 ```bash
-cd /path/to/your/script/directory
-
-# Comprehensive check of ALL environment components
-./setup_base_env.sh --update
+export GOOGLE_API_KEY="your_api_key_here"
+python -m src.cli generate Acts 10 1
 ```
 
-**What --update mode does:**
-
-**Part 0: Homebrew Update**
-1. **Updates Homebrew** package database (foundation for all checks)
-
-**Part 1: Comprehensive Toolchain Check**
-1. **Checks pyenv** version against Homebrew
-2. **Checks Python** version (latest stable 3.12.x or 3.13.x)
-3. **Checks pip-tools** and tests compatibility with latest pip in isolated environment
-4. **Checks R** version via Homebrew
-5. **Checks Julia** version via Homebrew
-6. **Checks system dependencies** (libgit2, libpq, openssl@3) via Homebrew
-7. **Reports comprehensive summary** of all toolchain components
-
-**Part 2: Python Package Check**
-1. **Backs up** current `requirements.in`
-2. **Temporarily relaxes** smart constraints to test latest versions
-3. **Compares** current vs. latest for all 8 smart constraint packages
-4. **Creates temporary test environment** to check for conflicts
-5. **Reports findings** with detailed version comparisons
-
-**Part 3: Evaluate Results and Conditionally Apply Updates**
-1. **Evaluates ALL test results** (toolchain + packages)
-2. **ONLY offers updates if ALL tests pass** - maximum stability guarantee
-3. **Automatic updates** (if tests passed):
-   - Installs latest Python via pyenv
-   - Updates pip and pip-tools
-   - Updates requirements.in with latest package versions
-4. **Manual updates recommended** (shown after automatic updates):
-   - R: `brew upgrade r`
-   - Julia: `brew upgrade julia`
-   - System deps: `brew upgrade libgit2 libpq openssl@3`
-5. **Offers 10-second timeout** to cancel before applying
-6. **Refuses to apply** if any test fails, maintaining stability
-7. **Provides detailed reasoning** when updates cannot be applied
-
-**When to use:**
-- Monthly or quarterly comprehensive maintenance
-- After major Python, R, Julia, or Homebrew updates
-- When investigating if old conflicts have been resolved
-- Before starting new projects to ensure all components are current
-
-**Note:** Update mode automatically enables adaptive conflict resolution for intelligent handling of any issues.
-
-### Testing the Environment
+### Generate Entire Chapter
 
 ```bash
-source base-env/.venv/bin/activate
-
-# Test Python packages
-python -c "import pandas, numpy, sklearn, plotly; print('✅ Core packages work')"
-
-# Test Jupyter kernel
-jupyter kernelspec list
-
-# Test R integration
-python -c "from rpy2.robjects import r; print('✅ R integration works')"
+python -m src.cli generate-chapter Acts 10
 ```
 
-## Production-Grade Safety Features
+### Build Website
 
-The setup script includes multiple layers of protection to ensure reliable, fail-safe installations:
-
-### 🛡️ Pre-flight Checks
-
-Before making any changes, the script validates:
-
-1. **Operating System Detection**: Detects macOS or Linux, identifies architecture (x86_64, arm64, etc.)
-2. **Platform Compatibility**: Ensures OS is supported (macOS, Linux); warns if running on Windows
-3. **Disk Space**: Ensures at least 10GB of free space is available (cross-platform df command handling)
-4. **Internet Connectivity**: Tests connection to PyPI and Google DNS
-5. **Write Permissions**: Verifies script can write to the environment directory
-6. **System Dependencies**: Checks for git, curl, and platform-specific package managers
-7. **Build Tools**: On Linux, checks for gcc and make (needed for compiling Python packages)
-8. **Metadata Loading**: Reads existing installation history if available
-
-If any critical check fails, the script exits immediately before making changes.
-
-**Cross-Platform Support:**
-- **macOS**: Uses Homebrew for system packages, df -g for disk space
-- **Linux**: Supports apt (Ubuntu/Debian), yum (RHEL/CentOS), dnf (Fedora), uses df -BG for disk space
-- **Shell Detection**: Auto-detects zsh, bash, or sh and configures appropriately
-- **Platform-Specific Commands**: Automatically adjusts sed syntax and other commands based on OS
-
-### 📸 Environment Snapshots
-
-**Automatic Backup Creation:**
-- Before making any changes, the script creates a complete backup of your current `.venv` directory
-- Snapshots are stored as `.venv.snapshot_YYYYMMDD_HHMMSS/`
-- Each snapshot includes metadata:
-  - Timestamp of snapshot creation
-  - Python and pip versions
-  - Package count
-  - Copy of `requirements.txt` and `requirements.lock.txt`
-
-**Automatic Cleanup:**
-- Keeps only the 2 most recent snapshots to save disk space
-- Removes snapshot after successful installation (no longer needed)
-- Older snapshots are automatically pruned
-
-### 🔄 Automatic Rollback
-
-**Error Detection:**
-- Error trapping is enabled during the installation phase (`set -e` and `trap`)
-- Any command failure triggers automatic rollback
-- Failures during pip-compile, wheel building, or package installation are caught
-
-**Rollback Process:**
-- Removes the failed `.venv` directory
-- Restores the most recent snapshot
-- Shows metadata about the restored environment
-- Exits with clear error message
-
-**Manual Rollback:**
-If you need to manually restore a snapshot:
 ```bash
-cd base-env
-rm -rf .venv
-mv .venv.snapshot_YYYYMMDD_HHMMSS .venv
-source .venv/bin/activate
+npx eleventy
+# Output in _site/ directory
 ```
 
-### 🏥 Post-Installation Health Checks
+### Run Tests
 
-After successful package installation, the script validates:
-
-1. **Python Interpreter**: Verifies Python can run and display version
-2. **Critical Packages**: Tests imports of numpy, pandas, matplotlib, jupyter, ipykernel
-3. **Jupyter Kernel**: Checks if Python3 kernel is available
-4. **Environment Size**: Reports disk space used by environment
-
-If critical checks fail, you're prompted to rollback or continue at your own risk.
-
-### 📝 Installation Metadata
-
-The script maintains a `.env_metadata.json` file that tracks:
-
-```json
-{
-  "last_successful_install": "2025-10-25 14:30:00",
-  "os_platform": "macos",
-  "os_type": "Darwin",
-  "os_arch": "arm64",
-  "python_version": "3.12.7",
-  "pip_version": "24.3.1",
-  "packages_count": 450,
-  "has_conflicts": false,
-  "installation_mode": "adaptive"
-}
+```bash
+pytest                          # Run all tests
+pytest --cov=src               # With coverage report
+pytest tests/unit/              # Unit tests only
 ```
-
-**Use Cases:**
-- Track when environment was last successfully updated
-- Identify which mode was used for installation
-- Monitor package count growth over time
-- Quick conflict status check
-
-**Location:** `base-env/.env_metadata.json` (excluded from git via `.gitignore`)
-
-### 🧹 Excluded from Git
-
-The following safety-related files are automatically excluded from version control:
-
-```
-.venv.snapshot_*/          # Snapshot backups
-.env_metadata.json         # Installation metadata
-*.log                      # Log files
-```
-
-This prevents bloating the repository while maintaining local safety features.
-
-## Package Management Strategy
-
-### Smart Constraints (8 packages)
-
-These packages have historically caused dependency conflicts. We pin specific versions:
-
-| Package | Version | Reason |
-|---------|---------|--------|
-| `numpy` | >=1.20.0 | Minimum version for core scientific computing compatibility |
-| `ipywidgets` | 8.1.7 | Jupyter widget compatibility with notebook ecosystem |
-| `geemap` | 0.36.4 | Pinned for Google Earth Engine API compatibility |
-| `plotly` | 5.15.0 | v6+ has breaking changes - pinned to stable 5.x |
-| `panel` | 1.8.2 | Dashboard framework pinned for stability |
-| `bokeh` | 3.8.0 | Historical stability issues with newer versions |
-| `voila` | 0.5.11 | Web app conversion stability with ipywidgets==8.1.7 |
-| `selenium` | 4.36.0 | Browser automation - latest stable version |
-
-**Removed**: `jupyter-dash` (obsolete), `nose` (deprecated since 2015), `bqplot` and `jupyterlab` (no longer require pinning)
-
-### Special Package Installation
-
-Some packages require installation from alternative sources because they are not available on PyPI:
-
-| Package | Source | Installation Method | Reason |
-|---------|--------|---------------------|--------|
-| `ecmwfapi` | GitHub | `pip install git+https://github.com/ecmwf/ecmwf-api-client.git` | Not published to PyPI |
-
-**🔧 Automatic Handling**: The setup script automatically detects and installs these special packages from their respective sources. You don't need to do anything manually.
-
-**📝 Note**: If you encounter errors about missing packages that seem like they should be in `requirements.txt`, check if they might be special cases like `ecmwfapi`. The script handles these separately after the main package installation.
-
-### Conflict Resolution
-
-**Tier 1: Fast Strategy (Default)**
-- Apply smart constraints before compilation
-- Fast, deterministic resolution
-- Prevents 95% of conflicts
-
-**Tier 2: Adaptive Strategy (--adaptive)**
-- Iterative constraint relaxation
-- Used only when Fast strategy fails
-- Slower but handles edge cases
-
-### Requirements Files
-
-- **`requirements.in`**: Human-maintained package list with smart constraints
-- **`requirements.txt`**: Compiled with exact versions (auto-generated)
-- **`constraints.txt`**: Smart constraints applied during compilation
 
 ## Project Structure
 
 ```
-base-env/
-├── .venv/                    # Python virtual environment
-│   ├── bin/activate         # Activation script (includes API keys)
-│   ├── lib/python3.12/      # Installed packages
-│   └── .claude_env_marker   # Environment metadata
-├── requirements.in          # Human-maintained package list
-├── requirements.txt         # Compiled exact versions
-└── constraints.txt          # Smart constraints
+StudyBible/
+├── src/                        # Python source code
+│   ├── config.py              # Configuration management
+│   ├── bible_structure.py     # 66-book canon structure
+│   ├── source_fetcher.py      # Download OSHB/SBLGNT
+│   ├── verse_extractor.py     # Extract Hebrew/Greek text
+│   ├── schema_validator.py    # JSON schema validation
+│   ├── gemini_client.py       # Gemini API client
+│   ├── exegesis_generator.py  # Orchestrate generation
+│   ├── data_writer.py         # Write JSON files
+│   ├── batch_processor.py     # Process multiple verses
+│   └── cli.py                 # Command-line interface
+├── tests/                     # Test suite (190 tests)
+│   ├── unit/                  # Unit tests
+│   ├── integration/           # Integration tests
+│   └── fixtures/              # Test fixtures
+├── data/                      # Generated verse JSON files
+│   ├── NT/Acts/10/            # Acts chapter 10 (48 verses)
+│   └── ...                    # Future chapters/books
+├── sources/                   # Biblical source texts
+│   ├── morphhb/               # OSHB (Hebrew)
+│   └── sblgnt/                # SBLGNT (Greek)
+├── website/                   # Eleventy static site
+│   ├── _includes/             # Layout templates
+│   ├── _data/                 # Data files
+│   └── acts/                  # Acts chapter pages
+├── schemas/                   # JSON validation schemas
+│   └── verse_schema.json      # 58-field verse schema
+├── StudyPrompt.md             # Exegetical requirements
+├── requirements.txt           # Python dependencies
+└── README.md                  # This file
 ```
 
-## Package Categories
+## Technology Stack
 
-### 📊 Data Manipulation (9)
-numpy, pandas, polars, pyarrow, duckdb, dask-geopandas, scipy, statsmodels, joblib
+### Backend
+- **Python 3.12**: Core application
+- **Google Gemini 2.5 Pro**: AI-powered exegetical analysis
+- **pytest**: Testing framework (80%+ coverage)
+- **lxml**: XML parsing (OSHB)
+- **jsonschema**: JSON validation
+- **click**: CLI framework
+- **rich**: Beautiful terminal output
 
-### 🤖 Machine Learning (5)
-scikit-learn, xgboost, lightgbm, catboost, h2o
+### Frontend
+- **Eleventy (11ty)**: Static site generator
+- **Pagefind**: Client-side search
+- **Nunjucks**: Templating engine
 
-### 🔥 Deep Learning (3)
-torch (PyTorch), tensorflow, keras
+### Sources
+- **OSHB**: Open Scriptures Hebrew Bible (Westminster Leningrad Codex)
+- **SBLGNT**: Society of Biblical Literature Greek New Testament
 
-### 📈 Visualization (10)
-matplotlib, seaborn, plotly, bokeh, altair, dash, fast-dash, dash-leaflet, pyvis
+### Deployment
+- **GitHub Pages**: Static hosting
+- **GitHub Actions**: CI/CD pipeline
 
-### 🌍 Geospatial Tools (4)
-geopandas, geemap, earthengine-api, spyndex
+## Development
 
-### 🧪 Interactive Development (7)
-jupyter, jupyterlab, ipython, ipywidgets, voila, nbgrader, papermill
-
-### 🌐 Web Deployment (8)
-streamlit, dash, panel, gradio, flask, fastapi, pywebio, nbconvert
-
-### 🤖 API Clients (5)
-openai, anthropic, requests, httpx, transformers
-
-### 🌦️ Scientific Data APIs (3)
-cdsapi, ecmwfapi (GitHub), netCDF4
-
-### 💰 Financial Data APIs (3)
-yfinance, yahoofinancials, pandas-datareader
-
-### 🗺️ Census & Geographic Data (2)
-census, us
-
-### 🌐 Web Automation & Scraping (5)
-selenium, beautifulsoup4, scholarly, semanticscholar, tweepy
-
-### 🎞️ Scientific Animation (5)
-manim, pyvista, k3d, sympy, p5
-
-### 🖼️ Media Processing (6)
-Pillow, opencv-python, moviepy, imageio, ffmpeg-python, embedchain
-
-### 📚 Bibliography Tools (2)
-pybtex, pyplantuml
-
-### 🧪 Testing & Autograding (4)
-pytest, nbgrader, otter-grader, nbval
-
-### 🔤 Natural Language Processing (2)
-nltk, spacy
-
-### 🤖 LLM Frameworks (1)
-langchain
-
-### 🗄️ Scientific Data Formats (3)
-xarray, zarr, h5py
-
-### 📐 Units & Physical Quantities (1)
-pint
-
-### 🔗 R Integration (1)
-rpy2
-
-### 🗄️ Database & ORM (4)
-sqlalchemy, psycopg2-binary, duckdb-engine, redis
-
-### ☁️ Cloud Services (1)
-boto3
-
-### 🛠️ Utilities (5)
-tqdm, click, python-dateutil, feedparser, openpyxl
-
-### 🔥 Scientific Computing (1)
-cantera (thermodynamics/chemistry)
-
-## Troubleshooting
-
-### ⚠️ "Module not found" or Import Errors
-
-**MOST COMMON ISSUE: Environment not activated**
-
-If you get errors like `ModuleNotFoundError: No module named 'pandas'` or the verification test fails, you likely forgot to activate the environment!
+### Running Tests
 
 ```bash
-# ❌ WRONG - This will fail:
-python -c "import pandas, numpy, sklearn; print('✅ Environment ready!')"
+# All tests with coverage
+pytest --cov=src --cov-report=html
 
-# ✅ CORRECT - Activate first:
-cd ~/Dropbox/Environments/base-env
-source .venv/bin/activate
-python -c "import pandas, numpy, sklearn; print('✅ Environment ready!')"
+# Specific test file
+pytest tests/unit/test_exegesis_generator.py -v
 
-# ✅ OR use the helper script:
-source ~/Dropbox/Environments/activate_base_env.sh
-python -c "import pandas, numpy, sklearn; print('✅ Environment ready!')"
-
-# ✅ OR run the verification script:
-~/Dropbox/Environments/verify_env.sh
+# Parallel execution (faster)
+pytest -n auto
 ```
 
-**How to check if environment is activated:**
-- Your prompt should show `(base-env)` or `(.venv)` at the beginning
-- Run `which python` - should show path containing `.venv`
-- Run `echo $VIRTUAL_ENV` - should show the environment path
-
-**To deactivate:**
-```bash
-deactivate
-```
-
-### Installation Fails
-
-**pyenv not found:**
+### Code Quality
 
 ```bash
-# The script should auto-install, but if needed:
-brew install pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
-source ~/.zshrc
+# Linting
+ruff check src/
+
+# Type checking
+mypy src/
+
+# Formatting
+black src/ tests/
 ```
 
-**Python 3.12 installation fails:**
+## Architecture
 
-```bash
-# Install build dependencies
-brew install openssl readline sqlite3 xz zlib
-pyenv install 3.12
-```
+### Generation Pipeline
 
-**Dependency conflicts:**
+1. **Extract Verse**: Read Hebrew/Greek text from source repositories
+2. **Build Prompt**: Combine StudyPrompt.md with verse reference and text
+3. **Generate Exegesis**: Call Gemini 2.5 Pro API with comprehensive prompt
+4. **Validate JSON**: Check against 58-field schema with 11 mandatory validations
+5. **Write File**: Atomic write to `/data/{testament}/{book}/{chapter}/{verse}.json`
 
-```bash
-# Try adaptive resolution
-./setup_base_env.sh --adaptive
+### Website Build
 
-# Or force reinstall
-./setup_base_env.sh --force-reinstall
-```
+1. **Data Loading**: Read JSON files from `/data` directory
+2. **Template Rendering**: Nunjucks templates with verse data
+3. **Static Generation**: Eleventy builds HTML pages
+4. **Search Indexing**: Pagefind indexes all content
+5. **Deployment**: GitHub Actions pushes to `gh-pages` branch
 
-### Package Issues
+## API Usage
 
-**Import errors after installation:**
+### Cost Estimation
 
-```bash
-# Verify package installed
-pip show <package-name>
+- **Per Verse**: ~10-15KB input + ~5-10KB output = ~$0.01-0.02 per verse
+- **Acts 10** (48 verses): ~$0.50-1.00
+- **Full Bible** (31,102 verses): ~$300-600
 
-# Try reinstalling specific package
-pip install --force-reinstall <package-name>
-```
+### Rate Limits
 
-**Jupyter kernel not found:**
+- **Free Tier**: ~15 requests/minute
+- **Estimated Time**:
+  - Acts 10: 2-3 hours (48 verses)
+  - Full Bible: 7-10 days (31,102 verses)
 
-```bash
-source base-env/.venv/bin/activate
-python -m ipykernel install --user --name base-env --display-name "Python 3.12 (base-env)"
-```
+## Contributing
 
-**R kernel issues:**
+This is a personal research project. Contributions welcome via issues and pull requests.
 
-```bash
-# Reinstall IRkernel
-R -e "install.packages('IRkernel', repos='https://cloud.r-project.org')"
-R -e "IRkernel::installspec(name='ir', displayname='R')"
-```
+## License
 
-### Performance Issues
+This project is licensed under the MIT License - see LICENSE file for details.
 
-**Slow installation:**
-- The script uses caching and wheel pre-compilation
-- First run is slower (~5-10 minutes)
-- Subsequent runs are faster (~2-3 minutes)
+## Acknowledgments
 
-**Disk space:**
+- **OSHB**: Open Scriptures Hebrew Bible project
+- **SBLGNT**: Society of Biblical Literature and Logos Bible Software
+- **Google**: Gemini API for AI-powered analysis
+- **Eleventy**: Excellent static site generator
+- **CPF**: Context-Preserving Framework v4.3.0
 
-```bash
-# Check environment size
-du -sh base-env/
+## Contact
 
-# Clean up pip cache if needed
-pip cache purge
-```
+David Lary - [GitHub](https://github.com/davidlary)
 
-## Version History
+Project Link: [https://github.com/davidlary/StudyBible](https://github.com/davidlary/StudyBible)
 
-See `Old/README.md` for historical versions:
-- **V3** (October 2025): Current version with smart constraints, performance optimizations
-- **V2** (June 2025): Introduced pip-tools and pyenv
-- **V1** (March-April 2025): Original implementations
-
-## Related Files
-
-- **`setup_keys.sh`**: Interactive API key configuration
-- **`README.API-KEYS.md`**: API key management documentation
-- **`Old/README.md`**: Archive of previous versions
-- **`requirements.in`**: Package list (edit this to add packages)
-
-## Support & Maintenance
-
-**Adding new packages:**
-1. Edit `base-env/requirements.in`
-2. Run `./setup_base_env.sh`
-3. Test the environment
-
-**Updating packages:**
-1. Modify versions in `requirements.in`
-2. Run `./setup_base_env.sh`
-3. If conflicts occur, add to smart constraints
-
-**Reporting issues:**
-- Check `Old/README.md` for historical context
-- Review troubleshooting section above
-- Verify pyenv and Python 3.12 are working
-
----
-
-**Last Updated:** November 14, 2025
-**Maintained by:** David Lary
-**Python Version:** 3.12
-**Total Packages:** Python (147 direct + dependencies), R (13), Julia (IJulia)
-**Version:** 3.3 with 21 enhancements
-**Note:** gremlinpython now included (aenum conflict resolved Oct 2025)
+Website: [https://davidlary.github.io/StudyBible/](https://davidlary.github.io/StudyBible/)

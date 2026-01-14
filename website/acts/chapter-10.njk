@@ -1,0 +1,40 @@
+---
+layout: layout.njk
+title: Acts Chapter 10
+---
+
+<h1>Acts Chapter 10</h1>
+<p class="subtitle">Cornelius and Peter: The Gospel Opens to the Gentiles</p>
+
+{% for verse in acts10_verses %}
+<div class="verse">
+    <div class="verse-header">
+        <span class="verse-id">Acts 10:{{ verse.verse_number }}</span>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Sacred Text</h3>
+        <div class="original-text">{{ verse.data.section_1_sacred_text.original_script }}</div>
+        <div class="translation"><strong>Direct:</strong> {{ verse.data.section_1_sacred_text.faithful_direct_translation }}</div>
+        <div class="translation"><strong>English:</strong> {{ verse.data.section_1_sacred_text.standalone_english_translation }}</div>
+        <div class="translation"><strong>Amplified:</strong> {{ verse.data.section_1_sacred_text.amplified_narrative_translation }}</div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Exegetical Synthesis</h3>
+        {% if verse.data.section_2_exegetical_synthesis.literal_primary_filter %}
+        <h4>Literal-Primary Filter</h4>
+        <ul>
+        {% for item in verse.data.section_2_exegetical_synthesis.literal_primary_filter %}
+            <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Life Application</h3>
+        <p>{{ verse.data.section_3_life_application }}</p>
+    </div>
+</div>
+{% endfor %}
