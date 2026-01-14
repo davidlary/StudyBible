@@ -188,11 +188,16 @@ def extract_greek_verse(
         if book_num is None:
             return None
 
-        # If path is directory, look for the data file
+        # If path is directory, look for the book file
         if sblgnt_path.is_dir():
-            # SBLGNT structure: sblgnt.txt or data/sblgnt.txt
-            text_file = sblgnt_path / "sblgnt.txt"
+            # Try multiple possible locations for SBLGNT text files
+            # Format 1: data/sblgnt/text/BookName.txt (Faithlife/SBLGNT)
+            text_file = sblgnt_path / "data" / "sblgnt" / "text" / f"{book}.txt"
             if not text_file.exists():
+                # Format 2: sblgnt.txt (MorphGNT combined file)
+                text_file = sblgnt_path / "sblgnt.txt"
+            if not text_file.exists():
+                # Format 3: data/sblgnt.txt
                 text_file = sblgnt_path / "data" / "sblgnt.txt"
         else:
             text_file = sblgnt_path
@@ -201,37 +206,41 @@ def extract_greek_verse(
             return None
 
         # Read and parse the file
-        words = []
+        # Try tab-delimited format first (Faithlife/SBLGNT): "Acts 1:1<tab>Greek text"
+        verse_ref = f"{book} {chapter}:{verse}"
         with open(text_file, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
-                if not line:
+                if not line or line.startswith('#'):
                     continue
 
-                parts = line.split()
-                if len(parts) < 4:
-                    continue
+                # Try tab-delimited format
+                if '\t' in line:
+                    parts = line.split('\t', 1)
+                    if len(parts) == 2 and parts[0] == verse_ref:
+                        return parts[1].strip()
+                else:
+                    # Try space-delimited MorphGNT format: book_num chapter verse word ...
+                    parts = line.split()
+                    if len(parts) < 4:
+                        continue
 
-                # Parse fields: book_num chapter verse word ...
-                try:
-                    line_book = int(parts[0])
-                    line_chapter = int(parts[1])
-                    line_verse = int(parts[2])
-                    word_text = parts[3]
+                    try:
+                        line_book = int(parts[0])
+                        line_chapter = int(parts[1])
+                        line_verse = int(parts[2])
+                        word_text = parts[3]
 
-                    # Check if this is our verse
-                    if (line_book == book_num and
-                        line_chapter == chapter and
-                        line_verse == verse):
-                        words.append(word_text)
+                        # Check if this is our verse
+                        if (line_book == book_num and
+                            line_chapter == chapter and
+                            line_verse == verse):
+                            return word_text
 
-                except (ValueError, IndexError):
-                    continue
+                    except (ValueError, IndexError):
+                        continue
 
-        if not words:
-            return None
-
-        return " ".join(words)
+        return None
 
     except (IOError, OSError) as e:
         return None
