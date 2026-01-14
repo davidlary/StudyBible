@@ -1,0 +1,37 @@
+{
+  "verse_id": "GEN-1-1",
+  "section_1_sacred_text": {
+    "original_script": "בְּרֵאשִׁית",
+    "faithful_direct_translation": "In the beginning",
+    "standalone_english_translation": "In the beginning",
+    "amplified_narrative_translation": "At the beginning"
+  },
+  "section_2_exegetical_synthesis": {
+    "literal_primary_filter": ["fact"],
+    "prophetic_typology_and_intertextuality": {
+      "type_shadow": "shadow",
+      "antitype_fulfillment": "fulfillment",
+      "progression_notes": "notes"
+    },
+    "linguistic_mechanics_and_names": [],
+    "literary_devices": "devices",
+    "numerical_and_gematria_significance": "numbers",
+    "historical_context_and_chronology": {
+      "dates": "dates",
+      "context": "context"
+    },
+    "socio_political_matrix": "politics",
+    "geospatial_and_physical_geography": {
+      "modern_location": "Location",
+      "coordinates": {
+        "lat": 999.0,
+        "long": 999.0
+      },
+      "altitude_m": 0,
+      "terrain_climate_characteristics": "terrain"
+    },
+    "archaeological_confirmation": "archaeology",
+    "aggregate_analogia_scriptura": "scripture"
+  },
+  "section_3_life_application": "Application"
+}

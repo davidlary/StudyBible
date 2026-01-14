@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Biblical Verse Exegesis Schema",
+  "description": "Comprehensive schema for storing high-fidelity biblical exegesis data",
+  "type": "object",
+  "required": [
+    "verse_id",
+    "section_1_sacred_text",
+    "section_2_exegetical_synthesis",
+    "section_3_life_application"
+  ],
+  "properties": {
+    "verse_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]+-[0-9]+-[0-9]+$",
+      "description": "Unique verse identifier in format BOOK-CH-VS"
+    },
+    "section_1_sacred_text": {
+      "type": "object",
+      "required": [
+        "original_script",
+        "faithful_direct_translation",
+        "standalone_english_translation",
+        "amplified_narrative_translation"
+      ],
+      "properties": {
+        "original_script": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Text in original Hebrew or Greek"
+        },
+        "faithful_direct_translation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Precise rendering from original languages"
+        },
+        "standalone_english_translation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optimized for immediate readability"
+        },
+        "amplified_narrative_translation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Full English expansion with nuances and grammatical weight"
+        }
+      }
+    },
+    "section_2_exegetical_synthesis": {
+      "type": "object",
+      "required": [
+        "literal_primary_filter",
+        "prophetic_typology_and_intertextuality",
+        "linguistic_mechanics_and_names",
+        "literary_devices",
+        "numerical_and_gematria_significance",
+        "historical_context_and_chronology",
+        "socio_political_matrix",
+        "geospatial_and_physical_geography",
+        "archaeological_confirmation",
+        "aggregate_analogia_scriptura"
+      ],
+      "properties": {
+        "literal_primary_filter": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "description": "Array of literal, historical, and grammatical facts"
+        },
+        "prophetic_typology_and_intertextuality": {
+          "type": "object",
+          "required": ["type_shadow", "antitype_fulfillment", "progression_notes"],
+          "properties": {
+            "type_shadow": {
+              "type": "string",
+              "description": "Themes through Pentateuch/Psalms/Prophets"
+            },
+            "antitype_fulfillment": {
+              "type": "string",
+              "description": "The realization in Christ"
+            },
+            "progression_notes": {
+              "type": "string",
+              "description": "Progression from prophetic promise to apostolic realization"
+            }
+          }
+        },
+        "linguistic_mechanics_and_names": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["entry", "theological_significance"],
+            "properties": {
+              "entry": {
+                "type": "string",
+                "description": "Original script with transliteration and meaning"
+              },
+              "theological_significance": {
+                "type": "string",
+                "description": "Etymological unpacking of proper names"
+              }
+            }
+          },
+          "description": "Etymology, grammar, and syntax details"
+        },
+        "literary_devices": {
+          "type": "string",
+          "description": "Chiasm, parallelism, inclusio, etc."
+        },
+        "numerical_and_gematria_significance": {
+          "type": "string",
+          "description": "Thematic weight of numbers"
+        },
+        "historical_context_and_chronology": {
+          "type": "object",
+          "required": ["dates", "context"],
+          "properties": {
+            "dates": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Precise conservative scholarship dates"
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Cultural, economic, and legal norms"
+            }
+          }
+        },
+        "socio_political_matrix": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Roman, Herodian, Tribal pressures and direct impact"
+        },
+        "geospatial_and_physical_geography": {
+          "type": "object",
+          "required": [
+            "modern_location",
+            "coordinates",
+            "altitude_m",
+            "terrain_climate_characteristics"
+          ],
+          "properties": {
+            "modern_location": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Place name"
+            },
+            "coordinates": {
+              "type": "object",
+              "required": ["lat", "long"],
+              "properties": {
+                "lat": {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 90
+                },
+                "long": {
+                  "type": "number",
+                  "minimum": -180,
+                  "maximum": 180
+                }
+              }
+            },
+            "altitude_m": {
+              "type": "number",
+              "description": "Altitude in meters"
+            },
+            "terrain_climate_characteristics": {
+              "type": "string",
+              "description": "Salient physical/terrain characteristics"
+            }
+          }
+        },
+        "archaeological_confirmation": {
+          "type": "string",
+          "description": "Inscriptions, ruins, coins, or artifacts"
+        },
+        "aggregate_analogia_scriptura": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Harmonized nuggets with all Scripture references retained in-line"
+        }
+      }
+    },
+    "section_3_life_application": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Concise, actionable output focused on doing the Word"
+    }
+  }
+}
