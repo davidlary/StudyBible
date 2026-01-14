@@ -4,3 +4,7 @@
 
 # Claude settings (may contain API keys)
 .claude/
+
+# Environment variables (contains API keys)
+.env
+.env.local
