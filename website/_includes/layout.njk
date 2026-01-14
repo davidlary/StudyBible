@@ -7,16 +7,16 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>{{ title }} - StudyBible</title>
-    <!-- Build: 2026-01-14 Beautiful Typography Update -->
+    <!-- Build: 2026-01-14-v3 Clean Layout Structure -->
 
     <!-- Google Fonts: Biblical Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Spectral:wght@400;600;700&display=swap&v=2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Spectral:wght@400;600;700&display=swap&v=3" rel="stylesheet">
 
     <style>
         /* ========================================
-           FOUNDATIONAL RESET & VARIABLES
+           FOUNDATIONAL RESET & CSS VARIABLES
            ======================================== */
         * {
             margin: 0;
@@ -57,14 +57,14 @@
             --font-commentary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             --font-headings: 'Spectral', Georgia, serif;
 
-            /* Spacing Scale (based on 8px grid) */
-            --space-xs: 0.5rem;   /* 8px */
-            --space-sm: 0.75rem;  /* 12px */
-            --space-md: 1rem;     /* 16px */
-            --space-lg: 1.5rem;   /* 24px */
-            --space-xl: 2rem;     /* 32px */
-            --space-2xl: 3rem;    /* 48px */
-            --space-3xl: 4rem;    /* 64px */
+            /* Spacing Scale (8px grid system) */
+            --space-xs: 0.5rem;
+            --space-sm: 0.75rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
 
             /* Reading Optimized */
             --max-reading-width: 70ch;
@@ -74,25 +74,28 @@
         }
 
         /* ========================================
-           BODY & LAYOUT FOUNDATION
+           BODY & DOCUMENT FOUNDATION
            ======================================== */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: var(--font-commentary);
             font-size: 16px;
             line-height: var(--line-height-commentary);
             color: var(--text-primary);
             background: var(--cream-bg);
-            background-image:
-                linear-gradient(to bottom, var(--cream-bg) 0%, var(--warm-white) 100%);
+            background-image: linear-gradient(to bottom, var(--cream-bg) 0%, var(--warm-white) 100%);
             min-height: 100vh;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
         /* ========================================
-           HEADER: Elegant Title Block
+           SITE HEADER
            ======================================== */
-        header {
+        body > header {
             background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
             color: var(--warm-white);
             padding: var(--space-2xl) var(--space-xl);
@@ -101,7 +104,7 @@
             border-bottom: 4px solid var(--gold);
         }
 
-        header h1 {
+        body > header h1 {
             font-family: var(--font-headings);
             font-size: 2.5rem;
             font-weight: 700;
@@ -110,7 +113,7 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        header p {
+        body > header p {
             font-family: var(--font-commentary);
             font-size: 1.1rem;
             font-weight: 400;
@@ -120,7 +123,7 @@
         }
 
         /* ========================================
-           NAVIGATION: Clean & Accessible
+           SITE NAVIGATION
            ======================================== */
         nav {
             background: white;
@@ -161,7 +164,7 @@
             border-radius: 8px;
         }
 
-        /* Page Title */
+        /* Page Titles (h1 directly in main) */
         main > h1 {
             font-family: var(--font-headings);
             font-size: 2rem;
@@ -183,203 +186,7 @@
         }
 
         /* ========================================
-           VERSE CONTAINER: Primary Content Block
-           ======================================== */
-        .verse {
-            margin-bottom: var(--space-3xl);
-            padding-bottom: var(--space-2xl);
-            border-bottom: 2px solid var(--soft-ivory);
-            page-break-inside: avoid;
-        }
-
-        .verse:last-child {
-            border-bottom: none;
-        }
-
-        /* Verse Header: Clear Reference Marker */
-        .verse-header {
-            background: linear-gradient(to right, var(--burgundy), var(--burgundy-light));
-            padding: var(--space-md) var(--space-lg);
-            margin-bottom: var(--space-xl);
-            border-radius: 6px 6px 0 0;
-            box-shadow: 0 2px 4px rgba(139, 38, 53, 0.2);
-        }
-
-        .verse-id {
-            font-family: var(--font-headings);
-            font-weight: 700;
-            color: white;
-            font-size: 1.4rem;
-            letter-spacing: 0.03em;
-        }
-
-        /* ========================================
-           SECTION CONTAINERS: Visual Hierarchy
-           ======================================== */
-        .section {
-            margin-bottom: var(--space-2xl);
-            padding: var(--space-xl);
-            border-radius: 6px;
-            page-break-inside: avoid;
-        }
-
-        /* Section Titles */
-        .section-title {
-            font-family: var(--font-headings);
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: var(--space-lg);
-            padding-bottom: var(--space-sm);
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-
-        .section-title::before {
-            content: '';
-            width: 6px;
-            height: 1.4rem;
-            border-radius: 2px;
-        }
-
-        /* Sacred Text Section (first section in each verse) */
-        .verse > .section:nth-of-type(1) {
-            background: var(--sacred-bg);
-            border: 2px solid var(--sacred-border);
-        }
-
-        .verse > .section:nth-of-type(1) .section-title {
-            color: var(--navy);
-        }
-
-        .verse > .section:nth-of-type(1) .section-title::before {
-            background: var(--navy);
-        }
-
-        /* Exegetical Synthesis Section (second section) */
-        .verse > .section:nth-of-type(2) {
-            background: var(--exegesis-bg);
-            border: 2px solid var(--exegesis-border);
-        }
-
-        .verse > .section:nth-of-type(2) .section-title {
-            color: var(--gold);
-        }
-
-        .verse > .section:nth-of-type(2) .section-title::before {
-            background: var(--gold);
-        }
-
-        /* Life Application Section (third section) */
-        .verse > .section:nth-of-type(3) {
-            background: var(--application-bg);
-            border: 2px solid var(--application-border);
-        }
-
-        .verse > .section:nth-of-type(3) .section-title {
-            color: #15803D;
-        }
-
-        .verse > .section:nth-of-type(3) .section-title::before {
-            background: #15803D;
-        }
-
-        /* ========================================
-           TYPOGRAPHY: Sacred Texts
-           ======================================== */
-        .original-text {
-            font-family: var(--font-original);
-            font-size: 1.5rem;
-            line-height: var(--line-height-scripture);
-            color: var(--navy);
-            margin: var(--space-lg) 0;
-            padding: var(--space-lg);
-            background: white;
-            border-left: 4px solid var(--navy);
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-            direction: ltr; /* Greek reads left-to-right */
-            font-weight: 400;
-        }
-
-        .translation {
-            font-family: var(--font-scripture);
-            font-size: 1.15rem;
-            line-height: var(--line-height-scripture);
-            color: var(--text-primary);
-            margin: var(--space-md) 0;
-            padding-left: var(--space-lg);
-            max-width: var(--max-reading-width);
-        }
-
-        .translation strong {
-            font-family: var(--font-commentary);
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--burgundy);
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            margin-right: var(--space-xs);
-        }
-
-        /* ========================================
-           TYPOGRAPHY: Commentary & Analysis
-           ======================================== */
-        .section h4 {
-            font-family: var(--font-headings);
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--navy);
-            margin-top: var(--space-xl);
-            margin-bottom: var(--space-md);
-            padding-top: var(--space-md);
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .section h4:first-of-type {
-            margin-top: 0;
-            border-top: none;
-            padding-top: 0;
-        }
-
-        .section p {
-            font-family: var(--font-commentary);
-            font-size: 1.05rem;
-            line-height: var(--line-height-commentary);
-            color: var(--text-secondary);
-            margin-bottom: var(--space-lg);
-            max-width: var(--max-reading-width);
-            hyphens: auto;
-            text-align: justify;
-            text-justify: inter-word;
-        }
-
-        .section ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: var(--space-lg);
-        }
-
-        .section ul li {
-            font-family: var(--font-commentary);
-            font-size: 1.05rem;
-            line-height: var(--line-height-commentary);
-            color: var(--text-secondary);
-            margin-bottom: var(--space-md);
-            padding-left: var(--space-xl);
-            position: relative;
-        }
-
-        .section ul li::before {
-            content: '◆';
-            position: absolute;
-            left: var(--space-md);
-            color: var(--gold);
-            font-size: 0.7em;
-        }
-
-        /* ========================================
-           FOOTER: Attribution
+           SITE FOOTER
            ======================================== */
         footer {
             margin-top: var(--space-3xl);
@@ -396,25 +203,23 @@
             margin-bottom: var(--space-sm);
         }
 
+        footer p:last-child {
+            margin-bottom: 0;
+        }
+
         /* ========================================
-           RESPONSIVE DESIGN: Mobile Optimization
+           RESPONSIVE DESIGN
            ======================================== */
         @media (max-width: 768px) {
-            :root {
-                --space-xl: 1.5rem;
-                --space-2xl: 2rem;
-                --space-3xl: 2.5rem;
-            }
-
-            header {
+            body > header {
                 padding: var(--space-xl) var(--space-md);
             }
 
-            header h1 {
+            body > header h1 {
                 font-size: 2rem;
             }
 
-            header p {
+            body > header p {
                 font-size: 1rem;
             }
 
@@ -427,39 +232,31 @@
                 margin: 0 var(--space-sm);
                 font-size: 0.95rem;
             }
-
-            .original-text {
-                font-size: 1.3rem;
-            }
-
-            .translation {
-                font-size: 1.05rem;
-                padding-left: var(--space-md);
-            }
-
-            .section {
-                padding: var(--space-lg);
-            }
-
-            .section p,
-            .section ul li {
-                text-align: left;
-            }
         }
 
         /* ========================================
-           PRINT STYLES: Beautiful Printed Output
+           ACCESSIBILITY
+           ======================================== */
+        a:focus,
+        button:focus,
+        summary:focus {
+            outline: 3px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        /* ========================================
+           PRINT OPTIMIZATION
            ======================================== */
         @media print {
             body {
                 background: white;
-                color: black;
             }
 
-            header {
+            body > header {
                 background: white;
                 color: black;
                 border-bottom: 3px solid black;
+                text-shadow: none;
             }
 
             nav {
@@ -470,47 +267,12 @@
                 box-shadow: none;
                 max-width: 100%;
                 padding: 0;
-            }
-
-            .verse {
-                page-break-inside: avoid;
-            }
-
-            .section {
-                page-break-inside: avoid;
-                border: 1px solid #ccc;
+                margin: 0;
             }
 
             footer {
                 border-top: 1px solid black;
-            }
-        }
-
-        /* ========================================
-           ACCESSIBILITY: Focus States
-           ======================================== */
-        a:focus,
-        button:focus {
-            outline: 3px solid var(--gold);
-            outline-offset: 2px;
-        }
-
-        /* ========================================
-           ENHANCEMENTS: Subtle Animations
-           ======================================== */
-        .verse,
-        .section {
-            animation: fadeIn 0.6s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+                background: white;
             }
         }
     </style>
