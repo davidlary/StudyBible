@@ -97,11 +97,19 @@ title: Acts Chapter 10
             {% if verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names %}
             <div class="note-section">
                 <h3 class="note-heading">Linguistic Mechanics & Etymology</h3>
+                <div class="note-prose">
                 {% if verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names | join(' ') }}</p>
+                    {% for item in verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names %}
+                        {% if item.entry %}
+                            <p><strong>{{item.entry}}:</strong> {{item.theological_significance}}</p>
+                        {% else %}
+                            <p>{{item}}</p>
+                        {% endif %}
+                    {% endfor %}
                 {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names }}</p>
+                    <p>{{ verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names }}</p>
                 {% endif %}
+                </div>
             </div>
             {% endif %}
 

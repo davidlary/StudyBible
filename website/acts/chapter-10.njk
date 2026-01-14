@@ -121,11 +121,19 @@ title: Acts Chapter 10
             {% if verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names %}
             <div class="note-section">
                 <h3 class="note-heading">Linguistic Mechanics & Etymology</h3>
+                <div class="note-prose">
                 {% if verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names | join(' ') }}</p>
+                    {% for item in verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names %}
+                        {% if item.entry %}
+                            <p><strong>{{item.entry}}:</strong> {{item.theological_significance}}</p>
+                        {% else %}
+                            <p>{{item}}</p>
+                        {% endif %}
+                    {% endfor %}
                 {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names }}</p>
+                    <p>{{ verse.data.section_2_exegetical_synthesis.linguistic_mechanics_and_names }}</p>
                 {% endif %}
+                </div>
             </div>
             {% endif %}
 
@@ -133,11 +141,15 @@ title: Acts Chapter 10
             {% if verse.data.section_2_exegetical_synthesis.literal_primary_filter %}
             <div class="note-section">
                 <h3 class="note-heading">Textual & Contextual Analysis</h3>
+                <div class="note-prose">
                 {% if verse.data.section_2_exegetical_synthesis.literal_primary_filter | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literal_primary_filter | join(' ') }}</p>
+                    {% for paragraph in verse.data.section_2_exegetical_synthesis.literal_primary_filter %}
+                        <p>{{paragraph}}</p>
+                    {% endfor %}
                 {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.literal_primary_filter }}</p>
+                    <p>{{ verse.data.section_2_exegetical_synthesis.literal_primary_filter }}</p>
                 {% endif %}
+                </div>
             </div>
             {% endif %}
 
@@ -177,11 +189,21 @@ title: Acts Chapter 10
             {% if verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality %}
             <div class="note-section">
                 <h3 class="note-heading">Prophetic Typology & Intertextuality</h3>
-                {% if verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality }}</p>
+                <div class="note-prose">
+                {% set propheticData = verse.data.section_2_exegetical_synthesis.prophetic_typology_and_intertextuality %}
+                {% if propheticData.type_shadow %}
+                    <p><strong>Type/Shadow:</strong> {{propheticData.type_shadow}}</p>
                 {% endif %}
+                {% if propheticData.antitype_fulfillment %}
+                    <p><strong>Antitype/Fulfillment:</strong> {{propheticData.antitype_fulfillment}}</p>
+                {% endif %}
+                {% if propheticData.progression_notes %}
+                    <p><strong>Progression:</strong> {{propheticData.progression_notes}}</p>
+                {% endif %}
+                {% if not propheticData.type_shadow and not propheticData.antitype_fulfillment %}
+                    <p>{{propheticData}}</p>
+                {% endif %}
+                </div>
             </div>
             {% endif %}
 
@@ -189,11 +211,18 @@ title: Acts Chapter 10
             {% if verse.data.section_2_exegetical_synthesis.historical_context_and_chronology %}
             <div class="note-section">
                 <h3 class="note-heading">Historical Context & Chronology</h3>
-                {% if verse.data.section_2_exegetical_synthesis.historical_context_and_chronology | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.historical_context_and_chronology | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.historical_context_and_chronology }}</p>
+                <div class="note-prose">
+                {% set historicalData = verse.data.section_2_exegetical_synthesis.historical_context_and_chronology %}
+                {% if historicalData.dates %}
+                    <p><strong>Dating:</strong> {{historicalData.dates}}</p>
                 {% endif %}
+                {% if historicalData.context %}
+                    <p>{{historicalData.context}}</p>
+                {% endif %}
+                {% if not historicalData.dates and not historicalData.context %}
+                    <p>{{historicalData}}</p>
+                {% endif %}
+                </div>
             </div>
             {% endif %}
 
@@ -201,11 +230,24 @@ title: Acts Chapter 10
             {% if verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography %}
             <div class="note-section">
                 <h3 class="note-heading">Geography & Physical Setting</h3>
-                {% if verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography | isArray %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography | join(' ') }}</p>
-                {% else %}
-                    <p class="note-prose">{{ verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography }}</p>
+                <div class="note-prose">
+                {% set geoData = verse.data.section_2_exegetical_synthesis.geospatial_and_physical_geography %}
+                {% if geoData.modern_location %}
+                    <p><strong>Location:</strong> {{geoData.modern_location}}</p>
                 {% endif %}
+                {% if geoData.coordinates %}
+                    <p><strong>Coordinates:</strong> {{geoData.coordinates}}</p>
+                {% endif %}
+                {% if geoData.altitude_m %}
+                    <p><strong>Altitude:</strong> {{geoData.altitude_m}}m</p>
+                {% endif %}
+                {% if geoData.terrain_climate_characteristics %}
+                    <p>{{geoData.terrain_climate_characteristics}}</p>
+                {% endif %}
+                {% if not geoData.modern_location and not geoData.coordinates %}
+                    <p>{{geoData}}</p>
+                {% endif %}
+                </div>
             </div>
             {% endif %}
 
