@@ -1,41 +1,47 @@
 # StudyBible
 
-High-fidelity biblical exegesis with original language analysis, comprehensive theological synthesis, and AI-powered deep reasoning.
+High-fidelity biblical exegesis with interlinear analysis, fact-checking, comprehensive tagging, and AI-powered deep reasoning.
 
 ## Overview
 
 StudyBible is a Python CLI application that generates comprehensive biblical exegesis for all 31,102 verses of the Protestant canon (66 books). Each verse includes:
 
+- **Interlinear Analysis**: Word-by-word morphology with Strong's numbers, parsing codes, transliteration (like Blue Letter Bible)
 - **Original Language Texts**: Hebrew (Westminster Leningrad Codex via OSHB) and Greek (SBLGNT)
 - **Four Translations**: Original script, faithful direct translation, standalone English, amplified narrative
+- **Geographic Calculations**: Straight-line and ancient route distances, elevations, travel times
+- **Comprehensive Tags**: 60+ categories across 5 tiers for database-like searching
+- **Fact-Checking Pipeline**: Multi-tier validation using Grok API (xAI)
 - **Exegetical Synthesis**: Ten comprehensive analysis dimensions including:
-  - Literal-Primary Filter (Sensus Literalis)
+  - Linguistic Mechanics & Etymology
+  - Textual & Contextual Analysis
+  - Scripture Interpreting Scripture
+  - Practical Application
   - Prophetic Typology & Intertextuality
-  - Linguistic Mechanics & Names
-  - Literary Devices
-  - Numerical & Gematria Significance
   - Historical Context & Chronology
-  - Socio-Political Matrix
-  - Geospatial Data & Physical Geography
+  - Geography & Physical Setting
+  - Socio-Political Context
   - Archaeological Confirmation
-  - Aggregate Perspective & Analogia Scriptura
-- **Life Application**: Practical guidance for contemporary living
+  - Literary Devices
 
 ## Features
 
-- **AI-Powered Analysis**: Uses Google Gemini 2.5 Pro for deep reasoning and exegetical synthesis
+- **AI-Powered Analysis**: Google Gemini 2.5 Pro for deep reasoning + Grok API for fact-checking
+- **True Interlinear**: Word-by-word Greek/Hebrew analysis with morphology and Strong's numbers
+- **Geographic Intelligence**: Distance calculations, elevations, travel time estimates with uncertainty notes
+- **Comprehensive Tagging**: 60+ tag categories (people, places, concepts, literary devices, etc.)
+- **Multi-Tier Fact-Checking**: Ground truth → Database → AI review with auto-correction
 - **Original Source Texts**: Direct extraction from OSHB (Hebrew) and SBLGNT (Greek) repositories
-- **JSON Flat-File Database**: Structured data storage at `/data/{OT|NT}/{BOOK}/{CH}/{VS}.json`
-- **Static Website**: Eleventy-powered site with custom isArray filter for flexible data rendering
+- **JSON Flat-File Database**: Structured data with tag indexes for static site searching
+- **Static Website**: Eleventy-powered site with responsive design (70ch → 90ch)
 - **GitHub Pages Deployment**: Automatic deployment via GitHub Actions
-- **Comprehensive Testing**: 190 tests with 81% coverage, pytest-based test suite
+- **Comprehensive Testing**: 19+ unit tests for fact-checking pipeline
 
 ## Live Website
 
 Visit the live StudyBible at: **https://davidlary.github.io/StudyBible/**
 
-**Currently available**: Acts Chapter 10 (17 verses with complete exegesis)
-*Note: Generation in progress - target is all 48 verses of Acts 10*
+**Currently available**: Acts Chapter 10 (18 verses with complete interlinear analysis and fact-checking)
 
 ## Installation
 
@@ -44,6 +50,7 @@ Visit the live StudyBible at: **https://davidlary.github.io/StudyBible/**
 - Python 3.12+
 - Node.js 20+
 - Google Gemini API key ([Get one here](https://console.cloud.google.com/apis/credentials))
+- xAI Grok API key (optional, for fact-checking)
 - Git
 
 ### Setup
@@ -60,12 +67,19 @@ Visit the live StudyBible at: **https://davidlary.github.io/StudyBible/**
    ```
 
 3. **Set up environment variables:**
-   ```bash
-   cp .env.example .env
-   # Edit .env and add your GOOGLE_API_KEY
+
+   API keys are configured via `~/Dropbox/Environments/.env-keys.yml`:
+   ```yaml
+   google_api_key: 'your-gemini-api-key-here'
+   xai_api_key: 'your-grok-api-key-here'
    ```
 
-   **IMPORTANT**: Never commit `.env` to git! It contains your API key.
+   Then load them:
+   ```bash
+   source ~/Dropbox/Environments/Code/StudyBible/load_api_keys.sh
+   ```
+
+   **IMPORTANT**: API keys stored in environment variables only, never committed to git.
 
 4. **Download source texts:**
    ```bash
@@ -86,11 +100,10 @@ Visit the live StudyBible at: **https://davidlary.github.io/StudyBible/**
 ### Generate Single Verse
 
 ```bash
-export GOOGLE_API_KEY="your_api_key_here"
 python -m src.cli generate Acts 10 1
 ```
 
-Output will be written to: `data/NT/Acts/10/01.json`
+Output written to: `data/NT/Acts/10/01.json`
 
 ### Generate Entire Chapter
 
@@ -98,7 +111,18 @@ Output will be written to: `data/NT/Acts/10/01.json`
 python -m src.cli generate-chapter Acts 10
 ```
 
-**Note**: This can take 2-3 hours for a 48-verse chapter due to API rate limits.
+**Note**: This takes 2-4 hours for a 48-verse chapter due to API rate limits (~1 verse/minute).
+
+### Build Tag Indexes
+
+```bash
+python3 src/tag_indexer.py
+```
+
+Generates search indexes in `website/_data/`:
+- `tag_index.json` - Flat index for JavaScript filtering
+- `tag_categories.json` - Category summaries
+- `verse_tags.json` - Per-verse tag lists
 
 ### Build Website
 
@@ -112,307 +136,283 @@ Or for development with live reload:
 npm run serve
 ```
 
-### Build Search Index
-
-```bash
-npm run search
-```
-
 ### Run Tests
 
 ```bash
-pytest                          # Run all tests
-pytest --cov=src               # With coverage report
-pytest tests/unit/              # Unit tests only
-pytest -n auto                  # Parallel execution (faster)
+pytest tests/unit/test_fact_checker.py -v    # Fact-checking tests (19 tests)
+pytest --cov=src                              # With coverage report
+pytest -n auto                                # Parallel execution
 ```
 
 ## Project Structure
 
 ```
 StudyBible/
-├── src/                        # Python source code (10 core modules)
-│   ├── config.py              # Configuration & environment management
-│   ├── bible_structure.py     # 66-book canon structure (31,102 verses)
-│   ├── source_fetcher.py      # Download OSHB/SBLGNT repositories
-│   ├── verse_extractor.py     # Extract Hebrew/Greek text + morphology
-│   ├── schema_validator.py    # JSON schema validation (11 mandatory checks)
-│   ├── gemini_client.py       # Gemini API client with retry logic
-│   ├── exegesis_generator.py  # Orchestrate generation pipeline
-│   ├── data_writer.py         # Atomic write JSON files
-│   ├── batch_processor.py     # Process multiple verses with checkpoints
+├── src/                        # Python source code
+│   ├── config.py              # API key handling (YAML parsing fix)
+│   ├── bible_structure.py     # 66-book canon (31,102 verses)
+│   ├── source_fetcher.py      # Download OSHB/SBLGNT
+│   ├── verse_extractor.py     # Extract Hebrew/Greek + morphology
+│   ├── schema_validator.py    # JSON schema validation
+│   ├── gemini_client.py       # Gemini API client
+│   ├── exegesis_generator.py  # Generation pipeline
+│   ├── fact_checker.py        # Multi-tier fact-checking (NEW)
+│   ├── tag_indexer.py         # Tag extraction & indexing (NEW)
+│   ├── data_writer.py         # Atomic JSON writes
+│   ├── batch_processor.py     # Batch with checkpoints
 │   └── cli.py                 # Command-line interface
-├── tests/                     # Test suite (190 tests, 81% coverage)
-│   ├── unit/                  # Unit tests for each module
+├── tests/                     # Test suite
+│   ├── unit/test_fact_checker.py  # 19 tests for fact-checking
 │   ├── integration/           # Integration tests
-│   └── fixtures/              # Test fixtures and sample data
+│   └── fixtures/              # Test fixtures
 ├── data/                      # Generated verse JSON files
-│   └── NT/Acts/10/            # Acts chapter 10 (17 verses so far)
-├── sources/                   # Biblical source texts (not in git)
-│   ├── morphhb/               # OSHB (Hebrew) - cloned via download-sources
-│   └── sblgnt/                # SBLGNT (Greek) - cloned via download-sources
+│   └── NT/Acts/10/            # Acts 10 (18 verses)
+├── sources/                   # Biblical source texts (git-ignored)
+│   ├── morphhb/               # OSHB (Hebrew)
+│   └── sblgnt/                # SBLGNT (Greek)
 ├── website/                   # Eleventy static site
-│   ├── .eleventy.js           # Eleventy config with custom isArray filter
-│   ├── _includes/             # Layout templates (Nunjucks)
-│   │   └── layout.njk         # Main layout with embedded CSS
-│   ├── _data/                 # Data files
-│   │   └── acts10_verses.js   # Loads Acts 10 JSON data
+│   ├── .eleventy.js           # Custom filters (isArray, markdownItalics)
+│   ├── _includes/             # Layout templates
+│   ├── _data/                 # Data files + tag indexes
+│   │   ├── tag_index.json         # Flat tag index (generated)
+│   │   ├── tag_categories.json    # Tag summaries (generated)
+│   │   └── verse_tags.json        # Per-verse tags (generated)
 │   ├── acts/                  # Acts chapter pages
-│   │   └── chapter-10.njk     # Acts 10 template (handles arrays & strings)
+│   │   └── chapter-10.njk     # Acts 10 (updated for new schema)
 │   └── index.njk              # Homepage
 ├── schemas/                   # JSON validation schemas
-│   └── verse_schema.json      # 58-field verse schema
-├── .github/workflows/         # GitHub Actions CI/CD
-│   └── deploy.yml             # Automated deployment to GitHub Pages
-├── StudyPrompt.md             # Comprehensive exegetical requirements
+│   └── verse_schema.json      # 70+ field schema (updated)
+├── vocabularies/              # Controlled vocabularies (NEW)
+│   └── controlled_terms.json  # Consistent terminology
+├── .github/workflows/         # GitHub Actions
+│   └── deploy.yml             # Auto-deployment
+├── StudyPrompt.md             # 300+ line comprehensive prompt
+├── CLAUDE_README.md           # Context for Claude Code sessions (NEW)
+├── IMPLEMENTATION_COMPLETE.md # Full implementation report (NEW)
+├── USER_SUMMARY.md            # Quick-start guide (NEW)
 ├── requirements.txt           # Python dependencies
-├── package.json               # Node dependencies + build scripts
-├── .env.example               # Template for environment variables
-├── .gitignore                 # Excludes .env, .claude, sources/, node_modules/
-└── README.md                  # This file
+└── package.json               # Node dependencies
 ```
 
 ## Technology Stack
 
 ### Backend
 - **Python 3.12**: Core application
-- **Google Gemini 2.5 Pro**: AI-powered exegetical analysis with thinking mode
-- **pytest**: Testing framework (190 tests, 81% coverage)
-- **lxml**: XML parsing for OSHB Hebrew texts
-- **jsonschema**: JSON validation with 11 mandatory field checks
-- **click**: CLI framework for command-line interface
-- **rich**: Beautiful terminal output with progress bars
+- **Google Gemini 2.5 Pro**: Exegetical analysis with thinking mode
+- **Grok API (xAI)**: Fact-checking and validation
+- **pytest**: Testing framework (19+ tests)
+- **lxml**: XML parsing for OSHB
+- **jsonschema**: JSON validation
+- **requests**: HTTP client for APIs
 
 ### Frontend
 - **Eleventy 3.1.2**: Static site generator
-- **Nunjucks**: Templating engine with custom filters
-- **Pagefind 1.4.0**: Client-side full-text search
-- **Custom isArray filter**: Handles mixed array/string data types
+- **Nunjucks**: Templating with custom filters
+  - `isArray`: Handle mixed data types
+  - `markdownItalics`: Convert *text* to <em>text</em>
+- **Pagefind 1.4.0**: Client-side search (planned)
+- **Responsive CSS**: 70ch → 90ch on wide screens
 
 ### Sources
-- **OSHB**: Open Scriptures Hebrew Bible (Westminster Leningrad Codex)
-- **SBLGNT**: Society of Biblical Literature Greek New Testament
+- **OSHB**: Westminster Leningrad Codex (Hebrew/Aramaic)
+- **SBLGNT**: SBL Greek New Testament
 
 ### Deployment
-- **GitHub Pages**: Static hosting at davidlary.github.io/StudyBible
-- **GitHub Actions**: Automated CI/CD pipeline on every push
-
-## Development
-
-### Running Tests
-
-```bash
-# All tests with coverage report
-pytest --cov=src --cov-report=html
-
-# Specific test file
-pytest tests/unit/test_exegesis_generator.py -v
-
-# Parallel execution (faster)
-pytest -n auto
-
-# Integration tests only
-pytest tests/integration/ -v
-```
-
-### Code Quality
-
-```bash
-# Linting
-ruff check src/
-
-# Type checking
-mypy src/
-
-# Formatting
-black src/ tests/
-```
-
-### Debugging Template Issues
-
-If the website displays incorrectly:
-
-1. **Build locally**: `npm run build`
-2. **Check generated HTML**: `website/_site/acts/chapter-10/index.html`
-3. **Verify data loading**: Check console output for "Loaded N verses"
-4. **Test isArray filter**: Ensure arrays render as `<ul>`, strings as `<p>`
+- **GitHub Pages**: Static hosting
+- **GitHub Actions**: Automated CI/CD
 
 ## Architecture
 
 ### Generation Pipeline
 
-1. **Extract Verse**: Read Hebrew/Greek text from source repositories
-   - OSHB: Parse XML files with lxml
-   - SBLGNT: Parse text files
-2. **Build Prompt**: Combine StudyPrompt.md with verse reference and text
-3. **Generate Exegesis**: Call Gemini 2.5 Pro API with comprehensive prompt
-   - Uses thinking mode for deep reasoning
-   - Retry logic with exponential backoff
-4. **Validate JSON**: Check against 58-field schema with 11 mandatory validations
-   - Thematic cognates, name etymologies, prophetic types
-   - Numerical data, literary devices, historical dates
-   - Socio-political context, geospatial coordinates
-   - Physical geography, archaeological data
-   - All Scripture cross-references
-5. **Write File**: Atomic write to `/data/{testament}/{book}/{chapter}/{verse}.json`
+1. **Extract Verse**: Read Hebrew/Greek from source repos
+2. **Build Prompt**: Combine StudyPrompt.md (300+ lines) with verse data
+3. **Generate Exegesis**: Call Gemini 2.5 Pro
+4. **Fact-Check**: Multi-tier validation
+   - TIER 1: Ground truth (verse refs, original text, cross-refs)
+   - TIER 2: Database (coordinates, dates)
+   - TIER 3: Expert AI review (Grok API)
+   - Auto-correction loop (max 3 retries)
+5. **Validate JSON**: Check against schema (70+ fields)
+6. **Write File**: Atomic write to `data/{OT|NT}/{BOOK}/{CH}/{VS}.json`
 
-### Website Build
+### Fact-Checking Pipeline (NEW)
 
-1. **Data Loading**: `website/_data/acts10_verses.js` reads JSON files
-2. **Template Rendering**: Nunjucks templates with verse data
-   - Custom `isArray` filter handles mixed data types
-   - Arrays → `<ul>` bullet lists
-   - Strings → `<p>` paragraphs with line breaks
-3. **Static Generation**: Eleventy builds HTML pages to `website/_site/`
-4. **Search Indexing**: Pagefind indexes all content for client-side search
-5. **Deployment**: GitHub Actions builds and deploys to GitHub Pages
+Multi-tier validation ensures accuracy:
 
-### Template Data Type Handling
+1. **Ground Truth Checks**:
+   - Verse reference validity
+   - Original language text match (SBLGNT/OSHB)
+   - Cross-reference verification
 
-The project handles **inconsistent data types** across verses:
-- **Verse 1**: Arrays (e.g., `["item1", "item2"]`)
-- **Verse 2**: Strings (e.g., `"paragraph 1\nparagraph 2"`)
+2. **Database Verification**:
+   - Geographic coordinates (-90 to 90 lat, -180 to 180 long)
+   - Historical dates (reasonable ranges)
 
-**Solution**: Custom `isArray` filter in `.eleventy.js`:
-```javascript
-eleventyConfig.addFilter("isArray", function(value) {
-  return Array.isArray(value);
-});
-```
+3. **Expert AI Review**:
+   - Grok API analyzes exegetical content
+   - Checks historical accuracy, theological soundness
+   - Auto-correction on failures (up to 3 attempts)
 
-Template logic:
+**Result**: `FactCheckResult` with issues, warnings, overall pass/fail
+
+### Tag System (NEW)
+
+Comprehensive tagging for database-like functionality:
+
+**5-Tier Taxonomy** (60+ categories):
+1. **Foundational Theology**: deity, trinity, salvation, sin
+2. **Applied Theology**: prayer, worship, spiritual_disciplines
+3. **Relational Ethics**: love, justice, humility
+4. **Cultural Historical**: people, places, nationalities, professions
+5. **Literary Prophetic**: literary_devices, prophecies, types_shadows
+
+**Implementation**:
+- Tags nested in verse JSON
+- Flat indexes generated by `tag_indexer.py`
+- JavaScript filtering (planned)
+
+### Template Rendering Fixes
+
+**Challenge**: Mixed data structures in JSON
+- Some fields are strings
+- Some are lists of strings
+- Some are lists of dicts
+- Some are dicts with nested fields
+
+**Solution**: Custom Nunjucks logic
 ```nunjucks
-{% if field | isArray %}
-  <ul>{% for item in field %}<li>{{ item }}</li>{% endfor %}</ul>
-{% else %}
-  <p>{{ field | replace("\n", "<br>") | safe }}</p>
+{# Handle list of dicts #}
+{% for item in linguistic_mechanics_and_names %}
+  {% if item.entry %}
+    <p><strong>{{item.entry}}:</strong> {{item.theological_significance}}</p>
+  {% endif %}
+{% endfor %}
+
+{# Handle dicts with specific keys #}
+{% if propheticData.type_shadow %}
+  <p><strong>Type/Shadow:</strong> {{propheticData.type_shadow | markdownItalics | safe}}</p>
 {% endif %}
+
+{# Handle coordinates dict #}
+<p>{{coordinates.lat}}°N, {{coordinates.long}}°E</p>
 ```
 
-## Security Best Practices
+## API Key Configuration (IMPORTANT)
 
-### API Key Management
+API keys are managed via YAML file:
 
-**CRITICAL**: Never commit API keys to git!
+**Location**: `/Users/davidlary/Dropbox/Environments/.env-keys.yml`
 
-1. **Environment Variables**: Store API key in `.env` (git-ignored)
-2. **Template File**: `.env.example` contains only placeholders
-3. **Validation**: Code checks API key format (must start with "AIzaSy")
-4. **Git History**: Previous exposed keys have been removed
-
-### Protected Files (in .gitignore)
-
-- `.env` - Contains real API key
-- `.env.local` - Local environment overrides
-- `.claude/` - Claude Code settings with API keys
-- `sources/` - Downloaded biblical texts (large files)
-- `node_modules/` - Node dependencies
-- `website/_site/` - Generated static site
-
-### Verifying Security
-
-```bash
-# Check for exposed API keys
-git log --all -S "AIzaSy" --source --
-
-# Verify .gitignore is working
-git status --ignored
-
-# Check for tracked sensitive files
-git ls-files | grep -E "\.env|\.claude"
+**Format**:
+```yaml
+google_api_key: 'AIzaSy...'
+xai_api_key: 'xai-...'
 ```
+
+**Loading**: `source load_api_keys.sh` (run before each session)
+
+**Security**:
+- Keys stored in environment variables only
+- Never committed to git
+- `src/config.py` handles malformed environment variables by reading YAML directly
 
 ## API Usage & Costs
 
-### Cost Estimation (Gemini 2.5 Pro)
+### Cost Estimation
 
-- **Per Verse**: ~10-15KB input + ~5-10KB output = ~$0.01-0.02 per verse
-- **Acts 10** (48 verses): ~$0.50-1.00
-- **Full Bible** (31,102 verses): ~$300-600
+**Gemini 2.5 Pro**:
+- Per Verse: ~$0.02-0.03 (with thinking mode)
+- Acts 10 (48 verses): ~$1-1.50
+- Full Bible (31,102 verses): ~$600-900
+
+**Grok API** (fact-checking):
+- Per Verse: ~$0.01-0.02
+- Acts 10: ~$0.50-1.00
 
 ### Rate Limits
 
-- **Free Tier**: ~15 requests/minute
+- **Gemini Free Tier**: ~15 requests/minute
+- **Processing Speed**: ~1 verse/minute with thinking mode
 - **Estimated Time**:
-  - Acts 10: 2-3 hours (48 verses at 3-4 minutes/verse)
-  - Full Bible: 7-10 days continuous processing (31,102 verses)
+  - Acts 10: 2-4 hours (48 verses)
+  - Full Bible: 7-14 days continuous
 
-### Optimization
+## Roadmap
 
-- Batch processing with checkpoint/resume capability
-- Exponential backoff on rate limit errors
-- Atomic writes prevent data corruption
-- Progress tracking every 10 verses
+- [x] Interlinear analysis (word-by-word morphology)
+- [x] Fact-checking pipeline (Grok API)
+- [x] Comprehensive tags (60+ categories)
+- [x] Geographic calculations (distances, elevations)
+- [x] Responsive design (70ch → 90ch)
+- [x] Generate Acts 10:1-18 (18/48 complete)
+- [ ] Complete Acts 10 (30 verses remaining)
+- [ ] Tag search UI (JavaScript filtering)
+- [ ] Full-text search (Pagefind integration)
+- [ ] Generate entire Book of Acts (28 chapters)
+- [ ] Complete New Testament (27 books)
+- [ ] Complete Old Testament (39 books)
 
 ## Troubleshooting
 
 ### Common Issues
 
-1. **"Layout not found" error**:
-   - Use correct build command: `npm run build`
-   - Or: `npx @11ty/eleventy --input=website --output=website/_site --config=website/.eleventy.js`
+1. **API Key Not Working**:
+   - Check YAML file: `~/Dropbox/Environments/.env-keys.yml`
+   - Reload keys: `source load_api_keys.sh`
+   - Test: `python3 -c "from src.config import get_gemini_api_key; print(get_gemini_api_key())"`
 
-2. **"[object Object]" on website**:
-   - Fixed! Custom `isArray` filter handles mixed data types
-   - Rebuild with: `npm run build`
+2. **[object Object] Rendering**:
+   - Fixed via custom template logic for nested structures
+   - Rebuild: `npm run build`
 
-3. **API rate limit errors**:
-   - Wait 60 seconds between batches
-   - Check rate limits in Google Cloud Console
+3. **Coordinates Not Showing**:
+   - Fixed via dict rendering: `{{coordinates.lat}}°N, {{coordinates.long}}°E`
 
-4. **Source files not found**:
-   - Run: `python -m src.cli download-sources`
-   - Verify: `sources/morphhb/` and `sources/sblgnt/` exist
+4. **Italics Not Rendering** (*text* showing as-is):
+   - Fixed via `markdownItalics` filter
+   - Converts `*word*` to `<em>word</em>`
 
-5. **GitHub Pages showing old version**:
-   - CDN cache can take 5-10 minutes to update
-   - Check deployment status: `gh run list --limit 5`
+5. **GitHub Pages Caching**:
+   - Hard refresh: Cmd+Shift+R (Mac) or Ctrl+Shift+R (Windows)
+   - CDN takes 5-10 minutes to update
 
-## Contributing
+## Security Best Practices
 
-This is a personal research project. Contributions welcome via issues and pull requests.
+**CRITICAL**: API keys managed via environment variables only
 
-### Development Workflow
+1. **YAML Configuration**: Keys in `~/Dropbox/Environments/.env-keys.yml`
+2. **Git Exclusion**: YAML file not in repository
+3. **Session Loading**: `source load_api_keys.sh` before each session
+4. **Fallback**: `src/config.py` reads YAML directly if env var malformed
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make changes and add tests
-4. Ensure tests pass: `pytest --cov=src`
-5. Commit changes: `git commit -m "Add amazing feature"`
-6. Push to branch: `git push origin feature/amazing-feature`
-7. Open a Pull Request
-
-## Roadmap
-
-- [x] Generate Acts 10 verses (17/48 complete)
-- [ ] Complete Acts 10 (31 verses remaining)
-- [ ] Add full-text search with Pagefind
-- [ ] Generate entire Book of Acts (28 chapters)
-- [ ] Add verse cross-reference navigation
-- [ ] Implement parallel processing for faster generation
-- [ ] Add PDF export for offline study
-- [ ] Generate complete New Testament (27 books)
-- [ ] Generate complete Old Testament (39 books)
+**Protected in .gitignore**:
+- `.env-keys.yml`
+- `load_api_keys.sh` (generated, may contain bugs)
+- `.claude/` (Claude Code settings)
+- `sources/` (large downloaded files)
+- `node_modules/`
 
 ## License
 
-This project is licensed under the MIT License - see LICENSE file for details.
+MIT License - see LICENSE file for details.
 
 ## Acknowledgments
 
-- **OSHB**: Open Scriptures Hebrew Bible project - faithful Hebrew source text
-- **SBLGNT**: Society of Biblical Literature and Logos Bible Software - critical Greek text
-- **Google**: Gemini 2.5 Pro API for AI-powered analysis with thinking mode
-- **Eleventy**: Excellent static site generator with flexible templating
-- **CPF**: Context-Preserving Framework v4.3.0 for development assistance
+- **OSHB**: Open Scriptures Hebrew Bible project
+- **SBLGNT**: Society of Biblical Literature + Logos Bible Software
+- **Google**: Gemini 2.5 Pro API
+- **xAI**: Grok API for fact-checking
+- **Eleventy**: Static site generator
+- **CPF v4.3.0**: Development framework
 
 ## Contact
 
 David Lary - [GitHub](https://github.com/davidlary)
 
-**Project Link**: [https://github.com/davidlary/StudyBible](https://github.com/davidlary/StudyBible)
+**Project**: [https://github.com/davidlary/StudyBible](https://github.com/davidlary/StudyBible)
 
-**Live Website**: [https://davidlary.github.io/StudyBible/](https://davidlary.github.io/StudyBible/)
+**Live Site**: [https://davidlary.github.io/StudyBible/](https://davidlary.github.io/StudyBible/)
 
 ---
 
