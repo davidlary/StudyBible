@@ -19,7 +19,8 @@ import google.generativeai as genai
 
 
 # Default model for exegesis generation
-DEFAULT_MODEL = "gemini-2.0-flash-thinking-exp-1219"
+# Using gemini-2.5-pro for deepest reasoning capability
+DEFAULT_MODEL = "gemini-2.5-pro"
 
 # Retry configuration
 DEFAULT_MAX_RETRIES = 3
