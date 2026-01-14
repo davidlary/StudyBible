@@ -15,7 +15,7 @@ class TestGeminiClient:
     @pytest.fixture
     def mock_api_key(self):
         """Mock API key for testing."""
-        return "AIzaSyDlyXl026OvnvXqR4vVnZQWUcw15vtqFuI"
+        return "AIzaSyMOCK_TEST_KEY_DO_NOT_USE_12345"
 
     @pytest.fixture
     def sample_json_response(self):

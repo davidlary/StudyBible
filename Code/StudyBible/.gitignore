@@ -1,0 +1,6 @@
+# Context-Preserving Framework
+.cpf/state/
+.cpf/logs/
+
+# Claude settings (may contain API keys)
+.claude/
