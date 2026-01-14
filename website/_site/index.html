@@ -3,95 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Home - StudyBible</title>
+    <!-- Build: 2026-01-14-v4 CSS Fix Verified and Redeployed -->
+
+    <!-- Google Fonts: Biblical Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Spectral:wght@400;600;700&display=swap&v=3" rel="stylesheet">
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* ========================================
+           FOUNDATIONAL RESET & CSS VARIABLES
+           ======================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Color Palette: Legacy Standard Bible Inspired */
+            --cream-bg: #FFFEF9;
+            --warm-white: #FAF8F3;
+            --soft-ivory: #F5F3ED;
+
+            /* Text Colors */
+            --text-primary: #2D3748;
+            --text-secondary: #4A5568;
+            --text-muted: #718096;
+
+            /* Accent Colors */
+            --burgundy: #8B2635;
+            --burgundy-light: #A73B4A;
+            --navy: #1A365D;
+            --navy-light: #2C5282;
+            --gold: #B8860B;
+            --gold-light: #D4A017;
+
+            /* Section Colors */
+            --sacred-bg: #EFF6FF;
+            --sacred-border: #BFDBFE;
+            --exegesis-bg: #FFFBEB;
+            --exegesis-border: #FDE68A;
+            --application-bg: #F0FDF4;
+            --application-border: #BBF7D0;
+
+            /* Typography Scale */
+            --font-scripture: 'Crimson Text', 'Cardo', 'EB Garamond', Georgia, serif;
+            --font-original: 'Gentium Book Plus', 'Cardo', 'EB Garamond', serif;
+            --font-commentary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-headings: 'Spectral', Georgia, serif;
+
+            /* Spacing Scale (8px grid system) */
+            --space-xs: 0.5rem;
+            --space-sm: 0.75rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+
+            /* Reading Optimized */
+            --max-reading-width: 70ch;
+            --line-height-scripture: 1.75;
+            --line-height-commentary: 1.7;
+            --line-height-compact: 1.5;
+        }
+
+        /* ========================================
+           BODY & DOCUMENT FOUNDATION
+           ======================================== */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
+            font-family: var(--font-commentary);
+            font-size: 16px;
+            line-height: var(--line-height-commentary);
+            color: var(--text-primary);
+            background: var(--cream-bg);
+            background-image: linear-gradient(to bottom, var(--cream-bg) 0%, var(--warm-white) 100%);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 8px;
+
+        /* ========================================
+           SITE HEADER
+           ======================================== */
+        body > header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--warm-white);
+            padding: var(--space-2xl) var(--space-xl);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--gold);
         }
-        header h1 { margin-bottom: 5px; }
-        header p { opacity: 0.9; }
+
+        body > header h1 {
+            font-family: var(--font-headings);
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-bottom: var(--space-sm);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        body > header p {
+            font-family: var(--font-commentary);
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            opacity: 0.95;
+            font-variant: small-caps;
+        }
+
+        /* ========================================
+           SITE NAVIGATION
+           ======================================== */
         nav {
             background: white;
-            padding: 15px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        nav a {
-            color: #3498db;
-            text-decoration: none;
-            margin-right: 20px;
-            font-weight: 500;
-        }
-        nav a:hover { text-decoration: underline; }
-        main {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .verse {
-            margin-bottom: 40px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #eee;
-        }
-        .verse:last-child { border-bottom: none; }
-        .verse-header {
-            background: #ecf0f1;
-            padding: 10px 15px;
-            margin-bottom: 20px;
-            border-left: 4px solid #3498db;
-        }
-        .verse-id {
-            font-weight: bold;
-            color: #2c3e50;
-            font-size: 1.2em;
-        }
-        .section {
-            margin-bottom: 25px;
-        }
-        .section-title {
-            color: #2c3e50;
-            font-size: 1.1em;
-            font-weight: 600;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #3498db;
-        }
-        .original-text {
-            font-size: 1.2em;
-            color: #34495e;
-            margin: 15px 0;
-            padding: 10px;
-            background: #f8f9fa;
-            border-radius: 4px;
-            direction: rtl;
-        }
-        .translation {
-            font-size: 1.1em;
-            line-height: 1.8;
-            margin: 10px 0;
-        }
-        footer {
-            margin-top: 40px;
-            padding: 20px;
+            padding: var(--space-md) var(--space-xl);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            border-bottom: 2px solid var(--soft-ivory);
             text-align: center;
-            color: #7f8c8d;
-            font-size: 0.9em;
+        }
+
+        nav a {
+            color: var(--navy);
+            text-decoration: none;
+            margin: 0 var(--space-lg);
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+            padding: var(--space-xs) var(--space-sm);
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--burgundy);
+            border-bottom-color: var(--gold);
+        }
+
+        /* ========================================
+           MAIN CONTENT CONTAINER
+           ======================================== */
+        main {
+            max-width: 1100px;
+            margin: var(--space-2xl) auto;
+            padding: var(--space-2xl) var(--space-xl);
+            background: white;
+            box-shadow:
+                0 1px 3px rgba(0, 0, 0, 0.06),
+                0 10px 40px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+        }
+
+        /* Page Titles (h1 directly in main) */
+        main > h1 {
+            font-family: var(--font-headings);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: var(--space-sm);
+            border-bottom: 3px solid var(--gold);
+            padding-bottom: var(--space-md);
+        }
+
+        main > .subtitle {
+            font-family: var(--font-scripture);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-2xl);
+            padding-left: var(--space-md);
+            border-left: 4px solid var(--gold-light);
+        }
+
+        /* ========================================
+           SITE FOOTER
+           ======================================== */
+        footer {
+            margin-top: var(--space-3xl);
+            padding: var(--space-2xl) var(--space-xl);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: var(--line-height-compact);
+            background: var(--soft-ivory);
+            border-top: 2px solid var(--warm-white);
+        }
+
+        footer p {
+            margin-bottom: var(--space-sm);
+        }
+
+        footer p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ========================================
+           RESPONSIVE DESIGN
+           ======================================== */
+        @media (max-width: 768px) {
+            body > header {
+                padding: var(--space-xl) var(--space-md);
+            }
+
+            body > header h1 {
+                font-size: 2rem;
+            }
+
+            body > header p {
+                font-size: 1rem;
+            }
+
+            main {
+                margin: var(--space-lg) var(--space-sm);
+                padding: var(--space-xl) var(--space-md);
+            }
+
+            nav a {
+                margin: 0 var(--space-sm);
+                font-size: 0.95rem;
+            }
+        }
+
+        /* ========================================
+           ACCESSIBILITY
+           ======================================== */
+        a:focus,
+        button:focus,
+        summary:focus {
+            outline: 3px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        /* ========================================
+           PRINT OPTIMIZATION
+           ======================================== */
+        @media print {
+            body {
+                background: white;
+            }
+
+            body > header {
+                background: white;
+                color: black;
+                border-bottom: 3px solid black;
+                text-shadow: none;
+            }
+
+            nav {
+                display: none;
+            }
+
+            main {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            footer {
+                border-top: 1px solid black;
+                background: white;
+            }
         }
     </style>
 </head>
@@ -103,7 +285,7 @@
 
     <nav>
         <a href="/">Home</a>
-        <a href="/acts/">Acts</a>
+        <a href="/acts/chapter-10/">Acts</a>
     </nav>
 
     <main>
@@ -140,6 +322,7 @@
     <footer>
         <p>Generated with Google Gemini 2.5 Pro | Source texts: OSHB (Hebrew) and SBLGNT (Greek)</p>
         <p>Built with Eleventy | Deployed on GitHub Pages</p>
+        <p style="margin-top: var(--space-md); font-style: italic; color: var(--burgundy);">"Your word is a lamp to my feet and a light to my path." — Psalm 119:105</p>
     </footer>
 </body>
 </html>
