@@ -6,6 +6,12 @@ module.exports = function(eleventyConfig) {
     return Array.isArray(value);
   });
 
+  // Add custom filter to convert *text* to <em>text</em>
+  eleventyConfig.addFilter("markdownItalics", function(value) {
+    if (!value || typeof value !== 'string') return value;
+    return value.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+  });
+
   // Don't need to copy data directory as it's read at build time by _data files
 
   // Set input/output directories

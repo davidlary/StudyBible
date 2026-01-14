@@ -1,0 +1,42 @@
+{
+  "chapter_file": "Chapter-AQ-Plants-Birds-Animals.tex",
+  "chapter_number": 8,
+  "element_count": 56,
+  "chunk_count": 14,
+  "prompt_count": 14,
+  "bloom_distribution": {
+    "Remember": 0,
+    "Understand": 9,
+    "Apply": 1,
+    "Analyze": 2,
+    "Evaluate": 1,
+    "Create": 1
+  },
+  "mayer_statistics": {
+    "total_chunks": 14,
+    "avg_overall_score": 7.773809523809524,
+    "avg_compliant_principles": 11.285714285714286,
+    "principle_averages": {
+      "Coherence": 7.928571428571429,
+      "Signaling": 7.785714285714286,
+      "Redundancy": 8.0,
+      "Spatial Contiguity": 8.0,
+      "Temporal Contiguity": 8.0,
+      "Segmenting": 7.928571428571429,
+      "Pre-training": 7.785714285714286,
+      "Modality": 8.0,
+      "Multimedia": 5.857142857142857,
+      "Personalization": 7.0,
+      "Voice": 8.0,
+      "Image": 9.0
+    }
+  },
+  "accessibility_statistics": {
+    "total_chunks": 14,
+    "compliant_chunks": 14,
+    "compliance_rate": 100.0,
+    "avg_score": 9.785714285714286,
+    "total_violations": 0,
+    "total_warnings": 6
+  }
+}

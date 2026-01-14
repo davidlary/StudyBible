@@ -1,0 +1,648 @@
+2026-01-14 08:47:20,971 - __main__ - INFO - Logging to file: ./output/logs/chapter_08.log
+2026-01-14 08:47:20,971 - slide_creation_system.pipeline - INFO - 
+Starting pipeline execution...
+2026-01-14 08:47:20,971 - slide_creation_system.pipeline - INFO - 
+[Stage 1/8] Parsing LaTeX structure...
+2026-01-14 08:47:20,971 - slide_creation_system.latex_parser - INFO - Initializing LaTeXParser: /Users/davidlary/Dropbox/Apps/Overleaf/AirQualityV3/main.tex
+2026-01-14 08:47:20,971 - slide_creation_system.latex_parser - INFO - Parsing LaTeX document
+2026-01-14 08:47:20,972 - slide_creation_system.latex_parser - INFO - Extracted 13 chapters
+2026-01-14 08:47:20,972 - slide_creation_system.latex_parser - INFO - Parsing complete: 13 chapters found
+2026-01-14 08:47:20,972 - slide_creation_system.pipeline - INFO -   ✓ Found 13 chapters
+2026-01-14 08:47:20,972 - slide_creation_system.pipeline - INFO - 
+[Stage 2/8] Extracting content...
+2026-01-14 08:47:20,973 - slide_creation_system.content_extractor - INFO - Initializing ContentExtractor: /Users/davidlary/Dropbox/Apps/Overleaf/AirQualityV3
+2026-01-14 08:47:20,973 - slide_creation_system.content_extractor - INFO - Extracting content from: Chapter-AQ-Plants-Birds-Animals.tex
+2026-01-14 08:47:20,975 - slide_creation_system.content_extractor - INFO - Extracted 56 content elements from Chapter-AQ-Plants-Birds-Animals.tex
+2026-01-14 08:47:20,975 - slide_creation_system.pipeline - INFO -   ✓ Extracted 56 content elements
+2026-01-14 08:47:20,975 - slide_creation_system.pipeline - INFO - 
+[Stage 3/8] Performing semantic chunking...
+2026-01-14 08:47:20,975 - slide_creation_system.semantic_chunker - INFO - Chunking 56 content elements
+2026-01-14 08:47:20,975 - slide_creation_system.semantic_chunker - INFO - Balanced to 14 final chunks
+2026-01-14 08:47:20,975 - slide_creation_system.semantic_chunker - INFO - Successfully chunked content into 14 slides
+2026-01-14 08:47:20,975 - slide_creation_system.pipeline - INFO -   ✓ Created 14 semantic chunks
+2026-01-14 08:47:20,975 - slide_creation_system.pipeline - INFO - 
+[Stage 4/8] Classifying cognitive levels...
+2026-01-14 08:47:20,975 - slide_creation_system.bloom_classifier - INFO - Classifying 14 chunks
+2026-01-14 08:47:20,976 - slide_creation_system.bloom_classifier - INFO - Classification complete: 14 levels assigned
+2026-01-14 08:47:20,976 - slide_creation_system.pipeline - INFO -   ✓ Classified 14 chunks
+2026-01-14 08:47:20,976 - slide_creation_system.pipeline - INFO -     Distribution: {'Remember': 0, 'Understand': 9, 'Apply': 1, 'Analyze': 2, 'Evaluate': 1, 'Create': 1}
+2026-01-14 08:47:20,976 - slide_creation_system.pipeline - INFO - 
+[Stage 5/8] Analyzing Mayer's principles...
+2026-01-14 08:47:20,976 - slide_creation_system.mayer_analyzer - INFO - Analyzing 14 chunks with Mayer principles
+2026-01-14 08:47:20,977 - slide_creation_system.mayer_analyzer - INFO - Analysis complete: 14 Mayer analyses generated
+2026-01-14 08:47:20,977 - slide_creation_system.pipeline - INFO -   ✓ Analyzed 14 chunks
+2026-01-14 08:47:20,977 - slide_creation_system.pipeline - INFO -     Avg Mayer score: 7.8/10
+2026-01-14 08:47:20,977 - slide_creation_system.pipeline - INFO - 
+[Stage 6/8] Checking accessibility...
+2026-01-14 08:47:20,977 - slide_creation_system.accessibility_checker - INFO - Checking accessibility for 14 chunks
+2026-01-14 08:47:20,979 - slide_creation_system.accessibility_checker - INFO - Accessibility check complete: 14/14 chunks compliant
+2026-01-14 08:47:20,979 - slide_creation_system.pipeline - INFO -   ✓ Checked 14 chunks
+2026-01-14 08:47:20,979 - slide_creation_system.pipeline - INFO -     Compliance rate: 100.0%
+2026-01-14 08:47:20,979 - slide_creation_system.pipeline - INFO - 
+[Stage 7/8] Generating prompts...
+2026-01-14 08:47:20,979 - slide_creation_system.prompt_generator - INFO - Initializing PromptGenerator for Chapter 8 (aspect ratio: 1.985:1)
+2026-01-14 08:47:20,979 - slide_creation_system.prompt_generator - INFO - Generating 14 prompts in batch
+2026-01-14 08:47:20,982 - slide_creation_system.prompt_generator - INFO - Generated 14 prompts successfully
+2026-01-14 08:47:20,982 - slide_creation_system.pipeline - INFO -   ✓ Generated 14 prompts
+2026-01-14 08:47:20,982 - slide_creation_system.pipeline - INFO - 
+[Stage 8/8] Writing output files...
+2026-01-14 08:47:20,982 - slide_creation_system.directory_manager - INFO - Creating directory structure
+2026-01-14 08:47:20,982 - slide_creation_system.directory_manager - INFO - Directory structure created successfully
+2026-01-14 08:47:20,985 - slide_creation_system.pipeline - INFO -   ✓ Wrote 14 prompt files
+2026-01-14 08:47:20,985 - slide_creation_system.pipeline - INFO -   ✓ Wrote metadata to ./output/metadata/chapter_08.json
+2026-01-14 08:47:20,985 - slide_creation_system.pipeline - INFO - 
+============================================================
+2026-01-14 08:47:20,985 - slide_creation_system.pipeline - INFO - Pipeline execution completed successfully!
+2026-01-14 08:47:20,985 - slide_creation_system.pipeline - INFO -   Prompts: 14
+2026-01-14 08:47:20,985 - slide_creation_system.pipeline - INFO -   Output: ./output
+2026-01-14 08:47:20,985 - slide_creation_system.pipeline - INFO - ============================================================
+2026-01-14 08:47:20,985 - __main__ - INFO - 
+============================================================
+2026-01-14 08:47:20,985 - __main__ - INFO - Generating slide images with Enhanced Nano Banana Projector...
+2026-01-14 08:47:20,985 - __main__ - INFO - ============================================================
+2026-01-14 08:47:20,986 - __main__ - ERROR - Unexpected error: No module named 'scripts'
+2026-01-14 08:56:03,899 - __main__ - INFO - Logging to file: ./output/logs/chapter_08.log
+2026-01-14 08:56:03,900 - slide_creation_system.pipeline - INFO - 
+Starting pipeline execution...
+2026-01-14 08:56:03,900 - slide_creation_system.pipeline - INFO - 
+[Stage 1/8] Parsing LaTeX structure...
+2026-01-14 08:56:03,900 - slide_creation_system.latex_parser - INFO - Initializing LaTeXParser: /Users/davidlary/Dropbox/Apps/Overleaf/AirQualityV3/main.tex
+2026-01-14 08:56:03,900 - slide_creation_system.latex_parser - INFO - Parsing LaTeX document
+2026-01-14 08:56:03,901 - slide_creation_system.latex_parser - INFO - Extracted 13 chapters
+2026-01-14 08:56:03,901 - slide_creation_system.latex_parser - INFO - Parsing complete: 13 chapters found
+2026-01-14 08:56:03,901 - slide_creation_system.pipeline - INFO -   ✓ Found 13 chapters
+2026-01-14 08:56:03,901 - slide_creation_system.pipeline - INFO - 
+[Stage 2/8] Extracting content...
+2026-01-14 08:56:03,901 - slide_creation_system.content_extractor - INFO - Initializing ContentExtractor: /Users/davidlary/Dropbox/Apps/Overleaf/AirQualityV3
+2026-01-14 08:56:03,901 - slide_creation_system.content_extractor - INFO - Extracting content from: Chapter-AQ-Plants-Birds-Animals.tex
+2026-01-14 08:56:03,903 - slide_creation_system.content_extractor - INFO - Extracted 56 content elements from Chapter-AQ-Plants-Birds-Animals.tex
+2026-01-14 08:56:03,903 - slide_creation_system.pipeline - INFO -   ✓ Extracted 56 content elements
+2026-01-14 08:56:03,903 - slide_creation_system.pipeline - INFO - 
+[Stage 3/8] Performing semantic chunking...
+2026-01-14 08:56:03,904 - slide_creation_system.semantic_chunker - INFO - Chunking 56 content elements
+2026-01-14 08:56:03,904 - slide_creation_system.semantic_chunker - INFO - Balanced to 14 final chunks
+2026-01-14 08:56:03,905 - slide_creation_system.semantic_chunker - INFO - Successfully chunked content into 14 slides
+2026-01-14 08:56:03,905 - slide_creation_system.pipeline - INFO -   ✓ Created 14 semantic chunks
+2026-01-14 08:56:03,905 - slide_creation_system.pipeline - INFO - 
+[Stage 4/8] Classifying cognitive levels...
+2026-01-14 08:56:03,905 - slide_creation_system.bloom_classifier - INFO - Classifying 14 chunks
+2026-01-14 08:56:03,906 - slide_creation_system.bloom_classifier - INFO - Classification complete: 14 levels assigned
+2026-01-14 08:56:03,906 - slide_creation_system.pipeline - INFO -   ✓ Classified 14 chunks
+2026-01-14 08:56:03,906 - slide_creation_system.pipeline - INFO -     Distribution: {'Remember': 0, 'Understand': 9, 'Apply': 1, 'Analyze': 2, 'Evaluate': 1, 'Create': 1}
+2026-01-14 08:56:03,907 - slide_creation_system.pipeline - INFO - 
+[Stage 5/8] Analyzing Mayer's principles...
+2026-01-14 08:56:03,907 - slide_creation_system.mayer_analyzer - INFO - Analyzing 14 chunks with Mayer principles
+2026-01-14 08:56:03,908 - slide_creation_system.mayer_analyzer - INFO - Analysis complete: 14 Mayer analyses generated
+2026-01-14 08:56:03,908 - slide_creation_system.pipeline - INFO -   ✓ Analyzed 14 chunks
+2026-01-14 08:56:03,908 - slide_creation_system.pipeline - INFO -     Avg Mayer score: 7.8/10
+2026-01-14 08:56:03,908 - slide_creation_system.pipeline - INFO - 
+[Stage 6/8] Checking accessibility...
+2026-01-14 08:56:03,908 - slide_creation_system.accessibility_checker - INFO - Checking accessibility for 14 chunks
+2026-01-14 08:56:03,910 - slide_creation_system.accessibility_checker - INFO - Accessibility check complete: 14/14 chunks compliant
+2026-01-14 08:56:03,910 - slide_creation_system.pipeline - INFO -   ✓ Checked 14 chunks
+2026-01-14 08:56:03,910 - slide_creation_system.pipeline - INFO -     Compliance rate: 100.0%
+2026-01-14 08:56:03,910 - slide_creation_system.pipeline - INFO - 
+[Stage 7/8] Generating prompts...
+2026-01-14 08:56:03,910 - slide_creation_system.prompt_generator - INFO - Initializing PromptGenerator for Chapter 8 (aspect ratio: 1.985:1)
+2026-01-14 08:56:03,910 - slide_creation_system.prompt_generator - INFO - Generating 14 prompts in batch
+2026-01-14 08:56:03,916 - slide_creation_system.prompt_generator - INFO - Generated 14 prompts successfully
+2026-01-14 08:56:03,916 - slide_creation_system.pipeline - INFO -   ✓ Generated 14 prompts
+2026-01-14 08:56:03,916 - slide_creation_system.pipeline - INFO - 
+[Stage 8/8] Writing output files...
+2026-01-14 08:56:03,916 - slide_creation_system.directory_manager - INFO - Creating directory structure
+2026-01-14 08:56:03,916 - slide_creation_system.directory_manager - INFO - Directory structure created successfully
+2026-01-14 08:56:03,928 - slide_creation_system.pipeline - INFO -   ✓ Wrote 14 prompt files
+2026-01-14 08:56:03,928 - slide_creation_system.pipeline - INFO -   ✓ Wrote metadata to ./output/metadata/chapter_08.json
+2026-01-14 08:56:03,928 - slide_creation_system.pipeline - INFO - 
+============================================================
+2026-01-14 08:56:03,928 - slide_creation_system.pipeline - INFO - Pipeline execution completed successfully!
+2026-01-14 08:56:03,928 - slide_creation_system.pipeline - INFO -   Prompts: 14
+2026-01-14 08:56:03,928 - slide_creation_system.pipeline - INFO -   Output: ./output
+2026-01-14 08:56:03,928 - slide_creation_system.pipeline - INFO - ============================================================
+2026-01-14 08:56:03,928 - __main__ - INFO - 
+============================================================
+2026-01-14 08:56:03,928 - __main__ - INFO - Generating slide images with Enhanced Nano Banana Projector...
+2026-01-14 08:56:03,928 - __main__ - INFO - ============================================================
+2026-01-14 08:56:03,929 - __main__ - ERROR - Unexpected error: No module named 'scripts'
+2026-01-14 08:56:30,604 - __main__ - INFO - Logging to file: ./output/logs/chapter_08.log
+2026-01-14 08:56:30,604 - slide_creation_system.pipeline - INFO - 
+Starting pipeline execution...
+2026-01-14 08:56:30,604 - slide_creation_system.pipeline - INFO - 
+[Stage 1/8] Parsing LaTeX structure...
+2026-01-14 08:56:30,604 - slide_creation_system.latex_parser - INFO - Initializing LaTeXParser: /Users/davidlary/Dropbox/Apps/Overleaf/AirQualityV3/main.tex
+2026-01-14 08:56:30,605 - slide_creation_system.latex_parser - INFO - Parsing LaTeX document
+2026-01-14 08:56:30,606 - slide_creation_system.latex_parser - INFO - Extracted 13 chapters
+2026-01-14 08:56:30,606 - slide_creation_system.latex_parser - INFO - Parsing complete: 13 chapters found
+2026-01-14 08:56:30,606 - slide_creation_system.pipeline - INFO -   ✓ Found 13 chapters
+2026-01-14 08:56:30,606 - slide_creation_system.pipeline - INFO - 
+[Stage 2/8] Extracting content...
+2026-01-14 08:56:30,606 - slide_creation_system.content_extractor - INFO - Initializing ContentExtractor: /Users/davidlary/Dropbox/Apps/Overleaf/AirQualityV3
+2026-01-14 08:56:30,606 - slide_creation_system.content_extractor - INFO - Extracting content from: Chapter-AQ-Plants-Birds-Animals.tex
+2026-01-14 08:56:30,609 - slide_creation_system.content_extractor - INFO - Extracted 56 content elements from Chapter-AQ-Plants-Birds-Animals.tex
+2026-01-14 08:56:30,609 - slide_creation_system.pipeline - INFO -   ✓ Extracted 56 content elements
+2026-01-14 08:56:30,609 - slide_creation_system.pipeline - INFO - 
+[Stage 3/8] Performing semantic chunking...
+2026-01-14 08:56:30,609 - slide_creation_system.semantic_chunker - INFO - Chunking 56 content elements
+2026-01-14 08:56:30,609 - slide_creation_system.semantic_chunker - INFO - Balanced to 14 final chunks
+2026-01-14 08:56:30,609 - slide_creation_system.semantic_chunker - INFO - Successfully chunked content into 14 slides
+2026-01-14 08:56:30,609 - slide_creation_system.pipeline - INFO -   ✓ Created 14 semantic chunks
+2026-01-14 08:56:30,609 - slide_creation_system.pipeline - INFO - 
+[Stage 4/8] Classifying cognitive levels...
+2026-01-14 08:56:30,609 - slide_creation_system.bloom_classifier - INFO - Classifying 14 chunks
+2026-01-14 08:56:30,610 - slide_creation_system.bloom_classifier - INFO - Classification complete: 14 levels assigned
+2026-01-14 08:56:30,611 - slide_creation_system.pipeline - INFO -   ✓ Classified 14 chunks
+2026-01-14 08:56:30,611 - slide_creation_system.pipeline - INFO -     Distribution: {'Remember': 0, 'Understand': 9, 'Apply': 1, 'Analyze': 2, 'Evaluate': 1, 'Create': 1}
+2026-01-14 08:56:30,611 - slide_creation_system.pipeline - INFO - 
+[Stage 5/8] Analyzing Mayer's principles...
+2026-01-14 08:56:30,611 - slide_creation_system.mayer_analyzer - INFO - Analyzing 14 chunks with Mayer principles
+2026-01-14 08:56:30,611 - slide_creation_system.mayer_analyzer - INFO - Analysis complete: 14 Mayer analyses generated
+2026-01-14 08:56:30,611 - slide_creation_system.pipeline - INFO -   ✓ Analyzed 14 chunks
+2026-01-14 08:56:30,611 - slide_creation_system.pipeline - INFO -     Avg Mayer score: 7.8/10
+2026-01-14 08:56:30,611 - slide_creation_system.pipeline - INFO - 
+[Stage 6/8] Checking accessibility...
+2026-01-14 08:56:30,611 - slide_creation_system.accessibility_checker - INFO - Checking accessibility for 14 chunks
+2026-01-14 08:56:30,613 - slide_creation_system.accessibility_checker - INFO - Accessibility check complete: 14/14 chunks compliant
+2026-01-14 08:56:30,613 - slide_creation_system.pipeline - INFO -   ✓ Checked 14 chunks
+2026-01-14 08:56:30,613 - slide_creation_system.pipeline - INFO -     Compliance rate: 100.0%
+2026-01-14 08:56:30,613 - slide_creation_system.pipeline - INFO - 
+[Stage 7/8] Generating prompts...
+2026-01-14 08:56:30,613 - slide_creation_system.prompt_generator - INFO - Initializing PromptGenerator for Chapter 8 (aspect ratio: 1.985:1)
+2026-01-14 08:56:30,613 - slide_creation_system.prompt_generator - INFO - Generating 14 prompts in batch
+2026-01-14 08:56:30,617 - slide_creation_system.prompt_generator - INFO - Generated 14 prompts successfully
+2026-01-14 08:56:30,617 - slide_creation_system.pipeline - INFO -   ✓ Generated 14 prompts
+2026-01-14 08:56:30,617 - slide_creation_system.pipeline - INFO - 
+[Stage 8/8] Writing output files...
+2026-01-14 08:56:30,617 - slide_creation_system.directory_manager - INFO - Creating directory structure
+2026-01-14 08:56:30,617 - slide_creation_system.directory_manager - INFO - Directory structure created successfully
+2026-01-14 08:56:30,621 - slide_creation_system.pipeline - INFO -   ✓ Wrote 14 prompt files
+2026-01-14 08:56:30,621 - slide_creation_system.pipeline - INFO -   ✓ Wrote metadata to ./output/metadata/chapter_08.json
+2026-01-14 08:56:30,621 - slide_creation_system.pipeline - INFO - 
+============================================================
+2026-01-14 08:56:30,621 - slide_creation_system.pipeline - INFO - Pipeline execution completed successfully!
+2026-01-14 08:56:30,621 - slide_creation_system.pipeline - INFO -   Prompts: 14
+2026-01-14 08:56:30,621 - slide_creation_system.pipeline - INFO -   Output: ./output
+2026-01-14 08:56:30,621 - slide_creation_system.pipeline - INFO - ============================================================
+2026-01-14 08:56:30,621 - __main__ - INFO - 
+============================================================
+2026-01-14 08:56:30,621 - __main__ - INFO - Generating slide images with Enhanced Nano Banana Projector...
+2026-01-14 08:56:30,621 - __main__ - INFO - ============================================================
+2026-01-14 08:56:31,570 - scripts.enhanced_nano_banana - INFO - Enhanced Nano Banana Projector initialized
+2026-01-14 08:56:31,570 - scripts.enhanced_nano_banana - INFO -   Philosophy: Substance + Beauty
+2026-01-14 08:56:31,570 - scripts.enhanced_nano_banana - INFO -   Goal: ALL details, beautifully integrated
+2026-01-14 08:56:31,571 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_001.png
+2026-01-14 08:56:31,571 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:31,777 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:31,777 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:31,777 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:31,777 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:31,778 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:31,866 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:31,866 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:31,866 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:31,866 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:31,866 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:31,970 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:31,971 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:31,971 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_002.png
+2026-01-14 08:56:31,972 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,066 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,069 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,069 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:32,069 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:32,069 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,183 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,183 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,183 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:32,183 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:32,183 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,255 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,256 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,256 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_003.png
+2026-01-14 08:56:32,256 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,378 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,379 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,379 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:32,379 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:32,379 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,455 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,458 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,458 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:32,458 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:32,458 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,551 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,553 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,554 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_004.png
+2026-01-14 08:56:32,554 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,654 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,656 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,656 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:32,656 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:32,656 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,743 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,744 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,744 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:32,744 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:32,744 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,823 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,824 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,825 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_005.png
+2026-01-14 08:56:32,825 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:32,917 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:32,920 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:32,920 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:32,920 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:32,920 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,003 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,004 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,004 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:33,004 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:33,004 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,093 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,094 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,094 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_006.png
+2026-01-14 08:56:33,094 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,201 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,202 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,202 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:33,202 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:33,202 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,275 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,276 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,276 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:33,276 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:33,276 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,369 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,370 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,371 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_007.png
+2026-01-14 08:56:33,371 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,474 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,475 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,475 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:33,475 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:33,475 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,560 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,562 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,562 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:33,563 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:33,563 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,637 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,638 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,638 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_008.png
+2026-01-14 08:56:33,639 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,761 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,761 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,761 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:33,761 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:33,761 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,843 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,844 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,844 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:33,844 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:33,844 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:33,944 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:33,945 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:33,945 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_009.png
+2026-01-14 08:56:33,945 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,029 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,030 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,030 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:34,030 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:34,030 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,132 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,132 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,132 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:34,132 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:34,132 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,204 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,204 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,205 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_010.png
+2026-01-14 08:56:34,205 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,330 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,331 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,331 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:34,331 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:34,331 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,405 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,405 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,405 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:34,405 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:34,405 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,516 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,517 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,517 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_011.png
+2026-01-14 08:56:34,518 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,588 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,589 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,589 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:34,589 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:34,589 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,710 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,711 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,711 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:34,711 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:34,711 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,779 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,780 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,780 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_012.png
+2026-01-14 08:56:34,780 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,912 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,914 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,914 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:34,914 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:34,914 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:34,991 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:34,992 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:34,992 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:34,992 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:34,992 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:35,104 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:35,105 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:35,105 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_013.png
+2026-01-14 08:56:35,105 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:35,182 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:35,186 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:35,186 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:35,186 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:35,186 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:35,314 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:35,315 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:35,315 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:35,316 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:35,316 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:35,402 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:35,404 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:35,405 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_014.png
+2026-01-14 08:56:35,405 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:35,478 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:35,479 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:35,479 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:35,479 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:56:35,480 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:35,568 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:35,581 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:56:35,581 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:56:35,581 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:56:35,581 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:56:35,652 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:56:35,653 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:48,229 - __main__ - INFO - Logging to file: ./output/logs/chapter_08.log
+2026-01-14 08:58:48,229 - slide_creation_system.pipeline - INFO - 
+Starting pipeline execution...
+2026-01-14 08:58:48,229 - slide_creation_system.pipeline - INFO - 
+[Stage 1/8] Parsing LaTeX structure...
+2026-01-14 08:58:48,229 - slide_creation_system.latex_parser - INFO - Initializing LaTeXParser: /Users/davidlary/Dropbox/Apps/Overleaf/AirQualityV3/main.tex
+2026-01-14 08:58:48,229 - slide_creation_system.latex_parser - INFO - Parsing LaTeX document
+2026-01-14 08:58:48,230 - slide_creation_system.latex_parser - INFO - Extracted 13 chapters
+2026-01-14 08:58:48,230 - slide_creation_system.latex_parser - INFO - Parsing complete: 13 chapters found
+2026-01-14 08:58:48,230 - slide_creation_system.pipeline - INFO -   ✓ Found 13 chapters
+2026-01-14 08:58:48,230 - slide_creation_system.pipeline - INFO - 
+[Stage 2/8] Extracting content...
+2026-01-14 08:58:48,230 - slide_creation_system.content_extractor - INFO - Initializing ContentExtractor: /Users/davidlary/Dropbox/Apps/Overleaf/AirQualityV3
+2026-01-14 08:58:48,231 - slide_creation_system.content_extractor - INFO - Extracting content from: Chapter-AQ-Plants-Birds-Animals.tex
+2026-01-14 08:58:48,233 - slide_creation_system.content_extractor - INFO - Extracted 56 content elements from Chapter-AQ-Plants-Birds-Animals.tex
+2026-01-14 08:58:48,233 - slide_creation_system.pipeline - INFO -   ✓ Extracted 56 content elements
+2026-01-14 08:58:48,233 - slide_creation_system.pipeline - INFO - 
+[Stage 3/8] Performing semantic chunking...
+2026-01-14 08:58:48,233 - slide_creation_system.semantic_chunker - INFO - Chunking 56 content elements
+2026-01-14 08:58:48,233 - slide_creation_system.semantic_chunker - INFO - Balanced to 14 final chunks
+2026-01-14 08:58:48,234 - slide_creation_system.semantic_chunker - INFO - Successfully chunked content into 14 slides
+2026-01-14 08:58:48,234 - slide_creation_system.pipeline - INFO -   ✓ Created 14 semantic chunks
+2026-01-14 08:58:48,234 - slide_creation_system.pipeline - INFO - 
+[Stage 4/8] Classifying cognitive levels...
+2026-01-14 08:58:48,234 - slide_creation_system.bloom_classifier - INFO - Classifying 14 chunks
+2026-01-14 08:58:48,235 - slide_creation_system.bloom_classifier - INFO - Classification complete: 14 levels assigned
+2026-01-14 08:58:48,235 - slide_creation_system.pipeline - INFO -   ✓ Classified 14 chunks
+2026-01-14 08:58:48,235 - slide_creation_system.pipeline - INFO -     Distribution: {'Remember': 0, 'Understand': 9, 'Apply': 1, 'Analyze': 2, 'Evaluate': 1, 'Create': 1}
+2026-01-14 08:58:48,235 - slide_creation_system.pipeline - INFO - 
+[Stage 5/8] Analyzing Mayer's principles...
+2026-01-14 08:58:48,235 - slide_creation_system.mayer_analyzer - INFO - Analyzing 14 chunks with Mayer principles
+2026-01-14 08:58:48,235 - slide_creation_system.mayer_analyzer - INFO - Analysis complete: 14 Mayer analyses generated
+2026-01-14 08:58:48,235 - slide_creation_system.pipeline - INFO -   ✓ Analyzed 14 chunks
+2026-01-14 08:58:48,235 - slide_creation_system.pipeline - INFO -     Avg Mayer score: 7.8/10
+2026-01-14 08:58:48,236 - slide_creation_system.pipeline - INFO - 
+[Stage 6/8] Checking accessibility...
+2026-01-14 08:58:48,236 - slide_creation_system.accessibility_checker - INFO - Checking accessibility for 14 chunks
+2026-01-14 08:58:48,238 - slide_creation_system.accessibility_checker - INFO - Accessibility check complete: 14/14 chunks compliant
+2026-01-14 08:58:48,238 - slide_creation_system.pipeline - INFO -   ✓ Checked 14 chunks
+2026-01-14 08:58:48,238 - slide_creation_system.pipeline - INFO -     Compliance rate: 100.0%
+2026-01-14 08:58:48,238 - slide_creation_system.pipeline - INFO - 
+[Stage 7/8] Generating prompts...
+2026-01-14 08:58:48,238 - slide_creation_system.prompt_generator - INFO - Initializing PromptGenerator for Chapter 8 (aspect ratio: 1.985:1)
+2026-01-14 08:58:48,238 - slide_creation_system.prompt_generator - INFO - Generating 14 prompts in batch
+2026-01-14 08:58:48,241 - slide_creation_system.prompt_generator - INFO - Generated 14 prompts successfully
+2026-01-14 08:58:48,241 - slide_creation_system.pipeline - INFO -   ✓ Generated 14 prompts
+2026-01-14 08:58:48,241 - slide_creation_system.pipeline - INFO - 
+[Stage 8/8] Writing output files...
+2026-01-14 08:58:48,241 - slide_creation_system.directory_manager - INFO - Creating directory structure
+2026-01-14 08:58:48,241 - slide_creation_system.directory_manager - INFO - Directory structure created successfully
+2026-01-14 08:58:48,244 - slide_creation_system.pipeline - INFO -   ✓ Wrote 14 prompt files
+2026-01-14 08:58:48,244 - slide_creation_system.pipeline - INFO -   ✓ Wrote metadata to ./output/metadata/chapter_08.json
+2026-01-14 08:58:48,244 - slide_creation_system.pipeline - INFO - 
+============================================================
+2026-01-14 08:58:48,244 - slide_creation_system.pipeline - INFO - Pipeline execution completed successfully!
+2026-01-14 08:58:48,244 - slide_creation_system.pipeline - INFO -   Prompts: 14
+2026-01-14 08:58:48,244 - slide_creation_system.pipeline - INFO -   Output: ./output
+2026-01-14 08:58:48,244 - slide_creation_system.pipeline - INFO - ============================================================
+2026-01-14 08:58:48,244 - __main__ - INFO - 
+============================================================
+2026-01-14 08:58:48,244 - __main__ - INFO - Generating slide images with Enhanced Nano Banana Projector...
+2026-01-14 08:58:48,244 - __main__ - INFO - ============================================================
+2026-01-14 08:58:49,037 - scripts.enhanced_nano_banana - INFO - Enhanced Nano Banana Projector initialized
+2026-01-14 08:58:49,037 - scripts.enhanced_nano_banana - INFO -   Philosophy: Substance + Beauty
+2026-01-14 08:58:49,037 - scripts.enhanced_nano_banana - INFO -   Goal: ALL details, beautifully integrated
+2026-01-14 08:58:49,038 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_001.png
+2026-01-14 08:58:49,038 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,237 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,237 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,237 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:49,237 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:49,237 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,316 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,317 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,317 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:49,317 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:49,317 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,413 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,415 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,415 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_002.png
+2026-01-14 08:58:49,415 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,502 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,505 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,505 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:49,505 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:49,505 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,595 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,597 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,597 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:49,597 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:49,597 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,682 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,683 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,683 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_003.png
+2026-01-14 08:58:49,684 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,753 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,753 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,753 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:49,753 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:49,754 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,853 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,853 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,853 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:49,853 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:49,853 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:49,941 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:49,943 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:49,943 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_004.png
+2026-01-14 08:58:49,944 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,009 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,010 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,010 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:50,010 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:50,010 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,090 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,090 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,090 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:50,091 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:50,091 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,169 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,170 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,170 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_005.png
+2026-01-14 08:58:50,170 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,249 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,249 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,249 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:50,249 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:50,250 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,337 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,337 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,337 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:50,337 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:50,337 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,453 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,455 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,455 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_006.png
+2026-01-14 08:58:50,456 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,537 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,537 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,537 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:50,538 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:50,538 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,633 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,633 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,633 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:50,633 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:50,633 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,704 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,704 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,705 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_007.png
+2026-01-14 08:58:50,705 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,792 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,792 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,792 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:50,792 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:50,792 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,865 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,866 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,866 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:50,866 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:50,866 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:50,981 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:50,981 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:50,982 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_008.png
+2026-01-14 08:58:50,982 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,058 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,059 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,059 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:51,059 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:51,059 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,160 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,160 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,161 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:51,161 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:51,161 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,240 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,240 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,241 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_009.png
+2026-01-14 08:58:51,241 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,349 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,349 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,349 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:51,349 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:51,349 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,415 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,415 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,415 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:51,415 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:51,415 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,532 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,533 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,533 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_010.png
+2026-01-14 08:58:51,533 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,601 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,601 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,601 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:51,601 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:51,602 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,718 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,718 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,718 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:51,718 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:51,719 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,794 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,794 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,795 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_011.png
+2026-01-14 08:58:51,795 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,876 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,877 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,877 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:51,877 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:51,877 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:51,957 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:51,957 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:51,957 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:51,957 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:51,958 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,112 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,112 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,113 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_012.png
+2026-01-14 08:58:52,113 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,181 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,182 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,182 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:52,182 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:52,182 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,291 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,292 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,292 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:52,292 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:52,292 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,370 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,371 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,371 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_013.png
+2026-01-14 08:58:52,371 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,472 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,472 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,472 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:52,472 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:52,473 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,553 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,554 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,554 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:52,554 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:52,554 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,653 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,654 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,654 - scripts.enhanced_nano_banana - INFO - Generating from complete prompt: slide_014.png
+2026-01-14 08:58:52,654 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,725 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,725 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,725 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:52,725 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 1/2
+2026-01-14 08:58:52,726 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,819 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,819 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-01-14 08:58:52,819 - scripts.enhanced_nano_banana - WARNING -   🔄 Will retry...
+2026-01-14 08:58:52,819 - scripts.enhanced_nano_banana - INFO -   🔄 Regeneration attempt 2/2
+2026-01-14 08:58:52,820 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-14 08:58:52,890 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent "HTTP/1.1 400 Bad Request"
+2026-01-14 08:58:52,891 - scripts.enhanced_nano_banana - ERROR - Generation failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
