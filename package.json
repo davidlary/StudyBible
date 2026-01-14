@@ -1,4 +1,12 @@
 {
+  "name": "studybible",
+  "version": "1.0.0",
+  "description": "High-fidelity biblical exegesis with original language analysis",
+  "scripts": {
+    "build": "npx @11ty/eleventy --input=website --output=website/_site --config=website/.eleventy.js",
+    "serve": "npx @11ty/eleventy --input=website --output=website/_site --config=website/.eleventy.js --serve",
+    "search": "npx pagefind --source website/_site"
+  },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "pagefind": "^1.4.0"
